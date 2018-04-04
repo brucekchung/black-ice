@@ -1,5 +1,6 @@
-import React, { Component } from 'react';
-import './App.css';
+import React, { Component } from 'react'
+import './App.css'
+import Main from '../Main/Main'
 
 class App extends Component {
   render() {
@@ -8,9 +9,10 @@ class App extends Component {
         <header className="App-header">
           <h1 className="App-title">Black Ice</h1>
         </header>
+        <Main />
       </div>
-    );
+    )
   }
 }
 
-export default App;
+export default App
