@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import './Login.css'
+import Nav from '../Nav/Nav'
 
 class Login extends Component {
   constructor() {
@@ -11,6 +12,7 @@ class Login extends Component {
   render() {
     return (
       <div>
+        <Nav />
         Login Component
       </div>
     )
