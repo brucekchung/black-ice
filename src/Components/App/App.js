@@ -1,5 +1,5 @@
-import React, { Component } from 'react';
-import './App.css';
+import React, { Component } from 'react'
+import './App.css'
 
 class App extends Component {
   render() {
@@ -9,8 +9,8 @@ class App extends Component {
           <h1 className="App-title">Black Ice</h1>
         </header>
       </div>
-    );
+    )
   }
 }
 
-export default App;
+export default App
