@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import Nav from '../Nav/Nav'
 
-class Reports extends Component {
+class Landing extends Component {
   constructor() {
     super()
     this.state = {}
@@ -12,10 +12,10 @@ class Reports extends Component {
     return (
       <div>
         <Nav />
-        Reports Component
+        Landing Component
       </div>
     )
   }
 }
 
-export default Reports
+export default Landing
