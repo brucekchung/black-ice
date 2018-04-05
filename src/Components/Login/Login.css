@@ -1,0 +1,14 @@
+.Login {
+  background: black;
+  color: white;
+}
+
+.Login input {
+  display: block;  
+  margin: 20px auto;
+  width: 60%;
+}
+
+.Login button {
+  margin: 20px auto;
+}
