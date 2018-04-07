@@ -16,7 +16,12 @@ class DataEntry extends Component {
         country: null,
         coordinates: null
       },
-      data: null
+      data: [{
+          name: '',
+          date_collected: '',
+          reflectance: '',
+          wavelength: ''
+      }]
     }
   }
 
@@ -27,6 +32,16 @@ class DataEntry extends Component {
     this.setState({ 
       location: { [name]: value }
     })
+  }
+
+  updateData = (e) => {
+    const name = e.target.name
+    const value = e.target.value
+    const index = e.target.parentNode.className
+    const data = [...this.state.data]
+    
+    data[index][name] = value
+    this.setState({ data })
   }
 
   render() {
@@ -44,7 +59,8 @@ class DataEntry extends Component {
                     options={ this.state.options.coordinates }
                     handleChange={ this.handleChange } />
           <h3>Data</h3>
-          <DataForm />
+          <DataForm data={ this.state.data }
+                    handleChange={ this.updateData } />
           <button type="submit">Save</button>
         </form>
       </div>

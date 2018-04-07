@@ -1,28 +1,16 @@
 import React, { Component } from 'react';
 
 class DataForm extends Component {
-  constructor(props) {
-    super(props)
-
-    this.state = {
-      repeatedItems: [{
-          name: '',
-          date_collected: '',
-          reflectance: '',
-          wavelength: ''
-      }]
-    }
-  }
-
   renderInputs = () => {
-    return this.state.repeatedItems.map((item, index) => {
-      const state = this.state.repeatedItems[index]
+    return this.props.data.map((item, index) => {
+      const state = this.props.data[index]
       return (
-        <div key={ index }>
+        <div key={ index } className={ index }>
           <h4>Data Point { index + 1 }</h4>
           <input type="text"  
                  name="name"
                  placeholder="Name"
+                 onChange={ this.props.handleChange }
                  value={ state.name } />
           <input type="text"
                  name="date_collected"
@@ -54,8 +42,8 @@ class DataForm extends Component {
   }
 
   removeData = () => {
-    if (this.state.repeatedItems.length > 1) {
-      const allItems = [...this.state.repeatedItems]
+    if (this.props.data.length > 1) {
+      const allItems = [...this.props.data]
 
       allItems.pop();
       this.setState({ repeatedItems: allItems })
@@ -71,8 +59,8 @@ class DataForm extends Component {
     return (
       <div>
         { this.renderInputs() }
-        <button onClick={ this.handleClick }>Add Data</button>
-        <button onClick={ this.handleClick }>Remove</button>
+        {/*<button onClick={ this.handleClick }>Add Data</button>
+        <button onClick={ this.handleClick }>Remove</button>*/}
       </div>
     )
   }
