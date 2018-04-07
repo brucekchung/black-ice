@@ -34,6 +34,11 @@ class DataEntry extends Component {
     })
   }
 
+  handleClick = (e) => {
+    e.preventDefault();
+    e.target.innerText === 'Add Data' ? this.addDataSet() : this.removeDataSet()
+  }
+
   updateData = (e) => {
     const name = e.target.name
     const value = e.target.value
@@ -42,6 +47,27 @@ class DataEntry extends Component {
     
     data[index][name] = value
     this.setState({ data })
+  }
+
+  addDataSet = () => {
+    const newSet = {
+      name: '',
+      date_collected: '',
+      reflectance: '',
+      wavelength: ''
+    }
+    const newDataArray = [...this.state.data, newSet]
+
+    this.setState({ data: newDataArray })
+  }
+
+  removeDataSet = () => {
+    if (this.state.data.length > 1) {
+      const allItems = [...this.state.data]
+
+      allItems.pop();
+      this.setState({ data: allItems })
+    }
   }
 
   render() {
@@ -60,7 +86,8 @@ class DataEntry extends Component {
                     handleChange={ this.handleChange } />
           <h3>Data</h3>
           <DataForm data={ this.state.data }
-                    handleChange={ this.updateData } />
+                    handleChange={ this.updateData }
+                    handleClick={ this.handleClick } />
           <button type="submit">Save</button>
         </form>
       </div>

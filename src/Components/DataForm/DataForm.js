@@ -29,38 +29,12 @@ class DataForm extends Component {
     })
   }
 
-  addData = () => {
-    const newSet = {
-      name: '',
-      date_collected: '',
-      reflectance: '',
-      wavelength: ''
-    }
-    const newItemsArray = [...this.state.repeatedItems, newSet]
-
-    this.setState({ repeatedItems: newItemsArray })
-  }
-
-  removeData = () => {
-    if (this.props.data.length > 1) {
-      const allItems = [...this.props.data]
-
-      allItems.pop();
-      this.setState({ repeatedItems: allItems })
-    }
-  }
-
-  handleClick = (e) => {
-    e.preventDefault()
-    e.target.innerText === 'Add Data' ? this.addData() : this.removeData()
-  }
-
   render() {
     return (
       <div>
         { this.renderInputs() }
-        {/*<button onClick={ this.handleClick }>Add Data</button>
-        <button onClick={ this.handleClick }>Remove</button>*/}
+        <button onClick={ this.props.handleClick }>Add Data</button>
+        <button onClick={ this.props.handleClick }>Remove</button>
       </div>
     )
   }
