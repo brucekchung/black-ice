@@ -10,7 +10,7 @@ class DataEntry extends Component {
     this.state = {
       options: {
         countries: ['Peru', 'Argentina'],
-        coordinates: ['1, -1'],
+        coordinates: ['1, -1']
       },
       location: {
         country: null,
@@ -73,16 +73,9 @@ class DataEntry extends Component {
   handleSubmit = e => {
     e.preventDefault()
 
-    const dataWithUnits = this.state.data.map(dataPoint => {
-      dataPoint.reflectance = dataPoint.reflectance + '%'
-      dataPoint.wavelength = dataPoint.wavelength + 'um'
-
-      return dataPoint
-    })
-
     // const dataToSend = {
     //   location_id,
-    //   data: dataWithUnits,
+    //   data: this.state.data,
     // }
     // const url = ''
     // const init = { 

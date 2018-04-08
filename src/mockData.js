@@ -2,22 +2,26 @@ export const allData = [{
     id: '1',
     name: 'Base Camp',
     date_collected: '08/19/18',
-    reflectance: '89%',
-    wavelength: '20um',
+    reflectance: '89',
+    wavelength: '20',
+    location_id: '1',
     altitude: '4000m',
-    latlng: '1, -1',
-    region: 'Ishinca'
-    country: 'test'
+    lat: '1',
+    lng: '-1',
+    region: 'Ishinca',
+    country: 'Peru'
   }, {
     id: '2',
     name: 'Camp 1',
     date_collected: '08/20/18',
-    reflectance: '70%',
-    wavelength: '110um',
+    reflectance: '70',
+    wavelength: '110',
+    location_id: '2',
     altitude: '5000m',
-    latlng: '2, -2',
-    region: 'Pisco'
-    country: 'test2'       
+    lat: '2',
+    lng: '-2',
+    region: 'Pisco',
+    country: 'Peru'       
 }]
 
 export const allLocations = [{
@@ -38,18 +42,18 @@ export const allLocations = [{
     country: 'Peru'
 }]
 
-export const data = [{
+export const dataOnly = [{
     id: '1',
     name: 'WP 1',
     date_collected: '08/19/18',
-    reflectance: '89%',
-    wavelength: '20um',
+    reflectance: '89',
+    wavelength: '20',
     location_id: '1'
   }, {
     id: '2',
     name: 'WP 22',
     date_collected: '08/20/18',
-    reflectance: '70%',
-    wavelength: '110um',
+    reflectance: '70',
+    wavelength: '110',
     location_id: '2'
 }]
