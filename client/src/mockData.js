@@ -24,7 +24,7 @@ export const allData = [{
     country: 'Peru'       
 }]
 
-export const allLocations = [{
+export const locationsOnly = [{
     id: '1',
     name: 'Base Camp',
     lat: '1',
