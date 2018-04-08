@@ -10,7 +10,7 @@ class ViewAll extends Component {
         name: 'Col',
         date_collected: '08/19/18',
         reflectance: '89%',
-        wavelength: 'something',
+        wavelength: '20um',
         altitude: '4000m',
         latlng: '1, -1',
         country: 'test'
@@ -19,7 +19,7 @@ class ViewAll extends Component {
         name: 'Base',
         date_collected: '08/18/18',
         reflectance: '70%',
-        wavelength: 'something else',
+        wavelength: '110um',
         altitude: '5000m',
         latlng: '2, -2',
         country: 'test2'       

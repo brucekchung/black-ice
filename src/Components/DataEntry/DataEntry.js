@@ -73,9 +73,16 @@ class DataEntry extends Component {
   handleSubmit = e => {
     e.preventDefault()
 
+    const dataWithUnits = this.state.data.map(dataPoint => {
+      dataPoint.reflectance = dataPoint.reflectance + '%'
+      dataPoint.wavelength = dataPoint.wavelength + 'um'
+
+      return dataPoint
+    })
+
     // const dataToSend = {
     //   location_id,
-    //   data: this.state.data,
+    //   data: dataWithUnits,
     // }
     // const url = ''
     // const init = { 

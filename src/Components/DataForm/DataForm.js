@@ -16,14 +16,17 @@ class DataForm extends Component {
           <input type="text"
                  name="date_collected"
                  placeholder="Date collected"
+                 onChange={ this.props.handleChange }
                  value={ state.date_collected } />
           <input type="text"
                  name="reflectance"
                  placeholder="Reflectance"
+                 onChange={ this.props.handleChange }
                  value={ state.reflectance } />
           <input type="text"
                  name="wavelength"
                  placeholder="Wavelength"
+                 onChange={ this.props.handleChange }
                  value={ state.wavelength } />
         </div>
       )
