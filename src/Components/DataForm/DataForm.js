@@ -4,6 +4,7 @@ class DataForm extends Component {
   renderInputs = () => {
     return this.props.data.map((item, index) => {
       const state = this.props.data[index]
+      
       return (
         <div key={ index } className={ index }>
           <h4>Data Point { index + 1 }</h4>
