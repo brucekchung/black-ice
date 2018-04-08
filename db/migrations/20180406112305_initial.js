@@ -3,9 +3,9 @@ exports.up = function(knex, Promise) {
     knex.schema.createTable('locations', table => {
       table.increments('id').primary()
       table.string('name')
-      table.number('lat')
-      table.number('lng')
-      table.number('alt')
+      table.string('lat')
+      table.string('lng')
+      table.string('alt')
       table.string('region')
       table.string('country')
 
@@ -33,7 +33,7 @@ exports.up = function(knex, Promise) {
 exports.down = function(knex, Promise) {
   return Promise.all([
     knex.schema.dropTable('locations_samples'),
-    knex.schema.dropTable('locations')
+    knex.schema.dropTable('locations'),
     knex.schema.dropTable('samples')
   ])
 }
