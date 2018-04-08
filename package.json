@@ -6,17 +6,16 @@
     "body-parser": "^1.18.2",
     "express": "^4.16.3",
     "knex": "^0.14.4",
-    "pg": "^7.4.1",
-    "react": "^16.3.1",
-    "react-dom": "^16.3.1",
-    "react-router-dom": "^4.2.2",
-    "react-scripts": "1.1.4"
+    "nodemon": "^1.17.3",
+    "pg": "^7.4.1"
   },
-  "proxy": "http://localhost:3000/",
+  "devDependencies": {
+    "concurrently": "^3.5.0"
+  },
   "scripts": {
     "test": "NODE_ENV=test mocha --exit",
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "eject": "react-scripts eject"
+    "client": "cd client && yarn start",
+    "server": "nodemon server.js",
+    "dev": "concurrently --kill-others-on-fail \"yarn server\" \"yarn client\""
   }
 }
