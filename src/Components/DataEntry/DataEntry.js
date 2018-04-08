@@ -10,7 +10,7 @@ class DataEntry extends Component {
     this.state = {
       options: {
         countries: ['Peru', 'Argentina'],
-        coordinates: ['1, -1'],
+        coordinates: ['1, -1']
       },
       location: {
         country: null,
