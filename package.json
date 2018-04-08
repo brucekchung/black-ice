@@ -14,9 +14,9 @@
   },
   "proxy": "http://localhost:3000/",
   "scripts": {
+    "test": "NODE_ENV=test mocha --exit",
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
   }
 }
