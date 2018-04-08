@@ -65,9 +65,28 @@ class DataEntry extends Component {
     if (this.state.data.length > 1) {
       const allItems = [...this.state.data]
 
-      allItems.pop();
+      allItems.pop()
       this.setState({ data: allItems })
     }
+  }
+
+  handleSubmit = e => {
+    e.preventDefault()
+
+    // const dataToSend = {
+    //   location_id,
+    //   data: this.state.data,
+    // }
+    // const url = ''
+    // const init = { 
+    //   method: 'POST',
+    //   headers: {
+    //     'Content-Type': 'application/json'
+    //   },
+    //   body: JSON.stringify(dataToSend)
+    // }
+
+    // apiCall(url, init)    
   }
 
   render() {
@@ -76,7 +95,7 @@ class DataEntry extends Component {
         <Nav />
         <h2>Add Data</h2>
         <button>Import CSV</button>
-        <form>
+        <form onSubmit={ this.handleSubmit }>
           <h3>Location</h3>
           <DropDown name='country'
                     options={ this.state.options.countries }
