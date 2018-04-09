@@ -45,5 +45,4 @@ server.post('/api/v1/samples/', (req, res) => {
     .catch(error => res.status(500).json({error}))
 })
 
-
 module.exports = server

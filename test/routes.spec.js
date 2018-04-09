@@ -25,9 +25,13 @@ describe('API Routes', () => {
     })
   })
 
-  describe('route', () => {
-    it('should...', () => {
-
+  describe('POST /api/v1/locations/', () => {
+    it('should add an entry to locations via POST', () => {
+      return chai.request(server)
+        .get('/api/v1/locations')
+        .then(res => {
+          res.should.have.status(200)
+      })
     })
   })
-}
+})
