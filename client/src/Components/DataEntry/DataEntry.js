@@ -3,18 +3,21 @@ import './DataEntry.css'
 import Nav from '../Nav/Nav'
 import DropDown from '../LocationForm/LocationForm'
 import DataForm from '../DataForm/DataForm'
+import { locationsOnly } from '../../mockData'
 
 class DataEntry extends Component {
   constructor() {
     super()
     this.state = {
       options: {
-        countries: ['Peru', 'Argentina'],
-        coordinates: ['1, -1']
+        countries: [],
+        coordinates: [],
+        regions: []
       },
       location: {
         country: null,
-        coordinates: null
+        coordinates: null,
+        region: null
       },
       data: [{
           name: '',
@@ -23,6 +26,44 @@ class DataEntry extends Component {
           wavelength: ''
       }]
     }
+  }
+
+  componentDidMount = async () => {
+    const url = '/api/v1/locations'
+    // const locations = await apiCall(url);
+    const countries = this.sortOptionsInfo(locationsOnly, 'country')
+    const regions = this.sortOptionsInfo(locationsOnly, 'region')
+    const coordinates = this.sortLatLng(locationsOnly);
+
+    this.setState({ 
+      options: {
+        countries,
+        regions,
+        coordinates
+      }
+    })
+  }
+
+  sortOptionsInfo = (locations, type) => {
+    return locations.reduce((acc, location) => {
+      if(acc.includes(location[type])) {
+        return acc
+      }
+
+      return [...acc, location[type]]
+    }, [])
+  }
+
+  sortLatLng = locations => {
+    return locations.reduce((acc, location) => {
+      const latlng = `${location.lat}, ${location.lng}`
+
+      if(acc.includes(latlng)) {
+        return acc
+      }
+
+      return [...acc, latlng]
+    }, [])
   }
 
   handleChange = (e) => {
@@ -99,6 +140,9 @@ class DataEntry extends Component {
           <h3>Location</h3>
           <DropDown name='country'
                     options={ this.state.options.countries }
+                    handleChange={ this.handleChange } />
+          <DropDown name='region'
+                    options={ this.state.options.regions }
                     handleChange={ this.handleChange } />
           <DropDown name='coordinates'
                     options={ this.state.options.coordinates }
