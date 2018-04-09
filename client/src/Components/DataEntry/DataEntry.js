@@ -9,15 +9,16 @@ class DataEntry extends Component {
   constructor() {
     super()
     this.state = {
+      allLocations: locationsOnly,
       options: {
         countries: [],
         coordinates: [],
         regions: []
       },
-      location: {
+      selectedLocation: {
         country: null,
         coordinates: null,
-        regions: null
+        region: null
       },
       data: [{
           name: '',
@@ -32,16 +33,36 @@ class DataEntry extends Component {
     const url = '/api/v1/locations'
     // const locations = await apiCall(url);
     const countries = this.sortOptionsInfo(locationsOnly, 'country')
-    const regions = this.sortOptionsInfo(locationsOnly, 'region')
-    const coordinates = this.sortLatLng(locationsOnly);
 
     this.setState({ 
-      options: {
-        countries,
-        regions,
-        coordinates
+      allLocations: locationsOnly,
+      options: { countries, regions: [], coordinates: [] }
+    })
+  }
+
+  updateLocationOptions = (name, value) => {
+    if(name === 'coordinates') {
+      return ({ 
+        countries: this.state.options.countries,
+        regions: this.state.options.regions,
+        coordinates: this.state.options.coordinates
+      })
+    }
+    const matches = this.state.allLocations.filter(location => {
+      if(name === 'country') {
+        return location.country === value
+      } else if(name === 'region') {
+        return location.country === this.state.selectedLocation.country && location.region === value
       }
     })
+    const regions = matches.map(location => location.region)
+    const coordinates = matches.map(location => `${ location.lat }, ${ location.lng }`)
+
+    return ({ 
+      countries: this.state.options.countries,
+      regions,
+      coordinates,
+     })
   }
 
   sortOptionsInfo = (locations, type) => {
@@ -66,12 +87,19 @@ class DataEntry extends Component {
     }, [])
   }
 
+  updateSelectedLocation = (name, value) => {
+    return Object.assign(this.state.selectedLocation, { [name]: value })
+  }
+
   handleChange = (e) => {
     const name = e.target.name
     const value = e.target.options[e.target.selectedIndex].value
+    const options = this.updateLocationOptions(name, value)
+    const selectedLocation = this.updateSelectedLocation(name, value)
 
     this.setState({ 
-      location: { [name]: value }
+      selectedLocation,
+      options
     })
   }
 
