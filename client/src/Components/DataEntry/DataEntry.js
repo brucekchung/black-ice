@@ -17,7 +17,7 @@ class DataEntry extends Component {
       location: {
         country: null,
         coordinates: null,
-        region: null
+        regions: null
       },
       data: [{
           name: '',
@@ -111,23 +111,42 @@ class DataEntry extends Component {
     }
   }
 
-  handleSubmit = e => {
+  sendData = (data) => {
+    const url = '/api/v1/data'
+    const init = { 
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify(data)
+    }
+
+    // apiCall(url, init)
+  }
+
+  getLocationId = () => {
+    const latlng = this.state.location.coordinates.split(', ')
+    const url = `/api/v1/locations?lat=${ latlng[0] }&lng=${ latlng[1] }`
+    // const results = await apiCall(url)
+
+    // return results.id
+  }
+
+  handleSubmit = async e => {
     e.preventDefault()
 
-    // const dataToSend = {
-    //   location_id,
-    //   data: this.state.data,
-    // }
-    // const url = ''
-    // const init = { 
-    //   method: 'POST',
-    //   headers: {
-    //     'Content-Type': 'application/json'
-    //   },
-    //   body: JSON.stringify(dataToSend)
-    // }
-
-    // apiCall(url, init)    
+    const location_id = await this.getLocationId();
+    const data = this.state.data.map(data => Object.assign(data, { location_id }))
+    
+    await this.sendData(data)
+    this.setState({ 
+      data: [{
+          name: '',
+          date_collected: '',
+          reflectance: '',
+          wavelength: ''
+      }]
+    })
   }
 
   render() {
