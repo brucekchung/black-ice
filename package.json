@@ -10,7 +10,8 @@
     "pg": "^7.4.1"
   },
   "devDependencies": {
-    "concurrently": "^3.5.0"
+    "concurrently": "^3.5.0",
+    "yarn": "^1.5.1"
   },
   "scripts": {
     "test": "NODE_ENV=test mocha --exit",
