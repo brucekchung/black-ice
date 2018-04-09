@@ -4,10 +4,13 @@ const bodyParser = require('body-parser')
 const environment = process.env.NODE_ENV || 'development'
 const configuration = require('./knexfile')[environment]
 const database = require('knex')(configuration)
+const path = require('path')
 
 server.set('port', process.env.PORT || 5000)
 
 server.use(bodyParser.json())
+
+server.use(express.static(path.join(__dirname, 'client/build')))
 
 server.listen(server.get('port'), () => {
   console.log(`listening on ${server.get('port')}`)
