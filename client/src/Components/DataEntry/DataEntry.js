@@ -10,11 +10,6 @@ class DataEntry extends Component {
     super()
     this.state = {
       allLocations: locationsOnly,
-      options: {
-        countries: [],
-        coordinates: [],
-        regions: []
-      },
       selectedLocation: {
         country: null,
         coordinates: null,
@@ -31,38 +26,11 @@ class DataEntry extends Component {
 
   componentDidMount = async () => {
     const url = '/api/v1/locations'
-    // const locations = await apiCall(url);
-    const countries = this.sortOptionsInfo(locationsOnly, 'country')
+    // const allLocations = await apiCall(url);
 
-    this.setState({ 
-      allLocations: locationsOnly,
-      options: { countries, regions: [], coordinates: [] }
-    })
-  }
-
-  updateLocationOptions = (name, value) => {
-    if(name === 'coordinates') {
-      return ({ 
-        countries: this.state.options.countries,
-        regions: this.state.options.regions,
-        coordinates: this.state.options.coordinates
-      })
-    }
-    const matches = this.state.allLocations.filter(location => {
-      if(name === 'country') {
-        return location.country === value
-      } else if(name === 'region') {
-        return location.country === this.state.selectedLocation.country && location.region === value
-      }
-    })
-    const regions = matches.map(location => location.region)
-    const coordinates = matches.map(location => `${ location.lat }, ${ location.lng }`)
-
-    return ({ 
-      countries: this.state.options.countries,
-      regions,
-      coordinates,
-     })
+    // this.setState({ 
+    //   allLocations
+    // })
   }
 
   sortOptionsInfo = (locations, type) => {
@@ -87,20 +55,12 @@ class DataEntry extends Component {
     }, [])
   }
 
-  updateSelectedLocation = (name, value) => {
-    return Object.assign(this.state.selectedLocation, { [name]: value })
-  }
-
   handleChange = (e) => {
     const name = e.target.name
     const value = e.target.options[e.target.selectedIndex].value
-    const options = this.updateLocationOptions(name, value)
-    const selectedLocation = this.updateSelectedLocation(name, value)
+    const selectedLocation = Object.assign(this.state.selectedLocation, { [name]: value })
 
-    this.setState({ 
-      selectedLocation,
-      options
-    })
+    this.setState({ selectedLocation })
   }
 
   handleClick = (e) => {
@@ -177,6 +137,16 @@ class DataEntry extends Component {
     })
   }
 
+  availableOptions = type => {
+    const sort = type === 'region' ? 'country' : 'region' 
+    const remaining = this.state.allLocations.filter(location => {
+      return location[sort] === this.state.selectedLocation[sort]
+    })
+    
+    return type === 'region' ? this.sortOptionsInfo(remaining, 'region')
+                             : this.sortLatLng(remaining)
+  }
+
   render() {
     return (
       <div>
@@ -186,13 +156,13 @@ class DataEntry extends Component {
         <form onSubmit={ this.handleSubmit }>
           <h3>Location</h3>
           <DropDown name='country'
-                    options={ this.state.options.countries }
+                    options={ this.sortOptionsInfo(this.state.allLocations, 'country') }
                     handleChange={ this.handleChange } />
           <DropDown name='region'
-                    options={ this.state.options.regions }
+                    options={ this.availableOptions('region') }
                     handleChange={ this.handleChange } />
           <DropDown name='coordinates'
-                    options={ this.state.options.coordinates }
+                    options={ this.availableOptions('coordinates') }
                     handleChange={ this.handleChange } />
           <h3>Data</h3>
           <DataForm data={ this.state.data }
