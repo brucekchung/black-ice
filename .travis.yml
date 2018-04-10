@@ -1,0 +1,15 @@
+language: node_js
+node_js:
+- node
+services:
+- postgresql
+before_script:
+- psql -c 'CREATE DATABASE blackice_test;' -U postgres
+notifications:
+  email: false
+deploy:
+  provider: heroku
+  # api_key:
+  #   secure: POZEVZ7mNwqAo1Ts6XjUVoQsQFdVPYus2d0VaYI1K...itGoesOnForAWhile
+  app: black-ice-michelle-bruce
+  skip_cleanup: true
