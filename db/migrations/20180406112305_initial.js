@@ -23,9 +23,9 @@ exports.up = function(knex, Promise) {
     }),
 
     knex.schema.createTable('locations_samples', table => {
-        table.increments('id').primary()
-        table.integer('locations_id').references('locations.id')
-        table.integer('samples_id').references('samples.id')
+      table.increments('id').primary()
+      table.integer('locations_id').references('locations.id')
+      table.integer('samples_id').references('samples.id')
     })
   ])
 }
