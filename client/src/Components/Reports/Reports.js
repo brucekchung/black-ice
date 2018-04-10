@@ -1,31 +1,70 @@
 import React, { Component } from 'react'
 import Nav from '../Nav/Nav'
 import DropDown from '../LocationForm/LocationForm'
+import { locationsOnly } from '../../mockData'
 
 class Reports extends Component {
   constructor() {
     super()
     this.state = {
-      options: {
-        countries: ['Peru', 'Argentina'],
-        coordinates: ['1, -1'],
-      },
-      location: {
-        country: null,
-        coordinates: null
+      allLocations: locationsOnly,
+      selectedLocation: {
+        country: '',
+        coordinates: '',
+        region: '',
       },
       startDate: null,
       endDate: null
     }
   }
 
-  handleChange = (e) => {
+  handleChange = e => {
     const name = e.target.name
     const value = e.target.options[e.target.selectedIndex].value
 
     this.setState({ 
       location: { [name]: value }
     })
+  }
+
+  availableOptions = type => {
+    const sort = type === 'region' ? 'country' : 'region' 
+    const remaining = this.state.allLocations.filter(location => {
+      return location[sort] === this.state.selectedLocation[sort]
+    })
+    
+    return type === 'region' ? this.sortOptionsInfo(remaining, 'region')
+                             : this.sortLatLng(remaining)
+  }
+
+  sortOptionsInfo = (locations, type) => {
+    return locations.reduce((acc, location) => {
+      if(acc.includes(location[type])) {
+        return acc
+      }
+
+      return [...acc, location[type]]
+    }, [])
+  }
+
+  sortLatLng = locations => {
+    return locations.reduce((acc, location) => {
+      const latlng = `${location.lat}, ${location.lng}`
+
+      if(acc.includes(latlng)) {
+        return acc
+      }
+
+      return [...acc, latlng]
+    }, [])
+  }
+
+  handleChange = e => {
+    const name = e.target.name
+    const value = e.target.options ? e.target.options[e.target.selectedIndex].value : e.target.value
+    const selectedLocation = Object.assign(this.state.selectedLocation, { [name]: value })
+
+    this.setState({ selectedLocation })
   }
 
   handleSubmit = async (e) => {
@@ -57,14 +96,20 @@ class Reports extends Component {
         <Nav />
         <h2>Reports</h2>
         <form onSubmit={ this.handleSubmit }>
-          <h3>Location</h3> 
           <DropDown name='country'
-                    options={ this.state.options.countries }
+                    options={ this.sortOptionsInfo(this.state.allLocations, 'country') }
+                    handleChange={ this.handleChange } />
+          <DropDown name='region'
+                    options={ this.availableOptions('region') }
                     handleChange={ this.handleChange } />
           <DropDown name='coordinates'
-                    options={ this.state.options.coordinates }
+                    options={ this.availableOptions('coordinates') }
                     handleChange={ this.handleChange } />
-          <button type='submit'>Save</button>
+          <label htmlFor="startDate">Start</label>
+          <input id="startDate" type="date" name="startDate" />
+          <label htmlFor="endDate">End</label>
+          <input id="endDate" type="date" name="endDate"/>
+          <button type='submit'>Generate Report</button>
         </form>
       {/*<Graph Object />*/}
       </div>
