@@ -48,4 +48,32 @@ server.post('/api/v1/samples/', (req, res) => {
     .catch(error => res.status(500).json({error}))
 })
 
+server.delete('/api/v1/samples/:id', (req, res) => {
+  database('samples').where('id', req.params.id)
+    .select()
+    .del()
+    .then(item => {
+      if(!item.length) {
+        res.status(200).send('deleted')
+      } else {
+        res.status(404).send('error deleting')
+      }
+    })
+    .catch(error => res.status(500).json({error}))
+})
+
+server.delete('/api/v1/locations/:id', (req, res) => {
+  database('locations').where('id', req.params.id)
+    .select()
+    .del()
+    .then(item => {
+      if(!item.length) {
+        res.status(200).send('deleted')
+      } else {
+        res.status(404).send('error deleting')
+      }
+    })
+    .catch(error => res.status(500).json({error}))
+})
+
 module.exports = server
