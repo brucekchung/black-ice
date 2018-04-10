@@ -1,0 +1,15 @@
+language: node_js
+node_js:
+- node
+services:
+- postgresql
+before_script:
+- psql -c 'CREATE DATABASE blackice_test;' -U postgres
+notifications:
+  email: false
+deploy:
+  provider: heroku
+  app: black-ice-michelle-bruce
+  skip_cleanup: true
+  api_key:
+    secure: UUnu16GmYrOiB2UDGt7+zcwX0w2KycaSLZw8Sx+e6v16TGA6pBQYPbO46ZD3eKrsB2E3aZ6TFVj5EuLFmFKUYkpST4mXVUvkGOJTx2tNUD8NLrskSUMbONb4d/B7Ib0fbM8N/8vrc9gVjWFWjCScPVRTXKkRZRfVMIp5vwYTslYPUEo99OuDKFCW+dxz/pq1Dfq14bFWCMy7fFPXSjpebUWzzc++J4frV1cUjbw4Y9PlqnuocBY0TA+2yLgyizan2155Mtz8bR8/1T+LQtxT8DnJhFHrOeFWN2mXYqATGPxgOcXB32S0hd5VNaYaovBMY7G3IDcs9cnqiBRQqz1NX/EadKsKDMvchQlYnlsf6rRjDEgMuJIMKAlegTfvvcksLHNvgTCO9OsZdDw9ErgX4nBXebjAf9C7amegMdZUD+e7yZvP7xHVd5a6pYv1zkEPaC1jsXGTUKsj27XDEBWc3ToaTn3mB7+mNYkFGxpZ5yfIdCl7tCScME01c0xplSM8E6KwT3k9YBIcthzx+bmawyn5BGj/RY6wgtRtxO7NRNoetXNF3pIBkchmyAU3i6RD0g/JGwzQuZEX9i6EX5RSWa64yYowjZJvS6xzP6Kcv8+LSd+biZO6OZI1HYm9PtWKfOrAqGBi+/46VPEUiluEawBI6NgEa0m/5vC+nTyxRPQ=
