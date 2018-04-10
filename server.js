@@ -35,16 +35,18 @@ server.post('/api/v1/locations/', (req, res) => {
 })
 
 server.post('/api/v1/samples/', (req, res) => {
-  const { name } = req.body
+  const sampleArray = req.body  
 
-  if (!name) {
-    return res
-      .status(422)
-      .json('missing parameter')
-  }
+  sampleArray.forEach((sample, index) => {
+    if(!sample.name) {
+      return res
+        .status(422)
+        .json(`Item at index: ${ index } is missing a name parameter`)
+    }
+  })
 
-  database('samples').insert(req.body, 'id')
-    .then(item => res.status(200).json({ id: item[0], name}))
+  database('samples').insert(sampleArray, 'id')
+    .then(item => res.status(200).json({ message: 'Samples inserted' }))
     .catch(error => res.status(500).json({error}))
 })
 
