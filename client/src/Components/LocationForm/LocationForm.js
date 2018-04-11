@@ -2,10 +2,12 @@ import React, { Component } from 'react'
 
 class DropDown extends Component {
   renderOptions = () => {
-    return this.props.options.map((option, index) => (
-      <option value={ option } 
-              key={ option + index }>{ option }</option>
-    ))
+    if(this.props.options && this.props.options.length > 0) {
+      return this.props.options.map((option, index) => (
+        <option value={ option } 
+                key={ option + index }>{ option }</option>
+      ))
+    }
   }
 
   render() {

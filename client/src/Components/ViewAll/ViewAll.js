@@ -7,7 +7,7 @@ class ViewAll extends Component {
     super()
     this.state = {
       data: allData,
-      search: '',
+      // search: '',
       filteredData: [],
       editableContent: null
     }
@@ -65,6 +65,17 @@ class ViewAll extends Component {
     button.innerText === 'Edit' ? this.editData(button) : this.saveData(button)
   }
 
+  deleteRow = async e => {
+    const tableRow = e.target.parentNode.parentNode
+    const id = tableRow.id
+    const remainingData = this.state.data.filter(dataPoint => dataPoint.id !== id)
+    // const url = `/api/v1/data/${ id }`
+    // const init = { method: 'DELETE' }
+
+    // await apiCall(url, init)
+    this.setState({ data: remainingData })
+  }
+
   renderData = () => {
     const data = this.state.filteredData.length > 0 ? this.state.filteredData : this.state.data
 
@@ -83,7 +94,7 @@ class ViewAll extends Component {
           <td className='region'>{ dataPoint.region}</td>
           <td className='country'>{ dataPoint.country }</td>
           <td><button onClick={ this.handleEdit }>Edit</button></td>
-          <td><button>Delete</button></td>
+          <td><button onClick={ this.deleteRow }>Delete</button></td>
         </tr>
       )
     })
