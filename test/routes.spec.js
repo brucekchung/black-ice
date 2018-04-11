@@ -32,6 +32,48 @@ describe('API Routes', () => {
         .then(res => {
           res.should.have.status(200)
       })
+        .catch(error => {
+          throw error
+        })
     })
+  })
+
+  describe('DELETE /api/v1/samples/:id', () => {
+    it('should delete a sample by id', () => {
+      return chai.request(server)
+        .delete('/api/v1/samples/1')
+        .then(res => {
+          res.should.have.status(200)
+          res.text.should.equal('deleted')
+      })
+        .catch(error => {
+          throw error
+        })
+    }) 
+
+    it('should return an error when a non-existant sample id is given', () => {
+      return chai.request(server)
+      .delete('/api/v1/samples/999')
+      .then(response => {
+        response.should.have.status(500)
+      })
+      .catch(error => {
+        throw error
+      })
+    })
+  })
+
+  describe('DELETE /api/v1/locations/:id', () => {
+    it('should delete a location by id', () => {
+      return chai.request(server)
+        .delete('/api/v1/locations/1')
+        .then(res => {
+          res.should.have.status(200)
+          res.text.should.equal('deleted')
+      })
+        .catch(error => {
+          throw error
+        })
+    }) 
   })
 })
