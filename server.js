@@ -17,9 +17,27 @@ server.listen(server.get('port'), () => {
 })
 
 server.get('/api/v1/locations', (req, res) => {
-  database('locations').select()
+  const queryKeys = Object.keys(req.query)
+
+  if (queryKeys.length === 0) {
+    database('locations').select()
     .then(locations => res.status(200).json(locations))
     .catch(error => res.status(500).json({ error }))
+  } else {
+    database('locations').where(req.query).select('*')
+    .then(locations => {
+      if(locations.length > 0) {
+        res.status(200).json(locations);
+      } else {
+        res.status(404).json({
+          error: `Could not find locations at that custom query`
+        })
+      }
+    })
+    .catch(error => {
+      return response.status(500).json({ error })
+    })
+  }
 })
 
 server.post('/api/v1/locations', (req, res) => {
