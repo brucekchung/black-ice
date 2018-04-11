@@ -66,6 +66,12 @@ server.delete('/api/v1/locations/:id', (req, res) => {
     .catch(error => res.status(500).json({ error }))
 })
 
+server.get('/api/v1/samples', (req, res) => {
+  database('samples').select()
+    .then(samples => res.status(200).json(samples))
+    .catch(error => res.status(500).json({ error }))
+})
+
 server.post('/api/v1/samples', (req, res) => {
   const sampleArray = req.body  
 
