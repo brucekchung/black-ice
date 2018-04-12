@@ -81,6 +81,7 @@ server.post('/api/v1/samples', (req, res) => {
     if(!sample.name) {
       return res
         .status(422)
+        //.send instead of .json??
         .json(`Item at index: ${ index } is missing a name parameter`)
     }
   })
