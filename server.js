@@ -87,9 +87,26 @@ server.delete('/api/v1/locations/:id', (req, res) => {
 })
 
 server.get('/api/v1/samples', (req, res) => {
-  database('samples').select()
+  const queryKeys = Object.keys(req.query)
+  const { startDate, endDate, location_id } = req.query
+
+  if (queryKeys.length === 0) {
+    database('samples').select()
     .then(samples => res.status(200).json(samples))
     .catch(error => res.status(500).json({ error }))
+  } else {
+    database('samples').whereBetween('date_collected', [startDate, endDate]).andWhere('location_id', location_id).select()
+    .then(samples => {
+      if(samples.length > 0) {
+        res.status(200).json(samples)
+      } else {
+        res.status(404).json({ error: `Could not find samples collected between ${ startDate } and ${ endDate } for that location` })
+      }
+    })
+    .catch(error => {
+      res.status(500).json({ error })
+    })
+  }
 })
 
 server.post('/api/v1/samples', (req, res) => {
