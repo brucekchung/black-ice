@@ -28,7 +28,7 @@ server.post('/api/v1/locations', (req, res) => {
   if (!name) {
     return res
       .status(422)
-      .json('missing parameter')
+      .json({ error: `The request body is missing a name parameter` })
   }
 
   database('locations').insert(req.body, 'id')
@@ -53,16 +53,24 @@ server.put('/api/v1/locations/:id', (req, res) => {
 })
 
 server.delete('/api/v1/locations/:id', (req, res) => {
-  database('locations').where('id', req.params.id)
+  const { id } = req.params
+
+  database('locations').where('id', id)
     .select()
     .del()
     .then(item => {
-      if(!item.length) {
-        res.status(200).send('deleted')
+      if (item) {
+        res.status(200).send(`Item: ${ id } was successfully deleted.`)
       } else {
-        res.status(404).send('error deleting')
+        res.status(404).json({ error: `Could not find location with id: ${ id }` })
       }
     })
+    .catch(error => res.status(500).json({ error }))
+})
+
+server.get('/api/v1/samples', (req, res) => {
+  database('samples').select()
+    .then(samples => res.status(200).json(samples))
     .catch(error => res.status(500).json({ error }))
 })
 
@@ -99,14 +107,16 @@ server.put('/api/v1/samples/:id', (req, res) => {
 })
 
 server.delete('/api/v1/samples/:id', (req, res) => {
-  database('samples').where('id', req.params.id)
+  const { id } = req.params
+
+  database('samples').where('id', id)
     .select()
     .del()
     .then(item => {
-      if(!item.length) {
-        res.status(200).send('deleted')
+      if (item) {
+        res.status(200).send(`Item: ${ id } was successfully deleted.`)
       } else {
-        res.status(404).send('error deleting')
+        res.status(404).json({ error: `Could not find sample with id: ${ id }` })
       }
     })
     .catch(error => res.status(500).json({ error }))
