@@ -3,19 +3,22 @@ import './DataEntry.css'
 import Nav from '../Nav/Nav'
 import DropDown from '../LocationForm/LocationForm'
 import DataForm from '../DataForm/DataForm'
-import { locationsOnly } from '../../mockData'
+import { apiCall } from '../../apiCall/apiCall'
+// import { locationsOnly } from '../../mockData'
 
 class DataEntry extends Component {
   constructor() {
     super()
     this.state = {
-      allLocations: locationsOnly,
+      allLocations: [],
       selectedLocation: {
+        name: '',
         country: '',
         coordinates: '',
         region: '',
-        latitude: '',
-        longitude: ''
+        lat: '',
+        lng: '',
+        alt: ''
       },
       addLocation: false,
       data: [{
@@ -27,14 +30,14 @@ class DataEntry extends Component {
     }
   }
 
-  // componentDidMount = () => {
-    // const url = '/api/v1/locations'
-    // const allLocations = await apiCall(url);
+  componentDidMount = async () => {
+    const url = '/api/v1/locations'
+    const allLocations = await apiCall(url);
 
-    // this.setState({ 
-    //   allLocations
-    // })
-  // }
+    this.setState({ 
+      allLocations
+    })
+  }
 
   changeLocationForm = e => {
     const text = e.target.innerText
@@ -120,7 +123,7 @@ class DataEntry extends Component {
       body: JSON.stringify(payload)
     }
 
-    // apiCall(url, init)
+    apiCall(url, init)
   }
 
   getLocationId = () => {
@@ -134,11 +137,13 @@ class DataEntry extends Component {
   resetState = () => {
     this.setState({
       selectedLocation: {
+        name: '',
         country: '',
         coordinates: '',
         region: '',
-        latitude: '',
-        longitude: ''
+        lat: '',
+        lng: '',
+        alt: ''
       },
       addLocation: false,
       data: [{
@@ -157,18 +162,18 @@ class DataEntry extends Component {
     this.submitData()    
   }
 
-  submitWithLocation = () => {
-    const { country, region, latitude, longitude } = this.state.selectedLocation
+  submitWithLocation = async () => {
+    const { country, region, lat, lng, name, alt } = this.state.selectedLocation
     const location = { 
-      type: 'Location',
-      payload: { country, region, latitude, longitude }
+      type: 'locations',
+      payload: { country, region, lat, lng, name, alt }
     }
     const data = {
-      type: 'Data',
+      type: 'samples',
       payload: this.state.data
     }
-    const createdLocation =  this.sendData(location)
-    const createdData = this.sendData(data)
+    const createdLocation = await this.sendData(location)
+    // const createdData = this.sendData(data)
 
     this.resetState()
   }
@@ -217,25 +222,35 @@ class DataEntry extends Component {
             <div className="add-location">
               <h4>Add a New Location</h4>
               <input type="text"
+                     name="name"
+                     placeholder="Location Name"
+                     value={ this.state.selectedLocation.name }
+                     onChange={ this.handleChange } />
+              <input type="text"
                      name="country"
                      placeholder="Country"
                      value={ this.state.selectedLocation.country }
-                     onChange={ this.handleChange }/>
+                     onChange={ this.handleChange } />
               <input type="text"
                      name="region"
                      placeholder="Region"
                      value={ this.state.selectedLocation.region }
-                     onChange={ this.handleChange }/>
+                     onChange={ this.handleChange } />
+              <input type="number"
+                     name="alt"
+                     placeholder="Altitude"
+                     value={ this.state.selectedLocation.alt }
+                     onChange={ this.handleChange } />
               <input type="text"
-                     name="latitude"
+                     name="lat"
                      placeholder="Latitude"
-                     value={ this.state.selectedLocation.latitude }
-                     onChange={ this.handleChange }/>
+                     value={ this.state.selectedLocation.lat }
+                     onChange={ this.handleChange } />
               <input type="text"
-                     name="longitude"
+                     name="lng"
                      placeholder="Longitude"
-                     value={ this.state.selectedLocation.longitude }
-                     onChange={ this.handleChange }/>
+                     value={ this.state.selectedLocation.lng }
+                     onChange={ this.handleChange } />
             </div>
           }
           <button type="button" onClick={ this.changeLocationForm }>Add a New Location</button>
