@@ -88,14 +88,14 @@ server.delete('/api/v1/locations/:id', (req, res) => {
 
 server.get('/api/v1/samples', (req, res) => {
   const queryKeys = Object.keys(req.query)
-  const { startDate, endDate, location_id } = req.query
+  const { startDate, endDate, locations_id } = req.query
 
   if (queryKeys.length === 0) {
     database('samples').select()
     .then(samples => res.status(200).json(samples))
     .catch(error => res.status(500).json({ error }))
   } else {
-    database('samples').whereBetween('date_collected', [startDate, endDate]).andWhere('location_id', location_id).select()
+    database('samples').whereBetween('date_collected', [startDate, endDate]).andWhere('locations_id', locations_id).select()
     .then(samples => {
       if(samples.length > 0) {
         res.status(200).json(samples)
