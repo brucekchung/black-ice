@@ -36,6 +36,50 @@ describe('API Routes', () => {
           throw error
         })
     })
+
+    it('should not add an entry to locations if the name is missing', () => {
+      return chai.request(server)
+        .post('/api/v1/locations')
+        .send({
+          // name: 'Denver',
+          lat: '41',
+          long: '105W'
+        })
+        .then(res => {
+          res.should.have.status(422)
+          res.should.be.json
+          res.body.should.be.a('object')
+        })
+    })
+  })
+
+  describe('POST /api/v1/samples/', () => {
+    it('should add an entry to samples via POST', () => {
+      return chai.request(server)
+        .get('/api/v1/samples')
+        .then(res => {
+          res.should.have.status(200)
+      })
+        .catch(error => {
+          throw error
+        })
+    })
+
+    it.skip('should not add an entry to samples if the name is missing', () => {
+      return chai.request(server)
+        .post('/api/v1/samples')
+        .send({
+          // body: [{thing: 'asdf'}]
+          // name: 'second',
+          // date_collected: '4/21/18',
+          // reflectance: 'low'
+        })
+        .then(res => {
+          res.should.have.status(422)
+          res.should.be.json
+          res.body.should.be.a('object')
+        })
+    })
   })
 
   describe('DELETE /api/v1/samples/:id', () => {
@@ -86,6 +130,7 @@ describe('API Routes', () => {
         throw error
       })
     })
+  })
 
   describe('PUT /api/v1/samples/:id', () => {
     it('should be able to edit a sample', () => {
@@ -100,6 +145,40 @@ describe('API Routes', () => {
           throw error
         })
     })
+
+    it('should give an error for an improper id', () => {
+      return chai.request(server)
+        .put('/api/v1/samples/999')
+        .send({name: 'USA'})
+        .then(res => {
+          res.should.have.status(404)
+          res.should.be.json
+        })
+    })
   })
+
+  describe('PUT /api/v1/locations/:id', () => {
+    it('should be able to edit a location', () => {
+      return chai.request(server)
+        .put('/api/v1/locations/1')
+        .send({name: 'Denver'})
+        .then(res => {
+          res.should.have.status(200)
+          res.text.should.equal('{"id":"1"}')
+        })
+        .catch(error => {
+          throw error
+        })
+    })
+
+    it('should give an error for an improper id', () => {
+      return chai.request(server)
+        .put('/api/v1/locations/999')
+        .send({name: 'USA'})
+        .then(res => {
+          res.should.have.status(404)
+          res.should.be.json
+        })
+    })
   })
 })
