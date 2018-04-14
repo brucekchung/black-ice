@@ -13,7 +13,7 @@ class Login extends Component {
 
   handleChange=(e)=> {
     const { name, value } = e.target;
-    this.setState({[name]:value});
+    this.setState({ [name]:value });
   }
 
   render() {
@@ -23,15 +23,15 @@ class Login extends Component {
         <input 
           className='email' 
           name='email' 
-          onChange={this.handleChange} 
+          onChange={ this.handleChange } 
           placeholder='email' 
-          value={this.state.email} />
+          value={ this.state.email } />
         <input 
           className='password' 
           name='password' 
-          onChange={this.handleChange} 
+          onChange={ this.handleChange } 
           placeholder='password' 
-          value={this.state.password} />
+          value={ this.state.password } />
         <button className='submit'>Enter</button>
       </div>
     )
