@@ -117,7 +117,7 @@ server.post('/api/v1/samples', (req, res) => {
       return res
         .status(422)
         //.send instead of .json??
-        .json(`Item at index: ${ index } is missing a name parameter`)
+        .send(`Item at index: ${ index } is missing a name parameter`)
     }
   })
 
