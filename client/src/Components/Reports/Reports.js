@@ -2,13 +2,12 @@ import React, { Component } from 'react'
 import Nav from '../Nav/Nav'
 import DropDown from '../LocationForm/LocationForm'
 import { apiCall } from '../../apiCall/apiCall'
-import { locationsOnly } from '../../mockData'
 
 class Reports extends Component {
   constructor() {
     super()
     this.state = {
-      allLocations: locationsOnly,
+      allLocations: [],
       selectedLocation: {
         country: '',
         coordinates: '',

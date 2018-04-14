@@ -13,7 +13,7 @@ class DataForm extends Component {
                  placeholder="Name"
                  onChange={ this.props.handleChange }
                  value={ state.name } />
-          <input type="date"
+          <input type="text"
                  name="date_collected"
                  placeholder="Date collected"
                  onChange={ this.props.handleChange }

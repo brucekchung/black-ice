@@ -1,24 +1,27 @@
 import React, { Component } from 'react'
 import Nav from '../Nav/Nav'
-import { allData } from '../../mockData'
+import { apiCall } from '../../apiCall/apiCall'
 
 class ViewAll extends Component {
   constructor() {
     super()
     this.state = {
-      data: allData,
-      // search: '',
+      data: [],
       filteredData: [],
       editableContent: null
     }
   }
 
-  // componentDidMount = async () => {
-  //   const url = '/api/v1/data'
-  //   const data = await apiCall(url)
+  componentDidMount = async () => {
+    const samples = await apiCall('/api/v1/samples')
+    const locations = await apiCall('/api/v1/locations')
+    const data = samples.map(sample => {
+      const found = locations.find(location => location.id === sample.locations_id)
+      return Object.assign(sample, found);
+    })
 
-  //   this.setState({ data })
-  // }
+    this.setState({ data })
+  }
 
   editData = button => {
     const id = button.parentNode.parentNode.id
@@ -52,7 +55,7 @@ class ViewAll extends Component {
 
   saveData = async button => {
     const data = this.getRowData(button)
-    console.log(data);
+    // console.log(data);
     
     // await updateData(data)
     button.innerText = 'Edit'
@@ -88,7 +91,7 @@ class ViewAll extends Component {
           <td className='date_collected'>{ dataPoint.date_collected }</td>
           <td className='reflectance'>{ dataPoint.reflectance }</td>
           <td className='wavelength'>{ dataPoint.wavelength }</td>
-          <td className='altitude'>{ dataPoint.altitude }</td>
+          <td className='alt'>{ dataPoint.alt }</td>
           <td className='lat'>{ dataPoint.lat }</td>
           <td className='lng'>{ dataPoint.lng }</td>
           <td className='region'>{ dataPoint.region}</td>
