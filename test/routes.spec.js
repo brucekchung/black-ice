@@ -25,10 +25,48 @@ describe('API Routes', () => {
     })
   })
 
+  describe('GET /api/v1/locations/', () => {
+    it('should get all the locations', () => {
+      return chai.request(server)
+        .get('/api/v1/locations')
+        .then(res => {
+          res.should.have.status(200)
+          res.body.length.should.equal(1)
+          res.should.be.json
+      })
+        .catch(error => {
+          throw error
+        })
+    })
+  })
+
+  describe('GET /api/v1/samples/', () => {
+    it('should get all the samples', () => {
+      return chai.request(server)
+        .get('/api/v1/samples')
+        .then(res => {
+          res.should.have.status(200)
+          res.body.length.should.equal(1)
+          res.should.be.json
+      })
+        .catch(error => {
+          throw error
+        })
+    })
+  })
+
   describe('POST /api/v1/locations/', () => {
     it('should add an entry to locations via POST', () => {
       return chai.request(server)
-        .get('/api/v1/locations')
+        .post('/api/v1/locations')
+        .send({
+          name: "PLACE",
+          lat: "40N",
+          lng: "105W",
+          alt: "5430",
+          region: "Colorodo",
+          country: "United States"
+        })
         .then(res => {
           res.should.have.status(200)
       })
@@ -56,7 +94,13 @@ describe('API Routes', () => {
   describe('POST /api/v1/samples/', () => {
     it('should add an entry to samples via POST', () => {
       return chai.request(server)
-        .get('/api/v1/samples')
+        .post('/api/v1/samples')
+        .send([{
+          name: 'second',
+          date_collected: '4/21/18',
+          reflectance: 'low',
+          wavelength: 'xyz'
+        }])
         .then(res => {
           res.should.have.status(200)
       })
@@ -68,16 +112,14 @@ describe('API Routes', () => {
     it.skip('should not add an entry to samples if the name is missing', () => {
       return chai.request(server)
         .post('/api/v1/samples')
-        .send({
-          // body: [{thing: 'asdf'}]
+        .send([{
           // name: 'second',
-          // date_collected: '4/21/18',
-          // reflectance: 'low'
-        })
+          date_collected: '4/21/18',
+          reflectance: 'low',
+          wavelength: 'xyz'
+        }])
         .then(res => {
           res.should.have.status(422)
-          res.should.be.json
-          res.body.should.be.a('object')
         })
     })
   })
@@ -95,9 +137,9 @@ describe('API Routes', () => {
         })
     }) 
 
-    it.skip('should return an error when a non-existant sample id is given', () => {
+    it('should return an error when a non-existant sample id is given', () => {
       return chai.request(server)
-      .delete('/api/v1/samples/999')
+      .delete('/api/v1/samples/999ab')
       .then(response => {
         response.should.have.status(500)
       })
@@ -120,11 +162,11 @@ describe('API Routes', () => {
         })
     }) 
 
-    it.skip('should return an error when a non-existant location id is given', () => {
+    it('should return an error when a non-existant location id is given', () => {
       return chai.request(server)
       .delete('/api/v1/locations/999')
       .then(response => {
-        response.should.have.status(500)
+        response.should.have.status(404)
       })
       .catch(error => {
         throw error
