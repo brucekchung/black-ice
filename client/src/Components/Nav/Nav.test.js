@@ -1,12 +1,12 @@
 import React from 'react'
-import DataEntry from './DataEntry'
+import Nav from './Nav'
 import { shallow } from 'enzyme'
 
-describe('DataEntry', () => {
-  let wrapper;
+describe('Nav', () => {
+  let wrapper
 
   beforeEach(() => {
-    const wrapper = shallow(<DataEntry />, { disableLifecycleMethods: true })
+    const wrapper = shallow(<Nav />)
   })
 
   it('should match snapshot upon load', () => {
