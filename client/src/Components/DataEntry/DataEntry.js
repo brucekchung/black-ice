@@ -113,7 +113,7 @@ class DataEntry extends Component {
     }
   }
 
-  sendData = ({ type, payload }) => {
+  sendData = async ({ type, payload }) => {
     const url = `/api/v1/${ type }`
     const init = { 
       method: 'POST',
@@ -123,15 +123,15 @@ class DataEntry extends Component {
       body: JSON.stringify(payload)
     }
 
-    apiCall(url, init)
+    return await apiCall(url, init)
   }
 
-  getLocationId = () => {
-    const latlng = this.state.location.coordinates.split(', ')
+  getLocationId = async () => {
+    const latlng = this.state.selectedLocation.coordinates.split(', ')
     const url = `/api/v1/locations?lat=${ latlng[0] }&lng=${ latlng[1] }`
-    // const results = await apiCall(url)
+    const { id } = await apiCall(url)
 
-    // return results.id
+    return id
   }
 
   resetState = () => {
@@ -156,10 +156,10 @@ class DataEntry extends Component {
   }
 
   submit = () => {
-    const location_id = this.getLocationId();
-    const data = this.state.data.map(data => Object.assign(data, { location_id }))
+    const locations_id = this.getLocationId()
+    const data = this.state.data.map(data => Object.assign(data, { locations_id }))
 
-    this.submitData()    
+    this.sendData(data)    
   }
 
   submitWithLocation = async () => {
@@ -168,12 +168,15 @@ class DataEntry extends Component {
       type: 'locations',
       payload: { country, region, lat, lng, name, alt }
     }
+    const createdLocation = await this.sendData(location)
+    const locations_id = createdLocation.id
+    
     const data = {
       type: 'samples',
-      payload: this.state.data
+      payload: this.state.data.map(data => Object.assign(data, { locations_id }))
     }
-    const createdLocation = await this.sendData(location)
-    // const createdData = this.sendData(data)
+    const createdData = await this.sendData(data)
+    debugger;
 
     this.resetState()
   }
