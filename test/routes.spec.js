@@ -25,6 +25,36 @@ describe('API Routes', () => {
     })
   })
 
+  describe('GET /api/v1/locations/', () => {
+    it('should get all the locations', () => {
+      return chai.request(server)
+        .get('/api/v1/locations')
+        .then(res => {
+          res.should.have.status(200)
+          res.body.length.should.equal(1)
+          res.should.be.json
+      })
+        .catch(error => {
+          throw error
+        })
+    })
+  })
+
+  describe('GET /api/v1/samples/', () => {
+    it('should get all the samples', () => {
+      return chai.request(server)
+        .get('/api/v1/samples')
+        .then(res => {
+          res.should.have.status(200)
+          res.body.length.should.equal(1)
+          res.should.be.json
+      })
+        .catch(error => {
+          throw error
+        })
+    })
+  })
+
   describe('POST /api/v1/locations/', () => {
     it('should add an entry to locations via POST', () => {
       return chai.request(server)
