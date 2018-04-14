@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import Nav from '../Nav/Nav'
 import DropDown from '../LocationForm/LocationForm'
+import { apiCall } from '../../apiCall/apiCall'
 import { locationsOnly } from '../../mockData'
 
 class Reports extends Component {
@@ -16,6 +17,13 @@ class Reports extends Component {
       startDate: null,
       endDate: null
     }
+  }
+
+  componentDidMount = async () => {
+    const url = '/api/v1/locations'
+    const allLocations = await apiCall(url)
+
+    this.setState({ allLocations })
   }
 
   handleChange = e => {
