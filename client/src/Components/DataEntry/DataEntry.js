@@ -34,9 +34,7 @@ class DataEntry extends Component {
     const url = '/api/v1/locations'
     const allLocations = await apiCall(url);
 
-    this.setState({ 
-      allLocations
-    })
+    this.setState({ allLocations })
   }
 
   changeLocationForm = e => {
@@ -155,28 +153,35 @@ class DataEntry extends Component {
     })
   }
 
-  submit = () => {
-    const locations_id = this.getLocationId()
-    const data = this.state.data.map(data => Object.assign(data, { locations_id }))
+  submit = async () => {
+    const locations_id = await this.getLocationId()
+    const data = {
+      type: 'samples',
+      payload: this.state.data.map(data => Object.assign(data, { locations_id }))
+    }
 
-    this.sendData(data)    
+    this.sendData(data)  
+    this.resetState()  
   }
 
-  submitWithLocation = async () => {
+  submitLocation = async () => {
     const { country, region, lat, lng, name, alt } = this.state.selectedLocation
     const location = { 
       type: 'locations',
       payload: { country, region, lat, lng, name, alt }
     }
-    const createdLocation = await this.sendData(location)
-    const locations_id = createdLocation.id
+    const { id } = await this.sendData(location)
     
+    return id
+  }
+
+  submitWithLocation = async () => {
+    const locations_id = await this.submitLocation()
     const data = {
       type: 'samples',
       payload: this.state.data.map(data => Object.assign(data, { locations_id }))
     }
     const createdData = await this.sendData(data)
-    debugger;
 
     this.resetState()
   }

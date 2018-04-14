@@ -1,13 +1,13 @@
 import React, { Component } from 'react'
 import Nav from '../Nav/Nav'
 import DropDown from '../LocationForm/LocationForm'
-import { locationsOnly } from '../../mockData'
+import { apiCall } from '../../apiCall/apiCall'
 
 class Reports extends Component {
   constructor() {
     super()
     this.state = {
-      allLocations: locationsOnly,
+      allLocations: [],
       selectedLocation: {
         country: '',
         coordinates: '',
@@ -16,6 +16,13 @@ class Reports extends Component {
       startDate: null,
       endDate: null
     }
+  }
+
+  componentDidMount = async () => {
+    const url = '/api/v1/locations'
+    const allLocations = await apiCall(url)
+
+    this.setState({ allLocations })
   }
 
   handleChange = e => {
@@ -59,6 +66,14 @@ class Reports extends Component {
     }, [])
   }
 
+  getLocationId = async () => {
+    const latlng = this.state.selectedLocation.coordinates.split(', ')
+    const url = `/api/v1/locations?lat=${ latlng[0] }&lng=${ latlng[1] }`
+    const results = await apiCall(url)
+
+    return results[0].id
+  }
+
   handleChange = e => {
     const name = e.target.name
     const value = e.target.options ? e.target.options[e.target.selectedIndex].value : e.target.value
@@ -67,22 +82,21 @@ class Reports extends Component {
     this.setState({ selectedLocation })
   }
 
+  setDates = e => {
+    const name = e.target.name
+    const value = e.target.value
+
+    this.setState({ [name]: value })
+  }
+
   handleSubmit = async (e) => {
     e.preventDefault();
 
-    // const dates = {
-    //   startDate: this.state.startDate,
-    //   endDate: this.state.endDate
-    // }
-    // const url = `/api/v1/locations/${ location_id }`
-    // const init = {
-    //   method: 'GET',
-    //   headers: {
-    //     'Content-Type': 'application/json'
-    //   },
-    //   body: JSON.stringify(dates)
-    // }
-    // const data = await apiCall(url, init)
+    const { startDate, endDate } = this.state
+    const id = await this.getLocationId()
+    const url = `/api/v1/samples?locations_id=${ id }&startDate=${ startDate }&endDate=${ endDate }`
+    const data = await apiCall(url)
+    
     // displayGraphs(results);
   }
 
@@ -105,10 +119,8 @@ class Reports extends Component {
           <DropDown name='coordinates'
                     options={ this.availableOptions('coordinates') }
                     handleChange={ this.handleChange } />
-          <label htmlFor="startDate">Start</label>
-          <input id="startDate" type="date" name="startDate" />
-          <label htmlFor="endDate">End</label>
-          <input id="endDate" type="date" name="endDate"/>
+          <input id="startDate" type="text" name="startDate" placeholder="Start Date" onChange={ this.setDates }/>
+          <input id="endDate" type="text" name="endDate" placeholder="End Date" onChange={ this.setDates }/>
           <button type='submit'>Generate Report</button>
         </form>
       {/*<Graph Object />*/}

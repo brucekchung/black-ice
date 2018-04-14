@@ -1,24 +1,27 @@
 import React, { Component } from 'react'
 import Nav from '../Nav/Nav'
-import { allData } from '../../mockData'
+import { apiCall } from '../../apiCall/apiCall'
 
 class ViewAll extends Component {
   constructor() {
     super()
     this.state = {
-      data: allData,
-      // search: '',
+      data: [],
       filteredData: [],
       editableContent: null
     }
   }
 
-  // componentDidMount = async () => {
-  //   const url = '/api/v1/data'
-  //   const data = await apiCall(url)
+  componentDidMount = async () => {
+    const samples = await apiCall('/api/v1/samples')
+    const locations = await apiCall('/api/v1/locations')
+    const data = samples.map(sample => {
+      const found = locations.find(location => location.id === sample.locations_id)
+      return Object.assign(sample, found);
+    })
 
-  //   this.setState({ data })
-  // }
+    this.setState({ data })
+  }
 
   editData = button => {
     const id = button.parentNode.parentNode.id
@@ -30,8 +33,8 @@ class ViewAll extends Component {
   getRowData = button => {
     const tableRow = button.parentNode.parentNode
     const id = tableRow.id
-    const editedRow = [...tableRow.childNodes].splice(0,9)
-    const match = this.state.data.find(dataPoint => dataPoint.id === id)
+    const editedRow = [...tableRow.childNodes].splice(0,10)
+    const match = this.state.data.find(dataPoint => dataPoint.id === parseInt(id))
 
     editedRow.forEach(tableData => match[tableData.className] = tableData.innerText)
     return match
@@ -80,7 +83,7 @@ class ViewAll extends Component {
     const data = this.state.filteredData.length > 0 ? this.state.filteredData : this.state.data
 
     return data.map(dataPoint => {
-      const editable = this.state.editableContent === dataPoint.location_id
+      const editable = parseInt(this.state.editableContent) === dataPoint.id
 
       return (
         <tr id={ dataPoint.id } key={ dataPoint.id } contentEditable={ editable }>
@@ -88,7 +91,8 @@ class ViewAll extends Component {
           <td className='date_collected'>{ dataPoint.date_collected }</td>
           <td className='reflectance'>{ dataPoint.reflectance }</td>
           <td className='wavelength'>{ dataPoint.wavelength }</td>
-          <td className='altitude'>{ dataPoint.altitude }</td>
+          <td className='locations_id'>{ dataPoint.locations_id }</td> 
+          <td className='alt'>{ dataPoint.alt }</td>
           <td className='lat'>{ dataPoint.lat }</td>
           <td className='lng'>{ dataPoint.lng }</td>
           <td className='region'>{ dataPoint.region}</td>
@@ -128,6 +132,7 @@ class ViewAll extends Component {
               <th>Date Collected</th>
               <th>Reflectance</th>
               <th>Wavelength</th>
+              <th>Location ID</th>
               <th>Altitude</th>
               <th>Latitude</th>
               <th>Longitude</th>
