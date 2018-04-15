@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import Nav from '../Nav/Nav'
 import DropDown from '../LocationForm/LocationForm'
 import { apiCall } from '../../apiCall/apiCall'
+import { shape, array, string } from 'prop-types'
 
 class Reports extends Component {
   constructor() {
@@ -13,8 +14,8 @@ class Reports extends Component {
         coordinates: '',
         region: '',
       },
-      startDate: null,
-      endDate: null
+      startDate: '',
+      endDate: ''
     }
   }
 
@@ -104,14 +105,27 @@ class Reports extends Component {
           <DropDown name='coordinates'
                     options={ this.availableOptions('coordinates') }
                     handleChange={ this.handleChange } />
-          <input id="startDate" type="text" name="startDate" placeholder="Start Date" onChange={ this.setDates }/>
-          <input id="endDate" type="text" name="endDate" placeholder="End Date" onChange={ this.setDates }/>
+          <input id="startDate" type="text" name="startDate" placeholder="Start Date" value={ this.state.startDate } onChange={ this.setDates }/>
+          <input id="endDate" type="text" name="endDate" placeholder="End Date" value={ this.state.endDate } onChange={ this.setDates }/>
           <button type='submit'>Generate Report</button>
         </form>
       {/*<Graph Object />*/}
       </div>
     )
   }
+}
+
+Reports.propTypes = {
+  state: shape({
+    allLocations: array.isRequired,
+    selectedLocation: shape({
+      country: string.isRequired,
+      coordinates: string.isRequired,
+      region: string.isRequired,
+    }),
+    startDate: string.isRequired,
+    endDate: string.isRequired
+  })
 }
 
 export default Reports

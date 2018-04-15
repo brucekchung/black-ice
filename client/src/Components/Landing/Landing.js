@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import Nav from '../Nav/Nav'
+import { string } from 'prop-types'
 
 class Landing extends Component {
   constructor() {
@@ -19,6 +20,12 @@ class Landing extends Component {
         <a href="/ViewAll">Edit Data</a>
       </div>
     )
+  }
+}
+
+Landing.propTypes = {
+  state: {
+    user: string.isRequired
   }
 }
 

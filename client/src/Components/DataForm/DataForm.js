@@ -1,4 +1,5 @@
-import React, { Component } from 'react';
+import React, { Component } from 'react'
+import { arrayOf, object, func } from 'prop-types'
 
 class DataForm extends Component {
   renderInputs = () => {
@@ -41,6 +42,12 @@ class DataForm extends Component {
       </div>
     )
   }
+}
+
+DataForm.propTypes = {
+  data: arrayOf(object.isRequired).isRequired,
+  handleChange: func.isRequired,
+  handleClick: func.isRequired
 }
 
 export default DataForm
