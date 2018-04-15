@@ -1,6 +1,7 @@
 import React from 'react'
 import ViewAll from './ViewAll'
 import { shallow } from 'enzyme'
+import { allData } from '../../mockData.js'
 
 describe('ViewAll', () => {
   let wrapper
@@ -60,7 +61,15 @@ describe('ViewAll', () => {
   })
 
   it('should setState with the filtered data on handleChange', () => {
+    wrapper.setState({ data: allData })    
 
+    const e = {
+      target: {
+        value: 'Pisco'
+      }
+    }
+     
+    wrapper.instance().handleChange(e)
+    expect(wrapper.state('filteredData').length).toEqual(1) 
   })
-
 })

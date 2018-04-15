@@ -65,7 +65,138 @@ ShallowWrapper {
                     </tr>
           </thead>
           <tbody>
-                    
+                    <tr
+                              id="1"
+                    >
+                              <td
+                                        className="name"
+                              >
+                                        Base Camp
+                              </td>
+                              <td
+                                        className="date_collected"
+                              >
+                                        08/19/18
+                              </td>
+                              <td
+                                        className="alt"
+                              />
+                              <td
+                                        className="lat"
+                              >
+                                        1
+                              </td>
+                              <td
+                                        className="lng"
+                              >
+                                        -1
+                              </td>
+                              <td
+                                        className="region"
+                              >
+                                        Ishinca
+                              </td>
+                              <td
+                                        className="country"
+                              >
+                                        Peru
+                              </td>
+                              <td
+                                        className="reflectance"
+                                        contentEditable={false}
+                              >
+                                        89
+                              </td>
+                              <td
+                                        className="wavelength"
+                                        contentEditable={false}
+                              >
+                                        20
+                              </td>
+                              <td
+                                        className="sample_id"
+                              />
+                              <td>
+                                        <button
+                                                  onClick={[Function]}
+                                        >
+                                                  Edit
+                                        </button>
+                              </td>
+                              <td>
+                                        <button
+                                                  onClick={[Function]}
+                                        >
+                                                  Delete
+                                        </button>
+                              </td>
+                    </tr>
+                    <tr
+                              id="2"
+                    >
+                              <td
+                                        className="name"
+                              >
+                                        Camp 1
+                              </td>
+                              <td
+                                        className="date_collected"
+                              >
+                                        08/20/18
+                              </td>
+                              <td
+                                        className="alt"
+                              />
+                              <td
+                                        className="lat"
+                              >
+                                        2
+                              </td>
+                              <td
+                                        className="lng"
+                              >
+                                        -2
+                              </td>
+                              <td
+                                        className="region"
+                              >
+                                        Pisco
+                              </td>
+                              <td
+                                        className="country"
+                              >
+                                        Peru
+                              </td>
+                              <td
+                                        className="reflectance"
+                                        contentEditable={false}
+                              >
+                                        70
+                              </td>
+                              <td
+                                        className="wavelength"
+                                        contentEditable={false}
+                              >
+                                        110
+                              </td>
+                              <td
+                                        className="sample_id"
+                              />
+                              <td>
+                                        <button
+                                                  onClick={[Function]}
+                                        >
+                                                  Edit
+                                        </button>
+                              </td>
+                              <td>
+                                        <button
+                                                  onClick={[Function]}
+                                        >
+                                                  Delete
+                                        </button>
+                              </td>
+                    </tr>
           </tbody>
 </table>,
       ],
@@ -148,7 +279,138 @@ ShallowWrapper {
               </tr>
 </thead>,
             <tbody>
-              
+              <tr
+                            id="1"
+              >
+                            <td
+                                          className="name"
+                            >
+                                          Base Camp
+                            </td>
+                            <td
+                                          className="date_collected"
+                            >
+                                          08/19/18
+                            </td>
+                            <td
+                                          className="alt"
+                            />
+                            <td
+                                          className="lat"
+                            >
+                                          1
+                            </td>
+                            <td
+                                          className="lng"
+                            >
+                                          -1
+                            </td>
+                            <td
+                                          className="region"
+                            >
+                                          Ishinca
+                            </td>
+                            <td
+                                          className="country"
+                            >
+                                          Peru
+                            </td>
+                            <td
+                                          className="reflectance"
+                                          contentEditable={false}
+                            >
+                                          89
+                            </td>
+                            <td
+                                          className="wavelength"
+                                          contentEditable={false}
+                            >
+                                          20
+                            </td>
+                            <td
+                                          className="sample_id"
+                            />
+                            <td>
+                                          <button
+                                                        onClick={[Function]}
+                                          >
+                                                        Edit
+                                          </button>
+                            </td>
+                            <td>
+                                          <button
+                                                        onClick={[Function]}
+                                          >
+                                                        Delete
+                                          </button>
+                            </td>
+              </tr>
+              <tr
+                            id="2"
+              >
+                            <td
+                                          className="name"
+                            >
+                                          Camp 1
+                            </td>
+                            <td
+                                          className="date_collected"
+                            >
+                                          08/20/18
+                            </td>
+                            <td
+                                          className="alt"
+                            />
+                            <td
+                                          className="lat"
+                            >
+                                          2
+                            </td>
+                            <td
+                                          className="lng"
+                            >
+                                          -2
+                            </td>
+                            <td
+                                          className="region"
+                            >
+                                          Pisco
+                            </td>
+                            <td
+                                          className="country"
+                            >
+                                          Peru
+                            </td>
+                            <td
+                                          className="reflectance"
+                                          contentEditable={false}
+                            >
+                                          70
+                            </td>
+                            <td
+                                          className="wavelength"
+                                          contentEditable={false}
+                            >
+                                          110
+                            </td>
+                            <td
+                                          className="sample_id"
+                            />
+                            <td>
+                                          <button
+                                                        onClick={[Function]}
+                                          >
+                                                        Edit
+                                          </button>
+                            </td>
+                            <td>
+                                          <button
+                                                        onClick={[Function]}
+                                          >
+                                                        Delete
+                                          </button>
+                            </td>
+              </tr>
 </tbody>,
           ],
         },
@@ -375,10 +637,644 @@ ShallowWrapper {
             "key": undefined,
             "nodeType": "host",
             "props": Object {
-              "children": Array [],
+              "children": Array [
+                <tr
+                  id="1"
+>
+                  <td
+                                    className="name"
+                  >
+                                    Base Camp
+                  </td>
+                  <td
+                                    className="date_collected"
+                  >
+                                    08/19/18
+                  </td>
+                  <td
+                                    className="alt"
+                  />
+                  <td
+                                    className="lat"
+                  >
+                                    1
+                  </td>
+                  <td
+                                    className="lng"
+                  >
+                                    -1
+                  </td>
+                  <td
+                                    className="region"
+                  >
+                                    Ishinca
+                  </td>
+                  <td
+                                    className="country"
+                  >
+                                    Peru
+                  </td>
+                  <td
+                                    className="reflectance"
+                                    contentEditable={false}
+                  >
+                                    89
+                  </td>
+                  <td
+                                    className="wavelength"
+                                    contentEditable={false}
+                  >
+                                    20
+                  </td>
+                  <td
+                                    className="sample_id"
+                  />
+                  <td>
+                                    <button
+                                                      onClick={[Function]}
+                                    >
+                                                      Edit
+                                    </button>
+                  </td>
+                  <td>
+                                    <button
+                                                      onClick={[Function]}
+                                    >
+                                                      Delete
+                                    </button>
+                  </td>
+</tr>,
+                <tr
+                  id="2"
+>
+                  <td
+                                    className="name"
+                  >
+                                    Camp 1
+                  </td>
+                  <td
+                                    className="date_collected"
+                  >
+                                    08/20/18
+                  </td>
+                  <td
+                                    className="alt"
+                  />
+                  <td
+                                    className="lat"
+                  >
+                                    2
+                  </td>
+                  <td
+                                    className="lng"
+                  >
+                                    -2
+                  </td>
+                  <td
+                                    className="region"
+                  >
+                                    Pisco
+                  </td>
+                  <td
+                                    className="country"
+                  >
+                                    Peru
+                  </td>
+                  <td
+                                    className="reflectance"
+                                    contentEditable={false}
+                  >
+                                    70
+                  </td>
+                  <td
+                                    className="wavelength"
+                                    contentEditable={false}
+                  >
+                                    110
+                  </td>
+                  <td
+                                    className="sample_id"
+                  />
+                  <td>
+                                    <button
+                                                      onClick={[Function]}
+                                    >
+                                                      Edit
+                                    </button>
+                  </td>
+                  <td>
+                                    <button
+                                                      onClick={[Function]}
+                                    >
+                                                      Delete
+                                    </button>
+                  </td>
+</tr>,
+              ],
             },
             "ref": null,
-            "rendered": Array [],
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": "1",
+                "nodeType": "host",
+                "props": Object {
+                  "children": Array [
+                    <td
+                      className="name"
+>
+                      Base Camp
+</td>,
+                    <td
+                      className="date_collected"
+>
+                      08/19/18
+</td>,
+                    <td
+                      className="alt"
+/>,
+                    <td
+                      className="lat"
+>
+                      1
+</td>,
+                    <td
+                      className="lng"
+>
+                      -1
+</td>,
+                    <td
+                      className="region"
+>
+                      Ishinca
+</td>,
+                    <td
+                      className="country"
+>
+                      Peru
+</td>,
+                    <td
+                      className="reflectance"
+                      contentEditable={false}
+>
+                      89
+</td>,
+                    <td
+                      className="wavelength"
+                      contentEditable={false}
+>
+                      20
+</td>,
+                    <td
+                      className="sample_id"
+/>,
+                    <td>
+                      <button
+                                            onClick={[Function]}
+                      >
+                                            Edit
+                      </button>
+</td>,
+                    <td>
+                      <button
+                                            onClick={[Function]}
+                      >
+                                            Delete
+                      </button>
+</td>,
+                  ],
+                  "id": "1",
+                },
+                "ref": null,
+                "rendered": Array [
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": "Base Camp",
+                      "className": "name",
+                    },
+                    "ref": null,
+                    "rendered": "Base Camp",
+                    "type": "td",
+                  },
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": "08/19/18",
+                      "className": "date_collected",
+                    },
+                    "ref": null,
+                    "rendered": "08/19/18",
+                    "type": "td",
+                  },
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": undefined,
+                      "className": "alt",
+                    },
+                    "ref": null,
+                    "rendered": null,
+                    "type": "td",
+                  },
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": "1",
+                      "className": "lat",
+                    },
+                    "ref": null,
+                    "rendered": "1",
+                    "type": "td",
+                  },
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": "-1",
+                      "className": "lng",
+                    },
+                    "ref": null,
+                    "rendered": "-1",
+                    "type": "td",
+                  },
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": "Ishinca",
+                      "className": "region",
+                    },
+                    "ref": null,
+                    "rendered": "Ishinca",
+                    "type": "td",
+                  },
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": "Peru",
+                      "className": "country",
+                    },
+                    "ref": null,
+                    "rendered": "Peru",
+                    "type": "td",
+                  },
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": "89",
+                      "className": "reflectance",
+                      "contentEditable": false,
+                    },
+                    "ref": null,
+                    "rendered": "89",
+                    "type": "td",
+                  },
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": "20",
+                      "className": "wavelength",
+                      "contentEditable": false,
+                    },
+                    "ref": null,
+                    "rendered": "20",
+                    "type": "td",
+                  },
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": undefined,
+                      "className": "sample_id",
+                    },
+                    "ref": null,
+                    "rendered": null,
+                    "type": "td",
+                  },
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": <button
+                        onClick={[Function]}
+>
+                        Edit
+</button>,
+                    },
+                    "ref": null,
+                    "rendered": Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "children": "Edit",
+                        "onClick": [Function],
+                      },
+                      "ref": null,
+                      "rendered": "Edit",
+                      "type": "button",
+                    },
+                    "type": "td",
+                  },
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": <button
+                        onClick={[Function]}
+>
+                        Delete
+</button>,
+                    },
+                    "ref": null,
+                    "rendered": Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "children": "Delete",
+                        "onClick": [Function],
+                      },
+                      "ref": null,
+                      "rendered": "Delete",
+                      "type": "button",
+                    },
+                    "type": "td",
+                  },
+                ],
+                "type": "tr",
+              },
+              Object {
+                "instance": null,
+                "key": "2",
+                "nodeType": "host",
+                "props": Object {
+                  "children": Array [
+                    <td
+                      className="name"
+>
+                      Camp 1
+</td>,
+                    <td
+                      className="date_collected"
+>
+                      08/20/18
+</td>,
+                    <td
+                      className="alt"
+/>,
+                    <td
+                      className="lat"
+>
+                      2
+</td>,
+                    <td
+                      className="lng"
+>
+                      -2
+</td>,
+                    <td
+                      className="region"
+>
+                      Pisco
+</td>,
+                    <td
+                      className="country"
+>
+                      Peru
+</td>,
+                    <td
+                      className="reflectance"
+                      contentEditable={false}
+>
+                      70
+</td>,
+                    <td
+                      className="wavelength"
+                      contentEditable={false}
+>
+                      110
+</td>,
+                    <td
+                      className="sample_id"
+/>,
+                    <td>
+                      <button
+                                            onClick={[Function]}
+                      >
+                                            Edit
+                      </button>
+</td>,
+                    <td>
+                      <button
+                                            onClick={[Function]}
+                      >
+                                            Delete
+                      </button>
+</td>,
+                  ],
+                  "id": "2",
+                },
+                "ref": null,
+                "rendered": Array [
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": "Camp 1",
+                      "className": "name",
+                    },
+                    "ref": null,
+                    "rendered": "Camp 1",
+                    "type": "td",
+                  },
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": "08/20/18",
+                      "className": "date_collected",
+                    },
+                    "ref": null,
+                    "rendered": "08/20/18",
+                    "type": "td",
+                  },
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": undefined,
+                      "className": "alt",
+                    },
+                    "ref": null,
+                    "rendered": null,
+                    "type": "td",
+                  },
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": "2",
+                      "className": "lat",
+                    },
+                    "ref": null,
+                    "rendered": "2",
+                    "type": "td",
+                  },
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": "-2",
+                      "className": "lng",
+                    },
+                    "ref": null,
+                    "rendered": "-2",
+                    "type": "td",
+                  },
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": "Pisco",
+                      "className": "region",
+                    },
+                    "ref": null,
+                    "rendered": "Pisco",
+                    "type": "td",
+                  },
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": "Peru",
+                      "className": "country",
+                    },
+                    "ref": null,
+                    "rendered": "Peru",
+                    "type": "td",
+                  },
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": "70",
+                      "className": "reflectance",
+                      "contentEditable": false,
+                    },
+                    "ref": null,
+                    "rendered": "70",
+                    "type": "td",
+                  },
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": "110",
+                      "className": "wavelength",
+                      "contentEditable": false,
+                    },
+                    "ref": null,
+                    "rendered": "110",
+                    "type": "td",
+                  },
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": undefined,
+                      "className": "sample_id",
+                    },
+                    "ref": null,
+                    "rendered": null,
+                    "type": "td",
+                  },
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": <button
+                        onClick={[Function]}
+>
+                        Edit
+</button>,
+                    },
+                    "ref": null,
+                    "rendered": Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "children": "Edit",
+                        "onClick": [Function],
+                      },
+                      "ref": null,
+                      "rendered": "Edit",
+                      "type": "button",
+                    },
+                    "type": "td",
+                  },
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": <button
+                        onClick={[Function]}
+>
+                        Delete
+</button>,
+                    },
+                    "ref": null,
+                    "rendered": Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "children": "Delete",
+                        "onClick": [Function],
+                      },
+                      "ref": null,
+                      "rendered": "Delete",
+                      "type": "button",
+                    },
+                    "type": "td",
+                  },
+                ],
+                "type": "tr",
+              },
+            ],
             "type": "tbody",
           },
         ],
@@ -441,7 +1337,138 @@ ShallowWrapper {
                         </tr>
             </thead>
             <tbody>
-                        
+                        <tr
+                                    id="1"
+                        >
+                                    <td
+                                                className="name"
+                                    >
+                                                Base Camp
+                                    </td>
+                                    <td
+                                                className="date_collected"
+                                    >
+                                                08/19/18
+                                    </td>
+                                    <td
+                                                className="alt"
+                                    />
+                                    <td
+                                                className="lat"
+                                    >
+                                                1
+                                    </td>
+                                    <td
+                                                className="lng"
+                                    >
+                                                -1
+                                    </td>
+                                    <td
+                                                className="region"
+                                    >
+                                                Ishinca
+                                    </td>
+                                    <td
+                                                className="country"
+                                    >
+                                                Peru
+                                    </td>
+                                    <td
+                                                className="reflectance"
+                                                contentEditable={false}
+                                    >
+                                                89
+                                    </td>
+                                    <td
+                                                className="wavelength"
+                                                contentEditable={false}
+                                    >
+                                                20
+                                    </td>
+                                    <td
+                                                className="sample_id"
+                                    />
+                                    <td>
+                                                <button
+                                                            onClick={[Function]}
+                                                >
+                                                            Edit
+                                                </button>
+                                    </td>
+                                    <td>
+                                                <button
+                                                            onClick={[Function]}
+                                                >
+                                                            Delete
+                                                </button>
+                                    </td>
+                        </tr>
+                        <tr
+                                    id="2"
+                        >
+                                    <td
+                                                className="name"
+                                    >
+                                                Camp 1
+                                    </td>
+                                    <td
+                                                className="date_collected"
+                                    >
+                                                08/20/18
+                                    </td>
+                                    <td
+                                                className="alt"
+                                    />
+                                    <td
+                                                className="lat"
+                                    >
+                                                2
+                                    </td>
+                                    <td
+                                                className="lng"
+                                    >
+                                                -2
+                                    </td>
+                                    <td
+                                                className="region"
+                                    >
+                                                Pisco
+                                    </td>
+                                    <td
+                                                className="country"
+                                    >
+                                                Peru
+                                    </td>
+                                    <td
+                                                className="reflectance"
+                                                contentEditable={false}
+                                    >
+                                                70
+                                    </td>
+                                    <td
+                                                className="wavelength"
+                                                contentEditable={false}
+                                    >
+                                                110
+                                    </td>
+                                    <td
+                                                className="sample_id"
+                                    />
+                                    <td>
+                                                <button
+                                                            onClick={[Function]}
+                                                >
+                                                            Edit
+                                                </button>
+                                    </td>
+                                    <td>
+                                                <button
+                                                            onClick={[Function]}
+                                                >
+                                                            Delete
+                                                </button>
+                                    </td>
+                        </tr>
             </tbody>
 </table>,
         ],
@@ -524,7 +1551,138 @@ ShallowWrapper {
                 </tr>
 </thead>,
               <tbody>
-                
+                <tr
+                                id="1"
+                >
+                                <td
+                                                className="name"
+                                >
+                                                Base Camp
+                                </td>
+                                <td
+                                                className="date_collected"
+                                >
+                                                08/19/18
+                                </td>
+                                <td
+                                                className="alt"
+                                />
+                                <td
+                                                className="lat"
+                                >
+                                                1
+                                </td>
+                                <td
+                                                className="lng"
+                                >
+                                                -1
+                                </td>
+                                <td
+                                                className="region"
+                                >
+                                                Ishinca
+                                </td>
+                                <td
+                                                className="country"
+                                >
+                                                Peru
+                                </td>
+                                <td
+                                                className="reflectance"
+                                                contentEditable={false}
+                                >
+                                                89
+                                </td>
+                                <td
+                                                className="wavelength"
+                                                contentEditable={false}
+                                >
+                                                20
+                                </td>
+                                <td
+                                                className="sample_id"
+                                />
+                                <td>
+                                                <button
+                                                                onClick={[Function]}
+                                                >
+                                                                Edit
+                                                </button>
+                                </td>
+                                <td>
+                                                <button
+                                                                onClick={[Function]}
+                                                >
+                                                                Delete
+                                                </button>
+                                </td>
+                </tr>
+                <tr
+                                id="2"
+                >
+                                <td
+                                                className="name"
+                                >
+                                                Camp 1
+                                </td>
+                                <td
+                                                className="date_collected"
+                                >
+                                                08/20/18
+                                </td>
+                                <td
+                                                className="alt"
+                                />
+                                <td
+                                                className="lat"
+                                >
+                                                2
+                                </td>
+                                <td
+                                                className="lng"
+                                >
+                                                -2
+                                </td>
+                                <td
+                                                className="region"
+                                >
+                                                Pisco
+                                </td>
+                                <td
+                                                className="country"
+                                >
+                                                Peru
+                                </td>
+                                <td
+                                                className="reflectance"
+                                                contentEditable={false}
+                                >
+                                                70
+                                </td>
+                                <td
+                                                className="wavelength"
+                                                contentEditable={false}
+                                >
+                                                110
+                                </td>
+                                <td
+                                                className="sample_id"
+                                />
+                                <td>
+                                                <button
+                                                                onClick={[Function]}
+                                                >
+                                                                Edit
+                                                </button>
+                                </td>
+                                <td>
+                                                <button
+                                                                onClick={[Function]}
+                                                >
+                                                                Delete
+                                                </button>
+                                </td>
+                </tr>
 </tbody>,
             ],
           },
@@ -751,10 +1909,644 @@ ShallowWrapper {
               "key": undefined,
               "nodeType": "host",
               "props": Object {
-                "children": Array [],
+                "children": Array [
+                  <tr
+                    id="1"
+>
+                    <td
+                                        className="name"
+                    >
+                                        Base Camp
+                    </td>
+                    <td
+                                        className="date_collected"
+                    >
+                                        08/19/18
+                    </td>
+                    <td
+                                        className="alt"
+                    />
+                    <td
+                                        className="lat"
+                    >
+                                        1
+                    </td>
+                    <td
+                                        className="lng"
+                    >
+                                        -1
+                    </td>
+                    <td
+                                        className="region"
+                    >
+                                        Ishinca
+                    </td>
+                    <td
+                                        className="country"
+                    >
+                                        Peru
+                    </td>
+                    <td
+                                        className="reflectance"
+                                        contentEditable={false}
+                    >
+                                        89
+                    </td>
+                    <td
+                                        className="wavelength"
+                                        contentEditable={false}
+                    >
+                                        20
+                    </td>
+                    <td
+                                        className="sample_id"
+                    />
+                    <td>
+                                        <button
+                                                            onClick={[Function]}
+                                        >
+                                                            Edit
+                                        </button>
+                    </td>
+                    <td>
+                                        <button
+                                                            onClick={[Function]}
+                                        >
+                                                            Delete
+                                        </button>
+                    </td>
+</tr>,
+                  <tr
+                    id="2"
+>
+                    <td
+                                        className="name"
+                    >
+                                        Camp 1
+                    </td>
+                    <td
+                                        className="date_collected"
+                    >
+                                        08/20/18
+                    </td>
+                    <td
+                                        className="alt"
+                    />
+                    <td
+                                        className="lat"
+                    >
+                                        2
+                    </td>
+                    <td
+                                        className="lng"
+                    >
+                                        -2
+                    </td>
+                    <td
+                                        className="region"
+                    >
+                                        Pisco
+                    </td>
+                    <td
+                                        className="country"
+                    >
+                                        Peru
+                    </td>
+                    <td
+                                        className="reflectance"
+                                        contentEditable={false}
+                    >
+                                        70
+                    </td>
+                    <td
+                                        className="wavelength"
+                                        contentEditable={false}
+                    >
+                                        110
+                    </td>
+                    <td
+                                        className="sample_id"
+                    />
+                    <td>
+                                        <button
+                                                            onClick={[Function]}
+                                        >
+                                                            Edit
+                                        </button>
+                    </td>
+                    <td>
+                                        <button
+                                                            onClick={[Function]}
+                                        >
+                                                            Delete
+                                        </button>
+                    </td>
+</tr>,
+                ],
               },
               "ref": null,
-              "rendered": Array [],
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": "1",
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": Array [
+                      <td
+                        className="name"
+>
+                        Base Camp
+</td>,
+                      <td
+                        className="date_collected"
+>
+                        08/19/18
+</td>,
+                      <td
+                        className="alt"
+/>,
+                      <td
+                        className="lat"
+>
+                        1
+</td>,
+                      <td
+                        className="lng"
+>
+                        -1
+</td>,
+                      <td
+                        className="region"
+>
+                        Ishinca
+</td>,
+                      <td
+                        className="country"
+>
+                        Peru
+</td>,
+                      <td
+                        className="reflectance"
+                        contentEditable={false}
+>
+                        89
+</td>,
+                      <td
+                        className="wavelength"
+                        contentEditable={false}
+>
+                        20
+</td>,
+                      <td
+                        className="sample_id"
+/>,
+                      <td>
+                        <button
+                                                onClick={[Function]}
+                        >
+                                                Edit
+                        </button>
+</td>,
+                      <td>
+                        <button
+                                                onClick={[Function]}
+                        >
+                                                Delete
+                        </button>
+</td>,
+                    ],
+                    "id": "1",
+                  },
+                  "ref": null,
+                  "rendered": Array [
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "children": "Base Camp",
+                        "className": "name",
+                      },
+                      "ref": null,
+                      "rendered": "Base Camp",
+                      "type": "td",
+                    },
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "children": "08/19/18",
+                        "className": "date_collected",
+                      },
+                      "ref": null,
+                      "rendered": "08/19/18",
+                      "type": "td",
+                    },
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "children": undefined,
+                        "className": "alt",
+                      },
+                      "ref": null,
+                      "rendered": null,
+                      "type": "td",
+                    },
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "children": "1",
+                        "className": "lat",
+                      },
+                      "ref": null,
+                      "rendered": "1",
+                      "type": "td",
+                    },
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "children": "-1",
+                        "className": "lng",
+                      },
+                      "ref": null,
+                      "rendered": "-1",
+                      "type": "td",
+                    },
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "children": "Ishinca",
+                        "className": "region",
+                      },
+                      "ref": null,
+                      "rendered": "Ishinca",
+                      "type": "td",
+                    },
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "children": "Peru",
+                        "className": "country",
+                      },
+                      "ref": null,
+                      "rendered": "Peru",
+                      "type": "td",
+                    },
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "children": "89",
+                        "className": "reflectance",
+                        "contentEditable": false,
+                      },
+                      "ref": null,
+                      "rendered": "89",
+                      "type": "td",
+                    },
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "children": "20",
+                        "className": "wavelength",
+                        "contentEditable": false,
+                      },
+                      "ref": null,
+                      "rendered": "20",
+                      "type": "td",
+                    },
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "children": undefined,
+                        "className": "sample_id",
+                      },
+                      "ref": null,
+                      "rendered": null,
+                      "type": "td",
+                    },
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "children": <button
+                          onClick={[Function]}
+>
+                          Edit
+</button>,
+                      },
+                      "ref": null,
+                      "rendered": Object {
+                        "instance": null,
+                        "key": undefined,
+                        "nodeType": "host",
+                        "props": Object {
+                          "children": "Edit",
+                          "onClick": [Function],
+                        },
+                        "ref": null,
+                        "rendered": "Edit",
+                        "type": "button",
+                      },
+                      "type": "td",
+                    },
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "children": <button
+                          onClick={[Function]}
+>
+                          Delete
+</button>,
+                      },
+                      "ref": null,
+                      "rendered": Object {
+                        "instance": null,
+                        "key": undefined,
+                        "nodeType": "host",
+                        "props": Object {
+                          "children": "Delete",
+                          "onClick": [Function],
+                        },
+                        "ref": null,
+                        "rendered": "Delete",
+                        "type": "button",
+                      },
+                      "type": "td",
+                    },
+                  ],
+                  "type": "tr",
+                },
+                Object {
+                  "instance": null,
+                  "key": "2",
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": Array [
+                      <td
+                        className="name"
+>
+                        Camp 1
+</td>,
+                      <td
+                        className="date_collected"
+>
+                        08/20/18
+</td>,
+                      <td
+                        className="alt"
+/>,
+                      <td
+                        className="lat"
+>
+                        2
+</td>,
+                      <td
+                        className="lng"
+>
+                        -2
+</td>,
+                      <td
+                        className="region"
+>
+                        Pisco
+</td>,
+                      <td
+                        className="country"
+>
+                        Peru
+</td>,
+                      <td
+                        className="reflectance"
+                        contentEditable={false}
+>
+                        70
+</td>,
+                      <td
+                        className="wavelength"
+                        contentEditable={false}
+>
+                        110
+</td>,
+                      <td
+                        className="sample_id"
+/>,
+                      <td>
+                        <button
+                                                onClick={[Function]}
+                        >
+                                                Edit
+                        </button>
+</td>,
+                      <td>
+                        <button
+                                                onClick={[Function]}
+                        >
+                                                Delete
+                        </button>
+</td>,
+                    ],
+                    "id": "2",
+                  },
+                  "ref": null,
+                  "rendered": Array [
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "children": "Camp 1",
+                        "className": "name",
+                      },
+                      "ref": null,
+                      "rendered": "Camp 1",
+                      "type": "td",
+                    },
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "children": "08/20/18",
+                        "className": "date_collected",
+                      },
+                      "ref": null,
+                      "rendered": "08/20/18",
+                      "type": "td",
+                    },
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "children": undefined,
+                        "className": "alt",
+                      },
+                      "ref": null,
+                      "rendered": null,
+                      "type": "td",
+                    },
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "children": "2",
+                        "className": "lat",
+                      },
+                      "ref": null,
+                      "rendered": "2",
+                      "type": "td",
+                    },
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "children": "-2",
+                        "className": "lng",
+                      },
+                      "ref": null,
+                      "rendered": "-2",
+                      "type": "td",
+                    },
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "children": "Pisco",
+                        "className": "region",
+                      },
+                      "ref": null,
+                      "rendered": "Pisco",
+                      "type": "td",
+                    },
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "children": "Peru",
+                        "className": "country",
+                      },
+                      "ref": null,
+                      "rendered": "Peru",
+                      "type": "td",
+                    },
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "children": "70",
+                        "className": "reflectance",
+                        "contentEditable": false,
+                      },
+                      "ref": null,
+                      "rendered": "70",
+                      "type": "td",
+                    },
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "children": "110",
+                        "className": "wavelength",
+                        "contentEditable": false,
+                      },
+                      "ref": null,
+                      "rendered": "110",
+                      "type": "td",
+                    },
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "children": undefined,
+                        "className": "sample_id",
+                      },
+                      "ref": null,
+                      "rendered": null,
+                      "type": "td",
+                    },
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "children": <button
+                          onClick={[Function]}
+>
+                          Edit
+</button>,
+                      },
+                      "ref": null,
+                      "rendered": Object {
+                        "instance": null,
+                        "key": undefined,
+                        "nodeType": "host",
+                        "props": Object {
+                          "children": "Edit",
+                          "onClick": [Function],
+                        },
+                        "ref": null,
+                        "rendered": "Edit",
+                        "type": "button",
+                      },
+                      "type": "td",
+                    },
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "children": <button
+                          onClick={[Function]}
+>
+                          Delete
+</button>,
+                      },
+                      "ref": null,
+                      "rendered": Object {
+                        "instance": null,
+                        "key": undefined,
+                        "nodeType": "host",
+                        "props": Object {
+                          "children": "Delete",
+                          "onClick": [Function],
+                        },
+                        "ref": null,
+                        "rendered": "Delete",
+                        "type": "button",
+                      },
+                      "type": "td",
+                    },
+                  ],
+                  "type": "tr",
+                },
+              ],
               "type": "tbody",
             },
           ],
