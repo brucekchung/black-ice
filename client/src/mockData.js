@@ -29,17 +29,25 @@ export const locationsOnly = [{
     name: 'Base Camp',
     lat: '1',
     lng: '-1',
-    altitude: '4000m',
+    alt: '4000m',
     region: 'Ishinca',
-    country: 'Peru'    
+    country: 'Argentina'    
   }, {
     id: '2',
     name: 'Camp 1',
     lat: '2',
     lng: '-2',
-    altitude: '5000m',
+    alt: '5000m',
     region: 'Pisco',
     country: 'Peru'
+  }, {
+    id: '3',
+    name: 'Camp 2',
+    lat: '1',
+    lng: '-2',
+    alt: '6000m',
+    region: 'Ishinca',
+    country: 'Argentina'
 }]
 
 export const dataOnly = [{

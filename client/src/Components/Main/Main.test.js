@@ -6,7 +6,7 @@ describe('Main', () => {
   let wrapper
 
   beforeEach(() => {
-    const wrapper = shallow(<Main />)
+    wrapper = shallow(<Main />)
   })
 
   it('should match snapshot upon load', () => {

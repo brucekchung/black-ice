@@ -3,9 +3,13 @@ import App from './App'
 import { shallow } from 'enzyme'
 
 describe('App', () => {
-  it('should match snapshot', () => {
-    const wrapper = shallow(<App />)
+  let wrapper
 
+  beforeEach(() => {
+    wrapper = shallow(<App />)
+  })
+
+  it('should match snapshot', () => {
     expect(wrapper).toMatchSnapshot()
   })
 })

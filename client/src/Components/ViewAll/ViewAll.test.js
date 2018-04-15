@@ -6,7 +6,7 @@ describe('ViewAll', () => {
   let wrapper
 
   beforeEach(() => {
-    const wrapper = shallow(<ViewAll />, { disableLifecycleMethods: true })
+    wrapper = shallow(<ViewAll />, { disableLifecycleMethods: true })
   })
 
   it('should match snapshot upon load', () => {

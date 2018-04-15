@@ -1,3 +1,287 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Nav should match snapshot upon load 1`] = `undefined`;
+exports[`Nav should match snapshot upon load 1`] = `
+ShallowWrapper {
+  "length": 1,
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <Nav />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "children": Array [
+        <NavLink
+          activeClassName="active"
+          ariaCurrent="true"
+          className="Nav"
+          exact={true}
+          to="/"
+>
+          Login
+</NavLink>,
+        <NavLink
+          activeClassName="active"
+          ariaCurrent="true"
+          className="Nav"
+          to="/Landing"
+>
+          Landing
+</NavLink>,
+        <NavLink
+          activeClassName="active"
+          ariaCurrent="true"
+          className="Nav"
+          to="/DataEntry"
+>
+          DataEntry
+</NavLink>,
+        <NavLink
+          activeClassName="active"
+          ariaCurrent="true"
+          className="Nav"
+          to="/Reports"
+>
+          Reports
+</NavLink>,
+        <NavLink
+          activeClassName="active"
+          ariaCurrent="true"
+          className="Nav"
+          to="/ViewAll"
+>
+          EditData
+</NavLink>,
+      ],
+      "className": "Nav-bar",
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "function",
+        "props": Object {
+          "activeClassName": "active",
+          "ariaCurrent": "true",
+          "children": "Login",
+          "className": "Nav",
+          "exact": true,
+          "to": "/",
+        },
+        "ref": null,
+        "rendered": "Login",
+        "type": [Function],
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "function",
+        "props": Object {
+          "activeClassName": "active",
+          "ariaCurrent": "true",
+          "children": "Landing",
+          "className": "Nav",
+          "to": "/Landing",
+        },
+        "ref": null,
+        "rendered": "Landing",
+        "type": [Function],
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "function",
+        "props": Object {
+          "activeClassName": "active",
+          "ariaCurrent": "true",
+          "children": "DataEntry",
+          "className": "Nav",
+          "to": "/DataEntry",
+        },
+        "ref": null,
+        "rendered": "DataEntry",
+        "type": [Function],
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "function",
+        "props": Object {
+          "activeClassName": "active",
+          "ariaCurrent": "true",
+          "children": "Reports",
+          "className": "Nav",
+          "to": "/Reports",
+        },
+        "ref": null,
+        "rendered": "Reports",
+        "type": [Function],
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "function",
+        "props": Object {
+          "activeClassName": "active",
+          "ariaCurrent": "true",
+          "children": "EditData",
+          "className": "Nav",
+          "to": "/ViewAll",
+        },
+        "ref": null,
+        "rendered": "EditData",
+        "type": [Function],
+      },
+    ],
+    "type": "div",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          <NavLink
+            activeClassName="active"
+            ariaCurrent="true"
+            className="Nav"
+            exact={true}
+            to="/"
+>
+            Login
+</NavLink>,
+          <NavLink
+            activeClassName="active"
+            ariaCurrent="true"
+            className="Nav"
+            to="/Landing"
+>
+            Landing
+</NavLink>,
+          <NavLink
+            activeClassName="active"
+            ariaCurrent="true"
+            className="Nav"
+            to="/DataEntry"
+>
+            DataEntry
+</NavLink>,
+          <NavLink
+            activeClassName="active"
+            ariaCurrent="true"
+            className="Nav"
+            to="/Reports"
+>
+            Reports
+</NavLink>,
+          <NavLink
+            activeClassName="active"
+            ariaCurrent="true"
+            className="Nav"
+            to="/ViewAll"
+>
+            EditData
+</NavLink>,
+        ],
+        "className": "Nav-bar",
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "function",
+          "props": Object {
+            "activeClassName": "active",
+            "ariaCurrent": "true",
+            "children": "Login",
+            "className": "Nav",
+            "exact": true,
+            "to": "/",
+          },
+          "ref": null,
+          "rendered": "Login",
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "function",
+          "props": Object {
+            "activeClassName": "active",
+            "ariaCurrent": "true",
+            "children": "Landing",
+            "className": "Nav",
+            "to": "/Landing",
+          },
+          "ref": null,
+          "rendered": "Landing",
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "function",
+          "props": Object {
+            "activeClassName": "active",
+            "ariaCurrent": "true",
+            "children": "DataEntry",
+            "className": "Nav",
+            "to": "/DataEntry",
+          },
+          "ref": null,
+          "rendered": "DataEntry",
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "function",
+          "props": Object {
+            "activeClassName": "active",
+            "ariaCurrent": "true",
+            "children": "Reports",
+            "className": "Nav",
+            "to": "/Reports",
+          },
+          "ref": null,
+          "rendered": "Reports",
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "function",
+          "props": Object {
+            "activeClassName": "active",
+            "ariaCurrent": "true",
+            "children": "EditData",
+            "className": "Nav",
+            "to": "/ViewAll",
+          },
+          "ref": null,
+          "rendered": "EditData",
+          "type": [Function],
+        },
+      ],
+      "type": "div",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+      },
+    },
+  },
+}
+`;
