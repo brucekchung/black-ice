@@ -56,15 +56,7 @@ class DataEntry extends Component {
   }
 
   sortLatLng = locations => {
-    return locations.reduce((acc, location) => {
-      const latlng = `${location.lat}, ${location.lng}`
-
-      if(acc.includes(latlng)) {
-        return acc
-      }
-
-      return [...acc, latlng]
-    }, [])
+    return locations.map(location => `${ location.lat }, ${ location.lng }`)
   }
 
   handleChange = e => {
