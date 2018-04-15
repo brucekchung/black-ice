@@ -15,4 +15,15 @@ describe('DropDown', () => {
     expect(wrapper).toMatchSnapshot()
   })
 
+  it('should render the options that are passed down', () => {
+    const options = ['Argentina']
+    const rendered = wrapper.instance().renderOptions()
+    const expected = [
+      <option value='Argentina' key='Argentina0'>Argentina</option>,
+      <option value='Peru' key='Peru1'>Peru</option>
+    ]
+
+    expect(rendered).toEqual(expected)
+  })
+
 })
