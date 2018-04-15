@@ -1,15 +1,16 @@
 import React from 'react'
-import ViewAll from './ViewAll'
+import Landing from './Landing'
 import { shallow } from 'enzyme'
 
-describe('ViewAll', () => {
-  let wrapper
+describe('Landing', () => {
+  let wrapper;
 
   beforeEach(() => {
-    wrapper = shallow(<ViewAll />, { disableLifecycleMethods: true })
+    wrapper = shallow(<Landing />)
   })
 
   it('should match snapshot upon load', () => {
     expect(wrapper).toMatchSnapshot()
   })
+
 })

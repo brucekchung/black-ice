@@ -1,0 +1,186 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`DropDown should match snapshot upon load 1`] = `
+ShallowWrapper {
+  "length": 1,
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <DropDown
+    handleChange={[Function]}
+    name="Countries"
+    options={
+        Array [
+            "Argentina",
+            "Peru",
+          ]
+    }
+/>,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "children": Array [
+        <option
+          value=""
+>
+          Choose 
+          Countries
+</option>,
+        Array [
+          <option
+            value="Argentina"
+>
+            Argentina
+</option>,
+          <option
+            value="Peru"
+>
+            Peru
+</option>,
+        ],
+      ],
+      "defaultValue": "",
+      "name": "Countries",
+      "onChange": [Function],
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            "Choose ",
+            "Countries",
+          ],
+          "value": "",
+        },
+        "ref": null,
+        "rendered": Array [
+          "Choose ",
+          "Countries",
+        ],
+        "type": "option",
+      },
+      Object {
+        "instance": null,
+        "key": "Argentina0",
+        "nodeType": "host",
+        "props": Object {
+          "children": "Argentina",
+          "value": "Argentina",
+        },
+        "ref": null,
+        "rendered": "Argentina",
+        "type": "option",
+      },
+      Object {
+        "instance": null,
+        "key": "Peru1",
+        "nodeType": "host",
+        "props": Object {
+          "children": "Peru",
+          "value": "Peru",
+        },
+        "ref": null,
+        "rendered": "Peru",
+        "type": "option",
+      },
+    ],
+    "type": "select",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          <option
+            value=""
+>
+            Choose 
+            Countries
+</option>,
+          Array [
+            <option
+              value="Argentina"
+>
+              Argentina
+</option>,
+            <option
+              value="Peru"
+>
+              Peru
+</option>,
+          ],
+        ],
+        "defaultValue": "",
+        "name": "Countries",
+        "onChange": [Function],
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              "Choose ",
+              "Countries",
+            ],
+            "value": "",
+          },
+          "ref": null,
+          "rendered": Array [
+            "Choose ",
+            "Countries",
+          ],
+          "type": "option",
+        },
+        Object {
+          "instance": null,
+          "key": "Argentina0",
+          "nodeType": "host",
+          "props": Object {
+            "children": "Argentina",
+            "value": "Argentina",
+          },
+          "ref": null,
+          "rendered": "Argentina",
+          "type": "option",
+        },
+        Object {
+          "instance": null,
+          "key": "Peru1",
+          "nodeType": "host",
+          "props": Object {
+            "children": "Peru",
+            "value": "Peru",
+          },
+          "ref": null,
+          "rendered": "Peru",
+          "type": "option",
+        },
+      ],
+      "type": "select",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+      },
+    },
+  },
+}
+`;

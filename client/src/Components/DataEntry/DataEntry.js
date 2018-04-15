@@ -56,15 +56,7 @@ class DataEntry extends Component {
   }
 
   sortLatLng = locations => {
-    return locations.reduce((acc, location) => {
-      const latlng = `${location.lat}, ${location.lng}`
-
-      if(acc.includes(latlng)) {
-        return acc
-      }
-
-      return [...acc, latlng]
-    }, [])
+    return locations.map(location => `${ location.lat }, ${ location.lng }`)
   }
 
   handleChange = e => {
@@ -134,6 +126,7 @@ class DataEntry extends Component {
 
   resetState = () => {
     this.setState({
+      allLocations: [],
       selectedLocation: {
         name: '',
         country: '',
@@ -261,7 +254,9 @@ class DataEntry extends Component {
                      onChange={ this.handleChange } />
             </div>
           }
-          <button type="button" onClick={ this.changeLocationForm }>Add a New Location</button>
+          <button type="button"
+                  className="add-new-location-button"
+                  onClick={ this.changeLocationForm }>Add a New Location</button>
           <h3>Data</h3>
           <DataForm data={ this.state.data }
                     handleChange={ this.updateData }

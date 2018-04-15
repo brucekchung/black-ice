@@ -1,15 +1,16 @@
 import React from 'react'
-import ViewAll from './ViewAll'
+import Nav from './Nav'
 import { shallow } from 'enzyme'
 
-describe('ViewAll', () => {
+describe('Nav', () => {
   let wrapper
 
   beforeEach(() => {
-    wrapper = shallow(<ViewAll />, { disableLifecycleMethods: true })
+    wrapper = shallow(<Nav />)
   })
 
   it('should match snapshot upon load', () => {
     expect(wrapper).toMatchSnapshot()
   })
+
 })

@@ -1,0 +1,893 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Reports should match snapshot upon load 1`] = `
+ShallowWrapper {
+  "length": 1,
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <Reports />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "children": Array [
+        <Nav />,
+        <h2>
+          Reports
+</h2>,
+        <form
+          onSubmit={[Function]}
+>
+          <DropDown
+                    handleChange={[Function]}
+                    name="country"
+                    options={Array []}
+          />
+          <DropDown
+                    handleChange={[Function]}
+                    name="region"
+                    options={Array []}
+          />
+          <DropDown
+                    handleChange={[Function]}
+                    name="coordinates"
+                    options={Array []}
+          />
+          <input
+                    id="startDate"
+                    name="startDate"
+                    onChange={[Function]}
+                    placeholder="Start Date"
+                    type="text"
+          />
+          <input
+                    id="endDate"
+                    name="endDate"
+                    onChange={[Function]}
+                    placeholder="End Date"
+                    type="text"
+          />
+          <button
+                    type="submit"
+          >
+                    Generate Report
+          </button>
+</form>,
+      ],
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "function",
+        "props": Object {},
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": "Reports",
+        },
+        "ref": null,
+        "rendered": "Reports",
+        "type": "h2",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <DropDown
+              handleChange={[Function]}
+              name="country"
+              options={Array []}
+/>,
+            <DropDown
+              handleChange={[Function]}
+              name="region"
+              options={Array []}
+/>,
+            <DropDown
+              handleChange={[Function]}
+              name="coordinates"
+              options={Array []}
+/>,
+            <input
+              id="startDate"
+              name="startDate"
+              onChange={[Function]}
+              placeholder="Start Date"
+              type="text"
+/>,
+            <input
+              id="endDate"
+              name="endDate"
+              onChange={[Function]}
+              placeholder="End Date"
+              type="text"
+/>,
+            <button
+              type="submit"
+>
+              Generate Report
+</button>,
+          ],
+          "onSubmit": [Function],
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "handleChange": [Function],
+              "name": "country",
+              "options": Array [],
+            },
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "handleChange": [Function],
+              "name": "region",
+              "options": Array [],
+            },
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "handleChange": [Function],
+              "name": "coordinates",
+              "options": Array [],
+            },
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "id": "startDate",
+              "name": "startDate",
+              "onChange": [Function],
+              "placeholder": "Start Date",
+              "type": "text",
+            },
+            "ref": null,
+            "rendered": null,
+            "type": "input",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "id": "endDate",
+              "name": "endDate",
+              "onChange": [Function],
+              "placeholder": "End Date",
+              "type": "text",
+            },
+            "ref": null,
+            "rendered": null,
+            "type": "input",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "Generate Report",
+              "type": "submit",
+            },
+            "ref": null,
+            "rendered": "Generate Report",
+            "type": "button",
+          },
+        ],
+        "type": "form",
+      },
+    ],
+    "type": "div",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          <Nav />,
+          <h2>
+            Reports
+</h2>,
+          <form
+            onSubmit={[Function]}
+>
+            <DropDown
+                        handleChange={[Function]}
+                        name="country"
+                        options={Array []}
+            />
+            <DropDown
+                        handleChange={[Function]}
+                        name="region"
+                        options={Array []}
+            />
+            <DropDown
+                        handleChange={[Function]}
+                        name="coordinates"
+                        options={Array []}
+            />
+            <input
+                        id="startDate"
+                        name="startDate"
+                        onChange={[Function]}
+                        placeholder="Start Date"
+                        type="text"
+            />
+            <input
+                        id="endDate"
+                        name="endDate"
+                        onChange={[Function]}
+                        placeholder="End Date"
+                        type="text"
+            />
+            <button
+                        type="submit"
+            >
+                        Generate Report
+            </button>
+</form>,
+        ],
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "function",
+          "props": Object {},
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": "Reports",
+          },
+          "ref": null,
+          "rendered": "Reports",
+          "type": "h2",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <DropDown
+                handleChange={[Function]}
+                name="country"
+                options={Array []}
+/>,
+              <DropDown
+                handleChange={[Function]}
+                name="region"
+                options={Array []}
+/>,
+              <DropDown
+                handleChange={[Function]}
+                name="coordinates"
+                options={Array []}
+/>,
+              <input
+                id="startDate"
+                name="startDate"
+                onChange={[Function]}
+                placeholder="Start Date"
+                type="text"
+/>,
+              <input
+                id="endDate"
+                name="endDate"
+                onChange={[Function]}
+                placeholder="End Date"
+                type="text"
+/>,
+              <button
+                type="submit"
+>
+                Generate Report
+</button>,
+            ],
+            "onSubmit": [Function],
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "handleChange": [Function],
+                "name": "country",
+                "options": Array [],
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "handleChange": [Function],
+                "name": "region",
+                "options": Array [],
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "handleChange": [Function],
+                "name": "coordinates",
+                "options": Array [],
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "id": "startDate",
+                "name": "startDate",
+                "onChange": [Function],
+                "placeholder": "Start Date",
+                "type": "text",
+              },
+              "ref": null,
+              "rendered": null,
+              "type": "input",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "id": "endDate",
+                "name": "endDate",
+                "onChange": [Function],
+                "placeholder": "End Date",
+                "type": "text",
+              },
+              "ref": null,
+              "rendered": null,
+              "type": "input",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "Generate Report",
+                "type": "submit",
+              },
+              "ref": null,
+              "rendered": "Generate Report",
+              "type": "button",
+            },
+          ],
+          "type": "form",
+        },
+      ],
+      "type": "div",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+      },
+    },
+    "disableLifecycleMethods": true,
+  },
+}
+`;
+
+exports[`Reports should match the snapshot when it has locations 1`] = `
+ShallowWrapper {
+  "length": 1,
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <Reports />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "children": Array [
+        <Nav />,
+        <h2>
+          Reports
+</h2>,
+        <form
+          onSubmit={[Function]}
+>
+          <DropDown
+                    handleChange={[Function]}
+                    name="country"
+                    options={
+                              Array [
+                                        "Argentina",
+                                        "Peru",
+                                      ]
+                    }
+          />
+          <DropDown
+                    handleChange={[Function]}
+                    name="region"
+                    options={Array []}
+          />
+          <DropDown
+                    handleChange={[Function]}
+                    name="coordinates"
+                    options={Array []}
+          />
+          <input
+                    id="startDate"
+                    name="startDate"
+                    onChange={[Function]}
+                    placeholder="Start Date"
+                    type="text"
+          />
+          <input
+                    id="endDate"
+                    name="endDate"
+                    onChange={[Function]}
+                    placeholder="End Date"
+                    type="text"
+          />
+          <button
+                    type="submit"
+          >
+                    Generate Report
+          </button>
+</form>,
+      ],
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "function",
+        "props": Object {},
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": "Reports",
+        },
+        "ref": null,
+        "rendered": "Reports",
+        "type": "h2",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <DropDown
+              handleChange={[Function]}
+              name="country"
+              options={
+                            Array [
+                                          "Argentina",
+                                          "Peru",
+                                        ]
+              }
+/>,
+            <DropDown
+              handleChange={[Function]}
+              name="region"
+              options={Array []}
+/>,
+            <DropDown
+              handleChange={[Function]}
+              name="coordinates"
+              options={Array []}
+/>,
+            <input
+              id="startDate"
+              name="startDate"
+              onChange={[Function]}
+              placeholder="Start Date"
+              type="text"
+/>,
+            <input
+              id="endDate"
+              name="endDate"
+              onChange={[Function]}
+              placeholder="End Date"
+              type="text"
+/>,
+            <button
+              type="submit"
+>
+              Generate Report
+</button>,
+          ],
+          "onSubmit": [Function],
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "handleChange": [Function],
+              "name": "country",
+              "options": Array [
+                "Argentina",
+                "Peru",
+              ],
+            },
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "handleChange": [Function],
+              "name": "region",
+              "options": Array [],
+            },
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "handleChange": [Function],
+              "name": "coordinates",
+              "options": Array [],
+            },
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "id": "startDate",
+              "name": "startDate",
+              "onChange": [Function],
+              "placeholder": "Start Date",
+              "type": "text",
+            },
+            "ref": null,
+            "rendered": null,
+            "type": "input",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "id": "endDate",
+              "name": "endDate",
+              "onChange": [Function],
+              "placeholder": "End Date",
+              "type": "text",
+            },
+            "ref": null,
+            "rendered": null,
+            "type": "input",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "Generate Report",
+              "type": "submit",
+            },
+            "ref": null,
+            "rendered": "Generate Report",
+            "type": "button",
+          },
+        ],
+        "type": "form",
+      },
+    ],
+    "type": "div",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          <Nav />,
+          <h2>
+            Reports
+</h2>,
+          <form
+            onSubmit={[Function]}
+>
+            <DropDown
+                        handleChange={[Function]}
+                        name="country"
+                        options={
+                                    Array [
+                                                "Argentina",
+                                                "Peru",
+                                              ]
+                        }
+            />
+            <DropDown
+                        handleChange={[Function]}
+                        name="region"
+                        options={Array []}
+            />
+            <DropDown
+                        handleChange={[Function]}
+                        name="coordinates"
+                        options={Array []}
+            />
+            <input
+                        id="startDate"
+                        name="startDate"
+                        onChange={[Function]}
+                        placeholder="Start Date"
+                        type="text"
+            />
+            <input
+                        id="endDate"
+                        name="endDate"
+                        onChange={[Function]}
+                        placeholder="End Date"
+                        type="text"
+            />
+            <button
+                        type="submit"
+            >
+                        Generate Report
+            </button>
+</form>,
+        ],
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "function",
+          "props": Object {},
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": "Reports",
+          },
+          "ref": null,
+          "rendered": "Reports",
+          "type": "h2",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <DropDown
+                handleChange={[Function]}
+                name="country"
+                options={
+                                Array [
+                                                "Argentina",
+                                                "Peru",
+                                              ]
+                }
+/>,
+              <DropDown
+                handleChange={[Function]}
+                name="region"
+                options={Array []}
+/>,
+              <DropDown
+                handleChange={[Function]}
+                name="coordinates"
+                options={Array []}
+/>,
+              <input
+                id="startDate"
+                name="startDate"
+                onChange={[Function]}
+                placeholder="Start Date"
+                type="text"
+/>,
+              <input
+                id="endDate"
+                name="endDate"
+                onChange={[Function]}
+                placeholder="End Date"
+                type="text"
+/>,
+              <button
+                type="submit"
+>
+                Generate Report
+</button>,
+            ],
+            "onSubmit": [Function],
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "handleChange": [Function],
+                "name": "country",
+                "options": Array [
+                  "Argentina",
+                  "Peru",
+                ],
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "handleChange": [Function],
+                "name": "region",
+                "options": Array [],
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "handleChange": [Function],
+                "name": "coordinates",
+                "options": Array [],
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "id": "startDate",
+                "name": "startDate",
+                "onChange": [Function],
+                "placeholder": "Start Date",
+                "type": "text",
+              },
+              "ref": null,
+              "rendered": null,
+              "type": "input",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "id": "endDate",
+                "name": "endDate",
+                "onChange": [Function],
+                "placeholder": "End Date",
+                "type": "text",
+              },
+              "ref": null,
+              "rendered": null,
+              "type": "input",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "Generate Report",
+                "type": "submit",
+              },
+              "ref": null,
+              "rendered": "Generate Report",
+              "type": "button",
+            },
+          ],
+          "type": "form",
+        },
+      ],
+      "type": "div",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+      },
+    },
+    "disableLifecycleMethods": true,
+  },
+}
+`;
