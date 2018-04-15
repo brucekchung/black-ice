@@ -16,8 +16,9 @@ class ViewAll extends Component {
     const samples = await apiCall('/api/v1/samples')
     const locations = await apiCall('/api/v1/locations')
     const data = samples.map(sample => {
+      const sample_id = {sample_id: sample.id}
       const found = locations.find(location => location.id === sample.locations_id)
-      return Object.assign(sample, found);
+      return Object.assign(sample, sample_id, found );
     })
 
     this.setState({ data })
@@ -40,24 +41,30 @@ class ViewAll extends Component {
     return match
   }
 
-  // updateData = async data => {
-  //   const url = `/api/v1/data-with-locations/${ data.id }`
-  //   const init = {
-  //     method: 'PUT',
-  //     headers: {
-  //       'Content-Type': 'application/json'
-  //     },
-  //     body: JSON.stringify(data)
-  //   }
+  updateData = async data => {
+    const updatedData = {
+      reflectance: data.reflectance,
+      wavelength: data.wavelength
+    }
+    console.log('trying to update: ', updatedData)
 
-  //   apiCall(url, init)
-  // }
+    const url = `/api/v1/samples/${ data.sample_id }`
+    const init = {
+      method: 'PUT',
+      headers: {
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify(updatedData)
+    }
+
+    apiCall(url, init)
+  }
 
   saveData = async button => {
     const data = this.getRowData(button)
     console.log(data);
     
-    // await updateData(data)
+    await this.updateData(data)
     button.innerText = 'Edit'
     this.setState({ editableContent: null })
   }
@@ -86,17 +93,17 @@ class ViewAll extends Component {
       const editable = parseInt(this.state.editableContent) === dataPoint.id
 
       return (
-        <tr id={ dataPoint.id } key={ dataPoint.id } contentEditable={ editable }>
+        <tr id={ dataPoint.id } key={ dataPoint.id }>
           <td className='name'>{ dataPoint.name }</td>
           <td className='date_collected'>{ dataPoint.date_collected }</td>
-          <td className='reflectance'>{ dataPoint.reflectance }</td>
-          <td className='wavelength'>{ dataPoint.wavelength }</td>
-          <td className='locations_id'>{ dataPoint.locations_id }</td> 
           <td className='alt'>{ dataPoint.alt }</td>
           <td className='lat'>{ dataPoint.lat }</td>
           <td className='lng'>{ dataPoint.lng }</td>
           <td className='region'>{ dataPoint.region}</td>
           <td className='country'>{ dataPoint.country }</td>
+          <td className='reflectance' contentEditable={ editable }>{ dataPoint.reflectance }</td>
+          <td className='wavelength' contentEditable={ editable }>{ dataPoint.wavelength }</td>
+          <td className='sample_id'>{ dataPoint.sample_id }</td> 
           <td><button onClick={ this.handleEdit }>Edit</button></td>
           <td><button onClick={ this.deleteRow }>Delete</button></td>
         </tr>
@@ -130,14 +137,14 @@ class ViewAll extends Component {
             <tr>
               <th>Name</th>
               <th>Date Collected</th>
-              <th>Reflectance</th>
-              <th>Wavelength</th>
-              <th>Location ID</th>
               <th>Altitude</th>
               <th>Latitude</th>
               <th>Longitude</th>
               <th>Region</th>
               <th>Country</th>
+              <th>Reflectance</th>
+              <th>Wavelength</th>
+              <th>Sample ID</th>
               <th></th>
               <th></th>
             </tr>
