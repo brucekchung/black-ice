@@ -6,7 +6,7 @@ describe('Nav', () => {
   let wrapper
 
   beforeEach(() => {
-    const wrapper = shallow(<Nav />)
+    wrapper = shallow(<Nav />)
   })
 
   it('should match snapshot upon load', () => {

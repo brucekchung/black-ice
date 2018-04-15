@@ -7,10 +7,10 @@ describe('DataForm', () => {
   let wrapper;
 
   beforeEach(() => {
-    const wrapper = shallow(<DataForm data={ [{ name: '', date_collected: '', reflectance: '', wavelength: '' }] }
-                                      handleClick={ jest.fn() }
-                                      handleChange={ jest.fn() } />, 
-                                      { disableLifecycleMethods: true })
+    wrapper = shallow(<DataForm data={ [{ name: '', date_collected: '', reflectance: '', wavelength: '' }] }
+                                handleClick={ jest.fn() }
+                                handleChange={ jest.fn() } />, 
+                                { disableLifecycleMethods: true })
   })
 
   it('should match snapshot upon load', () => {

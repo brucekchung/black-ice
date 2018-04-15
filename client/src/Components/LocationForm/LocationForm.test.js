@@ -6,9 +6,9 @@ describe('DropDown', () => {
   let wrapper;
 
   beforeEach(() => {
-    const wrapper = shallow(<DropDown options={['Argentina', 'Peru']}
-                                      name='Countries'
-                                      handleChange={ jest.fn() }/>)
+    wrapper = shallow(<DropDown options={['Argentina', 'Peru']}
+                                name='Countries'
+                                handleChange={ jest.fn() }/>)
   })
 
   it('should match snapshot upon load', () => {

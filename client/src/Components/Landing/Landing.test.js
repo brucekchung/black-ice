@@ -6,7 +6,7 @@ describe('Landing', () => {
   let wrapper;
 
   beforeEach(() => {
-    const wrapper = shallow(<Landing />)
+    wrapper = shallow(<Landing />)
   })
 
   it('should match snapshot upon load', () => {

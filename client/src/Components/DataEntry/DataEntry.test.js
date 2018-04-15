@@ -6,7 +6,7 @@ describe('DataEntry', () => {
   let wrapper;
 
   beforeEach(() => {
-    const wrapper = shallow(<DataEntry />, { disableLifecycleMethods: true })
+    wrapper = shallow(<DataEntry />, { disableLifecycleMethods: true })
   })
 
   it('should match snapshot upon load', () => {
