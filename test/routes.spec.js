@@ -63,6 +63,41 @@ describe('API Routes', () => {
           throw error
         })
     })
+
+    it('should get all locations at custom query params', () => {
+      return chai.request(server)
+        .get('/api/v1/locations?name=Boulder')
+        .then(res => {
+          res.should.have.status(200)
+          res.should.be.json
+          res.body[0].should.have.property('name')
+          res.body[0].name.should.equal('Boulder')
+          res.body[0].should.have.property('lat')
+          res.body[0].lat.should.equal('40N')
+          res.body[0].should.have.property('lng')
+          res.body[0].lng.should.equal('105W')
+          res.body[0].should.have.property('alt')
+          res.body[0].alt.should.equal('5430')
+          res.body[0].should.have.property('region')
+          res.body[0].region.should.equal('Colorodo')
+          res.body[0].should.have.property('country')
+          res.body[0].country.should.equal('United States')
+        })
+        .catch(err => {
+          throw err
+        })
+    })
+
+    it('should return a 404 if location at custom query params does not exist', () => {
+      return chai.request(server)
+        .get('/api/v1/locations?name=WRONG')
+        .then(res => {
+          res.should.have.status(404)
+          res.body.should.be.a('object')
+          res.body.should.have.property('error')
+          res.body.error.should.equal('Could not find locations at that custom query')
+        })
+    })
   })
 
   describe('GET /api/v1/samples/', () => {
@@ -76,6 +111,39 @@ describe('API Routes', () => {
       })
         .catch(error => {
           throw error
+        })
+    })
+
+    it('should get all samples at custom query params', () => {
+      return chai.request(server)
+        .get('/api/v1/samples?startDate=4/10/18&endDate=4/30/18&locations_id=1')
+        .then(res => {
+          res.should.have.status(200)
+          res.should.be.json
+          res.body[0].should.have.property('name')
+          res.body[0].name.should.equal('first')
+          res.body[0].should.have.property('date_collected')
+          res.body[0].date_collected.should.equal('4/20/18')
+          res.body[0].should.have.property('reflectance')
+          res.body[0].reflectance.should.equal('some value')
+          res.body[0].should.have.property('wavelength')
+          res.body[0].wavelength.should.equal('some value')
+          res.body[0].should.have.property('locations_id')
+          res.body[0].locations_id.should.equal(1)
+        })
+        .catch(err => {
+          throw err
+        })
+    })
+
+    it('should return a 404 if location at custom query params does not exist', () => {
+      return chai.request(server)
+        .get('/api/v1/samples?startDate=wrong&endDate=wrong&locations_id=999')
+        .then(res => {
+          res.should.have.status(404)
+          res.body.should.be.a('object')
+          res.body.should.have.property('error')
+          res.body.error.should.equal('Could not find samples collected between wrong and wrong for that location')
         })
     })
   })

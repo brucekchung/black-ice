@@ -67,9 +67,9 @@ server.put('/api/v1/locations/:id', (req, res) => {
 server.delete('/api/v1/locations/:id', (req, res) => {
   const { id } = req.params
 
-  database('locations').where('id', id)
-    .select()
-    .del()
+  database('samples').where('locations_id', id).del()
+  .then(() => {
+    database('locations').where('id', id).del()
     .then(item => {
       if (item) {
         res.status(200).send(`Item: ${ id } was successfully deleted.`)
@@ -78,6 +78,7 @@ server.delete('/api/v1/locations/:id', (req, res) => {
       }
     })
     .catch(error => res.status(500).json({ error }))
+  })
 })
 
 server.get('/api/v1/samples', (req, res) => {
@@ -86,20 +87,20 @@ server.get('/api/v1/samples', (req, res) => {
 
   if (queryKeys.length === 0) {
     database('samples').select()
-    .then(samples => res.status(200).json(samples))
-    .catch(error => res.status(500).json({ error }))
+      .then(samples => res.status(200).json(samples))
+      .catch(error => res.status(500).json({ error }))
   } else {
     database('samples').whereBetween('date_collected', [startDate, endDate]).andWhere('locations_id', locations_id).select()
-    .then(samples => {
-      if(samples.length > 0) {
-        res.status(200).json(samples)
-      } else {
-        res.status(404).json({ error: `Could not find samples collected between ${ startDate } and ${ endDate } for that location` })
-      }
-    })
-    .catch(error => {
-      res.status(500).json({ error })
-    })
+      .then(samples => {
+        if(samples.length > 0) {
+          res.status(200).json(samples)
+        } else {
+          res.status(404).json({ error: `Could not find samples collected between ${ startDate } and ${ endDate } for that location` })
+        }
+      })
+      .catch(error => {
+        res.status(500).json({ error })
+      })
   }
 })
 
@@ -110,7 +111,6 @@ server.post('/api/v1/samples', (req, res) => {
     if(!sample.name) {
       return res
         .status(422)
-        //.send instead of .json??
         .send(`Item at index: ${ index } is missing a name parameter`)
     }
   })
