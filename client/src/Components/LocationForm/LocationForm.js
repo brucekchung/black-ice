@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import { func, arrayOf, string } from 'prop-types'
 
 class DropDown extends Component {
   renderOptions = () => {
@@ -20,6 +21,12 @@ class DropDown extends Component {
       </select>
     )
   }
+}
+
+DropDown.propTypes = {
+  options: arrayOf(string.isRequired).isRequired,
+  name: string.isRequired,
+  handleChange: func.isRequired
 }
 
 export default DropDown
