@@ -4,7 +4,7 @@ import Nav from '../Nav/Nav'
 import DropDown from '../LocationForm/LocationForm'
 import DataForm from '../DataForm/DataForm'
 import { apiCall } from '../../apiCall/apiCall'
-// import { locationsOnly } from '../../mockData'
+import { array, arrayOf, object, bool, string, shape } from 'prop-types'
 
 class DataEntry extends Component {
   constructor() {
@@ -266,6 +266,23 @@ class DataEntry extends Component {
       </div>
     )
   }
+}
+
+DataEntry.propTypes = {
+  state: shape({
+    allLocations: array.isRequired,
+    selectedLocation: shape({
+      name: string.isRequired,
+      country: string.isRequired,
+      coordinates: string.isRequired,
+      region: string.isRequired,
+      lat: string.isRequired,
+      lng: string.isRequired,
+      alt: string.isRequired
+    }),
+    addLocation: bool.isRequired,
+    data: arrayOf(object.isRequired).isRequired
+  })
 }
 
 export default DataEntry

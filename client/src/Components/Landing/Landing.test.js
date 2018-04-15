@@ -13,4 +13,9 @@ describe('Landing', () => {
     expect(wrapper).toMatchSnapshot()
   })
 
+  it('should change the greeting when the user is changed', () => {
+    wrapper.setState({ user: 'Bruce' })
+  
+    expect(wrapper).toMatchSnapshot()
+  })
 })

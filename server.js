@@ -7,14 +7,8 @@ const database = require('knex')(configuration)
 const path = require('path')
 
 server.set('port', process.env.PORT || 5000)
-
 server.use(bodyParser.json())
-
 server.use(express.static(path.join(__dirname, 'client/build')))
-
-server.listen(server.get('port'), () => {
-  console.log(`listening on ${server.get('port')}`)
-})
 
 server.get('/api/v1/locations', (req, res) => {
   const queryKeys = Object.keys(req.query)
@@ -156,6 +150,10 @@ server.delete('/api/v1/samples/:id', (req, res) => {
       }
     })
     .catch(error => res.status(500).json({ error }))
+})
+
+server.listen(server.get('port'), () => {
+  console.log(`listening on ${server.get('port')}`)
 })
 
 module.exports = server

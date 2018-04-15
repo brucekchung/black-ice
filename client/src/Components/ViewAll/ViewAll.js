@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import Nav from '../Nav/Nav'
 import { apiCall } from '../../apiCall/apiCall'
+import { shape, array } from 'prop-types'
 
 class ViewAll extends Component {
   constructor() {
@@ -156,6 +157,13 @@ class ViewAll extends Component {
       </div>
     )
   }
+}
+
+ViewAll.propTypes = {
+  state: shape({
+    data: array.isRequired,
+    filteredData: array.isRequired,
+  })
 }
 
 export default ViewAll
