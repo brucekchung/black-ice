@@ -1,5 +1,225 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`Landing should change the greeting when the user is changed 1`] = `
+ShallowWrapper {
+  "length": 1,
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <Landing />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "children": Array [
+        <Nav />,
+        <h2>
+          Welcome, 
+          Bruce
+          !
+</h2>,
+        <a
+          href="/DataEntry"
+>
+          Add Data
+</a>,
+        <a
+          href="/Reports"
+>
+          Reports
+</a>,
+        <a
+          href="/ViewAll"
+>
+          Edit Data
+</a>,
+      ],
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "function",
+        "props": Object {},
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            "Welcome, ",
+            "Bruce",
+            "!",
+          ],
+        },
+        "ref": null,
+        "rendered": Array [
+          "Welcome, ",
+          "Bruce",
+          "!",
+        ],
+        "type": "h2",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": "Add Data",
+          "href": "/DataEntry",
+        },
+        "ref": null,
+        "rendered": "Add Data",
+        "type": "a",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": "Reports",
+          "href": "/Reports",
+        },
+        "ref": null,
+        "rendered": "Reports",
+        "type": "a",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": "Edit Data",
+          "href": "/ViewAll",
+        },
+        "ref": null,
+        "rendered": "Edit Data",
+        "type": "a",
+      },
+    ],
+    "type": "div",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          <Nav />,
+          <h2>
+            Welcome, 
+            Bruce
+            !
+</h2>,
+          <a
+            href="/DataEntry"
+>
+            Add Data
+</a>,
+          <a
+            href="/Reports"
+>
+            Reports
+</a>,
+          <a
+            href="/ViewAll"
+>
+            Edit Data
+</a>,
+        ],
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "function",
+          "props": Object {},
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              "Welcome, ",
+              "Bruce",
+              "!",
+            ],
+          },
+          "ref": null,
+          "rendered": Array [
+            "Welcome, ",
+            "Bruce",
+            "!",
+          ],
+          "type": "h2",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": "Add Data",
+            "href": "/DataEntry",
+          },
+          "ref": null,
+          "rendered": "Add Data",
+          "type": "a",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": "Reports",
+            "href": "/Reports",
+          },
+          "ref": null,
+          "rendered": "Reports",
+          "type": "a",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": "Edit Data",
+            "href": "/ViewAll",
+          },
+          "ref": null,
+          "rendered": "Edit Data",
+          "type": "a",
+        },
+      ],
+      "type": "div",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+      },
+    },
+  },
+}
+`;
+
 exports[`Landing should match snapshot upon load 1`] = `
 ShallowWrapper {
   "length": 1,
