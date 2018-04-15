@@ -126,6 +126,7 @@ class DataEntry extends Component {
 
   resetState = () => {
     this.setState({
+      allLocations: [],
       selectedLocation: {
         name: '',
         country: '',
@@ -253,7 +254,9 @@ class DataEntry extends Component {
                      onChange={ this.handleChange } />
             </div>
           }
-          <button type="button" onClick={ this.changeLocationForm }>Add a New Location</button>
+          <button type="button"
+                  className="add-new-location-button"
+                  onClick={ this.changeLocationForm }>Add a New Location</button>
           <h3>Data</h3>
           <DataForm data={ this.state.data }
                     handleChange={ this.updateData }

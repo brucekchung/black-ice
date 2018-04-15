@@ -54,6 +54,7 @@ ShallowWrapper {
                     />
           </div>
           <button
+                    className="add-new-location-button"
                     onClick={[Function]}
                     type="button"
           >
@@ -150,6 +151,7 @@ ShallowWrapper {
 </div>,
             false,
             <button
+              className="add-new-location-button"
               onClick={[Function]}
               type="button"
 >
@@ -282,6 +284,7 @@ ShallowWrapper {
             "nodeType": "host",
             "props": Object {
               "children": "Add a New Location",
+              "className": "add-new-location-button",
               "onClick": [Function],
               "type": "button",
             },
@@ -381,6 +384,7 @@ ShallowWrapper {
                         />
             </div>
             <button
+                        className="add-new-location-button"
                         onClick={[Function]}
                         type="button"
             >
@@ -477,6 +481,7 @@ ShallowWrapper {
 </div>,
               false,
               <button
+                className="add-new-location-button"
                 onClick={[Function]}
                 type="button"
 >
@@ -609,6 +614,726 @@ ShallowWrapper {
               "nodeType": "host",
               "props": Object {
                 "children": "Add a New Location",
+                "className": "add-new-location-button",
+                "onClick": [Function],
+                "type": "button",
+              },
+              "ref": null,
+              "rendered": "Add a New Location",
+              "type": "button",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "Data",
+              },
+              "ref": null,
+              "rendered": "Data",
+              "type": "h3",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "data": Array [
+                  Object {
+                    "date_collected": "",
+                    "name": "",
+                    "reflectance": "",
+                    "wavelength": "",
+                  },
+                ],
+                "handleChange": [Function],
+                "handleClick": [Function],
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "Save",
+                "type": "submit",
+              },
+              "ref": null,
+              "rendered": "Save",
+              "type": "button",
+            },
+          ],
+          "type": "form",
+        },
+      ],
+      "type": "div",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+      },
+    },
+    "disableLifecycleMethods": true,
+  },
+}
+`;
+
+exports[`DataEntry should match snapshot with locations 1`] = `
+ShallowWrapper {
+  "length": 1,
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <DataEntry />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "children": Array [
+        <Nav />,
+        <h2>
+          Add Data
+</h2>,
+        <button>
+          Import CSV
+</button>,
+        <form
+          onSubmit={[Function]}
+>
+          <h3>
+                    Location
+          </h3>
+          <div
+                    className="choose-location"
+          >
+                    <h4>
+                              Choose an existing Location
+                    </h4>
+                    <DropDown
+                              handleChange={[Function]}
+                              name="country"
+                              options={
+                                        Array [
+                                                  "Argentina",
+                                                  "Peru",
+                                                ]
+                              }
+                    />
+                    <DropDown
+                              handleChange={[Function]}
+                              name="region"
+                              options={Array []}
+                    />
+                    <DropDown
+                              handleChange={[Function]}
+                              name="coordinates"
+                              options={Array []}
+                    />
+          </div>
+          <button
+                    className="add-new-location-button"
+                    onClick={[Function]}
+                    type="button"
+          >
+                    Add a New Location
+          </button>
+          <h3>
+                    Data
+          </h3>
+          <DataForm
+                    data={
+                              Array [
+                                        Object {
+                                          "date_collected": "",
+                                          "name": "",
+                                          "reflectance": "",
+                                          "wavelength": "",
+                                        },
+                                      ]
+                    }
+                    handleChange={[Function]}
+                    handleClick={[Function]}
+          />
+          <button
+                    type="submit"
+          >
+                    Save
+          </button>
+</form>,
+      ],
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "function",
+        "props": Object {},
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": "Add Data",
+        },
+        "ref": null,
+        "rendered": "Add Data",
+        "type": "h2",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": "Import CSV",
+        },
+        "ref": null,
+        "rendered": "Import CSV",
+        "type": "button",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <h3>
+              Location
+</h3>,
+            <div
+              className="choose-location"
+>
+              <h4>
+                            Choose an existing Location
+              </h4>
+              <DropDown
+                            handleChange={[Function]}
+                            name="country"
+                            options={
+                                          Array [
+                                                        "Argentina",
+                                                        "Peru",
+                                                      ]
+                            }
+              />
+              <DropDown
+                            handleChange={[Function]}
+                            name="region"
+                            options={Array []}
+              />
+              <DropDown
+                            handleChange={[Function]}
+                            name="coordinates"
+                            options={Array []}
+              />
+</div>,
+            false,
+            <button
+              className="add-new-location-button"
+              onClick={[Function]}
+              type="button"
+>
+              Add a New Location
+</button>,
+            <h3>
+              Data
+</h3>,
+            <DataForm
+              data={
+                            Array [
+                                          Object {
+                                            "date_collected": "",
+                                            "name": "",
+                                            "reflectance": "",
+                                            "wavelength": "",
+                                          },
+                                        ]
+              }
+              handleChange={[Function]}
+              handleClick={[Function]}
+/>,
+            <button
+              type="submit"
+>
+              Save
+</button>,
+          ],
+          "onSubmit": [Function],
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "Location",
+            },
+            "ref": null,
+            "rendered": "Location",
+            "type": "h3",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                <h4>
+                  Choose an existing Location
+</h4>,
+                <DropDown
+                  handleChange={[Function]}
+                  name="country"
+                  options={
+                                    Array [
+                                                      "Argentina",
+                                                      "Peru",
+                                                    ]
+                  }
+/>,
+                <DropDown
+                  handleChange={[Function]}
+                  name="region"
+                  options={Array []}
+/>,
+                <DropDown
+                  handleChange={[Function]}
+                  name="coordinates"
+                  options={Array []}
+/>,
+              ],
+              "className": "choose-location",
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "Choose an existing Location",
+                },
+                "ref": null,
+                "rendered": "Choose an existing Location",
+                "type": "h4",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "class",
+                "props": Object {
+                  "handleChange": [Function],
+                  "name": "country",
+                  "options": Array [
+                    "Argentina",
+                    "Peru",
+                  ],
+                },
+                "ref": null,
+                "rendered": null,
+                "type": [Function],
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "class",
+                "props": Object {
+                  "handleChange": [Function],
+                  "name": "region",
+                  "options": Array [],
+                },
+                "ref": null,
+                "rendered": null,
+                "type": [Function],
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "class",
+                "props": Object {
+                  "handleChange": [Function],
+                  "name": "coordinates",
+                  "options": Array [],
+                },
+                "ref": null,
+                "rendered": null,
+                "type": [Function],
+              },
+            ],
+            "type": "div",
+          },
+          false,
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "Add a New Location",
+              "className": "add-new-location-button",
+              "onClick": [Function],
+              "type": "button",
+            },
+            "ref": null,
+            "rendered": "Add a New Location",
+            "type": "button",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "Data",
+            },
+            "ref": null,
+            "rendered": "Data",
+            "type": "h3",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "data": Array [
+                Object {
+                  "date_collected": "",
+                  "name": "",
+                  "reflectance": "",
+                  "wavelength": "",
+                },
+              ],
+              "handleChange": [Function],
+              "handleClick": [Function],
+            },
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "Save",
+              "type": "submit",
+            },
+            "ref": null,
+            "rendered": "Save",
+            "type": "button",
+          },
+        ],
+        "type": "form",
+      },
+    ],
+    "type": "div",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          <Nav />,
+          <h2>
+            Add Data
+</h2>,
+          <button>
+            Import CSV
+</button>,
+          <form
+            onSubmit={[Function]}
+>
+            <h3>
+                        Location
+            </h3>
+            <div
+                        className="choose-location"
+            >
+                        <h4>
+                                    Choose an existing Location
+                        </h4>
+                        <DropDown
+                                    handleChange={[Function]}
+                                    name="country"
+                                    options={
+                                                Array [
+                                                            "Argentina",
+                                                            "Peru",
+                                                          ]
+                                    }
+                        />
+                        <DropDown
+                                    handleChange={[Function]}
+                                    name="region"
+                                    options={Array []}
+                        />
+                        <DropDown
+                                    handleChange={[Function]}
+                                    name="coordinates"
+                                    options={Array []}
+                        />
+            </div>
+            <button
+                        className="add-new-location-button"
+                        onClick={[Function]}
+                        type="button"
+            >
+                        Add a New Location
+            </button>
+            <h3>
+                        Data
+            </h3>
+            <DataForm
+                        data={
+                                    Array [
+                                                Object {
+                                                  "date_collected": "",
+                                                  "name": "",
+                                                  "reflectance": "",
+                                                  "wavelength": "",
+                                                },
+                                              ]
+                        }
+                        handleChange={[Function]}
+                        handleClick={[Function]}
+            />
+            <button
+                        type="submit"
+            >
+                        Save
+            </button>
+</form>,
+        ],
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "function",
+          "props": Object {},
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": "Add Data",
+          },
+          "ref": null,
+          "rendered": "Add Data",
+          "type": "h2",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": "Import CSV",
+          },
+          "ref": null,
+          "rendered": "Import CSV",
+          "type": "button",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <h3>
+                Location
+</h3>,
+              <div
+                className="choose-location"
+>
+                <h4>
+                                Choose an existing Location
+                </h4>
+                <DropDown
+                                handleChange={[Function]}
+                                name="country"
+                                options={
+                                                Array [
+                                                                "Argentina",
+                                                                "Peru",
+                                                              ]
+                                }
+                />
+                <DropDown
+                                handleChange={[Function]}
+                                name="region"
+                                options={Array []}
+                />
+                <DropDown
+                                handleChange={[Function]}
+                                name="coordinates"
+                                options={Array []}
+                />
+</div>,
+              false,
+              <button
+                className="add-new-location-button"
+                onClick={[Function]}
+                type="button"
+>
+                Add a New Location
+</button>,
+              <h3>
+                Data
+</h3>,
+              <DataForm
+                data={
+                                Array [
+                                                Object {
+                                                  "date_collected": "",
+                                                  "name": "",
+                                                  "reflectance": "",
+                                                  "wavelength": "",
+                                                },
+                                              ]
+                }
+                handleChange={[Function]}
+                handleClick={[Function]}
+/>,
+              <button
+                type="submit"
+>
+                Save
+</button>,
+            ],
+            "onSubmit": [Function],
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "Location",
+              },
+              "ref": null,
+              "rendered": "Location",
+              "type": "h3",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  <h4>
+                    Choose an existing Location
+</h4>,
+                  <DropDown
+                    handleChange={[Function]}
+                    name="country"
+                    options={
+                                        Array [
+                                                            "Argentina",
+                                                            "Peru",
+                                                          ]
+                    }
+/>,
+                  <DropDown
+                    handleChange={[Function]}
+                    name="region"
+                    options={Array []}
+/>,
+                  <DropDown
+                    handleChange={[Function]}
+                    name="coordinates"
+                    options={Array []}
+/>,
+                ],
+                "className": "choose-location",
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "Choose an existing Location",
+                  },
+                  "ref": null,
+                  "rendered": "Choose an existing Location",
+                  "type": "h4",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "class",
+                  "props": Object {
+                    "handleChange": [Function],
+                    "name": "country",
+                    "options": Array [
+                      "Argentina",
+                      "Peru",
+                    ],
+                  },
+                  "ref": null,
+                  "rendered": null,
+                  "type": [Function],
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "class",
+                  "props": Object {
+                    "handleChange": [Function],
+                    "name": "region",
+                    "options": Array [],
+                  },
+                  "ref": null,
+                  "rendered": null,
+                  "type": [Function],
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "class",
+                  "props": Object {
+                    "handleChange": [Function],
+                    "name": "coordinates",
+                    "options": Array [],
+                  },
+                  "ref": null,
+                  "rendered": null,
+                  "type": [Function],
+                },
+              ],
+              "type": "div",
+            },
+            false,
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "Add a New Location",
+                "className": "add-new-location-button",
                 "onClick": [Function],
                 "type": "button",
               },
