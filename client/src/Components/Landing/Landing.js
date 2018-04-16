@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import Nav from '../Nav/Nav'
-import { string } from 'prop-types'
+import { string, shape } from 'prop-types'
 
 class Landing extends Component {
   constructor() {
@@ -24,9 +24,9 @@ class Landing extends Component {
 }
 
 Landing.propTypes = {
-  state: {
+  state: shape({
     user: string.isRequired
-  }
+  })
 }
 
 export default Landing
