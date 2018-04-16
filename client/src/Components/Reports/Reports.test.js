@@ -18,13 +18,15 @@ describe('Reports', () => {
   it('should have a default state', () => {
     expect(wrapper.state()).toEqual({
       allLocations: [],
+      allSamples: [],
       selectedLocation: {
         country: '',
         coordinates: '',
         region: ''
       },
-      startDate: null,
-      endDate: null
+      showGraph: false,
+      startDate: '',
+      endDate: ''
     })
   })
 
