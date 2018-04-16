@@ -62,7 +62,7 @@ class ViewAll extends Component {
 
   saveData = async button => {
     const data = this.getRowData(button)
-    
+
     await this.updateData(data)
     button.innerText = 'Edit'
     this.setState({ editableContent: null })
@@ -82,6 +82,7 @@ class ViewAll extends Component {
     // const init = { method: 'DELETE' }
 
     // await apiCall(url, init)
+
     this.setState({ data: remainingData })
   }
 
