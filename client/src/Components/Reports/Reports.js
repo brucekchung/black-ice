@@ -1,9 +1,13 @@
+import '../../../node_modules/britecharts/dist/css/britecharts.min.css'
 import React, { Component } from 'react'
 import Nav from '../Nav/Nav'
 import DropDown from '../LocationForm/LocationForm'
 import { apiCall } from '../../apiCall/apiCall'
-import { shape, array, string } from 'prop-types'
+import { shape, array, string, bool } from 'prop-types'
 import './Reports.css'
+import BarChart from 'britecharts/dist/umd/bar.min'
+
+const d3Selection = require('d3-selection');
 
 class Reports extends Component {
   constructor() {
@@ -16,6 +20,7 @@ class Reports extends Component {
         coordinates: '',
         region: '',
       },
+      showGraph: false,
       startDate: '',
       endDate: ''
     }
@@ -85,7 +90,8 @@ class Reports extends Component {
     const url = `/api/v1/samples?locations_id=${ id }&startDate=${ startDate }&endDate=${ endDate }`
     const data = await apiCall(url)
     
-    // displayGraphs(results);
+    this.setState({ showGraph: true })
+    this.displayBarGraph(data)
   }
 
   calculateAverage = () => {
@@ -111,8 +117,24 @@ class Reports extends Component {
     return rounded
   }
 
-  displayGraphs = data => {
-    // return data.map(dataPoint => add point to graph)
+  displayBarGraph = data => {
+    const reformatted = data.map(dataPoint => ({
+      value: dataPoint.reflectance,
+      name: dataPoint.wavelength
+    }))
+
+    const container = d3Selection.select('.js-chart-container'),
+      barChart = new BarChart();
+
+    if (container.node()) {
+      barChart
+      .width(1000)
+      .height(300)
+      .isAnimated(true)
+      // .exportChart('download_data', 'reflectance')
+    }
+
+    container.datum(reformatted).call(barChart);
   }
 
   render() {
@@ -156,7 +178,14 @@ class Reports extends Component {
           <input id="endDate" type="text" name="endDate" placeholder="End Date" value={ this.state.endDate } onChange={ this.setDates }/>
           <button type='submit'>Generate Report</button>
         </form>
-      {/*<Graph Object />*/}
+        {
+          this.state.showGraph &&
+          <div className="graph">
+            <div className="y-label">Reflectance</div>
+            <div className="js-chart-container"></div>
+            <div className="x-label">Wavelength</div>
+          </div>
+        }
       </div>
     )
   }
@@ -165,11 +194,13 @@ class Reports extends Component {
 Reports.propTypes = {
   state: shape({
     allLocations: array.isRequired,
+    allSamples: array.isRequired,
     selectedLocation: shape({
       country: string.isRequired,
       coordinates: string.isRequired,
       region: string.isRequired,
     }),
+    showGraph: bool.isRequired,
     startDate: string.isRequired,
     endDate: string.isRequired
   })

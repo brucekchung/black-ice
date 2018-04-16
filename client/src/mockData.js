@@ -1,5 +1,5 @@
 export const allData = [{
-    id: '1',
+    sample_id: '1',
     name: 'Base Camp',
     date_collected: '08/19/18',
     reflectance: '89',
@@ -11,7 +11,7 @@ export const allData = [{
     region: 'Ishinca',
     country: 'Peru'
   }, {
-    id: '2',
+    sample_id: '2',
     name: 'Camp 1',
     date_collected: '08/20/18',
     reflectance: '70',
