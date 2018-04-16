@@ -21,7 +21,8 @@ describe('ViewAll', () => {
     const expected = {
       data: [],
       filteredData: [],
-      editableContent: null
+      editableContent: null,
+      hasSearched: false
     }
     const actual = wrapper.state()
 
