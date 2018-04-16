@@ -7,7 +7,10 @@ describe('ViewAll', () => {
   let wrapper
 
   beforeEach(() => {
-    wrapper = shallow(<ViewAll />, { disableLifecycleMethods: true })
+    wrapper = shallow(<ViewAll 
+      udateData={jest.fn()}
+      getRowData={jest.fn()}
+      />, { disableLifecycleMethods: true })
   })
 
   it('should match snapshot upon load', () => {
@@ -25,15 +28,19 @@ describe('ViewAll', () => {
     expect(actual).toEqual(expected)
   })
 
-  it('should make an apiCall on componentDidMount', () => {
+  it('should make a GET request to samples with the correct parameters on componentDidMount', () => {
+    window.fetch = jest.fn().mockImplementation(() => Promise.resolve({
+      json: () => Promise.resolve([])
+    }))
+    wrapper.instance().componentDidMount()
 
+    const url = '/api/v1/samples'
+    const init = null
+    
+    expect(window.fetch).toHaveBeenCalledWith(url, init)
   })
 
-  it('should setState on componentDidMount', () => {
-
-  })
-
-  it('should setState when editData button is clicked', () => {
+  it.skip('should setState when editData button is clicked', () => {
     // const e = {
     //   target: {
     //     innerText: 'Add Data'
@@ -48,19 +55,28 @@ describe('ViewAll', () => {
 
   })
 
-  it('should make an apiCall when updateData is run', () => {
+  it.skip('should make an apiCall when updateData is run', () => {
 
   })
 
-  it('should setState when saveData is called', () => {
+  it.skip('should setState when saveData is called', () => {
+    wrapper.setState({ editableContent: 1 })
+    // wrapper.instance().saveData('a')
 
+    expect(wrapper.state('editableContent')).toEqual(null)
   })
 
-  it('should setState when deleteRow is called', () => {
+  it.skip('should setState when deleteRow is called', async () => {
+    wrapper.setState({ data: allData })    
+    expect(wrapper.state('data').length).toEqual(2)
+    // wrapper.find('.delete-btn').first().simulate('click')
+    const e = {target: {parentNode: {parentNode: {id: 1}}}}
 
+    await wrapper.instance().deleteRow(e)
+    expect(wrapper.state('data').length).toEqual(1)
   })
 
-  it('should setState with the filtered data on handleChange', () => {
+  it('should setState of filteredData to the search input when handleChange is called', () => {
     wrapper.setState({ data: allData })    
 
     const e = {
