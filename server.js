@@ -144,7 +144,7 @@ server.delete('/api/v1/samples/:id', (req, res) => {
     .del()
     .then(item => {
       if (item) {
-        res.status(200).send(`Item: ${ id } was successfully deleted.`)
+        res.status(200).json({Item: `${ id } was successfully deleted.`})
       } else {
         res.status(404).json({ error: `Could not find sample with id: ${ id }` })
       }
