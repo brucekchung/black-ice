@@ -9,7 +9,8 @@ class ViewAll extends Component {
     this.state = {
       data: [],
       filteredData: [],
-      editableContent: null
+      editableContent: null,
+      hasSearched: false
     }
   }
 
@@ -36,7 +37,7 @@ class ViewAll extends Component {
     const tableRow = button.parentNode.parentNode
     const id = tableRow.id
     const editedRow = [...tableRow.childNodes].splice(0,10)
-    const match = this.state.data.find(dataPoint => dataPoint.id === parseInt(id))
+    const match = this.state.data.find(dataPoint => dataPoint.id === parseInt(id, 10))
 
     editedRow.forEach(tableData => match[tableData.className] = tableData.innerText)
     return match
@@ -76,24 +77,24 @@ class ViewAll extends Component {
 
   deleteRow = async e => {
     const tableRow = e.target.parentNode.parentNode
-    const id = tableRow.id
-    const remainingData = this.state.data.filter(dataPoint => dataPoint.id !== id)
-    // const url = `/api/v1/data/${ id }`
-    // const init = { method: 'DELETE' }
+    const id = parseInt(tableRow.id, 10)
+    const remainingData = this.state.data.filter(dataPoint => dataPoint.sample_id !== id)
+    const url = `/api/v1/samples/${ id }`
+    const init = { method: 'DELETE' }
 
-    // await apiCall(url, init)
+    await apiCall(url, init)
 
     this.setState({ data: remainingData })
   }
 
   renderData = () => {
-    const data = this.state.filteredData.length > 0 ? this.state.filteredData : this.state.data
+    const data = this.state.hasSearched ? this.state.filteredData : this.state.data
 
     return data.map(dataPoint => {
-      const editable = parseInt(this.state.editableContent) === dataPoint.id
+      const editable = parseInt(this.state.editableContent, 10) === dataPoint.id
 
       return (
-        <tr id={ dataPoint.id } key={ dataPoint.id }>
+        <tr id={ dataPoint.sample_id } key={ dataPoint.sample_id }>
           <td className='name'>{ dataPoint.name }</td>
           <td className='date_collected'>{ dataPoint.date_collected }</td>
           <td className='alt'>{ dataPoint.alt }</td>
@@ -114,8 +115,17 @@ class ViewAll extends Component {
   filterData = searchValue => {
     return this.state.data.filter(dataPoint => {
       const values = Object.values(dataPoint)
+      const match = values.find(value => {
+        let stuff = value
 
-      return values.find(value => value.includes(searchValue))
+        if(typeof value === 'number') {
+          stuff = value.toString()
+        }
+
+        return stuff.includes(searchValue)
+      }) 
+
+      return match
     })
   }
 
@@ -123,7 +133,10 @@ class ViewAll extends Component {
     const searchValue = e.target.value
     const filteredData = this.filterData(searchValue)
 
-    this.setState({ filteredData })
+    this.setState({ 
+      filteredData,
+      hasSearched: true 
+    })
   }
 
   render() {
