@@ -47,7 +47,6 @@ class ViewAll extends Component {
       reflectance: data.reflectance,
       wavelength: data.wavelength
     }
-    console.log('trying to update: ', updatedData)
 
     const url = `/api/v1/samples/${ data.sample_id }`
     const init = {

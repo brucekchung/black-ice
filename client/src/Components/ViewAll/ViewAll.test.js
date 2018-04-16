@@ -8,7 +8,7 @@ describe('ViewAll', () => {
 
   beforeEach(() => {
     wrapper = shallow(<ViewAll 
-      udateData={jest.fn()}
+      updateData={jest.fn()}
       getRowData={jest.fn()}
       />, { disableLifecycleMethods: true })
   })
@@ -40,19 +40,43 @@ describe('ViewAll', () => {
     expect(window.fetch).toHaveBeenCalledWith(url, init)
   })
 
-  it('should setState when editData button is clicked', () => {
-
+  it('should setState of editableContent to the correct id when editData is called', () => {
     expect(wrapper.state('editableContent')).toEqual(null)
 
+    const button = {parentNode: {parentNode: {id: 1}}}
+
+    wrapper.instance().editData(button)
+    expect(wrapper.state('editableContent')).toEqual(1)
   })
 
-  it.skip('should make an apiCall when updateData is run', () => {
+  it('should make an apiCall when updateData is run', () => {
+    window.fetch = jest.fn().mockImplementation(() => Promise.resolve({
+      json: () => Promise.resolve([])
+    }))
 
+    const data = {sample_id: 1}
+    const updatedData = {
+      reflectance: undefined,
+      wavelength: undefined
+    }
+    const url = '/api/v1/samples/1'
+    const init = {
+      method: 'PUT',
+      headers: {
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify(updatedData)
+    }
+
+    wrapper.instance().updateData(data)
+    expect(window.fetch).toHaveBeenCalledWith(url, init)
   })
 
-  it.skip('should setState when saveData is called', () => {
+  it.skip('should setState of editableContent to null when saveData is called', () => {
     wrapper.setState({ editableContent: 1 })
-    // wrapper.instance().saveData('a')
+    const button = {parentNode: {parentNode: {id: 1}}}
+
+    wrapper.instance().saveData(button)
 
     expect(wrapper.state('editableContent')).toEqual(null)
   })
