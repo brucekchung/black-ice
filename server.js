@@ -72,7 +72,7 @@ server.delete('/api/v1/locations/:id', (req, res) => {
     database('locations').where('id', id).del()
     .then(item => {
       if (item) {
-        res.status(200).send(`Item: ${ id } was successfully deleted.`)
+        res.status(200).json({Message: `Item ${ id } was successfully deleted.`})
       } else {
         res.status(404).json({ error: `Could not find location with id: ${ id }` })
       }
