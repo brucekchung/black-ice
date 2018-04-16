@@ -20,13 +20,9 @@ exports.seed = (knex, Promise) => {
           name: 'first',
           date_collected: '4/20/18',
           reflectance: 'some value',
-          wavelength: 'some value'
+          wavelength: 'some value',
+          locations_id: 1
         }
-      ])
-    })
-    .then(() => {
-      return knex('locations_samples').insert([
-
       ])
     })
 }
