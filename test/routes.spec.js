@@ -350,8 +350,8 @@ describe('API Routes', () => {
         .delete('/api/v1/samples/1')
         .then(res => {
           res.should.have.status(200)
-          res.text.should.be.a('string')
-          res.text.should.equal('Item: 1 was successfully deleted.')
+          res.should.be.json
+          res.should.be.a('object')
         })
         .catch(error => {
           throw error
