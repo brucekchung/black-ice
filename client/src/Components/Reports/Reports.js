@@ -3,12 +3,14 @@ import Nav from '../Nav/Nav'
 import DropDown from '../LocationForm/LocationForm'
 import { apiCall } from '../../apiCall/apiCall'
 import { shape, array, string } from 'prop-types'
+import './Reports.css'
 
 class Reports extends Component {
   constructor() {
     super()
     this.state = {
       allLocations: [],
+      allSamples: [],
       selectedLocation: {
         country: '',
         coordinates: '',
@@ -20,10 +22,10 @@ class Reports extends Component {
   }
 
   componentDidMount = async () => {
-    const url = '/api/v1/locations'
-    const allLocations = await apiCall(url)
+    const allLocations = await apiCall('/api/v1/locations')
+    const allSamples = await apiCall('/api/v1/samples')
 
-    this.setState({ allLocations })
+    this.setState({ allLocations, allSamples })
   }
 
   availableOptions = type => {
@@ -86,6 +88,29 @@ class Reports extends Component {
     // displayGraphs(results);
   }
 
+  calculateAverage = () => {
+    const avg = this.state.allSamples.length / this.state.allLocations.length
+    const rounded = Number.parseFloat(avg).toPrecision(3)
+
+    return rounded
+  }
+
+  calculateReflectance = () => {
+    const reflectance = this.state.allSamples.reduce((acc, sample) => {
+      if(sample.reflectance === '') {
+        return acc
+      } else {
+        let num = parseInt(sample.reflectance)
+
+        return acc + num
+      }
+    }, 0)
+    const avg = reflectance / this.state.allSamples.length
+    const rounded = Number.parseFloat(avg).toPrecision(3)
+
+    return rounded
+  }
+
   displayGraphs = data => {
     // return data.map(dataPoint => add point to graph)
   }
@@ -95,6 +120,28 @@ class Reports extends Component {
       <div>
         <Nav />
         <h2>Reports</h2>
+        <div className="dashboard">
+          <div className="total-samples">
+            <h4>TOTAL</h4>
+            <h3>{ this.state.allSamples.length }</h3>
+            <h4>SAMPLES</h4>
+          </div>
+          <div className="total-locations">
+            <h4>TOTAL</h4>
+            <h3>{ this.state.allLocations.length }</h3>
+            <h4>LOCATIONS</h4>
+          </div>
+          <div className="avg-samples">
+            <h4>AVERAGE</h4>
+            <h3>{ this.calculateAverage() }</h3>
+            <h4>SAMPLES/LOCATION</h4>
+          </div>
+          <div className="avg-reflectance">
+            <h4>AVERAGE</h4>
+            <h3>{ this.calculateReflectance() }</h3>
+            <h4>REFLECTANCE</h4>
+          </div>
+        </div>
         <form onSubmit={ this.handleSubmit }>
           <DropDown name='country'
                     options={ this.removeRepeatOptions(this.state.allLocations, 'country') }
