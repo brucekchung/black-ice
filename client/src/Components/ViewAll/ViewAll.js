@@ -19,7 +19,7 @@ class ViewAll extends Component {
     const data = samples.map(sample => {
       const sample_id = {sample_id: sample.id}
       const found = locations.find(location => location.id === sample.locations_id)
-      return Object.assign(sample, sample_id, found );
+      return Object.assign(sample, sample_id, found )
     })
 
     this.setState({ data })
@@ -47,7 +47,6 @@ class ViewAll extends Component {
       reflectance: data.reflectance,
       wavelength: data.wavelength
     }
-    console.log('trying to update: ', updatedData)
 
     const url = `/api/v1/samples/${ data.sample_id }`
     const init = {
@@ -63,8 +62,7 @@ class ViewAll extends Component {
 
   saveData = async button => {
     const data = this.getRowData(button)
-    console.log(data);
-    
+
     await this.updateData(data)
     button.innerText = 'Edit'
     this.setState({ editableContent: null })
@@ -84,6 +82,7 @@ class ViewAll extends Component {
     // const init = { method: 'DELETE' }
 
     // await apiCall(url, init)
+
     this.setState({ data: remainingData })
   }
 
@@ -106,7 +105,7 @@ class ViewAll extends Component {
           <td className='wavelength' contentEditable={ editable }>{ dataPoint.wavelength }</td>
           <td className='sample_id'>{ dataPoint.sample_id }</td> 
           <td><button onClick={ this.handleEdit }>Edit</button></td>
-          <td><button onClick={ this.deleteRow }>Delete</button></td>
+          <td><button className='delete-btn' onClick={ this.deleteRow }>Delete</button></td>
         </tr>
       )
     })

@@ -4,7 +4,10 @@ exports[`ViewAll should match snapshot upon load 1`] = `
 ShallowWrapper {
   "length": 1,
   Symbol(enzyme.__root__): [Circular],
-  Symbol(enzyme.__unrendered__): <ViewAll />,
+  Symbol(enzyme.__unrendered__): <ViewAll
+    getRowData={[Function]}
+    updateData={[Function]}
+/>,
   Symbol(enzyme.__renderer__): Object {
     "batchedUpdates": [Function],
     "getNode": [Function],
@@ -37,15 +40,6 @@ ShallowWrapper {
                                         Date Collected
                               </th>
                               <th>
-                                        Reflectance
-                              </th>
-                              <th>
-                                        Wavelength
-                              </th>
-                              <th>
-                                        Location ID
-                              </th>
-                              <th>
                                         Altitude
                               </th>
                               <th>
@@ -59,6 +53,15 @@ ShallowWrapper {
                               </th>
                               <th>
                                         Country
+                              </th>
+                              <th>
+                                        Reflectance
+                              </th>
+                              <th>
+                                        Wavelength
+                              </th>
+                              <th>
+                                        Sample ID
                               </th>
                               <th />
                               <th />
@@ -120,15 +123,6 @@ ShallowWrapper {
                                           Date Collected
                             </th>
                             <th>
-                                          Reflectance
-                            </th>
-                            <th>
-                                          Wavelength
-                            </th>
-                            <th>
-                                          Location ID
-                            </th>
-                            <th>
                                           Altitude
                             </th>
                             <th>
@@ -142,6 +136,15 @@ ShallowWrapper {
                             </th>
                             <th>
                                           Country
+                            </th>
+                            <th>
+                                          Reflectance
+                            </th>
+                            <th>
+                                          Wavelength
+                            </th>
+                            <th>
+                                          Sample ID
                             </th>
                             <th />
                             <th />
@@ -167,15 +170,6 @@ ShallowWrapper {
                                 Date Collected
                 </th>
                 <th>
-                                Reflectance
-                </th>
-                <th>
-                                Wavelength
-                </th>
-                <th>
-                                Location ID
-                </th>
-                <th>
                                 Altitude
                 </th>
                 <th>
@@ -189,6 +183,15 @@ ShallowWrapper {
                 </th>
                 <th>
                                 Country
+                </th>
+                <th>
+                                Reflectance
+                </th>
+                <th>
+                                Wavelength
+                </th>
+                <th>
+                                Sample ID
                 </th>
                 <th />
                 <th />
@@ -208,15 +211,6 @@ ShallowWrapper {
                     Date Collected
 </th>,
                   <th>
-                    Reflectance
-</th>,
-                  <th>
-                    Wavelength
-</th>,
-                  <th>
-                    Location ID
-</th>,
-                  <th>
                     Altitude
 </th>,
                   <th>
@@ -230,6 +224,15 @@ ShallowWrapper {
 </th>,
                   <th>
                     Country
+</th>,
+                  <th>
+                    Reflectance
+</th>,
+                  <th>
+                    Wavelength
+</th>,
+                  <th>
+                    Sample ID
 </th>,
                   <th />,
                   <th />,
@@ -257,39 +260,6 @@ ShallowWrapper {
                   },
                   "ref": null,
                   "rendered": "Date Collected",
-                  "type": "th",
-                },
-                Object {
-                  "instance": null,
-                  "key": undefined,
-                  "nodeType": "host",
-                  "props": Object {
-                    "children": "Reflectance",
-                  },
-                  "ref": null,
-                  "rendered": "Reflectance",
-                  "type": "th",
-                },
-                Object {
-                  "instance": null,
-                  "key": undefined,
-                  "nodeType": "host",
-                  "props": Object {
-                    "children": "Wavelength",
-                  },
-                  "ref": null,
-                  "rendered": "Wavelength",
-                  "type": "th",
-                },
-                Object {
-                  "instance": null,
-                  "key": undefined,
-                  "nodeType": "host",
-                  "props": Object {
-                    "children": "Location ID",
-                  },
-                  "ref": null,
-                  "rendered": "Location ID",
                   "type": "th",
                 },
                 Object {
@@ -345,6 +315,39 @@ ShallowWrapper {
                   },
                   "ref": null,
                   "rendered": "Country",
+                  "type": "th",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "Reflectance",
+                  },
+                  "ref": null,
+                  "rendered": "Reflectance",
+                  "type": "th",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "Wavelength",
+                  },
+                  "ref": null,
+                  "rendered": "Wavelength",
+                  "type": "th",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "Sample ID",
+                  },
+                  "ref": null,
+                  "rendered": "Sample ID",
                   "type": "th",
                 },
                 Object {
@@ -413,15 +416,6 @@ ShallowWrapper {
                                                 Date Collected
                                     </th>
                                     <th>
-                                                Reflectance
-                                    </th>
-                                    <th>
-                                                Wavelength
-                                    </th>
-                                    <th>
-                                                Location ID
-                                    </th>
-                                    <th>
                                                 Altitude
                                     </th>
                                     <th>
@@ -435,6 +429,15 @@ ShallowWrapper {
                                     </th>
                                     <th>
                                                 Country
+                                    </th>
+                                    <th>
+                                                Reflectance
+                                    </th>
+                                    <th>
+                                                Wavelength
+                                    </th>
+                                    <th>
+                                                Sample ID
                                     </th>
                                     <th />
                                     <th />
@@ -496,15 +499,6 @@ ShallowWrapper {
                                                 Date Collected
                                 </th>
                                 <th>
-                                                Reflectance
-                                </th>
-                                <th>
-                                                Wavelength
-                                </th>
-                                <th>
-                                                Location ID
-                                </th>
-                                <th>
                                                 Altitude
                                 </th>
                                 <th>
@@ -518,6 +512,15 @@ ShallowWrapper {
                                 </th>
                                 <th>
                                                 Country
+                                </th>
+                                <th>
+                                                Reflectance
+                                </th>
+                                <th>
+                                                Wavelength
+                                </th>
+                                <th>
+                                                Sample ID
                                 </th>
                                 <th />
                                 <th />
@@ -543,15 +546,6 @@ ShallowWrapper {
                                     Date Collected
                   </th>
                   <th>
-                                    Reflectance
-                  </th>
-                  <th>
-                                    Wavelength
-                  </th>
-                  <th>
-                                    Location ID
-                  </th>
-                  <th>
                                     Altitude
                   </th>
                   <th>
@@ -565,6 +559,15 @@ ShallowWrapper {
                   </th>
                   <th>
                                     Country
+                  </th>
+                  <th>
+                                    Reflectance
+                  </th>
+                  <th>
+                                    Wavelength
+                  </th>
+                  <th>
+                                    Sample ID
                   </th>
                   <th />
                   <th />
@@ -584,15 +587,6 @@ ShallowWrapper {
                       Date Collected
 </th>,
                     <th>
-                      Reflectance
-</th>,
-                    <th>
-                      Wavelength
-</th>,
-                    <th>
-                      Location ID
-</th>,
-                    <th>
                       Altitude
 </th>,
                     <th>
@@ -606,6 +600,15 @@ ShallowWrapper {
 </th>,
                     <th>
                       Country
+</th>,
+                    <th>
+                      Reflectance
+</th>,
+                    <th>
+                      Wavelength
+</th>,
+                    <th>
+                      Sample ID
 </th>,
                     <th />,
                     <th />,
@@ -633,39 +636,6 @@ ShallowWrapper {
                     },
                     "ref": null,
                     "rendered": "Date Collected",
-                    "type": "th",
-                  },
-                  Object {
-                    "instance": null,
-                    "key": undefined,
-                    "nodeType": "host",
-                    "props": Object {
-                      "children": "Reflectance",
-                    },
-                    "ref": null,
-                    "rendered": "Reflectance",
-                    "type": "th",
-                  },
-                  Object {
-                    "instance": null,
-                    "key": undefined,
-                    "nodeType": "host",
-                    "props": Object {
-                      "children": "Wavelength",
-                    },
-                    "ref": null,
-                    "rendered": "Wavelength",
-                    "type": "th",
-                  },
-                  Object {
-                    "instance": null,
-                    "key": undefined,
-                    "nodeType": "host",
-                    "props": Object {
-                      "children": "Location ID",
-                    },
-                    "ref": null,
-                    "rendered": "Location ID",
                     "type": "th",
                   },
                   Object {
@@ -721,6 +691,39 @@ ShallowWrapper {
                     },
                     "ref": null,
                     "rendered": "Country",
+                    "type": "th",
+                  },
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": "Reflectance",
+                    },
+                    "ref": null,
+                    "rendered": "Reflectance",
+                    "type": "th",
+                  },
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": "Wavelength",
+                    },
+                    "ref": null,
+                    "rendered": "Wavelength",
+                    "type": "th",
+                  },
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": "Sample ID",
+                    },
+                    "ref": null,
+                    "rendered": "Sample ID",
                     "type": "th",
                   },
                   Object {
