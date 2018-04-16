@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import Nav from '../Nav/Nav'
+import './Landing.css'
 import { string } from 'prop-types'
 
 class Landing extends Component {
@@ -12,12 +13,13 @@ class Landing extends Component {
 
   render() {
     return (
-      <div>
-        <Nav />
+      <div className="Landing">
         <h2>Welcome, { this.state.user }!</h2>
-        <a href="/DataEntry">Add Data</a>
-        <a href="/Reports">Reports</a>
-        <a href="/ViewAll">Edit Data</a>
+        <div className="center-links">
+          <a href="/DataEntry">Add Data</a>
+          <a href="/Reports">Reports</a>
+          <a href="/ViewAll">Edit Data</a>
+        </div>
       </div>
     )
   }

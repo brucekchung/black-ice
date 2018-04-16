@@ -1,0 +1,24 @@
+.Landing {
+  margin: 0 auto;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.Landing a {
+  text-decoration: none;
+}
+
+.Landing h2 {
+  display: block;
+  text-align: center;
+  margin: 50px;
+}
+
+.Landing .center-links {
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  width: 70%;
+}
+

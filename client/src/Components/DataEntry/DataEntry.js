@@ -4,6 +4,7 @@ import Nav from '../Nav/Nav'
 import DropDown from '../LocationForm/LocationForm'
 import DataForm from '../DataForm/DataForm'
 import { apiCall } from '../../apiCall/apiCall'
+import './DataEntry.css'
 import { array, arrayOf, object, bool, string, shape } from 'prop-types'
 
 class DataEntry extends Component {
@@ -197,8 +198,7 @@ class DataEntry extends Component {
 
   render() {
     return (
-      <div>
-        <Nav />
+      <div className="DataEntry">
         <h2>Add Data</h2>
         <button>Import CSV</button>
         <form onSubmit={ this.handleSubmit }>
