@@ -9,7 +9,8 @@ class ViewAll extends Component {
     this.state = {
       data: [],
       filteredData: [],
-      editableContent: null
+      editableContent: null,
+      hasSearched: false
     }
   }
 
@@ -87,7 +88,7 @@ class ViewAll extends Component {
   }
 
   renderData = () => {
-    const data = this.state.filteredData.length > 0 ? this.state.filteredData : this.state.data
+    const data = this.state.hasSearched ? this.state.filteredData : this.state.data
 
     return data.map(dataPoint => {
       const editable = parseInt(this.state.editableContent, 10) === dataPoint.id
@@ -114,8 +115,17 @@ class ViewAll extends Component {
   filterData = searchValue => {
     return this.state.data.filter(dataPoint => {
       const values = Object.values(dataPoint)
+      const match = values.find(value => {
+        let stuff = value
 
-      return values.find(value => value.includes(searchValue))
+        if(typeof value === 'number') {
+          stuff = value.toString()
+        }
+
+        return stuff.includes(searchValue)
+      }) 
+
+      return match
     })
   }
 
@@ -123,7 +133,10 @@ class ViewAll extends Component {
     const searchValue = e.target.value
     const filteredData = this.filterData(searchValue)
 
-    this.setState({ filteredData })
+    this.setState({ 
+      filteredData,
+      hasSearched: true 
+    })
   }
 
   render() {
