@@ -40,18 +40,9 @@ describe('ViewAll', () => {
     expect(window.fetch).toHaveBeenCalledWith(url, init)
   })
 
-  it.skip('should setState when editData button is clicked', () => {
-    // const e = {
-    //   target: {
-    //     innerText: 'Add Data'
-    //   },
-    //   preventDefault: jest.fn()
-    // }
+  it('should setState when editData button is clicked', () => {
 
     expect(wrapper.state('editableContent')).toEqual(null)
-    // console.log(wrapper.debug())
-    // wrapper.instance().handleClick(e)
-    // expect(wrapper.state('data').length).toEqual(2)
 
   })
 
