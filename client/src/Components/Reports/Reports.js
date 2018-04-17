@@ -117,8 +117,7 @@ class Reports extends Component {
 
   render() {
     return (
-      <div>
-        <Nav />
+      <div className="Reports">
         <h2>Reports</h2>
         <div className="dashboard">
           <div className="total-samples">
