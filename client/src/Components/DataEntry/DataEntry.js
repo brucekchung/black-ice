@@ -199,14 +199,13 @@ class DataEntry extends Component {
   render() {
     return (
       <div className="DataEntry">
-        <h2>Add Data</h2>
-        <button>Import CSV</button>
+        <button className="import-button">Import CSV</button>
         <form onSubmit={ this.handleSubmit }>
           <h3>Location</h3>
           {
             !this.state.addLocation &&
             <div className="choose-location">
-              <h4>Choose an existing Location</h4>
+              <h4>Choose an existing location:</h4>
               <DropDown name='country'
                         options={ this.sortOptionsInfo(this.state.allLocations, 'country') }
                         handleChange={ this.handleChange } />
@@ -254,6 +253,7 @@ class DataEntry extends Component {
                      onChange={ this.handleChange } />
             </div>
           }
+          <h5>OR</h5>
           <button type="button"
                   className="add-new-location-button"
                   onClick={ this.changeLocationForm }>Add a New Location</button>
@@ -261,7 +261,7 @@ class DataEntry extends Component {
           <DataForm data={ this.state.data }
                     handleChange={ this.updateData }
                     handleClick={ this.handleClick } />
-          <button type="submit">Save</button>
+          <button type="submit" className="submit-button">Save</button>
         </form>
       </div>
     )

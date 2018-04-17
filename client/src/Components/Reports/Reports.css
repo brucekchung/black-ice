@@ -10,10 +10,13 @@
 
 .Reports form {
   padding: 20px 0;
-  background: black;
   position: fixed;
-  bottom: 0;
+  bottom: 0px;
   width: 100%;
   display: flex;
   justify-content: space-around;
+}
+
+.Reports graph {
+  padding-bottom: 500px;
 }

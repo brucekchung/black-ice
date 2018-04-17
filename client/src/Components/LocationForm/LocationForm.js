@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import { func, arrayOf, string } from 'prop-types'
+import './LocationForm.css'
 
 class DropDown extends Component {
   renderOptions = () => {
@@ -13,12 +14,15 @@ class DropDown extends Component {
 
   render() {
     return (
-      <select name={ this.props.name } 
-              defaultValue=''
-              onChange={ this.props.handleChange }>
-        <option value=''>Choose { this.props.name }</option>
-        { this.renderOptions() }
-      </select>
+      <div className="DropDown">
+        <select name={ this.props.name } 
+                defaultValue=''
+                onChange={ this.props.handleChange }>
+          <option value=''>Choose { this.props.name }</option>
+          { this.renderOptions() }
+        </select>
+      </div>
+      
     )
   }
 }

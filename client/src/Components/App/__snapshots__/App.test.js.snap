@@ -18,15 +18,12 @@ ShallowWrapper {
     "nodeType": "host",
     "props": Object {
       "children": Array [
-        <header
-          className="App-header"
+        <h1
+          className="title"
 >
-          <h1
-                    className="App-title"
-          >
-                    Black Ice
-          </h1>
-</header>,
+          Black Ice
+</h1>,
+        <Nav />,
         <Main />,
       ],
       "className": "App",
@@ -38,27 +35,21 @@ ShallowWrapper {
         "key": undefined,
         "nodeType": "host",
         "props": Object {
-          "children": <h1
-            className="App-title"
->
-            Black Ice
-</h1>,
-          "className": "App-header",
+          "children": "Black Ice",
+          "className": "title",
         },
         "ref": null,
-        "rendered": Object {
-          "instance": null,
-          "key": undefined,
-          "nodeType": "host",
-          "props": Object {
-            "children": "Black Ice",
-            "className": "App-title",
-          },
-          "ref": null,
-          "rendered": "Black Ice",
-          "type": "h1",
-        },
-        "type": "header",
+        "rendered": "Black Ice",
+        "type": "h1",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "function",
+        "props": Object {},
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
       },
       Object {
         "instance": null,
@@ -79,15 +70,12 @@ ShallowWrapper {
       "nodeType": "host",
       "props": Object {
         "children": Array [
-          <header
-            className="App-header"
+          <h1
+            className="title"
 >
-            <h1
-                        className="App-title"
-            >
-                        Black Ice
-            </h1>
-</header>,
+            Black Ice
+</h1>,
+          <Nav />,
           <Main />,
         ],
         "className": "App",
@@ -99,27 +87,21 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "host",
           "props": Object {
-            "children": <h1
-              className="App-title"
->
-              Black Ice
-</h1>,
-            "className": "App-header",
+            "children": "Black Ice",
+            "className": "title",
           },
           "ref": null,
-          "rendered": Object {
-            "instance": null,
-            "key": undefined,
-            "nodeType": "host",
-            "props": Object {
-              "children": "Black Ice",
-              "className": "App-title",
-            },
-            "ref": null,
-            "rendered": "Black Ice",
-            "type": "h1",
-          },
-          "type": "header",
+          "rendered": "Black Ice",
+          "type": "h1",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "function",
+          "props": Object {},
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
         },
         Object {
           "instance": null,

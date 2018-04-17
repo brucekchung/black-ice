@@ -18,11 +18,9 @@ ShallowWrapper {
     "nodeType": "host",
     "props": Object {
       "children": Array [
-        <Nav />,
-        <h2>
-          Add Data
-</h2>,
-        <button>
+        <button
+          className="import-button"
+>
           Import CSV
 </button>,
         <form
@@ -35,7 +33,7 @@ ShallowWrapper {
                     className="choose-location"
           >
                     <h4>
-                              Choose an existing Location
+                              Choose an existing location:
                     </h4>
                     <DropDown
                               handleChange={[Function]}
@@ -53,6 +51,9 @@ ShallowWrapper {
                               options={Array []}
                     />
           </div>
+          <h5>
+                    OR
+          </h5>
           <button
                     className="add-new-location-button"
                     onClick={[Function]}
@@ -78,41 +79,24 @@ ShallowWrapper {
                     handleClick={[Function]}
           />
           <button
+                    className="submit-button"
                     type="submit"
           >
                     Save
           </button>
 </form>,
       ],
+      "className": "DataEntry",
     },
     "ref": null,
     "rendered": Array [
       Object {
         "instance": null,
         "key": undefined,
-        "nodeType": "function",
-        "props": Object {},
-        "ref": null,
-        "rendered": null,
-        "type": [Function],
-      },
-      Object {
-        "instance": null,
-        "key": undefined,
-        "nodeType": "host",
-        "props": Object {
-          "children": "Add Data",
-        },
-        "ref": null,
-        "rendered": "Add Data",
-        "type": "h2",
-      },
-      Object {
-        "instance": null,
-        "key": undefined,
         "nodeType": "host",
         "props": Object {
           "children": "Import CSV",
+          "className": "import-button",
         },
         "ref": null,
         "rendered": "Import CSV",
@@ -131,7 +115,7 @@ ShallowWrapper {
               className="choose-location"
 >
               <h4>
-                            Choose an existing Location
+                            Choose an existing location:
               </h4>
               <DropDown
                             handleChange={[Function]}
@@ -150,6 +134,9 @@ ShallowWrapper {
               />
 </div>,
             false,
+            <h5>
+              OR
+</h5>,
             <button
               className="add-new-location-button"
               onClick={[Function]}
@@ -175,6 +162,7 @@ ShallowWrapper {
               handleClick={[Function]}
 />,
             <button
+              className="submit-button"
               type="submit"
 >
               Save
@@ -202,7 +190,7 @@ ShallowWrapper {
             "props": Object {
               "children": Array [
                 <h4>
-                  Choose an existing Location
+                  Choose an existing location:
 </h4>,
                 <DropDown
                   handleChange={[Function]}
@@ -229,10 +217,10 @@ ShallowWrapper {
                 "key": undefined,
                 "nodeType": "host",
                 "props": Object {
-                  "children": "Choose an existing Location",
+                  "children": "Choose an existing location:",
                 },
                 "ref": null,
-                "rendered": "Choose an existing Location",
+                "rendered": "Choose an existing location:",
                 "type": "h4",
               },
               Object {
@@ -278,6 +266,17 @@ ShallowWrapper {
             "type": "div",
           },
           false,
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "OR",
+            },
+            "ref": null,
+            "rendered": "OR",
+            "type": "h5",
+          },
           Object {
             "instance": null,
             "key": undefined,
@@ -329,6 +328,7 @@ ShallowWrapper {
             "nodeType": "host",
             "props": Object {
               "children": "Save",
+              "className": "submit-button",
               "type": "submit",
             },
             "ref": null,
@@ -348,11 +348,9 @@ ShallowWrapper {
       "nodeType": "host",
       "props": Object {
         "children": Array [
-          <Nav />,
-          <h2>
-            Add Data
-</h2>,
-          <button>
+          <button
+            className="import-button"
+>
             Import CSV
 </button>,
           <form
@@ -365,7 +363,7 @@ ShallowWrapper {
                         className="choose-location"
             >
                         <h4>
-                                    Choose an existing Location
+                                    Choose an existing location:
                         </h4>
                         <DropDown
                                     handleChange={[Function]}
@@ -383,6 +381,9 @@ ShallowWrapper {
                                     options={Array []}
                         />
             </div>
+            <h5>
+                        OR
+            </h5>
             <button
                         className="add-new-location-button"
                         onClick={[Function]}
@@ -408,41 +409,24 @@ ShallowWrapper {
                         handleClick={[Function]}
             />
             <button
+                        className="submit-button"
                         type="submit"
             >
                         Save
             </button>
 </form>,
         ],
+        "className": "DataEntry",
       },
       "ref": null,
       "rendered": Array [
         Object {
           "instance": null,
           "key": undefined,
-          "nodeType": "function",
-          "props": Object {},
-          "ref": null,
-          "rendered": null,
-          "type": [Function],
-        },
-        Object {
-          "instance": null,
-          "key": undefined,
-          "nodeType": "host",
-          "props": Object {
-            "children": "Add Data",
-          },
-          "ref": null,
-          "rendered": "Add Data",
-          "type": "h2",
-        },
-        Object {
-          "instance": null,
-          "key": undefined,
           "nodeType": "host",
           "props": Object {
             "children": "Import CSV",
+            "className": "import-button",
           },
           "ref": null,
           "rendered": "Import CSV",
@@ -461,7 +445,7 @@ ShallowWrapper {
                 className="choose-location"
 >
                 <h4>
-                                Choose an existing Location
+                                Choose an existing location:
                 </h4>
                 <DropDown
                                 handleChange={[Function]}
@@ -480,6 +464,9 @@ ShallowWrapper {
                 />
 </div>,
               false,
+              <h5>
+                OR
+</h5>,
               <button
                 className="add-new-location-button"
                 onClick={[Function]}
@@ -505,6 +492,7 @@ ShallowWrapper {
                 handleClick={[Function]}
 />,
               <button
+                className="submit-button"
                 type="submit"
 >
                 Save
@@ -532,7 +520,7 @@ ShallowWrapper {
               "props": Object {
                 "children": Array [
                   <h4>
-                    Choose an existing Location
+                    Choose an existing location:
 </h4>,
                   <DropDown
                     handleChange={[Function]}
@@ -559,10 +547,10 @@ ShallowWrapper {
                   "key": undefined,
                   "nodeType": "host",
                   "props": Object {
-                    "children": "Choose an existing Location",
+                    "children": "Choose an existing location:",
                   },
                   "ref": null,
-                  "rendered": "Choose an existing Location",
+                  "rendered": "Choose an existing location:",
                   "type": "h4",
                 },
                 Object {
@@ -608,6 +596,17 @@ ShallowWrapper {
               "type": "div",
             },
             false,
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "OR",
+              },
+              "ref": null,
+              "rendered": "OR",
+              "type": "h5",
+            },
             Object {
               "instance": null,
               "key": undefined,
@@ -659,6 +658,7 @@ ShallowWrapper {
               "nodeType": "host",
               "props": Object {
                 "children": "Save",
+                "className": "submit-button",
                 "type": "submit",
               },
               "ref": null,
@@ -701,11 +701,9 @@ ShallowWrapper {
     "nodeType": "host",
     "props": Object {
       "children": Array [
-        <Nav />,
-        <h2>
-          Add Data
-</h2>,
-        <button>
+        <button
+          className="import-button"
+>
           Import CSV
 </button>,
         <form
@@ -718,7 +716,7 @@ ShallowWrapper {
                     className="choose-location"
           >
                     <h4>
-                              Choose an existing Location
+                              Choose an existing location:
                     </h4>
                     <DropDown
                               handleChange={[Function]}
@@ -741,6 +739,9 @@ ShallowWrapper {
                               options={Array []}
                     />
           </div>
+          <h5>
+                    OR
+          </h5>
           <button
                     className="add-new-location-button"
                     onClick={[Function]}
@@ -766,41 +767,24 @@ ShallowWrapper {
                     handleClick={[Function]}
           />
           <button
+                    className="submit-button"
                     type="submit"
           >
                     Save
           </button>
 </form>,
       ],
+      "className": "DataEntry",
     },
     "ref": null,
     "rendered": Array [
       Object {
         "instance": null,
         "key": undefined,
-        "nodeType": "function",
-        "props": Object {},
-        "ref": null,
-        "rendered": null,
-        "type": [Function],
-      },
-      Object {
-        "instance": null,
-        "key": undefined,
-        "nodeType": "host",
-        "props": Object {
-          "children": "Add Data",
-        },
-        "ref": null,
-        "rendered": "Add Data",
-        "type": "h2",
-      },
-      Object {
-        "instance": null,
-        "key": undefined,
         "nodeType": "host",
         "props": Object {
           "children": "Import CSV",
+          "className": "import-button",
         },
         "ref": null,
         "rendered": "Import CSV",
@@ -819,7 +803,7 @@ ShallowWrapper {
               className="choose-location"
 >
               <h4>
-                            Choose an existing Location
+                            Choose an existing location:
               </h4>
               <DropDown
                             handleChange={[Function]}
@@ -843,6 +827,9 @@ ShallowWrapper {
               />
 </div>,
             false,
+            <h5>
+              OR
+</h5>,
             <button
               className="add-new-location-button"
               onClick={[Function]}
@@ -868,6 +855,7 @@ ShallowWrapper {
               handleClick={[Function]}
 />,
             <button
+              className="submit-button"
               type="submit"
 >
               Save
@@ -895,7 +883,7 @@ ShallowWrapper {
             "props": Object {
               "children": Array [
                 <h4>
-                  Choose an existing Location
+                  Choose an existing location:
 </h4>,
                 <DropDown
                   handleChange={[Function]}
@@ -927,10 +915,10 @@ ShallowWrapper {
                 "key": undefined,
                 "nodeType": "host",
                 "props": Object {
-                  "children": "Choose an existing Location",
+                  "children": "Choose an existing location:",
                 },
                 "ref": null,
-                "rendered": "Choose an existing Location",
+                "rendered": "Choose an existing location:",
                 "type": "h4",
               },
               Object {
@@ -984,6 +972,17 @@ ShallowWrapper {
             "key": undefined,
             "nodeType": "host",
             "props": Object {
+              "children": "OR",
+            },
+            "ref": null,
+            "rendered": "OR",
+            "type": "h5",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
               "children": "Add a New Location",
               "className": "add-new-location-button",
               "onClick": [Function],
@@ -1030,6 +1029,7 @@ ShallowWrapper {
             "nodeType": "host",
             "props": Object {
               "children": "Save",
+              "className": "submit-button",
               "type": "submit",
             },
             "ref": null,
@@ -1049,11 +1049,9 @@ ShallowWrapper {
       "nodeType": "host",
       "props": Object {
         "children": Array [
-          <Nav />,
-          <h2>
-            Add Data
-</h2>,
-          <button>
+          <button
+            className="import-button"
+>
             Import CSV
 </button>,
           <form
@@ -1066,7 +1064,7 @@ ShallowWrapper {
                         className="choose-location"
             >
                         <h4>
-                                    Choose an existing Location
+                                    Choose an existing location:
                         </h4>
                         <DropDown
                                     handleChange={[Function]}
@@ -1089,6 +1087,9 @@ ShallowWrapper {
                                     options={Array []}
                         />
             </div>
+            <h5>
+                        OR
+            </h5>
             <button
                         className="add-new-location-button"
                         onClick={[Function]}
@@ -1114,41 +1115,24 @@ ShallowWrapper {
                         handleClick={[Function]}
             />
             <button
+                        className="submit-button"
                         type="submit"
             >
                         Save
             </button>
 </form>,
         ],
+        "className": "DataEntry",
       },
       "ref": null,
       "rendered": Array [
         Object {
           "instance": null,
           "key": undefined,
-          "nodeType": "function",
-          "props": Object {},
-          "ref": null,
-          "rendered": null,
-          "type": [Function],
-        },
-        Object {
-          "instance": null,
-          "key": undefined,
-          "nodeType": "host",
-          "props": Object {
-            "children": "Add Data",
-          },
-          "ref": null,
-          "rendered": "Add Data",
-          "type": "h2",
-        },
-        Object {
-          "instance": null,
-          "key": undefined,
           "nodeType": "host",
           "props": Object {
             "children": "Import CSV",
+            "className": "import-button",
           },
           "ref": null,
           "rendered": "Import CSV",
@@ -1167,7 +1151,7 @@ ShallowWrapper {
                 className="choose-location"
 >
                 <h4>
-                                Choose an existing Location
+                                Choose an existing location:
                 </h4>
                 <DropDown
                                 handleChange={[Function]}
@@ -1191,6 +1175,9 @@ ShallowWrapper {
                 />
 </div>,
               false,
+              <h5>
+                OR
+</h5>,
               <button
                 className="add-new-location-button"
                 onClick={[Function]}
@@ -1216,6 +1203,7 @@ ShallowWrapper {
                 handleClick={[Function]}
 />,
               <button
+                className="submit-button"
                 type="submit"
 >
                 Save
@@ -1243,7 +1231,7 @@ ShallowWrapper {
               "props": Object {
                 "children": Array [
                   <h4>
-                    Choose an existing Location
+                    Choose an existing location:
 </h4>,
                   <DropDown
                     handleChange={[Function]}
@@ -1275,10 +1263,10 @@ ShallowWrapper {
                   "key": undefined,
                   "nodeType": "host",
                   "props": Object {
-                    "children": "Choose an existing Location",
+                    "children": "Choose an existing location:",
                   },
                   "ref": null,
-                  "rendered": "Choose an existing Location",
+                  "rendered": "Choose an existing location:",
                   "type": "h4",
                 },
                 Object {
@@ -1332,6 +1320,17 @@ ShallowWrapper {
               "key": undefined,
               "nodeType": "host",
               "props": Object {
+                "children": "OR",
+              },
+              "ref": null,
+              "rendered": "OR",
+              "type": "h5",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
                 "children": "Add a New Location",
                 "className": "add-new-location-button",
                 "onClick": [Function],
@@ -1378,6 +1377,7 @@ ShallowWrapper {
               "nodeType": "host",
               "props": Object {
                 "children": "Save",
+                "className": "submit-button",
                 "type": "submit",
               },
               "ref": null,
