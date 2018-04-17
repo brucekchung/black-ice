@@ -1,7 +1,72 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,700')
+
 * {
-  box sizing: border-box;
+  box-sizing: border-box;
 }
 
 .App {
+  color: #eef0f2;
+  background-color: #333;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1rem;
   height: 100vh;
+}
+
+.title {
+  background-color: #222;
+  font-size: 2.5rem;
+  font-weight: 700;
+  padding-top: 30px;
+  text-align: center;
+}
+
+input,
+button,
+select {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1rem;
+  font-weight: 300;
+  height: 40px;
+  outline: none;
+  width: 250px;
+}
+
+/*button {
+  padding: 10px;
+}*/
+
+input {
+  padding: 0 10px;
+}
+
+input, select {
+  background-color: #333;
+  border: 1px solid #eef0f2;
+  color: #eef0f2;
+}
+
+select {
+  border-radius: 0px;
+}
+
+input::placeholder {
+  color: #eef0f2;
+  opacity: 0.9;
+}
+
+input:focus {
+  border: 2px solid #0892a5;
+}
+
+button {
+  color: #eef0f2;
+  background-color: #0892a5;
+  border: 1px solid #0892a5;
+  font-weight: 400;
+}
+
+button:hover {
+  background-color: #09A0B5;
+  border: 1px solid #09A0B5;
+  opacity: 1;
 }

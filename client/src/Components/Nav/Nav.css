@@ -1,15 +1,25 @@
 
 .Nav-bar {
-  background: grey;
+  background-color: #222;
   display: flex;
   justify-content: space-around;
-  padding: 20px;
+  margin: auto;
+  padding: 20px 100px 0 100px;
 }
 
 .Nav-bar a {
+  border-bottom: 3px solid #eef0f2;
+  color: #eef0f2;
+  font-size: 1.5rem;
+  font-weight: 400;
+  opacity: 0.8;
+  padding: 10px 0;
   text-decoration: none;
 }
 
+.Nav-bar a:hover,
 .Nav-bar .selected {
-  color: yellow;
+  border-bottom: 3px solid #0892a5;
+  color: #0892a5;
+  opacity: 1.0;
 }
