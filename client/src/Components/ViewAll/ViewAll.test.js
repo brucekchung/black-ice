@@ -86,6 +86,10 @@ describe('ViewAll', () => {
   })
 
   it('should setState when deleteRow is called', async () => {
+    window.fetch = jest.fn().mockImplementation(() => Promise.resolve({
+      json: () => Promise.resolve({})
+    }))
+    
     wrapper.setState({ data: allData })    
     expect(wrapper.state('data').length).toEqual(2)
 

@@ -1,11 +1,3 @@
-.Reports .dashboard {
-  display: flex;
-  justify-content: center;
-}
-
-.Reports .dashboard div {
-  width: 100%;
-}
 
 .Reports h2 {
   text-align: center;

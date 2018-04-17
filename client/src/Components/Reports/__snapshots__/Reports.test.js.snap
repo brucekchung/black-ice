@@ -22,6 +22,58 @@ ShallowWrapper {
         <h2>
           Reports
 </h2>,
+        <div
+          className="dashboard"
+>
+          <div
+                    className="total-samples"
+          >
+                    <h4>
+                              TOTAL
+                    </h4>
+                    <h3 />
+                    <h4>
+                              SAMPLES
+                    </h4>
+          </div>
+          <div
+                    className="total-locations"
+          >
+                    <h4>
+                              TOTAL
+                    </h4>
+                    <h3 />
+                    <h4>
+                              LOCATIONS
+                    </h4>
+          </div>
+          <div
+                    className="avg-samples"
+          >
+                    <h4>
+                              AVERAGE
+                    </h4>
+                    <h3>
+                              NaN
+                    </h3>
+                    <h4>
+                              SAMPLES/LOCATION
+                    </h4>
+          </div>
+          <div
+                    className="avg-reflectance"
+          >
+                    <h4>
+                              AVERAGE
+                    </h4>
+                    <h3>
+                              NaN
+                    </h3>
+                    <h4>
+                              REFLECTANCE
+                    </h4>
+          </div>
+</div>,
         <form
           onSubmit={[Function]}
 >
@@ -46,6 +98,7 @@ ShallowWrapper {
                     onChange={[Function]}
                     placeholder="Start Date"
                     type="text"
+                    value=""
           />
           <input
                     id="endDate"
@@ -53,6 +106,7 @@ ShallowWrapper {
                     onChange={[Function]}
                     placeholder="End Date"
                     type="text"
+                    value=""
           />
           <button
                     type="submit"
@@ -60,6 +114,7 @@ ShallowWrapper {
                     Generate Report
           </button>
 </form>,
+        false,
       ],
     },
     "ref": null,
@@ -90,6 +145,288 @@ ShallowWrapper {
         "nodeType": "host",
         "props": Object {
           "children": Array [
+            <div
+              className="total-samples"
+>
+              <h4>
+                            TOTAL
+              </h4>
+              <h3 />
+              <h4>
+                            SAMPLES
+              </h4>
+</div>,
+            <div
+              className="total-locations"
+>
+              <h4>
+                            TOTAL
+              </h4>
+              <h3 />
+              <h4>
+                            LOCATIONS
+              </h4>
+</div>,
+            <div
+              className="avg-samples"
+>
+              <h4>
+                            AVERAGE
+              </h4>
+              <h3>
+                            NaN
+              </h3>
+              <h4>
+                            SAMPLES/LOCATION
+              </h4>
+</div>,
+            <div
+              className="avg-reflectance"
+>
+              <h4>
+                            AVERAGE
+              </h4>
+              <h3>
+                            NaN
+              </h3>
+              <h4>
+                            REFLECTANCE
+              </h4>
+</div>,
+          ],
+          "className": "dashboard",
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                <h4>
+                  TOTAL
+</h4>,
+                <h3 />,
+                <h4>
+                  SAMPLES
+</h4>,
+              ],
+              "className": "total-samples",
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "TOTAL",
+                },
+                "ref": null,
+                "rendered": "TOTAL",
+                "type": "h4",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": 0,
+                },
+                "ref": null,
+                "rendered": 0,
+                "type": "h3",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "SAMPLES",
+                },
+                "ref": null,
+                "rendered": "SAMPLES",
+                "type": "h4",
+              },
+            ],
+            "type": "div",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                <h4>
+                  TOTAL
+</h4>,
+                <h3 />,
+                <h4>
+                  LOCATIONS
+</h4>,
+              ],
+              "className": "total-locations",
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "TOTAL",
+                },
+                "ref": null,
+                "rendered": "TOTAL",
+                "type": "h4",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": 0,
+                },
+                "ref": null,
+                "rendered": 0,
+                "type": "h3",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "LOCATIONS",
+                },
+                "ref": null,
+                "rendered": "LOCATIONS",
+                "type": "h4",
+              },
+            ],
+            "type": "div",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                <h4>
+                  AVERAGE
+</h4>,
+                <h3>
+                  NaN
+</h3>,
+                <h4>
+                  SAMPLES/LOCATION
+</h4>,
+              ],
+              "className": "avg-samples",
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "AVERAGE",
+                },
+                "ref": null,
+                "rendered": "AVERAGE",
+                "type": "h4",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "NaN",
+                },
+                "ref": null,
+                "rendered": "NaN",
+                "type": "h3",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "SAMPLES/LOCATION",
+                },
+                "ref": null,
+                "rendered": "SAMPLES/LOCATION",
+                "type": "h4",
+              },
+            ],
+            "type": "div",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                <h4>
+                  AVERAGE
+</h4>,
+                <h3>
+                  NaN
+</h3>,
+                <h4>
+                  REFLECTANCE
+</h4>,
+              ],
+              "className": "avg-reflectance",
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "AVERAGE",
+                },
+                "ref": null,
+                "rendered": "AVERAGE",
+                "type": "h4",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "NaN",
+                },
+                "ref": null,
+                "rendered": "NaN",
+                "type": "h3",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "REFLECTANCE",
+                },
+                "ref": null,
+                "rendered": "REFLECTANCE",
+                "type": "h4",
+              },
+            ],
+            "type": "div",
+          },
+        ],
+        "type": "div",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
             <DropDown
               handleChange={[Function]}
               name="country"
@@ -111,6 +448,7 @@ ShallowWrapper {
               onChange={[Function]}
               placeholder="Start Date"
               type="text"
+              value=""
 />,
             <input
               id="endDate"
@@ -118,6 +456,7 @@ ShallowWrapper {
               onChange={[Function]}
               placeholder="End Date"
               type="text"
+              value=""
 />,
             <button
               type="submit"
@@ -178,6 +517,7 @@ ShallowWrapper {
               "onChange": [Function],
               "placeholder": "Start Date",
               "type": "text",
+              "value": "",
             },
             "ref": null,
             "rendered": null,
@@ -193,6 +533,7 @@ ShallowWrapper {
               "onChange": [Function],
               "placeholder": "End Date",
               "type": "text",
+              "value": "",
             },
             "ref": null,
             "rendered": null,
@@ -213,6 +554,7 @@ ShallowWrapper {
         ],
         "type": "form",
       },
+      false,
     ],
     "type": "div",
   },
@@ -227,6 +569,58 @@ ShallowWrapper {
           <h2>
             Reports
 </h2>,
+          <div
+            className="dashboard"
+>
+            <div
+                        className="total-samples"
+            >
+                        <h4>
+                                    TOTAL
+                        </h4>
+                        <h3 />
+                        <h4>
+                                    SAMPLES
+                        </h4>
+            </div>
+            <div
+                        className="total-locations"
+            >
+                        <h4>
+                                    TOTAL
+                        </h4>
+                        <h3 />
+                        <h4>
+                                    LOCATIONS
+                        </h4>
+            </div>
+            <div
+                        className="avg-samples"
+            >
+                        <h4>
+                                    AVERAGE
+                        </h4>
+                        <h3>
+                                    NaN
+                        </h3>
+                        <h4>
+                                    SAMPLES/LOCATION
+                        </h4>
+            </div>
+            <div
+                        className="avg-reflectance"
+            >
+                        <h4>
+                                    AVERAGE
+                        </h4>
+                        <h3>
+                                    NaN
+                        </h3>
+                        <h4>
+                                    REFLECTANCE
+                        </h4>
+            </div>
+</div>,
           <form
             onSubmit={[Function]}
 >
@@ -251,6 +645,7 @@ ShallowWrapper {
                         onChange={[Function]}
                         placeholder="Start Date"
                         type="text"
+                        value=""
             />
             <input
                         id="endDate"
@@ -258,6 +653,7 @@ ShallowWrapper {
                         onChange={[Function]}
                         placeholder="End Date"
                         type="text"
+                        value=""
             />
             <button
                         type="submit"
@@ -265,6 +661,7 @@ ShallowWrapper {
                         Generate Report
             </button>
 </form>,
+          false,
         ],
       },
       "ref": null,
@@ -295,6 +692,288 @@ ShallowWrapper {
           "nodeType": "host",
           "props": Object {
             "children": Array [
+              <div
+                className="total-samples"
+>
+                <h4>
+                                TOTAL
+                </h4>
+                <h3 />
+                <h4>
+                                SAMPLES
+                </h4>
+</div>,
+              <div
+                className="total-locations"
+>
+                <h4>
+                                TOTAL
+                </h4>
+                <h3 />
+                <h4>
+                                LOCATIONS
+                </h4>
+</div>,
+              <div
+                className="avg-samples"
+>
+                <h4>
+                                AVERAGE
+                </h4>
+                <h3>
+                                NaN
+                </h3>
+                <h4>
+                                SAMPLES/LOCATION
+                </h4>
+</div>,
+              <div
+                className="avg-reflectance"
+>
+                <h4>
+                                AVERAGE
+                </h4>
+                <h3>
+                                NaN
+                </h3>
+                <h4>
+                                REFLECTANCE
+                </h4>
+</div>,
+            ],
+            "className": "dashboard",
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  <h4>
+                    TOTAL
+</h4>,
+                  <h3 />,
+                  <h4>
+                    SAMPLES
+</h4>,
+                ],
+                "className": "total-samples",
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "TOTAL",
+                  },
+                  "ref": null,
+                  "rendered": "TOTAL",
+                  "type": "h4",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": 0,
+                  },
+                  "ref": null,
+                  "rendered": 0,
+                  "type": "h3",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "SAMPLES",
+                  },
+                  "ref": null,
+                  "rendered": "SAMPLES",
+                  "type": "h4",
+                },
+              ],
+              "type": "div",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  <h4>
+                    TOTAL
+</h4>,
+                  <h3 />,
+                  <h4>
+                    LOCATIONS
+</h4>,
+                ],
+                "className": "total-locations",
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "TOTAL",
+                  },
+                  "ref": null,
+                  "rendered": "TOTAL",
+                  "type": "h4",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": 0,
+                  },
+                  "ref": null,
+                  "rendered": 0,
+                  "type": "h3",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "LOCATIONS",
+                  },
+                  "ref": null,
+                  "rendered": "LOCATIONS",
+                  "type": "h4",
+                },
+              ],
+              "type": "div",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  <h4>
+                    AVERAGE
+</h4>,
+                  <h3>
+                    NaN
+</h3>,
+                  <h4>
+                    SAMPLES/LOCATION
+</h4>,
+                ],
+                "className": "avg-samples",
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "AVERAGE",
+                  },
+                  "ref": null,
+                  "rendered": "AVERAGE",
+                  "type": "h4",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "NaN",
+                  },
+                  "ref": null,
+                  "rendered": "NaN",
+                  "type": "h3",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "SAMPLES/LOCATION",
+                  },
+                  "ref": null,
+                  "rendered": "SAMPLES/LOCATION",
+                  "type": "h4",
+                },
+              ],
+              "type": "div",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  <h4>
+                    AVERAGE
+</h4>,
+                  <h3>
+                    NaN
+</h3>,
+                  <h4>
+                    REFLECTANCE
+</h4>,
+                ],
+                "className": "avg-reflectance",
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "AVERAGE",
+                  },
+                  "ref": null,
+                  "rendered": "AVERAGE",
+                  "type": "h4",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "NaN",
+                  },
+                  "ref": null,
+                  "rendered": "NaN",
+                  "type": "h3",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "REFLECTANCE",
+                  },
+                  "ref": null,
+                  "rendered": "REFLECTANCE",
+                  "type": "h4",
+                },
+              ],
+              "type": "div",
+            },
+          ],
+          "type": "div",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
               <DropDown
                 handleChange={[Function]}
                 name="country"
@@ -316,6 +995,7 @@ ShallowWrapper {
                 onChange={[Function]}
                 placeholder="Start Date"
                 type="text"
+                value=""
 />,
               <input
                 id="endDate"
@@ -323,6 +1003,7 @@ ShallowWrapper {
                 onChange={[Function]}
                 placeholder="End Date"
                 type="text"
+                value=""
 />,
               <button
                 type="submit"
@@ -383,6 +1064,7 @@ ShallowWrapper {
                 "onChange": [Function],
                 "placeholder": "Start Date",
                 "type": "text",
+                "value": "",
               },
               "ref": null,
               "rendered": null,
@@ -398,6 +1080,7 @@ ShallowWrapper {
                 "onChange": [Function],
                 "placeholder": "End Date",
                 "type": "text",
+                "value": "",
               },
               "ref": null,
               "rendered": null,
@@ -418,6 +1101,7 @@ ShallowWrapper {
           ],
           "type": "form",
         },
+        false,
       ],
       "type": "div",
     },
@@ -455,6 +1139,60 @@ ShallowWrapper {
         <h2>
           Reports
 </h2>,
+        <div
+          className="dashboard"
+>
+          <div
+                    className="total-samples"
+          >
+                    <h4>
+                              TOTAL
+                    </h4>
+                    <h3 />
+                    <h4>
+                              SAMPLES
+                    </h4>
+          </div>
+          <div
+                    className="total-locations"
+          >
+                    <h4>
+                              TOTAL
+                    </h4>
+                    <h3>
+                              3
+                    </h3>
+                    <h4>
+                              LOCATIONS
+                    </h4>
+          </div>
+          <div
+                    className="avg-samples"
+          >
+                    <h4>
+                              AVERAGE
+                    </h4>
+                    <h3>
+                              0.00
+                    </h3>
+                    <h4>
+                              SAMPLES/LOCATION
+                    </h4>
+          </div>
+          <div
+                    className="avg-reflectance"
+          >
+                    <h4>
+                              AVERAGE
+                    </h4>
+                    <h3>
+                              NaN
+                    </h3>
+                    <h4>
+                              REFLECTANCE
+                    </h4>
+          </div>
+</div>,
         <form
           onSubmit={[Function]}
 >
@@ -484,6 +1222,7 @@ ShallowWrapper {
                     onChange={[Function]}
                     placeholder="Start Date"
                     type="text"
+                    value=""
           />
           <input
                     id="endDate"
@@ -491,6 +1230,7 @@ ShallowWrapper {
                     onChange={[Function]}
                     placeholder="End Date"
                     type="text"
+                    value=""
           />
           <button
                     type="submit"
@@ -498,6 +1238,7 @@ ShallowWrapper {
                     Generate Report
           </button>
 </form>,
+        false,
       ],
     },
     "ref": null,
@@ -521,6 +1262,292 @@ ShallowWrapper {
         "ref": null,
         "rendered": "Reports",
         "type": "h2",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <div
+              className="total-samples"
+>
+              <h4>
+                            TOTAL
+              </h4>
+              <h3 />
+              <h4>
+                            SAMPLES
+              </h4>
+</div>,
+            <div
+              className="total-locations"
+>
+              <h4>
+                            TOTAL
+              </h4>
+              <h3>
+                            3
+              </h3>
+              <h4>
+                            LOCATIONS
+              </h4>
+</div>,
+            <div
+              className="avg-samples"
+>
+              <h4>
+                            AVERAGE
+              </h4>
+              <h3>
+                            0.00
+              </h3>
+              <h4>
+                            SAMPLES/LOCATION
+              </h4>
+</div>,
+            <div
+              className="avg-reflectance"
+>
+              <h4>
+                            AVERAGE
+              </h4>
+              <h3>
+                            NaN
+              </h3>
+              <h4>
+                            REFLECTANCE
+              </h4>
+</div>,
+          ],
+          "className": "dashboard",
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                <h4>
+                  TOTAL
+</h4>,
+                <h3 />,
+                <h4>
+                  SAMPLES
+</h4>,
+              ],
+              "className": "total-samples",
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "TOTAL",
+                },
+                "ref": null,
+                "rendered": "TOTAL",
+                "type": "h4",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": 0,
+                },
+                "ref": null,
+                "rendered": 0,
+                "type": "h3",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "SAMPLES",
+                },
+                "ref": null,
+                "rendered": "SAMPLES",
+                "type": "h4",
+              },
+            ],
+            "type": "div",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                <h4>
+                  TOTAL
+</h4>,
+                <h3>
+                  3
+</h3>,
+                <h4>
+                  LOCATIONS
+</h4>,
+              ],
+              "className": "total-locations",
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "TOTAL",
+                },
+                "ref": null,
+                "rendered": "TOTAL",
+                "type": "h4",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": 3,
+                },
+                "ref": null,
+                "rendered": 3,
+                "type": "h3",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "LOCATIONS",
+                },
+                "ref": null,
+                "rendered": "LOCATIONS",
+                "type": "h4",
+              },
+            ],
+            "type": "div",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                <h4>
+                  AVERAGE
+</h4>,
+                <h3>
+                  0.00
+</h3>,
+                <h4>
+                  SAMPLES/LOCATION
+</h4>,
+              ],
+              "className": "avg-samples",
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "AVERAGE",
+                },
+                "ref": null,
+                "rendered": "AVERAGE",
+                "type": "h4",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "0.00",
+                },
+                "ref": null,
+                "rendered": "0.00",
+                "type": "h3",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "SAMPLES/LOCATION",
+                },
+                "ref": null,
+                "rendered": "SAMPLES/LOCATION",
+                "type": "h4",
+              },
+            ],
+            "type": "div",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                <h4>
+                  AVERAGE
+</h4>,
+                <h3>
+                  NaN
+</h3>,
+                <h4>
+                  REFLECTANCE
+</h4>,
+              ],
+              "className": "avg-reflectance",
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "AVERAGE",
+                },
+                "ref": null,
+                "rendered": "AVERAGE",
+                "type": "h4",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "NaN",
+                },
+                "ref": null,
+                "rendered": "NaN",
+                "type": "h3",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "REFLECTANCE",
+                },
+                "ref": null,
+                "rendered": "REFLECTANCE",
+                "type": "h4",
+              },
+            ],
+            "type": "div",
+          },
+        ],
+        "type": "div",
       },
       Object {
         "instance": null,
@@ -554,6 +1581,7 @@ ShallowWrapper {
               onChange={[Function]}
               placeholder="Start Date"
               type="text"
+              value=""
 />,
             <input
               id="endDate"
@@ -561,6 +1589,7 @@ ShallowWrapper {
               onChange={[Function]}
               placeholder="End Date"
               type="text"
+              value=""
 />,
             <button
               type="submit"
@@ -624,6 +1653,7 @@ ShallowWrapper {
               "onChange": [Function],
               "placeholder": "Start Date",
               "type": "text",
+              "value": "",
             },
             "ref": null,
             "rendered": null,
@@ -639,6 +1669,7 @@ ShallowWrapper {
               "onChange": [Function],
               "placeholder": "End Date",
               "type": "text",
+              "value": "",
             },
             "ref": null,
             "rendered": null,
@@ -659,6 +1690,7 @@ ShallowWrapper {
         ],
         "type": "form",
       },
+      false,
     ],
     "type": "div",
   },
@@ -673,6 +1705,60 @@ ShallowWrapper {
           <h2>
             Reports
 </h2>,
+          <div
+            className="dashboard"
+>
+            <div
+                        className="total-samples"
+            >
+                        <h4>
+                                    TOTAL
+                        </h4>
+                        <h3 />
+                        <h4>
+                                    SAMPLES
+                        </h4>
+            </div>
+            <div
+                        className="total-locations"
+            >
+                        <h4>
+                                    TOTAL
+                        </h4>
+                        <h3>
+                                    3
+                        </h3>
+                        <h4>
+                                    LOCATIONS
+                        </h4>
+            </div>
+            <div
+                        className="avg-samples"
+            >
+                        <h4>
+                                    AVERAGE
+                        </h4>
+                        <h3>
+                                    0.00
+                        </h3>
+                        <h4>
+                                    SAMPLES/LOCATION
+                        </h4>
+            </div>
+            <div
+                        className="avg-reflectance"
+            >
+                        <h4>
+                                    AVERAGE
+                        </h4>
+                        <h3>
+                                    NaN
+                        </h3>
+                        <h4>
+                                    REFLECTANCE
+                        </h4>
+            </div>
+</div>,
           <form
             onSubmit={[Function]}
 >
@@ -702,6 +1788,7 @@ ShallowWrapper {
                         onChange={[Function]}
                         placeholder="Start Date"
                         type="text"
+                        value=""
             />
             <input
                         id="endDate"
@@ -709,6 +1796,7 @@ ShallowWrapper {
                         onChange={[Function]}
                         placeholder="End Date"
                         type="text"
+                        value=""
             />
             <button
                         type="submit"
@@ -716,6 +1804,7 @@ ShallowWrapper {
                         Generate Report
             </button>
 </form>,
+          false,
         ],
       },
       "ref": null,
@@ -739,6 +1828,292 @@ ShallowWrapper {
           "ref": null,
           "rendered": "Reports",
           "type": "h2",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <div
+                className="total-samples"
+>
+                <h4>
+                                TOTAL
+                </h4>
+                <h3 />
+                <h4>
+                                SAMPLES
+                </h4>
+</div>,
+              <div
+                className="total-locations"
+>
+                <h4>
+                                TOTAL
+                </h4>
+                <h3>
+                                3
+                </h3>
+                <h4>
+                                LOCATIONS
+                </h4>
+</div>,
+              <div
+                className="avg-samples"
+>
+                <h4>
+                                AVERAGE
+                </h4>
+                <h3>
+                                0.00
+                </h3>
+                <h4>
+                                SAMPLES/LOCATION
+                </h4>
+</div>,
+              <div
+                className="avg-reflectance"
+>
+                <h4>
+                                AVERAGE
+                </h4>
+                <h3>
+                                NaN
+                </h3>
+                <h4>
+                                REFLECTANCE
+                </h4>
+</div>,
+            ],
+            "className": "dashboard",
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  <h4>
+                    TOTAL
+</h4>,
+                  <h3 />,
+                  <h4>
+                    SAMPLES
+</h4>,
+                ],
+                "className": "total-samples",
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "TOTAL",
+                  },
+                  "ref": null,
+                  "rendered": "TOTAL",
+                  "type": "h4",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": 0,
+                  },
+                  "ref": null,
+                  "rendered": 0,
+                  "type": "h3",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "SAMPLES",
+                  },
+                  "ref": null,
+                  "rendered": "SAMPLES",
+                  "type": "h4",
+                },
+              ],
+              "type": "div",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  <h4>
+                    TOTAL
+</h4>,
+                  <h3>
+                    3
+</h3>,
+                  <h4>
+                    LOCATIONS
+</h4>,
+                ],
+                "className": "total-locations",
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "TOTAL",
+                  },
+                  "ref": null,
+                  "rendered": "TOTAL",
+                  "type": "h4",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": 3,
+                  },
+                  "ref": null,
+                  "rendered": 3,
+                  "type": "h3",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "LOCATIONS",
+                  },
+                  "ref": null,
+                  "rendered": "LOCATIONS",
+                  "type": "h4",
+                },
+              ],
+              "type": "div",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  <h4>
+                    AVERAGE
+</h4>,
+                  <h3>
+                    0.00
+</h3>,
+                  <h4>
+                    SAMPLES/LOCATION
+</h4>,
+                ],
+                "className": "avg-samples",
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "AVERAGE",
+                  },
+                  "ref": null,
+                  "rendered": "AVERAGE",
+                  "type": "h4",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "0.00",
+                  },
+                  "ref": null,
+                  "rendered": "0.00",
+                  "type": "h3",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "SAMPLES/LOCATION",
+                  },
+                  "ref": null,
+                  "rendered": "SAMPLES/LOCATION",
+                  "type": "h4",
+                },
+              ],
+              "type": "div",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  <h4>
+                    AVERAGE
+</h4>,
+                  <h3>
+                    NaN
+</h3>,
+                  <h4>
+                    REFLECTANCE
+</h4>,
+                ],
+                "className": "avg-reflectance",
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "AVERAGE",
+                  },
+                  "ref": null,
+                  "rendered": "AVERAGE",
+                  "type": "h4",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "NaN",
+                  },
+                  "ref": null,
+                  "rendered": "NaN",
+                  "type": "h3",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "REFLECTANCE",
+                  },
+                  "ref": null,
+                  "rendered": "REFLECTANCE",
+                  "type": "h4",
+                },
+              ],
+              "type": "div",
+            },
+          ],
+          "type": "div",
         },
         Object {
           "instance": null,
@@ -772,6 +2147,7 @@ ShallowWrapper {
                 onChange={[Function]}
                 placeholder="Start Date"
                 type="text"
+                value=""
 />,
               <input
                 id="endDate"
@@ -779,6 +2155,7 @@ ShallowWrapper {
                 onChange={[Function]}
                 placeholder="End Date"
                 type="text"
+                value=""
 />,
               <button
                 type="submit"
@@ -842,6 +2219,7 @@ ShallowWrapper {
                 "onChange": [Function],
                 "placeholder": "Start Date",
                 "type": "text",
+                "value": "",
               },
               "ref": null,
               "rendered": null,
@@ -857,6 +2235,7 @@ ShallowWrapper {
                 "onChange": [Function],
                 "placeholder": "End Date",
                 "type": "text",
+                "value": "",
               },
               "ref": null,
               "rendered": null,
@@ -877,6 +2256,7 @@ ShallowWrapper {
           ],
           "type": "form",
         },
+        false,
       ],
       "type": "div",
     },

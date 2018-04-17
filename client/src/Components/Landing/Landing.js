@@ -26,9 +26,9 @@ class Landing extends Component {
 }
 
 Landing.propTypes = {
-  state: {
+  state: shape({
     user: string.isRequired
-  }
+  })
 }
 
 export default Landing
