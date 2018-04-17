@@ -34,7 +34,7 @@ describe('DataEntry', () => {
         alt: ''
       },
       addLocation: false,
-      data: [{
+      sampleData: [{
           name: '',
           date_collected: '',
           reflectance: '',
@@ -103,9 +103,9 @@ describe('DataEntry', () => {
       preventDefault: jest.fn()
     }
 
-    expect(wrapper.state('data').length).toEqual(1)
+    expect(wrapper.state('sampleData').length).toEqual(1)
     wrapper.instance().handleClick(e)
-    expect(wrapper.state('data').length).toEqual(2)
+    expect(wrapper.state('sampleData').length).toEqual(2)
   })
 
   it('should update each data object in state when the associated input is changed', () => {
@@ -126,22 +126,21 @@ describe('DataEntry', () => {
     }]
 
     wrapper.instance().updateData(e)
-    expect(wrapper.state('data')).toEqual(expected)
-
+    expect(wrapper.state('sampleData')).toEqual(expected)
   })
 
   it('should add another data object to state', () => {
-    expect(wrapper.state('data').length).toEqual(1)
+    expect(wrapper.state('sampleData').length).toEqual(1)
     wrapper.instance().addDataSet()
-    expect(wrapper.state('data').length).toEqual(2)
+    expect(wrapper.state('sampleData').length).toEqual(2)
   })
 
   it('should remove the last data form when the remove button is clicked', () => {
     wrapper.instance().addDataSet()
-    expect(wrapper.state('data').length).toEqual(2)
+    expect(wrapper.state('sampleData').length).toEqual(2)
 
     wrapper.instance().removeDataSet()
-    expect(wrapper.state('data').length).toEqual(1)
+    expect(wrapper.state('sampleData').length).toEqual(1)
   })
 
   it('should call fetch with the correct parameters when POSTing data', () => {
@@ -215,7 +214,7 @@ describe('DataEntry', () => {
         alt: ''
       },
       addLocation: false,
-      data: [{
+      sampleData: [{
           name: '',
           date_collected: '',
           reflectance: '',
@@ -243,7 +242,7 @@ describe('DataEntry', () => {
         alt: ''
       },
       addLocation: false,
-      data: [{
+      sampleData: [{
           name: '',
           date_collected: '',
           reflectance: '',
@@ -298,7 +297,7 @@ describe('DataEntry', () => {
         alt: ''
       },
       addLocation: false,
-      data: [{
+      sampleData: [{
           name: '',
           date_collected: '',
           reflectance: '',

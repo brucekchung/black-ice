@@ -74,9 +74,10 @@ class DataEntry extends Component {
   updateData = e => {
     const name = e.target.name
     const value = e.target.value
-    const index = e.target.parentNode.className
+    const index = parseInt(e.target.parentNode.className.replace('data-form-set ', ''), 10)
     const sampleData = [...this.state.sampleData]
-    
+    console.log('parentNode: ', e.target.parentNode)
+    console.log('index: ', index)
     sampleData[index][name] = value
     this.setState({ sampleData })
   }

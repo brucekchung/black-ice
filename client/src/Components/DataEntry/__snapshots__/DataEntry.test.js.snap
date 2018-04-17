@@ -65,7 +65,9 @@ ShallowWrapper {
                     Data
           </h3>
           <DataForm
-                    data={
+                    handleChange={[Function]}
+                    handleClick={[Function]}
+                    sampleData={
                               Array [
                                         Object {
                                           "date_collected": "",
@@ -75,8 +77,6 @@ ShallowWrapper {
                                         },
                                       ]
                     }
-                    handleChange={[Function]}
-                    handleClick={[Function]}
           />
           <button
                     className="submit-button"
@@ -148,7 +148,9 @@ ShallowWrapper {
               Data
 </h3>,
             <DataForm
-              data={
+              handleChange={[Function]}
+              handleClick={[Function]}
+              sampleData={
                             Array [
                                           Object {
                                             "date_collected": "",
@@ -158,8 +160,6 @@ ShallowWrapper {
                                           },
                                         ]
               }
-              handleChange={[Function]}
-              handleClick={[Function]}
 />,
             <button
               className="submit-button"
@@ -307,7 +307,9 @@ ShallowWrapper {
             "key": undefined,
             "nodeType": "class",
             "props": Object {
-              "data": Array [
+              "handleChange": [Function],
+              "handleClick": [Function],
+              "sampleData": Array [
                 Object {
                   "date_collected": "",
                   "name": "",
@@ -315,8 +317,6 @@ ShallowWrapper {
                   "wavelength": "",
                 },
               ],
-              "handleChange": [Function],
-              "handleClick": [Function],
             },
             "ref": null,
             "rendered": null,
@@ -395,7 +395,9 @@ ShallowWrapper {
                         Data
             </h3>
             <DataForm
-                        data={
+                        handleChange={[Function]}
+                        handleClick={[Function]}
+                        sampleData={
                                     Array [
                                                 Object {
                                                   "date_collected": "",
@@ -405,8 +407,6 @@ ShallowWrapper {
                                                 },
                                               ]
                         }
-                        handleChange={[Function]}
-                        handleClick={[Function]}
             />
             <button
                         className="submit-button"
@@ -478,7 +478,9 @@ ShallowWrapper {
                 Data
 </h3>,
               <DataForm
-                data={
+                handleChange={[Function]}
+                handleClick={[Function]}
+                sampleData={
                                 Array [
                                                 Object {
                                                   "date_collected": "",
@@ -488,8 +490,6 @@ ShallowWrapper {
                                                 },
                                               ]
                 }
-                handleChange={[Function]}
-                handleClick={[Function]}
 />,
               <button
                 className="submit-button"
@@ -637,7 +637,9 @@ ShallowWrapper {
               "key": undefined,
               "nodeType": "class",
               "props": Object {
-                "data": Array [
+                "handleChange": [Function],
+                "handleClick": [Function],
+                "sampleData": Array [
                   Object {
                     "date_collected": "",
                     "name": "",
@@ -645,8 +647,6 @@ ShallowWrapper {
                     "wavelength": "",
                   },
                 ],
-                "handleChange": [Function],
-                "handleClick": [Function],
               },
               "ref": null,
               "rendered": null,
@@ -753,7 +753,9 @@ ShallowWrapper {
                     Data
           </h3>
           <DataForm
-                    data={
+                    handleChange={[Function]}
+                    handleClick={[Function]}
+                    sampleData={
                               Array [
                                         Object {
                                           "date_collected": "",
@@ -763,8 +765,6 @@ ShallowWrapper {
                                         },
                                       ]
                     }
-                    handleChange={[Function]}
-                    handleClick={[Function]}
           />
           <button
                     className="submit-button"
@@ -841,7 +841,9 @@ ShallowWrapper {
               Data
 </h3>,
             <DataForm
-              data={
+              handleChange={[Function]}
+              handleClick={[Function]}
+              sampleData={
                             Array [
                                           Object {
                                             "date_collected": "",
@@ -851,8 +853,6 @@ ShallowWrapper {
                                           },
                                         ]
               }
-              handleChange={[Function]}
-              handleClick={[Function]}
 />,
             <button
               className="submit-button"
@@ -1008,7 +1008,9 @@ ShallowWrapper {
             "key": undefined,
             "nodeType": "class",
             "props": Object {
-              "data": Array [
+              "handleChange": [Function],
+              "handleClick": [Function],
+              "sampleData": Array [
                 Object {
                   "date_collected": "",
                   "name": "",
@@ -1016,8 +1018,6 @@ ShallowWrapper {
                   "wavelength": "",
                 },
               ],
-              "handleChange": [Function],
-              "handleClick": [Function],
             },
             "ref": null,
             "rendered": null,
@@ -1101,7 +1101,9 @@ ShallowWrapper {
                         Data
             </h3>
             <DataForm
-                        data={
+                        handleChange={[Function]}
+                        handleClick={[Function]}
+                        sampleData={
                                     Array [
                                                 Object {
                                                   "date_collected": "",
@@ -1111,8 +1113,6 @@ ShallowWrapper {
                                                 },
                                               ]
                         }
-                        handleChange={[Function]}
-                        handleClick={[Function]}
             />
             <button
                         className="submit-button"
@@ -1189,7 +1189,9 @@ ShallowWrapper {
                 Data
 </h3>,
               <DataForm
-                data={
+                handleChange={[Function]}
+                handleClick={[Function]}
+                sampleData={
                                 Array [
                                                 Object {
                                                   "date_collected": "",
@@ -1199,8 +1201,6 @@ ShallowWrapper {
                                                 },
                                               ]
                 }
-                handleChange={[Function]}
-                handleClick={[Function]}
 />,
               <button
                 className="submit-button"
@@ -1356,7 +1356,9 @@ ShallowWrapper {
               "key": undefined,
               "nodeType": "class",
               "props": Object {
-                "data": Array [
+                "handleChange": [Function],
+                "handleClick": [Function],
+                "sampleData": Array [
                   Object {
                     "date_collected": "",
                     "name": "",
@@ -1364,8 +1366,6 @@ ShallowWrapper {
                     "wavelength": "",
                   },
                 ],
-                "handleChange": [Function],
-                "handleClick": [Function],
               },
               "ref": null,
               "rendered": null,
