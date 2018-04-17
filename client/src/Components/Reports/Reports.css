@@ -1,22 +1,77 @@
 .Reports {
-  height: 100%;
+  font-weight: 300;
 }
 
-.Reports h2 {
-  font-size: 2rem;
-  text-align: center;
-  margin: 40px;
+.Reports h3 {
+  display: block;
+  font-size: 1.25rem;
 }
 
 .Reports form {
-  padding: 20px 0;
-  position: fixed;
-  bottom: 0px;
-  width: 100%;
-  display: flex;
-  justify-content: space-around;
+  margin: 60px auto;
+  text-align: center;
+  width: 70%;
+}
+
+.Reports form .choose-location,
+.Reports form .choose-dates {
+  text-align: center;
+}
+
+.Reports form input,
+.Reports form select {
+  margin: 20px 0 ;
+}
+
+.Reports form input {
+  margin: 20px;
 }
 
 .Reports graph {
   padding-bottom: 500px;
+}
+
+.dashboard {
+  display: flex;
+  justify-content: space-between;
+  margin: 50px auto;
+  width: 80%;
+}
+
+.dashboard div {
+  border: 5px solid #0892a5;
+  border-radius: 100%;
+  text-align: center;
+  min-height: 200px;
+  min-width: 200px;
+}
+
+.dashboard div h4 {
+  margin: 28px;
+}
+
+.dashboard div h3 {
+  font-size: 3rem;
+}
+
+.graph {
+  margin: auto;
+  text-align: center;
+  width: 70%;
+}
+
+.js-chart-container {
+  width: 100%;
+}
+
+.y-label {
+  position: relative;
+  top: 650px;
+  right: 20px;
+  transform: rotate(-90deg);
+  transform-origin: left top 0;
+}
+
+.x-label {
+  padding: 30px;
 }
