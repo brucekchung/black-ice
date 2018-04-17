@@ -25,85 +25,111 @@ ShallowWrapper {
                     className="total-samples"
           >
                     <h4>
-                              TOTAL
+                              Total
                     </h4>
                     <h3 />
                     <h4>
-                              SAMPLES
+                              Samples
                     </h4>
           </div>
           <div
                     className="total-locations"
           >
                     <h4>
-                              TOTAL
+                              Total
                     </h4>
                     <h3 />
                     <h4>
-                              LOCATIONS
+                              Locations
                     </h4>
           </div>
           <div
                     className="avg-samples"
           >
                     <h4>
-                              AVERAGE
+                              Average
                     </h4>
                     <h3>
                               NaN
                     </h3>
                     <h4>
-                              SAMPLES/LOCATION
+                              Samples / Location
                     </h4>
           </div>
           <div
                     className="avg-reflectance"
           >
                     <h4>
-                              AVERAGE
+                              Average
                     </h4>
                     <h3>
                               NaN
                     </h3>
                     <h4>
-                              REFLECTANCE
+                              Reflectance
                     </h4>
           </div>
 </div>,
         <form
           onSubmit={[Function]}
 >
-          <DropDown
-                    handleChange={[Function]}
-                    name="country"
-                    options={Array []}
-          />
-          <DropDown
-                    handleChange={[Function]}
-                    name="region"
-                    options={Array []}
-          />
-          <DropDown
-                    handleChange={[Function]}
-                    name="coordinates"
-                    options={Array []}
-          />
-          <input
-                    id="startDate"
-                    name="startDate"
-                    onChange={[Function]}
-                    placeholder="Start Date"
-                    type="text"
-                    value=""
-          />
-          <input
-                    id="endDate"
-                    name="endDate"
-                    onChange={[Function]}
-                    placeholder="End Date"
-                    type="text"
-                    value=""
-          />
+          <h3>
+                    Choose a location:
+          </h3>
+          <div
+                    className="choose-location"
+          >
+                    <DropDown
+                              handleChange={[Function]}
+                              name="country"
+                              options={Array []}
+                    />
+                    <DropDown
+                              handleChange={[Function]}
+                              name="region"
+                              options={Array []}
+                    />
+                    <DropDown
+                              handleChange={[Function]}
+                              name="coordinates"
+                              options={Array []}
+                    />
+          </div>
+          <h3>
+                    Choose a date range:
+          </h3>
+          <div
+                    className="choose-dates"
+          >
+                    <label
+                              htmlFor="startDate"
+                    >
+                              Start
+                    </label>
+                    <input
+                              autocomplete="off"
+                              id="startDate"
+                              name="startDate"
+                              onChange={[Function]}
+                              placeholder="mm/dd/yy"
+                              type="text"
+                              value=""
+                    />
+                    <label
+                              htmlFor="endDate"
+                    >
+                              End
+                    </label>
+                    <input
+                              autocomplete="off"
+                              id="endDate"
+                              name="endDate"
+                              onChange={[Function]}
+                              placeholder="mm/dd/yy"
+                              type="text"
+                              value=""
+                    />
+          </div>
           <button
                     type="submit"
           >
@@ -126,48 +152,48 @@ ShallowWrapper {
               className="total-samples"
 >
               <h4>
-                            TOTAL
+                            Total
               </h4>
               <h3 />
               <h4>
-                            SAMPLES
+                            Samples
               </h4>
 </div>,
             <div
               className="total-locations"
 >
               <h4>
-                            TOTAL
+                            Total
               </h4>
               <h3 />
               <h4>
-                            LOCATIONS
+                            Locations
               </h4>
 </div>,
             <div
               className="avg-samples"
 >
               <h4>
-                            AVERAGE
+                            Average
               </h4>
               <h3>
                             NaN
               </h3>
               <h4>
-                            SAMPLES/LOCATION
+                            Samples / Location
               </h4>
 </div>,
             <div
               className="avg-reflectance"
 >
               <h4>
-                            AVERAGE
+                            Average
               </h4>
               <h3>
                             NaN
               </h3>
               <h4>
-                            REFLECTANCE
+                            Reflectance
               </h4>
 </div>,
           ],
@@ -182,11 +208,11 @@ ShallowWrapper {
             "props": Object {
               "children": Array [
                 <h4>
-                  TOTAL
+                  Total
 </h4>,
                 <h3 />,
                 <h4>
-                  SAMPLES
+                  Samples
 </h4>,
               ],
               "className": "total-samples",
@@ -198,10 +224,10 @@ ShallowWrapper {
                 "key": undefined,
                 "nodeType": "host",
                 "props": Object {
-                  "children": "TOTAL",
+                  "children": "Total",
                 },
                 "ref": null,
-                "rendered": "TOTAL",
+                "rendered": "Total",
                 "type": "h4",
               },
               Object {
@@ -220,10 +246,10 @@ ShallowWrapper {
                 "key": undefined,
                 "nodeType": "host",
                 "props": Object {
-                  "children": "SAMPLES",
+                  "children": "Samples",
                 },
                 "ref": null,
-                "rendered": "SAMPLES",
+                "rendered": "Samples",
                 "type": "h4",
               },
             ],
@@ -236,11 +262,11 @@ ShallowWrapper {
             "props": Object {
               "children": Array [
                 <h4>
-                  TOTAL
+                  Total
 </h4>,
                 <h3 />,
                 <h4>
-                  LOCATIONS
+                  Locations
 </h4>,
               ],
               "className": "total-locations",
@@ -252,10 +278,10 @@ ShallowWrapper {
                 "key": undefined,
                 "nodeType": "host",
                 "props": Object {
-                  "children": "TOTAL",
+                  "children": "Total",
                 },
                 "ref": null,
-                "rendered": "TOTAL",
+                "rendered": "Total",
                 "type": "h4",
               },
               Object {
@@ -274,10 +300,10 @@ ShallowWrapper {
                 "key": undefined,
                 "nodeType": "host",
                 "props": Object {
-                  "children": "LOCATIONS",
+                  "children": "Locations",
                 },
                 "ref": null,
-                "rendered": "LOCATIONS",
+                "rendered": "Locations",
                 "type": "h4",
               },
             ],
@@ -290,13 +316,13 @@ ShallowWrapper {
             "props": Object {
               "children": Array [
                 <h4>
-                  AVERAGE
+                  Average
 </h4>,
                 <h3>
                   NaN
 </h3>,
                 <h4>
-                  SAMPLES/LOCATION
+                  Samples / Location
 </h4>,
               ],
               "className": "avg-samples",
@@ -308,10 +334,10 @@ ShallowWrapper {
                 "key": undefined,
                 "nodeType": "host",
                 "props": Object {
-                  "children": "AVERAGE",
+                  "children": "Average",
                 },
                 "ref": null,
-                "rendered": "AVERAGE",
+                "rendered": "Average",
                 "type": "h4",
               },
               Object {
@@ -330,10 +356,10 @@ ShallowWrapper {
                 "key": undefined,
                 "nodeType": "host",
                 "props": Object {
-                  "children": "SAMPLES/LOCATION",
+                  "children": "Samples / Location",
                 },
                 "ref": null,
-                "rendered": "SAMPLES/LOCATION",
+                "rendered": "Samples / Location",
                 "type": "h4",
               },
             ],
@@ -346,13 +372,13 @@ ShallowWrapper {
             "props": Object {
               "children": Array [
                 <h4>
-                  AVERAGE
+                  Average
 </h4>,
                 <h3>
                   NaN
 </h3>,
                 <h4>
-                  REFLECTANCE
+                  Reflectance
 </h4>,
               ],
               "className": "avg-reflectance",
@@ -364,10 +390,10 @@ ShallowWrapper {
                 "key": undefined,
                 "nodeType": "host",
                 "props": Object {
-                  "children": "AVERAGE",
+                  "children": "Average",
                 },
                 "ref": null,
-                "rendered": "AVERAGE",
+                "rendered": "Average",
                 "type": "h4",
               },
               Object {
@@ -386,10 +412,10 @@ ShallowWrapper {
                 "key": undefined,
                 "nodeType": "host",
                 "props": Object {
-                  "children": "REFLECTANCE",
+                  "children": "Reflectance",
                 },
                 "ref": null,
-                "rendered": "REFLECTANCE",
+                "rendered": "Reflectance",
                 "type": "h4",
               },
             ],
@@ -404,37 +430,63 @@ ShallowWrapper {
         "nodeType": "host",
         "props": Object {
           "children": Array [
-            <DropDown
-              handleChange={[Function]}
-              name="country"
-              options={Array []}
-/>,
-            <DropDown
-              handleChange={[Function]}
-              name="region"
-              options={Array []}
-/>,
-            <DropDown
-              handleChange={[Function]}
-              name="coordinates"
-              options={Array []}
-/>,
-            <input
-              id="startDate"
-              name="startDate"
-              onChange={[Function]}
-              placeholder="Start Date"
-              type="text"
-              value=""
-/>,
-            <input
-              id="endDate"
-              name="endDate"
-              onChange={[Function]}
-              placeholder="End Date"
-              type="text"
-              value=""
-/>,
+            <h3>
+              Choose a location:
+</h3>,
+            <div
+              className="choose-location"
+>
+              <DropDown
+                            handleChange={[Function]}
+                            name="country"
+                            options={Array []}
+              />
+              <DropDown
+                            handleChange={[Function]}
+                            name="region"
+                            options={Array []}
+              />
+              <DropDown
+                            handleChange={[Function]}
+                            name="coordinates"
+                            options={Array []}
+              />
+</div>,
+            <h3>
+              Choose a date range:
+</h3>,
+            <div
+              className="choose-dates"
+>
+              <label
+                            htmlFor="startDate"
+              >
+                            Start
+              </label>
+              <input
+                            autocomplete="off"
+                            id="startDate"
+                            name="startDate"
+                            onChange={[Function]}
+                            placeholder="mm/dd/yy"
+                            type="text"
+                            value=""
+              />
+              <label
+                            htmlFor="endDate"
+              >
+                            End
+              </label>
+              <input
+                            autocomplete="off"
+                            id="endDate"
+                            name="endDate"
+                            onChange={[Function]}
+                            placeholder="mm/dd/yy"
+                            type="text"
+                            value=""
+              />
+</div>,
             <button
               type="submit"
 >
@@ -448,73 +500,192 @@ ShallowWrapper {
           Object {
             "instance": null,
             "key": undefined,
-            "nodeType": "class",
+            "nodeType": "host",
             "props": Object {
-              "handleChange": [Function],
-              "name": "country",
-              "options": Array [],
+              "children": "Choose a location:",
             },
             "ref": null,
-            "rendered": null,
-            "type": [Function],
-          },
-          Object {
-            "instance": null,
-            "key": undefined,
-            "nodeType": "class",
-            "props": Object {
-              "handleChange": [Function],
-              "name": "region",
-              "options": Array [],
-            },
-            "ref": null,
-            "rendered": null,
-            "type": [Function],
-          },
-          Object {
-            "instance": null,
-            "key": undefined,
-            "nodeType": "class",
-            "props": Object {
-              "handleChange": [Function],
-              "name": "coordinates",
-              "options": Array [],
-            },
-            "ref": null,
-            "rendered": null,
-            "type": [Function],
+            "rendered": "Choose a location:",
+            "type": "h3",
           },
           Object {
             "instance": null,
             "key": undefined,
             "nodeType": "host",
             "props": Object {
-              "id": "startDate",
-              "name": "startDate",
-              "onChange": [Function],
-              "placeholder": "Start Date",
-              "type": "text",
-              "value": "",
+              "children": Array [
+                <DropDown
+                  handleChange={[Function]}
+                  name="country"
+                  options={Array []}
+/>,
+                <DropDown
+                  handleChange={[Function]}
+                  name="region"
+                  options={Array []}
+/>,
+                <DropDown
+                  handleChange={[Function]}
+                  name="coordinates"
+                  options={Array []}
+/>,
+              ],
+              "className": "choose-location",
             },
             "ref": null,
-            "rendered": null,
-            "type": "input",
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "class",
+                "props": Object {
+                  "handleChange": [Function],
+                  "name": "country",
+                  "options": Array [],
+                },
+                "ref": null,
+                "rendered": null,
+                "type": [Function],
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "class",
+                "props": Object {
+                  "handleChange": [Function],
+                  "name": "region",
+                  "options": Array [],
+                },
+                "ref": null,
+                "rendered": null,
+                "type": [Function],
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "class",
+                "props": Object {
+                  "handleChange": [Function],
+                  "name": "coordinates",
+                  "options": Array [],
+                },
+                "ref": null,
+                "rendered": null,
+                "type": [Function],
+              },
+            ],
+            "type": "div",
           },
           Object {
             "instance": null,
             "key": undefined,
             "nodeType": "host",
             "props": Object {
-              "id": "endDate",
-              "name": "endDate",
-              "onChange": [Function],
-              "placeholder": "End Date",
-              "type": "text",
-              "value": "",
+              "children": "Choose a date range:",
             },
             "ref": null,
-            "rendered": null,
-            "type": "input",
+            "rendered": "Choose a date range:",
+            "type": "h3",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                <label
+                  htmlFor="startDate"
+>
+                  Start
+</label>,
+                <input
+                  autocomplete="off"
+                  id="startDate"
+                  name="startDate"
+                  onChange={[Function]}
+                  placeholder="mm/dd/yy"
+                  type="text"
+                  value=""
+/>,
+                <label
+                  htmlFor="endDate"
+>
+                  End
+</label>,
+                <input
+                  autocomplete="off"
+                  id="endDate"
+                  name="endDate"
+                  onChange={[Function]}
+                  placeholder="mm/dd/yy"
+                  type="text"
+                  value=""
+/>,
+              ],
+              "className": "choose-dates",
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "Start",
+                  "htmlFor": "startDate",
+                },
+                "ref": null,
+                "rendered": "Start",
+                "type": "label",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "autocomplete": "off",
+                  "id": "startDate",
+                  "name": "startDate",
+                  "onChange": [Function],
+                  "placeholder": "mm/dd/yy",
+                  "type": "text",
+                  "value": "",
+                },
+                "ref": null,
+                "rendered": null,
+                "type": "input",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "End",
+                  "htmlFor": "endDate",
+                },
+                "ref": null,
+                "rendered": "End",
+                "type": "label",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "autocomplete": "off",
+                  "id": "endDate",
+                  "name": "endDate",
+                  "onChange": [Function],
+                  "placeholder": "mm/dd/yy",
+                  "type": "text",
+                  "value": "",
+                },
+                "ref": null,
+                "rendered": null,
+                "type": "input",
+              },
+            ],
+            "type": "div",
           },
           Object {
             "instance": null,
@@ -549,85 +720,111 @@ ShallowWrapper {
                         className="total-samples"
             >
                         <h4>
-                                    TOTAL
+                                    Total
                         </h4>
                         <h3 />
                         <h4>
-                                    SAMPLES
+                                    Samples
                         </h4>
             </div>
             <div
                         className="total-locations"
             >
                         <h4>
-                                    TOTAL
+                                    Total
                         </h4>
                         <h3 />
                         <h4>
-                                    LOCATIONS
+                                    Locations
                         </h4>
             </div>
             <div
                         className="avg-samples"
             >
                         <h4>
-                                    AVERAGE
+                                    Average
                         </h4>
                         <h3>
                                     NaN
                         </h3>
                         <h4>
-                                    SAMPLES/LOCATION
+                                    Samples / Location
                         </h4>
             </div>
             <div
                         className="avg-reflectance"
             >
                         <h4>
-                                    AVERAGE
+                                    Average
                         </h4>
                         <h3>
                                     NaN
                         </h3>
                         <h4>
-                                    REFLECTANCE
+                                    Reflectance
                         </h4>
             </div>
 </div>,
           <form
             onSubmit={[Function]}
 >
-            <DropDown
-                        handleChange={[Function]}
-                        name="country"
-                        options={Array []}
-            />
-            <DropDown
-                        handleChange={[Function]}
-                        name="region"
-                        options={Array []}
-            />
-            <DropDown
-                        handleChange={[Function]}
-                        name="coordinates"
-                        options={Array []}
-            />
-            <input
-                        id="startDate"
-                        name="startDate"
-                        onChange={[Function]}
-                        placeholder="Start Date"
-                        type="text"
-                        value=""
-            />
-            <input
-                        id="endDate"
-                        name="endDate"
-                        onChange={[Function]}
-                        placeholder="End Date"
-                        type="text"
-                        value=""
-            />
+            <h3>
+                        Choose a location:
+            </h3>
+            <div
+                        className="choose-location"
+            >
+                        <DropDown
+                                    handleChange={[Function]}
+                                    name="country"
+                                    options={Array []}
+                        />
+                        <DropDown
+                                    handleChange={[Function]}
+                                    name="region"
+                                    options={Array []}
+                        />
+                        <DropDown
+                                    handleChange={[Function]}
+                                    name="coordinates"
+                                    options={Array []}
+                        />
+            </div>
+            <h3>
+                        Choose a date range:
+            </h3>
+            <div
+                        className="choose-dates"
+            >
+                        <label
+                                    htmlFor="startDate"
+                        >
+                                    Start
+                        </label>
+                        <input
+                                    autocomplete="off"
+                                    id="startDate"
+                                    name="startDate"
+                                    onChange={[Function]}
+                                    placeholder="mm/dd/yy"
+                                    type="text"
+                                    value=""
+                        />
+                        <label
+                                    htmlFor="endDate"
+                        >
+                                    End
+                        </label>
+                        <input
+                                    autocomplete="off"
+                                    id="endDate"
+                                    name="endDate"
+                                    onChange={[Function]}
+                                    placeholder="mm/dd/yy"
+                                    type="text"
+                                    value=""
+                        />
+            </div>
             <button
                         type="submit"
             >
@@ -650,48 +847,48 @@ ShallowWrapper {
                 className="total-samples"
 >
                 <h4>
-                                TOTAL
+                                Total
                 </h4>
                 <h3 />
                 <h4>
-                                SAMPLES
+                                Samples
                 </h4>
 </div>,
               <div
                 className="total-locations"
 >
                 <h4>
-                                TOTAL
+                                Total
                 </h4>
                 <h3 />
                 <h4>
-                                LOCATIONS
+                                Locations
                 </h4>
 </div>,
               <div
                 className="avg-samples"
 >
                 <h4>
-                                AVERAGE
+                                Average
                 </h4>
                 <h3>
                                 NaN
                 </h3>
                 <h4>
-                                SAMPLES/LOCATION
+                                Samples / Location
                 </h4>
 </div>,
               <div
                 className="avg-reflectance"
 >
                 <h4>
-                                AVERAGE
+                                Average
                 </h4>
                 <h3>
                                 NaN
                 </h3>
                 <h4>
-                                REFLECTANCE
+                                Reflectance
                 </h4>
 </div>,
             ],
@@ -706,11 +903,11 @@ ShallowWrapper {
               "props": Object {
                 "children": Array [
                   <h4>
-                    TOTAL
+                    Total
 </h4>,
                   <h3 />,
                   <h4>
-                    SAMPLES
+                    Samples
 </h4>,
                 ],
                 "className": "total-samples",
@@ -722,10 +919,10 @@ ShallowWrapper {
                   "key": undefined,
                   "nodeType": "host",
                   "props": Object {
-                    "children": "TOTAL",
+                    "children": "Total",
                   },
                   "ref": null,
-                  "rendered": "TOTAL",
+                  "rendered": "Total",
                   "type": "h4",
                 },
                 Object {
@@ -744,10 +941,10 @@ ShallowWrapper {
                   "key": undefined,
                   "nodeType": "host",
                   "props": Object {
-                    "children": "SAMPLES",
+                    "children": "Samples",
                   },
                   "ref": null,
-                  "rendered": "SAMPLES",
+                  "rendered": "Samples",
                   "type": "h4",
                 },
               ],
@@ -760,11 +957,11 @@ ShallowWrapper {
               "props": Object {
                 "children": Array [
                   <h4>
-                    TOTAL
+                    Total
 </h4>,
                   <h3 />,
                   <h4>
-                    LOCATIONS
+                    Locations
 </h4>,
                 ],
                 "className": "total-locations",
@@ -776,10 +973,10 @@ ShallowWrapper {
                   "key": undefined,
                   "nodeType": "host",
                   "props": Object {
-                    "children": "TOTAL",
+                    "children": "Total",
                   },
                   "ref": null,
-                  "rendered": "TOTAL",
+                  "rendered": "Total",
                   "type": "h4",
                 },
                 Object {
@@ -798,10 +995,10 @@ ShallowWrapper {
                   "key": undefined,
                   "nodeType": "host",
                   "props": Object {
-                    "children": "LOCATIONS",
+                    "children": "Locations",
                   },
                   "ref": null,
-                  "rendered": "LOCATIONS",
+                  "rendered": "Locations",
                   "type": "h4",
                 },
               ],
@@ -814,13 +1011,13 @@ ShallowWrapper {
               "props": Object {
                 "children": Array [
                   <h4>
-                    AVERAGE
+                    Average
 </h4>,
                   <h3>
                     NaN
 </h3>,
                   <h4>
-                    SAMPLES/LOCATION
+                    Samples / Location
 </h4>,
                 ],
                 "className": "avg-samples",
@@ -832,10 +1029,10 @@ ShallowWrapper {
                   "key": undefined,
                   "nodeType": "host",
                   "props": Object {
-                    "children": "AVERAGE",
+                    "children": "Average",
                   },
                   "ref": null,
-                  "rendered": "AVERAGE",
+                  "rendered": "Average",
                   "type": "h4",
                 },
                 Object {
@@ -854,10 +1051,10 @@ ShallowWrapper {
                   "key": undefined,
                   "nodeType": "host",
                   "props": Object {
-                    "children": "SAMPLES/LOCATION",
+                    "children": "Samples / Location",
                   },
                   "ref": null,
-                  "rendered": "SAMPLES/LOCATION",
+                  "rendered": "Samples / Location",
                   "type": "h4",
                 },
               ],
@@ -870,13 +1067,13 @@ ShallowWrapper {
               "props": Object {
                 "children": Array [
                   <h4>
-                    AVERAGE
+                    Average
 </h4>,
                   <h3>
                     NaN
 </h3>,
                   <h4>
-                    REFLECTANCE
+                    Reflectance
 </h4>,
                 ],
                 "className": "avg-reflectance",
@@ -888,10 +1085,10 @@ ShallowWrapper {
                   "key": undefined,
                   "nodeType": "host",
                   "props": Object {
-                    "children": "AVERAGE",
+                    "children": "Average",
                   },
                   "ref": null,
-                  "rendered": "AVERAGE",
+                  "rendered": "Average",
                   "type": "h4",
                 },
                 Object {
@@ -910,10 +1107,10 @@ ShallowWrapper {
                   "key": undefined,
                   "nodeType": "host",
                   "props": Object {
-                    "children": "REFLECTANCE",
+                    "children": "Reflectance",
                   },
                   "ref": null,
-                  "rendered": "REFLECTANCE",
+                  "rendered": "Reflectance",
                   "type": "h4",
                 },
               ],
@@ -928,37 +1125,63 @@ ShallowWrapper {
           "nodeType": "host",
           "props": Object {
             "children": Array [
-              <DropDown
-                handleChange={[Function]}
-                name="country"
-                options={Array []}
-/>,
-              <DropDown
-                handleChange={[Function]}
-                name="region"
-                options={Array []}
-/>,
-              <DropDown
-                handleChange={[Function]}
-                name="coordinates"
-                options={Array []}
-/>,
-              <input
-                id="startDate"
-                name="startDate"
-                onChange={[Function]}
-                placeholder="Start Date"
-                type="text"
-                value=""
-/>,
-              <input
-                id="endDate"
-                name="endDate"
-                onChange={[Function]}
-                placeholder="End Date"
-                type="text"
-                value=""
-/>,
+              <h3>
+                Choose a location:
+</h3>,
+              <div
+                className="choose-location"
+>
+                <DropDown
+                                handleChange={[Function]}
+                                name="country"
+                                options={Array []}
+                />
+                <DropDown
+                                handleChange={[Function]}
+                                name="region"
+                                options={Array []}
+                />
+                <DropDown
+                                handleChange={[Function]}
+                                name="coordinates"
+                                options={Array []}
+                />
+</div>,
+              <h3>
+                Choose a date range:
+</h3>,
+              <div
+                className="choose-dates"
+>
+                <label
+                                htmlFor="startDate"
+                >
+                                Start
+                </label>
+                <input
+                                autocomplete="off"
+                                id="startDate"
+                                name="startDate"
+                                onChange={[Function]}
+                                placeholder="mm/dd/yy"
+                                type="text"
+                                value=""
+                />
+                <label
+                                htmlFor="endDate"
+                >
+                                End
+                </label>
+                <input
+                                autocomplete="off"
+                                id="endDate"
+                                name="endDate"
+                                onChange={[Function]}
+                                placeholder="mm/dd/yy"
+                                type="text"
+                                value=""
+                />
+</div>,
               <button
                 type="submit"
 >
@@ -972,73 +1195,192 @@ ShallowWrapper {
             Object {
               "instance": null,
               "key": undefined,
-              "nodeType": "class",
+              "nodeType": "host",
               "props": Object {
-                "handleChange": [Function],
-                "name": "country",
-                "options": Array [],
+                "children": "Choose a location:",
               },
               "ref": null,
-              "rendered": null,
-              "type": [Function],
-            },
-            Object {
-              "instance": null,
-              "key": undefined,
-              "nodeType": "class",
-              "props": Object {
-                "handleChange": [Function],
-                "name": "region",
-                "options": Array [],
-              },
-              "ref": null,
-              "rendered": null,
-              "type": [Function],
-            },
-            Object {
-              "instance": null,
-              "key": undefined,
-              "nodeType": "class",
-              "props": Object {
-                "handleChange": [Function],
-                "name": "coordinates",
-                "options": Array [],
-              },
-              "ref": null,
-              "rendered": null,
-              "type": [Function],
+              "rendered": "Choose a location:",
+              "type": "h3",
             },
             Object {
               "instance": null,
               "key": undefined,
               "nodeType": "host",
               "props": Object {
-                "id": "startDate",
-                "name": "startDate",
-                "onChange": [Function],
-                "placeholder": "Start Date",
-                "type": "text",
-                "value": "",
+                "children": Array [
+                  <DropDown
+                    handleChange={[Function]}
+                    name="country"
+                    options={Array []}
+/>,
+                  <DropDown
+                    handleChange={[Function]}
+                    name="region"
+                    options={Array []}
+/>,
+                  <DropDown
+                    handleChange={[Function]}
+                    name="coordinates"
+                    options={Array []}
+/>,
+                ],
+                "className": "choose-location",
               },
               "ref": null,
-              "rendered": null,
-              "type": "input",
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "class",
+                  "props": Object {
+                    "handleChange": [Function],
+                    "name": "country",
+                    "options": Array [],
+                  },
+                  "ref": null,
+                  "rendered": null,
+                  "type": [Function],
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "class",
+                  "props": Object {
+                    "handleChange": [Function],
+                    "name": "region",
+                    "options": Array [],
+                  },
+                  "ref": null,
+                  "rendered": null,
+                  "type": [Function],
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "class",
+                  "props": Object {
+                    "handleChange": [Function],
+                    "name": "coordinates",
+                    "options": Array [],
+                  },
+                  "ref": null,
+                  "rendered": null,
+                  "type": [Function],
+                },
+              ],
+              "type": "div",
             },
             Object {
               "instance": null,
               "key": undefined,
               "nodeType": "host",
               "props": Object {
-                "id": "endDate",
-                "name": "endDate",
-                "onChange": [Function],
-                "placeholder": "End Date",
-                "type": "text",
-                "value": "",
+                "children": "Choose a date range:",
               },
               "ref": null,
-              "rendered": null,
-              "type": "input",
+              "rendered": "Choose a date range:",
+              "type": "h3",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  <label
+                    htmlFor="startDate"
+>
+                    Start
+</label>,
+                  <input
+                    autocomplete="off"
+                    id="startDate"
+                    name="startDate"
+                    onChange={[Function]}
+                    placeholder="mm/dd/yy"
+                    type="text"
+                    value=""
+/>,
+                  <label
+                    htmlFor="endDate"
+>
+                    End
+</label>,
+                  <input
+                    autocomplete="off"
+                    id="endDate"
+                    name="endDate"
+                    onChange={[Function]}
+                    placeholder="mm/dd/yy"
+                    type="text"
+                    value=""
+/>,
+                ],
+                "className": "choose-dates",
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "Start",
+                    "htmlFor": "startDate",
+                  },
+                  "ref": null,
+                  "rendered": "Start",
+                  "type": "label",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "autocomplete": "off",
+                    "id": "startDate",
+                    "name": "startDate",
+                    "onChange": [Function],
+                    "placeholder": "mm/dd/yy",
+                    "type": "text",
+                    "value": "",
+                  },
+                  "ref": null,
+                  "rendered": null,
+                  "type": "input",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "End",
+                    "htmlFor": "endDate",
+                  },
+                  "ref": null,
+                  "rendered": "End",
+                  "type": "label",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "autocomplete": "off",
+                    "id": "endDate",
+                    "name": "endDate",
+                    "onChange": [Function],
+                    "placeholder": "mm/dd/yy",
+                    "type": "text",
+                    "value": "",
+                  },
+                  "ref": null,
+                  "rendered": null,
+                  "type": "input",
+                },
+              ],
+              "type": "div",
             },
             Object {
               "instance": null,
@@ -1096,92 +1438,118 @@ ShallowWrapper {
                     className="total-samples"
           >
                     <h4>
-                              TOTAL
+                              Total
                     </h4>
                     <h3 />
                     <h4>
-                              SAMPLES
+                              Samples
                     </h4>
           </div>
           <div
                     className="total-locations"
           >
                     <h4>
-                              TOTAL
+                              Total
                     </h4>
                     <h3>
                               3
                     </h3>
                     <h4>
-                              LOCATIONS
+                              Locations
                     </h4>
           </div>
           <div
                     className="avg-samples"
           >
                     <h4>
-                              AVERAGE
+                              Average
                     </h4>
                     <h3>
                               0.00
                     </h3>
                     <h4>
-                              SAMPLES/LOCATION
+                              Samples / Location
                     </h4>
           </div>
           <div
                     className="avg-reflectance"
           >
                     <h4>
-                              AVERAGE
+                              Average
                     </h4>
                     <h3>
                               NaN
                     </h3>
                     <h4>
-                              REFLECTANCE
+                              Reflectance
                     </h4>
           </div>
 </div>,
         <form
           onSubmit={[Function]}
 >
-          <DropDown
-                    handleChange={[Function]}
-                    name="country"
-                    options={
-                              Array [
-                                        "Argentina",
-                                        "Peru",
-                                      ]
-                    }
-          />
-          <DropDown
-                    handleChange={[Function]}
-                    name="region"
-                    options={Array []}
-          />
-          <DropDown
-                    handleChange={[Function]}
-                    name="coordinates"
-                    options={Array []}
-          />
-          <input
-                    id="startDate"
-                    name="startDate"
-                    onChange={[Function]}
-                    placeholder="Start Date"
-                    type="text"
-                    value=""
-          />
-          <input
-                    id="endDate"
-                    name="endDate"
-                    onChange={[Function]}
-                    placeholder="End Date"
-                    type="text"
-                    value=""
-          />
+          <h3>
+                    Choose a location:
+          </h3>
+          <div
+                    className="choose-location"
+          >
+                    <DropDown
+                              handleChange={[Function]}
+                              name="country"
+                              options={
+                                        Array [
+                                                  "Argentina",
+                                                  "Peru",
+                                                ]
+                              }
+                    />
+                    <DropDown
+                              handleChange={[Function]}
+                              name="region"
+                              options={Array []}
+                    />
+                    <DropDown
+                              handleChange={[Function]}
+                              name="coordinates"
+                              options={Array []}
+                    />
+          </div>
+          <h3>
+                    Choose a date range:
+          </h3>
+          <div
+                    className="choose-dates"
+          >
+                    <label
+                              htmlFor="startDate"
+                    >
+                              Start
+                    </label>
+                    <input
+                              autocomplete="off"
+                              id="startDate"
+                              name="startDate"
+                              onChange={[Function]}
+                              placeholder="mm/dd/yy"
+                              type="text"
+                              value=""
+                    />
+                    <label
+                              htmlFor="endDate"
+                    >
+                              End
+                    </label>
+                    <input
+                              autocomplete="off"
+                              id="endDate"
+                              name="endDate"
+                              onChange={[Function]}
+                              placeholder="mm/dd/yy"
+                              type="text"
+                              value=""
+                    />
+          </div>
           <button
                     type="submit"
           >
@@ -1204,50 +1572,50 @@ ShallowWrapper {
               className="total-samples"
 >
               <h4>
-                            TOTAL
+                            Total
               </h4>
               <h3 />
               <h4>
-                            SAMPLES
+                            Samples
               </h4>
 </div>,
             <div
               className="total-locations"
 >
               <h4>
-                            TOTAL
+                            Total
               </h4>
               <h3>
                             3
               </h3>
               <h4>
-                            LOCATIONS
+                            Locations
               </h4>
 </div>,
             <div
               className="avg-samples"
 >
               <h4>
-                            AVERAGE
+                            Average
               </h4>
               <h3>
                             0.00
               </h3>
               <h4>
-                            SAMPLES/LOCATION
+                            Samples / Location
               </h4>
 </div>,
             <div
               className="avg-reflectance"
 >
               <h4>
-                            AVERAGE
+                            Average
               </h4>
               <h3>
                             NaN
               </h3>
               <h4>
-                            REFLECTANCE
+                            Reflectance
               </h4>
 </div>,
           ],
@@ -1262,11 +1630,11 @@ ShallowWrapper {
             "props": Object {
               "children": Array [
                 <h4>
-                  TOTAL
+                  Total
 </h4>,
                 <h3 />,
                 <h4>
-                  SAMPLES
+                  Samples
 </h4>,
               ],
               "className": "total-samples",
@@ -1278,10 +1646,10 @@ ShallowWrapper {
                 "key": undefined,
                 "nodeType": "host",
                 "props": Object {
-                  "children": "TOTAL",
+                  "children": "Total",
                 },
                 "ref": null,
-                "rendered": "TOTAL",
+                "rendered": "Total",
                 "type": "h4",
               },
               Object {
@@ -1300,10 +1668,10 @@ ShallowWrapper {
                 "key": undefined,
                 "nodeType": "host",
                 "props": Object {
-                  "children": "SAMPLES",
+                  "children": "Samples",
                 },
                 "ref": null,
-                "rendered": "SAMPLES",
+                "rendered": "Samples",
                 "type": "h4",
               },
             ],
@@ -1316,13 +1684,13 @@ ShallowWrapper {
             "props": Object {
               "children": Array [
                 <h4>
-                  TOTAL
+                  Total
 </h4>,
                 <h3>
                   3
 </h3>,
                 <h4>
-                  LOCATIONS
+                  Locations
 </h4>,
               ],
               "className": "total-locations",
@@ -1334,10 +1702,10 @@ ShallowWrapper {
                 "key": undefined,
                 "nodeType": "host",
                 "props": Object {
-                  "children": "TOTAL",
+                  "children": "Total",
                 },
                 "ref": null,
-                "rendered": "TOTAL",
+                "rendered": "Total",
                 "type": "h4",
               },
               Object {
@@ -1356,10 +1724,10 @@ ShallowWrapper {
                 "key": undefined,
                 "nodeType": "host",
                 "props": Object {
-                  "children": "LOCATIONS",
+                  "children": "Locations",
                 },
                 "ref": null,
-                "rendered": "LOCATIONS",
+                "rendered": "Locations",
                 "type": "h4",
               },
             ],
@@ -1372,13 +1740,13 @@ ShallowWrapper {
             "props": Object {
               "children": Array [
                 <h4>
-                  AVERAGE
+                  Average
 </h4>,
                 <h3>
                   0.00
 </h3>,
                 <h4>
-                  SAMPLES/LOCATION
+                  Samples / Location
 </h4>,
               ],
               "className": "avg-samples",
@@ -1390,10 +1758,10 @@ ShallowWrapper {
                 "key": undefined,
                 "nodeType": "host",
                 "props": Object {
-                  "children": "AVERAGE",
+                  "children": "Average",
                 },
                 "ref": null,
-                "rendered": "AVERAGE",
+                "rendered": "Average",
                 "type": "h4",
               },
               Object {
@@ -1412,10 +1780,10 @@ ShallowWrapper {
                 "key": undefined,
                 "nodeType": "host",
                 "props": Object {
-                  "children": "SAMPLES/LOCATION",
+                  "children": "Samples / Location",
                 },
                 "ref": null,
-                "rendered": "SAMPLES/LOCATION",
+                "rendered": "Samples / Location",
                 "type": "h4",
               },
             ],
@@ -1428,13 +1796,13 @@ ShallowWrapper {
             "props": Object {
               "children": Array [
                 <h4>
-                  AVERAGE
+                  Average
 </h4>,
                 <h3>
                   NaN
 </h3>,
                 <h4>
-                  REFLECTANCE
+                  Reflectance
 </h4>,
               ],
               "className": "avg-reflectance",
@@ -1446,10 +1814,10 @@ ShallowWrapper {
                 "key": undefined,
                 "nodeType": "host",
                 "props": Object {
-                  "children": "AVERAGE",
+                  "children": "Average",
                 },
                 "ref": null,
-                "rendered": "AVERAGE",
+                "rendered": "Average",
                 "type": "h4",
               },
               Object {
@@ -1468,10 +1836,10 @@ ShallowWrapper {
                 "key": undefined,
                 "nodeType": "host",
                 "props": Object {
-                  "children": "REFLECTANCE",
+                  "children": "Reflectance",
                 },
                 "ref": null,
-                "rendered": "REFLECTANCE",
+                "rendered": "Reflectance",
                 "type": "h4",
               },
             ],
@@ -1486,42 +1854,68 @@ ShallowWrapper {
         "nodeType": "host",
         "props": Object {
           "children": Array [
-            <DropDown
-              handleChange={[Function]}
-              name="country"
-              options={
-                            Array [
-                                          "Argentina",
-                                          "Peru",
-                                        ]
-              }
-/>,
-            <DropDown
-              handleChange={[Function]}
-              name="region"
-              options={Array []}
-/>,
-            <DropDown
-              handleChange={[Function]}
-              name="coordinates"
-              options={Array []}
-/>,
-            <input
-              id="startDate"
-              name="startDate"
-              onChange={[Function]}
-              placeholder="Start Date"
-              type="text"
-              value=""
-/>,
-            <input
-              id="endDate"
-              name="endDate"
-              onChange={[Function]}
-              placeholder="End Date"
-              type="text"
-              value=""
-/>,
+            <h3>
+              Choose a location:
+</h3>,
+            <div
+              className="choose-location"
+>
+              <DropDown
+                            handleChange={[Function]}
+                            name="country"
+                            options={
+                                          Array [
+                                                        "Argentina",
+                                                        "Peru",
+                                                      ]
+                            }
+              />
+              <DropDown
+                            handleChange={[Function]}
+                            name="region"
+                            options={Array []}
+              />
+              <DropDown
+                            handleChange={[Function]}
+                            name="coordinates"
+                            options={Array []}
+              />
+</div>,
+            <h3>
+              Choose a date range:
+</h3>,
+            <div
+              className="choose-dates"
+>
+              <label
+                            htmlFor="startDate"
+              >
+                            Start
+              </label>
+              <input
+                            autocomplete="off"
+                            id="startDate"
+                            name="startDate"
+                            onChange={[Function]}
+                            placeholder="mm/dd/yy"
+                            type="text"
+                            value=""
+              />
+              <label
+                            htmlFor="endDate"
+              >
+                            End
+              </label>
+              <input
+                            autocomplete="off"
+                            id="endDate"
+                            name="endDate"
+                            onChange={[Function]}
+                            placeholder="mm/dd/yy"
+                            type="text"
+                            value=""
+              />
+</div>,
             <button
               type="submit"
 >
@@ -1535,76 +1929,200 @@ ShallowWrapper {
           Object {
             "instance": null,
             "key": undefined,
-            "nodeType": "class",
+            "nodeType": "host",
             "props": Object {
-              "handleChange": [Function],
-              "name": "country",
-              "options": Array [
-                "Argentina",
-                "Peru",
+              "children": "Choose a location:",
+            },
+            "ref": null,
+            "rendered": "Choose a location:",
+            "type": "h3",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                <DropDown
+                  handleChange={[Function]}
+                  name="country"
+                  options={
+                                    Array [
+                                                      "Argentina",
+                                                      "Peru",
+                                                    ]
+                  }
+/>,
+                <DropDown
+                  handleChange={[Function]}
+                  name="region"
+                  options={Array []}
+/>,
+                <DropDown
+                  handleChange={[Function]}
+                  name="coordinates"
+                  options={Array []}
+/>,
               ],
+              "className": "choose-location",
             },
             "ref": null,
-            "rendered": null,
-            "type": [Function],
-          },
-          Object {
-            "instance": null,
-            "key": undefined,
-            "nodeType": "class",
-            "props": Object {
-              "handleChange": [Function],
-              "name": "region",
-              "options": Array [],
-            },
-            "ref": null,
-            "rendered": null,
-            "type": [Function],
-          },
-          Object {
-            "instance": null,
-            "key": undefined,
-            "nodeType": "class",
-            "props": Object {
-              "handleChange": [Function],
-              "name": "coordinates",
-              "options": Array [],
-            },
-            "ref": null,
-            "rendered": null,
-            "type": [Function],
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "class",
+                "props": Object {
+                  "handleChange": [Function],
+                  "name": "country",
+                  "options": Array [
+                    "Argentina",
+                    "Peru",
+                  ],
+                },
+                "ref": null,
+                "rendered": null,
+                "type": [Function],
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "class",
+                "props": Object {
+                  "handleChange": [Function],
+                  "name": "region",
+                  "options": Array [],
+                },
+                "ref": null,
+                "rendered": null,
+                "type": [Function],
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "class",
+                "props": Object {
+                  "handleChange": [Function],
+                  "name": "coordinates",
+                  "options": Array [],
+                },
+                "ref": null,
+                "rendered": null,
+                "type": [Function],
+              },
+            ],
+            "type": "div",
           },
           Object {
             "instance": null,
             "key": undefined,
             "nodeType": "host",
             "props": Object {
-              "id": "startDate",
-              "name": "startDate",
-              "onChange": [Function],
-              "placeholder": "Start Date",
-              "type": "text",
-              "value": "",
+              "children": "Choose a date range:",
             },
             "ref": null,
-            "rendered": null,
-            "type": "input",
+            "rendered": "Choose a date range:",
+            "type": "h3",
           },
           Object {
             "instance": null,
             "key": undefined,
             "nodeType": "host",
             "props": Object {
-              "id": "endDate",
-              "name": "endDate",
-              "onChange": [Function],
-              "placeholder": "End Date",
-              "type": "text",
-              "value": "",
+              "children": Array [
+                <label
+                  htmlFor="startDate"
+>
+                  Start
+</label>,
+                <input
+                  autocomplete="off"
+                  id="startDate"
+                  name="startDate"
+                  onChange={[Function]}
+                  placeholder="mm/dd/yy"
+                  type="text"
+                  value=""
+/>,
+                <label
+                  htmlFor="endDate"
+>
+                  End
+</label>,
+                <input
+                  autocomplete="off"
+                  id="endDate"
+                  name="endDate"
+                  onChange={[Function]}
+                  placeholder="mm/dd/yy"
+                  type="text"
+                  value=""
+/>,
+              ],
+              "className": "choose-dates",
             },
             "ref": null,
-            "rendered": null,
-            "type": "input",
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "Start",
+                  "htmlFor": "startDate",
+                },
+                "ref": null,
+                "rendered": "Start",
+                "type": "label",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "autocomplete": "off",
+                  "id": "startDate",
+                  "name": "startDate",
+                  "onChange": [Function],
+                  "placeholder": "mm/dd/yy",
+                  "type": "text",
+                  "value": "",
+                },
+                "ref": null,
+                "rendered": null,
+                "type": "input",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "End",
+                  "htmlFor": "endDate",
+                },
+                "ref": null,
+                "rendered": "End",
+                "type": "label",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "autocomplete": "off",
+                  "id": "endDate",
+                  "name": "endDate",
+                  "onChange": [Function],
+                  "placeholder": "mm/dd/yy",
+                  "type": "text",
+                  "value": "",
+                },
+                "ref": null,
+                "rendered": null,
+                "type": "input",
+              },
+            ],
+            "type": "div",
           },
           Object {
             "instance": null,
@@ -1639,92 +2157,118 @@ ShallowWrapper {
                         className="total-samples"
             >
                         <h4>
-                                    TOTAL
+                                    Total
                         </h4>
                         <h3 />
                         <h4>
-                                    SAMPLES
+                                    Samples
                         </h4>
             </div>
             <div
                         className="total-locations"
             >
                         <h4>
-                                    TOTAL
+                                    Total
                         </h4>
                         <h3>
                                     3
                         </h3>
                         <h4>
-                                    LOCATIONS
+                                    Locations
                         </h4>
             </div>
             <div
                         className="avg-samples"
             >
                         <h4>
-                                    AVERAGE
+                                    Average
                         </h4>
                         <h3>
                                     0.00
                         </h3>
                         <h4>
-                                    SAMPLES/LOCATION
+                                    Samples / Location
                         </h4>
             </div>
             <div
                         className="avg-reflectance"
             >
                         <h4>
-                                    AVERAGE
+                                    Average
                         </h4>
                         <h3>
                                     NaN
                         </h3>
                         <h4>
-                                    REFLECTANCE
+                                    Reflectance
                         </h4>
             </div>
 </div>,
           <form
             onSubmit={[Function]}
 >
-            <DropDown
-                        handleChange={[Function]}
-                        name="country"
-                        options={
-                                    Array [
-                                                "Argentina",
-                                                "Peru",
-                                              ]
-                        }
-            />
-            <DropDown
-                        handleChange={[Function]}
-                        name="region"
-                        options={Array []}
-            />
-            <DropDown
-                        handleChange={[Function]}
-                        name="coordinates"
-                        options={Array []}
-            />
-            <input
-                        id="startDate"
-                        name="startDate"
-                        onChange={[Function]}
-                        placeholder="Start Date"
-                        type="text"
-                        value=""
-            />
-            <input
-                        id="endDate"
-                        name="endDate"
-                        onChange={[Function]}
-                        placeholder="End Date"
-                        type="text"
-                        value=""
-            />
+            <h3>
+                        Choose a location:
+            </h3>
+            <div
+                        className="choose-location"
+            >
+                        <DropDown
+                                    handleChange={[Function]}
+                                    name="country"
+                                    options={
+                                                Array [
+                                                            "Argentina",
+                                                            "Peru",
+                                                          ]
+                                    }
+                        />
+                        <DropDown
+                                    handleChange={[Function]}
+                                    name="region"
+                                    options={Array []}
+                        />
+                        <DropDown
+                                    handleChange={[Function]}
+                                    name="coordinates"
+                                    options={Array []}
+                        />
+            </div>
+            <h3>
+                        Choose a date range:
+            </h3>
+            <div
+                        className="choose-dates"
+            >
+                        <label
+                                    htmlFor="startDate"
+                        >
+                                    Start
+                        </label>
+                        <input
+                                    autocomplete="off"
+                                    id="startDate"
+                                    name="startDate"
+                                    onChange={[Function]}
+                                    placeholder="mm/dd/yy"
+                                    type="text"
+                                    value=""
+                        />
+                        <label
+                                    htmlFor="endDate"
+                        >
+                                    End
+                        </label>
+                        <input
+                                    autocomplete="off"
+                                    id="endDate"
+                                    name="endDate"
+                                    onChange={[Function]}
+                                    placeholder="mm/dd/yy"
+                                    type="text"
+                                    value=""
+                        />
+            </div>
             <button
                         type="submit"
             >
@@ -1747,50 +2291,50 @@ ShallowWrapper {
                 className="total-samples"
 >
                 <h4>
-                                TOTAL
+                                Total
                 </h4>
                 <h3 />
                 <h4>
-                                SAMPLES
+                                Samples
                 </h4>
 </div>,
               <div
                 className="total-locations"
 >
                 <h4>
-                                TOTAL
+                                Total
                 </h4>
                 <h3>
                                 3
                 </h3>
                 <h4>
-                                LOCATIONS
+                                Locations
                 </h4>
 </div>,
               <div
                 className="avg-samples"
 >
                 <h4>
-                                AVERAGE
+                                Average
                 </h4>
                 <h3>
                                 0.00
                 </h3>
                 <h4>
-                                SAMPLES/LOCATION
+                                Samples / Location
                 </h4>
 </div>,
               <div
                 className="avg-reflectance"
 >
                 <h4>
-                                AVERAGE
+                                Average
                 </h4>
                 <h3>
                                 NaN
                 </h3>
                 <h4>
-                                REFLECTANCE
+                                Reflectance
                 </h4>
 </div>,
             ],
@@ -1805,11 +2349,11 @@ ShallowWrapper {
               "props": Object {
                 "children": Array [
                   <h4>
-                    TOTAL
+                    Total
 </h4>,
                   <h3 />,
                   <h4>
-                    SAMPLES
+                    Samples
 </h4>,
                 ],
                 "className": "total-samples",
@@ -1821,10 +2365,10 @@ ShallowWrapper {
                   "key": undefined,
                   "nodeType": "host",
                   "props": Object {
-                    "children": "TOTAL",
+                    "children": "Total",
                   },
                   "ref": null,
-                  "rendered": "TOTAL",
+                  "rendered": "Total",
                   "type": "h4",
                 },
                 Object {
@@ -1843,10 +2387,10 @@ ShallowWrapper {
                   "key": undefined,
                   "nodeType": "host",
                   "props": Object {
-                    "children": "SAMPLES",
+                    "children": "Samples",
                   },
                   "ref": null,
-                  "rendered": "SAMPLES",
+                  "rendered": "Samples",
                   "type": "h4",
                 },
               ],
@@ -1859,13 +2403,13 @@ ShallowWrapper {
               "props": Object {
                 "children": Array [
                   <h4>
-                    TOTAL
+                    Total
 </h4>,
                   <h3>
                     3
 </h3>,
                   <h4>
-                    LOCATIONS
+                    Locations
 </h4>,
                 ],
                 "className": "total-locations",
@@ -1877,10 +2421,10 @@ ShallowWrapper {
                   "key": undefined,
                   "nodeType": "host",
                   "props": Object {
-                    "children": "TOTAL",
+                    "children": "Total",
                   },
                   "ref": null,
-                  "rendered": "TOTAL",
+                  "rendered": "Total",
                   "type": "h4",
                 },
                 Object {
@@ -1899,10 +2443,10 @@ ShallowWrapper {
                   "key": undefined,
                   "nodeType": "host",
                   "props": Object {
-                    "children": "LOCATIONS",
+                    "children": "Locations",
                   },
                   "ref": null,
-                  "rendered": "LOCATIONS",
+                  "rendered": "Locations",
                   "type": "h4",
                 },
               ],
@@ -1915,13 +2459,13 @@ ShallowWrapper {
               "props": Object {
                 "children": Array [
                   <h4>
-                    AVERAGE
+                    Average
 </h4>,
                   <h3>
                     0.00
 </h3>,
                   <h4>
-                    SAMPLES/LOCATION
+                    Samples / Location
 </h4>,
                 ],
                 "className": "avg-samples",
@@ -1933,10 +2477,10 @@ ShallowWrapper {
                   "key": undefined,
                   "nodeType": "host",
                   "props": Object {
-                    "children": "AVERAGE",
+                    "children": "Average",
                   },
                   "ref": null,
-                  "rendered": "AVERAGE",
+                  "rendered": "Average",
                   "type": "h4",
                 },
                 Object {
@@ -1955,10 +2499,10 @@ ShallowWrapper {
                   "key": undefined,
                   "nodeType": "host",
                   "props": Object {
-                    "children": "SAMPLES/LOCATION",
+                    "children": "Samples / Location",
                   },
                   "ref": null,
-                  "rendered": "SAMPLES/LOCATION",
+                  "rendered": "Samples / Location",
                   "type": "h4",
                 },
               ],
@@ -1971,13 +2515,13 @@ ShallowWrapper {
               "props": Object {
                 "children": Array [
                   <h4>
-                    AVERAGE
+                    Average
 </h4>,
                   <h3>
                     NaN
 </h3>,
                   <h4>
-                    REFLECTANCE
+                    Reflectance
 </h4>,
                 ],
                 "className": "avg-reflectance",
@@ -1989,10 +2533,10 @@ ShallowWrapper {
                   "key": undefined,
                   "nodeType": "host",
                   "props": Object {
-                    "children": "AVERAGE",
+                    "children": "Average",
                   },
                   "ref": null,
-                  "rendered": "AVERAGE",
+                  "rendered": "Average",
                   "type": "h4",
                 },
                 Object {
@@ -2011,10 +2555,10 @@ ShallowWrapper {
                   "key": undefined,
                   "nodeType": "host",
                   "props": Object {
-                    "children": "REFLECTANCE",
+                    "children": "Reflectance",
                   },
                   "ref": null,
-                  "rendered": "REFLECTANCE",
+                  "rendered": "Reflectance",
                   "type": "h4",
                 },
               ],
@@ -2029,42 +2573,68 @@ ShallowWrapper {
           "nodeType": "host",
           "props": Object {
             "children": Array [
-              <DropDown
-                handleChange={[Function]}
-                name="country"
-                options={
-                                Array [
-                                                "Argentina",
-                                                "Peru",
-                                              ]
-                }
-/>,
-              <DropDown
-                handleChange={[Function]}
-                name="region"
-                options={Array []}
-/>,
-              <DropDown
-                handleChange={[Function]}
-                name="coordinates"
-                options={Array []}
-/>,
-              <input
-                id="startDate"
-                name="startDate"
-                onChange={[Function]}
-                placeholder="Start Date"
-                type="text"
-                value=""
-/>,
-              <input
-                id="endDate"
-                name="endDate"
-                onChange={[Function]}
-                placeholder="End Date"
-                type="text"
-                value=""
-/>,
+              <h3>
+                Choose a location:
+</h3>,
+              <div
+                className="choose-location"
+>
+                <DropDown
+                                handleChange={[Function]}
+                                name="country"
+                                options={
+                                                Array [
+                                                                "Argentina",
+                                                                "Peru",
+                                                              ]
+                                }
+                />
+                <DropDown
+                                handleChange={[Function]}
+                                name="region"
+                                options={Array []}
+                />
+                <DropDown
+                                handleChange={[Function]}
+                                name="coordinates"
+                                options={Array []}
+                />
+</div>,
+              <h3>
+                Choose a date range:
+</h3>,
+              <div
+                className="choose-dates"
+>
+                <label
+                                htmlFor="startDate"
+                >
+                                Start
+                </label>
+                <input
+                                autocomplete="off"
+                                id="startDate"
+                                name="startDate"
+                                onChange={[Function]}
+                                placeholder="mm/dd/yy"
+                                type="text"
+                                value=""
+                />
+                <label
+                                htmlFor="endDate"
+                >
+                                End
+                </label>
+                <input
+                                autocomplete="off"
+                                id="endDate"
+                                name="endDate"
+                                onChange={[Function]}
+                                placeholder="mm/dd/yy"
+                                type="text"
+                                value=""
+                />
+</div>,
               <button
                 type="submit"
 >
@@ -2078,76 +2648,200 @@ ShallowWrapper {
             Object {
               "instance": null,
               "key": undefined,
-              "nodeType": "class",
+              "nodeType": "host",
               "props": Object {
-                "handleChange": [Function],
-                "name": "country",
-                "options": Array [
-                  "Argentina",
-                  "Peru",
+                "children": "Choose a location:",
+              },
+              "ref": null,
+              "rendered": "Choose a location:",
+              "type": "h3",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  <DropDown
+                    handleChange={[Function]}
+                    name="country"
+                    options={
+                                        Array [
+                                                            "Argentina",
+                                                            "Peru",
+                                                          ]
+                    }
+/>,
+                  <DropDown
+                    handleChange={[Function]}
+                    name="region"
+                    options={Array []}
+/>,
+                  <DropDown
+                    handleChange={[Function]}
+                    name="coordinates"
+                    options={Array []}
+/>,
                 ],
+                "className": "choose-location",
               },
               "ref": null,
-              "rendered": null,
-              "type": [Function],
-            },
-            Object {
-              "instance": null,
-              "key": undefined,
-              "nodeType": "class",
-              "props": Object {
-                "handleChange": [Function],
-                "name": "region",
-                "options": Array [],
-              },
-              "ref": null,
-              "rendered": null,
-              "type": [Function],
-            },
-            Object {
-              "instance": null,
-              "key": undefined,
-              "nodeType": "class",
-              "props": Object {
-                "handleChange": [Function],
-                "name": "coordinates",
-                "options": Array [],
-              },
-              "ref": null,
-              "rendered": null,
-              "type": [Function],
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "class",
+                  "props": Object {
+                    "handleChange": [Function],
+                    "name": "country",
+                    "options": Array [
+                      "Argentina",
+                      "Peru",
+                    ],
+                  },
+                  "ref": null,
+                  "rendered": null,
+                  "type": [Function],
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "class",
+                  "props": Object {
+                    "handleChange": [Function],
+                    "name": "region",
+                    "options": Array [],
+                  },
+                  "ref": null,
+                  "rendered": null,
+                  "type": [Function],
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "class",
+                  "props": Object {
+                    "handleChange": [Function],
+                    "name": "coordinates",
+                    "options": Array [],
+                  },
+                  "ref": null,
+                  "rendered": null,
+                  "type": [Function],
+                },
+              ],
+              "type": "div",
             },
             Object {
               "instance": null,
               "key": undefined,
               "nodeType": "host",
               "props": Object {
-                "id": "startDate",
-                "name": "startDate",
-                "onChange": [Function],
-                "placeholder": "Start Date",
-                "type": "text",
-                "value": "",
+                "children": "Choose a date range:",
               },
               "ref": null,
-              "rendered": null,
-              "type": "input",
+              "rendered": "Choose a date range:",
+              "type": "h3",
             },
             Object {
               "instance": null,
               "key": undefined,
               "nodeType": "host",
               "props": Object {
-                "id": "endDate",
-                "name": "endDate",
-                "onChange": [Function],
-                "placeholder": "End Date",
-                "type": "text",
-                "value": "",
+                "children": Array [
+                  <label
+                    htmlFor="startDate"
+>
+                    Start
+</label>,
+                  <input
+                    autocomplete="off"
+                    id="startDate"
+                    name="startDate"
+                    onChange={[Function]}
+                    placeholder="mm/dd/yy"
+                    type="text"
+                    value=""
+/>,
+                  <label
+                    htmlFor="endDate"
+>
+                    End
+</label>,
+                  <input
+                    autocomplete="off"
+                    id="endDate"
+                    name="endDate"
+                    onChange={[Function]}
+                    placeholder="mm/dd/yy"
+                    type="text"
+                    value=""
+/>,
+                ],
+                "className": "choose-dates",
               },
               "ref": null,
-              "rendered": null,
-              "type": "input",
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "Start",
+                    "htmlFor": "startDate",
+                  },
+                  "ref": null,
+                  "rendered": "Start",
+                  "type": "label",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "autocomplete": "off",
+                    "id": "startDate",
+                    "name": "startDate",
+                    "onChange": [Function],
+                    "placeholder": "mm/dd/yy",
+                    "type": "text",
+                    "value": "",
+                  },
+                  "ref": null,
+                  "rendered": null,
+                  "type": "input",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "End",
+                    "htmlFor": "endDate",
+                  },
+                  "ref": null,
+                  "rendered": "End",
+                  "type": "label",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "autocomplete": "off",
+                    "id": "endDate",
+                    "name": "endDate",
+                    "onChange": [Function],
+                    "placeholder": "mm/dd/yy",
+                    "type": "text",
+                    "value": "",
+                  },
+                  "ref": null,
+                  "rendered": null,
+                  "type": "input",
+                },
+              ],
+              "type": "div",
             },
             Object {
               "instance": null,

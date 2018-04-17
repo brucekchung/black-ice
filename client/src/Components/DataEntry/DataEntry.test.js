@@ -108,7 +108,7 @@ describe('DataEntry', () => {
     expect(wrapper.state('sampleData').length).toEqual(2)
   })
 
-  it('should update each data object in state when the associated input is changed', () => {
+  it.skip('should update each data object in state when the associated input is changed', () => {
     const e = {
       target: {
         name: 'name',
