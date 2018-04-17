@@ -35,11 +35,6 @@ ShallowWrapper {
 />,
         <Route
           exact={true}
-          path="/Landing"
-          render={[Function]}
-/>,
-        <Route
-          exact={true}
           path="/ViewAll"
           render={[Function]}
 />,
@@ -92,19 +87,6 @@ ShallowWrapper {
         "nodeType": "class",
         "props": Object {
           "exact": true,
-          "path": "/Landing",
-          "render": [Function],
-        },
-        "ref": null,
-        "rendered": null,
-        "type": [Function],
-      },
-      Object {
-        "instance": null,
-        "key": undefined,
-        "nodeType": "class",
-        "props": Object {
-          "exact": true,
           "path": "/ViewAll",
           "render": [Function],
         },
@@ -135,11 +117,6 @@ ShallowWrapper {
           <Route
             exact={true}
             path="/Reports"
-            render={[Function]}
-/>,
-          <Route
-            exact={true}
-            path="/Landing"
             render={[Function]}
 />,
           <Route
@@ -184,19 +161,6 @@ ShallowWrapper {
           "props": Object {
             "exact": true,
             "path": "/Reports",
-            "render": [Function],
-          },
-          "ref": null,
-          "rendered": null,
-          "type": [Function],
-        },
-        Object {
-          "instance": null,
-          "key": undefined,
-          "nodeType": "class",
-          "props": Object {
-            "exact": true,
-            "path": "/Landing",
             "render": [Function],
           },
           "ref": null,

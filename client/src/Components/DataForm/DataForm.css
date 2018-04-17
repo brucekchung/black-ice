@@ -1,0 +1,18 @@
+.DataForm input {
+  margin: 10px;
+}
+
+.data-form-set {
+  margin-bottom: 20px;
+  width: 100%;
+}
+
+.DataForm button {
+  margin: 10px;
+  width: 115px;
+}
+
+.add-remove-buttons {
+  position: absolute;
+  right: 135px;
+}
