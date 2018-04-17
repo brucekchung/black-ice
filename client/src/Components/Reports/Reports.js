@@ -178,9 +178,21 @@ class Reports extends Component {
           <h3>Choose a date range:</h3>
           <div className="choose-dates">
             <label htmlFor="startDate">Start</label>
-            <input id="startDate" type="text" name="startDate" placeholder="mm/dd/yy" value={ this.state.startDate } onChange={ this.setDates }/>
+            <input id="startDate"
+                   type="text"
+                   name="startDate"
+                   placeholder="mm/dd/yy"
+                   autocomplete="off"
+                   value={ this.state.startDate }
+                   onChange={ this.setDates }/>
             <label htmlFor="endDate">End</label>
-            <input id="endDate" type="text" name="endDate" placeholder="mm/dd/yy" value={ this.state.endDate } onChange={ this.setDates }/>
+            <input id="endDate"
+                   type="text"
+                   name="endDate"
+                   placeholder="mm/dd/yy"
+                   autocomplete="off"
+                   value={ this.state.endDate }
+                   onChange={ this.setDates }/>
           </div>
           <button type='submit'>Generate Report</button>
         </form>
