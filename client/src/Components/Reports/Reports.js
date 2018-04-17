@@ -140,7 +140,6 @@ class Reports extends Component {
   render() {
     return (
       <div className="Reports">
-        <h2>Reports</h2>
         <div className="dashboard">
           <div className="total-samples">
             <h4>TOTAL</h4>

@@ -146,7 +146,6 @@ class ViewAll extends Component {
     return (
       <div className="ViewAll">
         <input className="search-bar" placeholder="search" type="text" name="search" onChange={ this.handleChange } /> 
-        <h2>All Data</h2>
         <table>
           <thead>
             <tr>

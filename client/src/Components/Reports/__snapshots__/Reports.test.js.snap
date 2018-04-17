@@ -18,10 +18,6 @@ ShallowWrapper {
     "nodeType": "host",
     "props": Object {
       "children": Array [
-        <Nav />,
-        <h2>
-          Reports
-</h2>,
         <div
           className="dashboard"
 >
@@ -116,29 +112,10 @@ ShallowWrapper {
 </form>,
         false,
       ],
+      "className": "Reports",
     },
     "ref": null,
     "rendered": Array [
-      Object {
-        "instance": null,
-        "key": undefined,
-        "nodeType": "function",
-        "props": Object {},
-        "ref": null,
-        "rendered": null,
-        "type": [Function],
-      },
-      Object {
-        "instance": null,
-        "key": undefined,
-        "nodeType": "host",
-        "props": Object {
-          "children": "Reports",
-        },
-        "ref": null,
-        "rendered": "Reports",
-        "type": "h2",
-      },
       Object {
         "instance": null,
         "key": undefined,
@@ -565,10 +542,6 @@ ShallowWrapper {
       "nodeType": "host",
       "props": Object {
         "children": Array [
-          <Nav />,
-          <h2>
-            Reports
-</h2>,
           <div
             className="dashboard"
 >
@@ -663,29 +636,10 @@ ShallowWrapper {
 </form>,
           false,
         ],
+        "className": "Reports",
       },
       "ref": null,
       "rendered": Array [
-        Object {
-          "instance": null,
-          "key": undefined,
-          "nodeType": "function",
-          "props": Object {},
-          "ref": null,
-          "rendered": null,
-          "type": [Function],
-        },
-        Object {
-          "instance": null,
-          "key": undefined,
-          "nodeType": "host",
-          "props": Object {
-            "children": "Reports",
-          },
-          "ref": null,
-          "rendered": "Reports",
-          "type": "h2",
-        },
         Object {
           "instance": null,
           "key": undefined,
@@ -1135,10 +1089,6 @@ ShallowWrapper {
     "nodeType": "host",
     "props": Object {
       "children": Array [
-        <Nav />,
-        <h2>
-          Reports
-</h2>,
         <div
           className="dashboard"
 >
@@ -1240,29 +1190,10 @@ ShallowWrapper {
 </form>,
         false,
       ],
+      "className": "Reports",
     },
     "ref": null,
     "rendered": Array [
-      Object {
-        "instance": null,
-        "key": undefined,
-        "nodeType": "function",
-        "props": Object {},
-        "ref": null,
-        "rendered": null,
-        "type": [Function],
-      },
-      Object {
-        "instance": null,
-        "key": undefined,
-        "nodeType": "host",
-        "props": Object {
-          "children": "Reports",
-        },
-        "ref": null,
-        "rendered": "Reports",
-        "type": "h2",
-      },
       Object {
         "instance": null,
         "key": undefined,
@@ -1701,10 +1632,6 @@ ShallowWrapper {
       "nodeType": "host",
       "props": Object {
         "children": Array [
-          <Nav />,
-          <h2>
-            Reports
-</h2>,
           <div
             className="dashboard"
 >
@@ -1806,29 +1733,10 @@ ShallowWrapper {
 </form>,
           false,
         ],
+        "className": "Reports",
       },
       "ref": null,
       "rendered": Array [
-        Object {
-          "instance": null,
-          "key": undefined,
-          "nodeType": "function",
-          "props": Object {},
-          "ref": null,
-          "rendered": null,
-          "type": [Function],
-        },
-        Object {
-          "instance": null,
-          "key": undefined,
-          "nodeType": "host",
-          "props": Object {
-            "children": "Reports",
-          },
-          "ref": null,
-          "rendered": "Reports",
-          "type": "h2",
-        },
         Object {
           "instance": null,
           "key": undefined,

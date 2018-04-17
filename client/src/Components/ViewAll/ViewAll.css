@@ -5,8 +5,9 @@
 
 .ViewAll .search-bar {
   position: fixed;
-  border: 2px solid blue;
+  border: 1px solid #eef0f2;
   right: 0;
+  top: 150px;
 }
 
 .ViewAll h2 {
@@ -16,6 +17,7 @@
 }
 
 .ViewAll table {
-  width: 100%;
+  width: 90%;
+  margin: 100px auto;
 }
 

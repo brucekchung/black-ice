@@ -1,11 +1,12 @@
 import React, { Component } from 'react'
 import { arrayOf, object, func } from 'prop-types'
+import './DataForm.css'
 
 class DataForm extends Component {
   renderInputs = () => {
     return this.props.data.map((item, index) => {
       return (
-        <div key={ index } className={ index }>
+        <div key={ index } className={`data-form-set ${index}`} >
           <h4>Data Point { index + 1 }</h4>
           <input type="text"  
                  name="name"
@@ -35,10 +36,12 @@ class DataForm extends Component {
 
   render() {
     return (
-      <div>
+      <div className="DataForm">
         { this.renderInputs() }
-        <button onClick={ this.props.handleClick }>Add Data</button>
-        <button onClick={ this.props.handleClick }>Remove</button>
+        <div className="add-remove-buttons">
+          <button onClick={ this.props.handleClick }>Add Data</button>
+          <button onClick={ this.props.handleClick }>Remove</button>
+        </div>
       </div>
     )
   }

@@ -19,45 +19,37 @@ ShallowWrapper {
     "props": Object {
       "children": Array [
         <NavLink
-          activeClassName="active"
+          activeClassName="selected"
           ariaCurrent="true"
           className="Nav"
           exact={true}
           to="/"
 >
-          Login
+          Home
 </NavLink>,
         <NavLink
-          activeClassName="active"
-          ariaCurrent="true"
-          className="Nav"
-          to="/Landing"
->
-          Landing
-</NavLink>,
-        <NavLink
-          activeClassName="active"
+          activeClassName="selected"
           ariaCurrent="true"
           className="Nav"
           to="/DataEntry"
 >
-          DataEntry
+          Add Data
 </NavLink>,
         <NavLink
-          activeClassName="active"
+          activeClassName="selected"
+          ariaCurrent="true"
+          className="Nav"
+          to="/ViewAll"
+>
+          Edit Data
+</NavLink>,
+        <NavLink
+          activeClassName="selected"
           ariaCurrent="true"
           className="Nav"
           to="/Reports"
 >
           Reports
-</NavLink>,
-        <NavLink
-          activeClassName="active"
-          ariaCurrent="true"
-          className="Nav"
-          to="/ViewAll"
->
-          EditData
 </NavLink>,
       ],
       "className": "Nav-bar",
@@ -69,15 +61,15 @@ ShallowWrapper {
         "key": undefined,
         "nodeType": "function",
         "props": Object {
-          "activeClassName": "active",
+          "activeClassName": "selected",
           "ariaCurrent": "true",
-          "children": "Login",
+          "children": "Home",
           "className": "Nav",
           "exact": true,
           "to": "/",
         },
         "ref": null,
-        "rendered": "Login",
+        "rendered": "Home",
         "type": [Function],
       },
       Object {
@@ -85,29 +77,14 @@ ShallowWrapper {
         "key": undefined,
         "nodeType": "function",
         "props": Object {
-          "activeClassName": "active",
+          "activeClassName": "selected",
           "ariaCurrent": "true",
-          "children": "Landing",
-          "className": "Nav",
-          "to": "/Landing",
-        },
-        "ref": null,
-        "rendered": "Landing",
-        "type": [Function],
-      },
-      Object {
-        "instance": null,
-        "key": undefined,
-        "nodeType": "function",
-        "props": Object {
-          "activeClassName": "active",
-          "ariaCurrent": "true",
-          "children": "DataEntry",
+          "children": "Add Data",
           "className": "Nav",
           "to": "/DataEntry",
         },
         "ref": null,
-        "rendered": "DataEntry",
+        "rendered": "Add Data",
         "type": [Function],
       },
       Object {
@@ -115,7 +92,22 @@ ShallowWrapper {
         "key": undefined,
         "nodeType": "function",
         "props": Object {
-          "activeClassName": "active",
+          "activeClassName": "selected",
+          "ariaCurrent": "true",
+          "children": "Edit Data",
+          "className": "Nav",
+          "to": "/ViewAll",
+        },
+        "ref": null,
+        "rendered": "Edit Data",
+        "type": [Function],
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "function",
+        "props": Object {
+          "activeClassName": "selected",
           "ariaCurrent": "true",
           "children": "Reports",
           "className": "Nav",
@@ -123,21 +115,6 @@ ShallowWrapper {
         },
         "ref": null,
         "rendered": "Reports",
-        "type": [Function],
-      },
-      Object {
-        "instance": null,
-        "key": undefined,
-        "nodeType": "function",
-        "props": Object {
-          "activeClassName": "active",
-          "ariaCurrent": "true",
-          "children": "EditData",
-          "className": "Nav",
-          "to": "/ViewAll",
-        },
-        "ref": null,
-        "rendered": "EditData",
         "type": [Function],
       },
     ],
@@ -151,45 +128,37 @@ ShallowWrapper {
       "props": Object {
         "children": Array [
           <NavLink
-            activeClassName="active"
+            activeClassName="selected"
             ariaCurrent="true"
             className="Nav"
             exact={true}
             to="/"
 >
-            Login
+            Home
 </NavLink>,
           <NavLink
-            activeClassName="active"
-            ariaCurrent="true"
-            className="Nav"
-            to="/Landing"
->
-            Landing
-</NavLink>,
-          <NavLink
-            activeClassName="active"
+            activeClassName="selected"
             ariaCurrent="true"
             className="Nav"
             to="/DataEntry"
 >
-            DataEntry
+            Add Data
 </NavLink>,
           <NavLink
-            activeClassName="active"
+            activeClassName="selected"
+            ariaCurrent="true"
+            className="Nav"
+            to="/ViewAll"
+>
+            Edit Data
+</NavLink>,
+          <NavLink
+            activeClassName="selected"
             ariaCurrent="true"
             className="Nav"
             to="/Reports"
 >
             Reports
-</NavLink>,
-          <NavLink
-            activeClassName="active"
-            ariaCurrent="true"
-            className="Nav"
-            to="/ViewAll"
->
-            EditData
 </NavLink>,
         ],
         "className": "Nav-bar",
@@ -201,15 +170,15 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "function",
           "props": Object {
-            "activeClassName": "active",
+            "activeClassName": "selected",
             "ariaCurrent": "true",
-            "children": "Login",
+            "children": "Home",
             "className": "Nav",
             "exact": true,
             "to": "/",
           },
           "ref": null,
-          "rendered": "Login",
+          "rendered": "Home",
           "type": [Function],
         },
         Object {
@@ -217,29 +186,14 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "function",
           "props": Object {
-            "activeClassName": "active",
+            "activeClassName": "selected",
             "ariaCurrent": "true",
-            "children": "Landing",
-            "className": "Nav",
-            "to": "/Landing",
-          },
-          "ref": null,
-          "rendered": "Landing",
-          "type": [Function],
-        },
-        Object {
-          "instance": null,
-          "key": undefined,
-          "nodeType": "function",
-          "props": Object {
-            "activeClassName": "active",
-            "ariaCurrent": "true",
-            "children": "DataEntry",
+            "children": "Add Data",
             "className": "Nav",
             "to": "/DataEntry",
           },
           "ref": null,
-          "rendered": "DataEntry",
+          "rendered": "Add Data",
           "type": [Function],
         },
         Object {
@@ -247,7 +201,22 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "function",
           "props": Object {
-            "activeClassName": "active",
+            "activeClassName": "selected",
+            "ariaCurrent": "true",
+            "children": "Edit Data",
+            "className": "Nav",
+            "to": "/ViewAll",
+          },
+          "ref": null,
+          "rendered": "Edit Data",
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "function",
+          "props": Object {
+            "activeClassName": "selected",
             "ariaCurrent": "true",
             "children": "Reports",
             "className": "Nav",
@@ -255,21 +224,6 @@ ShallowWrapper {
           },
           "ref": null,
           "rendered": "Reports",
-          "type": [Function],
-        },
-        Object {
-          "instance": null,
-          "key": undefined,
-          "nodeType": "function",
-          "props": Object {
-            "activeClassName": "active",
-            "ariaCurrent": "true",
-            "children": "EditData",
-            "className": "Nav",
-            "to": "/ViewAll",
-          },
-          "ref": null,
-          "rendered": "EditData",
           "type": [Function],
         },
       ],
