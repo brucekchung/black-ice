@@ -1,23 +1,44 @@
 .ViewAll {
   color: #eef0f2;
+  font-weight: 300;
   position: relative;
 }
 
 .ViewAll .search-bar {
-  position: fixed;
   border: 1px solid #eef0f2;
-  right: 0;
-  top: 150px;
+  position: absolute;
+  right: 24px;
+  top: -75px;
 }
 
 .ViewAll h2 {
-  margin: 40px;
   font-size: 2rem;
+  margin: 40px;
   text-align: center;
 }
 
 .ViewAll table {
+  margin: 100px auto 0 auto;
   width: 90%;
-  margin: 100px auto;
 }
 
+.ViewAll button {
+  width: 100%;
+}
+
+.ViewAll table thead {
+  border-bottom: 1px solid #eef0f2;
+}
+
+.ViewAll table thead th {
+  padding-bottom: 20px;
+  font-weight: 400;
+}
+
+.ViewAll table tbody td,
+.ViewAll table thead th {
+  text-align: left;
+  padding-top: 10px;
+  padding-right: 10px;
+  width: 100px;
+}

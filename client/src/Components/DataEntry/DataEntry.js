@@ -76,9 +76,9 @@ class DataEntry extends Component {
   updateData = e => {
     const name = e.target.name
     const value = e.target.value
-    const index = e.target.parentNode.className
+    const index = e.target.parentNode.className.replace('data-form-set ', '')
     const data = [...this.state.data]
-    
+
     data[index][name] = value
     this.setState({ data })
   }
