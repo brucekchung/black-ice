@@ -1,5 +1,20 @@
 .DataEntry {
   text-align: center;
+  font-weight: 300;
+}
+
+.DataEntry h2 {
+  font-size: 2rem;
+  margin: 20px;
+}
+
+.DataEntry h3 {
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+
+.DataEntry h4 {
+  font-size: 1.25rem;
 }
 
 
