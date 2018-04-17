@@ -3,18 +3,24 @@
   height: 100%;
   display: flex;
   flex-direction: column;
-  background: navy;
-  color: white;
+  font-weight: 300;
 }
 
 .Landing a {
+  color: #eef0f2;
+  font-size: 1.5rem;
+  font-weight: 300;
   text-decoration: none;
   color: white;
   font-size: 1.4em;
 }
 
+.Landing a:hover {
+  color: #0892a5;
+}
+
 .Landing h2 {
-  display: block;
+  font-size: 2rem;
   text-align: center;
   margin: 50px;
 }
@@ -32,7 +38,7 @@
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
-  width: 70%;
+  width: 71%;
 }
 
 .Landing img {

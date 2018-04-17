@@ -1,5 +1,6 @@
 .ViewAll {
-  color: navy;
+  color: #eef0f2;
+  position: relative;
   border: 1px solid red;
 }
 
@@ -11,6 +12,7 @@
 
 .ViewAll h2 {
   margin: 40px;
+  font-size: 2rem;
   text-align: center;
 }
 
