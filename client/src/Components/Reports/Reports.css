@@ -1,9 +1,11 @@
-.dashboard {
-  display: flex;
-  justify-content: center;
+
+.Reports h2 {
+  text-align: center;
+  margin: 40px;
 }
 
-.dashboard div {
-  margin: 20px 70px;
-  width: 150px;
+.Reports form {
+  margin: 20px;
+  border: 1px solid red;
+
 }

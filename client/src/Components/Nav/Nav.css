@@ -1,0 +1,15 @@
+
+.Nav-bar {
+  background: grey;
+  display: flex;
+  justify-content: space-around;
+  padding: 20px;
+}
+
+.Nav-bar a {
+  text-decoration: none;
+}
+
+.Nav-bar .selected {
+  color: yellow;
+}

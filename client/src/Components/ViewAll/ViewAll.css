@@ -1,0 +1,21 @@
+.ViewAll {
+  color: navy;
+  position: relative;
+  border: 1px solid red;
+}
+
+.ViewAll .search-bar {
+  position: absolute;
+  border: 2px solid blue;
+  right: 0;
+}
+
+.ViewAll h2 {
+  margin: 40px;
+  text-align: center;
+}
+
+.ViewAll table {
+  width: 100%;
+}
+

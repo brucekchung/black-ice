@@ -1,13 +1,13 @@
 import React from 'react'
 import { NavLink } from 'react-router-dom'
+import './Nav.css'
 
 const Nav = () => (
   <div className='Nav-bar'>
-    <NavLink className="Nav" exact to='/'>Login</NavLink>
-    <NavLink className="Nav" to='/Landing'>Landing</NavLink>
-    <NavLink className="Nav" to='/DataEntry'>DataEntry</NavLink>
-    <NavLink className="Nav" to='/Reports'>Reports</NavLink>
-    <NavLink className="Nav" to='/ViewAll'>EditData</NavLink>
+    <NavLink className="Nav" activeClassName='selected' exact to='/'>Home</NavLink>
+    <NavLink className="Nav" activeClassName='selected' to='/DataEntry'>DataEntry</NavLink>
+    <NavLink className="Nav" activeClassName='selected' to='/Reports'>Reports</NavLink>
+    <NavLink className="Nav" activeClassName='selected' to='/ViewAll'>EditData</NavLink>
   </div>
 )
 

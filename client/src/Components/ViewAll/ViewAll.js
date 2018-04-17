@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import Nav from '../Nav/Nav'
 import { apiCall } from '../../apiCall/apiCall'
+import './ViewAll.css'
 import { shape, array } from 'prop-types'
 
 class ViewAll extends Component {
@@ -141,10 +142,9 @@ class ViewAll extends Component {
 
   render() {
     return (
-      <div>
-        <Nav />
+      <div className="ViewAll">
+        <input className="search-bar" placeholder="search" type="text" name="search" onChange={ this.handleChange } /> 
         <h2>All Data</h2>
-        <input type="text" name="search" onChange={ this.handleChange } /> 
         <table>
           <thead>
             <tr>
