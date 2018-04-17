@@ -78,8 +78,10 @@ class ViewAll extends Component {
 
   deleteRow = async e => {
     const tableRow = e.target.parentNode.parentNode
-    const id = tableRow.id
+    const id = parseInt(tableRow.id, 10)
     const remainingData = this.state.data.filter(dataPoint => dataPoint.sample_id !== id)
+    console.log('remainingData: ', remainingData)
+    console.log('tr id: ', id)
     const url = `/api/v1/samples/${ id }`
     const init = { method: 'DELETE' }
 
