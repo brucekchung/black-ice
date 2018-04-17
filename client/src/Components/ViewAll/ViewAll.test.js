@@ -1,3 +1,4 @@
+/* eslint-disable */
 import React from 'react'
 import ViewAll from './ViewAll'
 import { shallow } from 'enzyme'

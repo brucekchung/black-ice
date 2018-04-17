@@ -19,7 +19,7 @@
   "rules": {
     "eqeqeq": ["error", "always"],
     "getter-return": ["error", { "allowImplicit": true }],
-    "indent": ["warn", 2],
+    /* "indent": ["warn", 2], */
     "no-template-curly-in-string": "error",
     "semi": ["error", "never"],
     "array-bracket-spacing": ["error", "never"],
@@ -33,8 +33,8 @@
     "keyword-spacing": ["error", { "before": true, "after": true }],
     "max-len": ["warn", 500],
     "no-duplicate-imports": "error",
-    "id-length": "error",
-    "id-blacklist": ["error", "data", "err", "e", "cb", "callback", "payload", "obj", "arr"],
+    /* "id-length": "error", */
+    "id-blacklist": ["error", "data", "err", "cb", "callback", "obj", "arr"],
     "max-depth": ["warn", 4]
   },
   "globals": {

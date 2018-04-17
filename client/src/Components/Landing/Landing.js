@@ -1,5 +1,4 @@
 import React, { Component } from 'react'
-import Nav from '../Nav/Nav'
 import './Landing.css'
 import { shape, string } from 'prop-types'
 import editDataIcon from '../../assets/archive.svg'

@@ -1,3 +1,4 @@
+/* eslint-disable */
 import React from 'react'
 import DataEntry from './DataEntry'
 import { shallow } from 'enzyme'
