@@ -1,3 +1,6 @@
+.Reports {
+  height: 100%;
+}
 
 .Reports h2 {
   text-align: center;
@@ -5,7 +8,11 @@
 }
 
 .Reports form {
-  margin: 20px;
-  border: 1px solid red;
-
+  padding: 20px 0;
+  background: black;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
 }

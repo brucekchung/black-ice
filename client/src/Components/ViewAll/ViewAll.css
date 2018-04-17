@@ -1,11 +1,10 @@
 .ViewAll {
   color: navy;
-  position: relative;
   border: 1px solid red;
 }
 
 .ViewAll .search-bar {
-  position: absolute;
+  position: fixed;
   border: 2px solid blue;
   right: 0;
 }

@@ -1,7 +1,10 @@
 import React, { Component } from 'react'
 import Nav from '../Nav/Nav'
 import './Landing.css'
-import { string } from 'prop-types'
+import { shape, string } from 'prop-types'
+import editDataIcon from '../../assets/archive.svg'
+import folderIcon from '../../assets/folder.svg'
+import lineChartIcon from '../../assets/line-chart.svg'
 
 class Landing extends Component {
   constructor() {
@@ -16,9 +19,18 @@ class Landing extends Component {
       <div className="Landing">
         <h2>Welcome, { this.state.user }!</h2>
         <div className="center-links">
-          <a href="/DataEntry">Add Data</a>
-          <a href="/Reports">Reports</a>
-          <a href="/ViewAll">Edit Data</a>
+          <div className="selection">
+            <a href="/DataEntry">Add Data</a>
+            <img src={folderIcon} alt="logo" />
+          </div>
+          <div className="selection">
+            <a href="/Reports">Reports</a>
+            <img src={lineChartIcon} alt="logo" />
+          </div>
+          <div className="selection">
+            <a href="/ViewAll">Edit Data</a>
+            <img src={editDataIcon} alt="logo" />
+          </div>
         </div>
       </div>
     )
