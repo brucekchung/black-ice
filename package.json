@@ -18,7 +18,8 @@
   },
   "scripts": {
     "start": "node server.js",
-    "test": "NODE_ENV=test mocha --exit",
+    "test": "cd client/ && npm i --only=dev && npm i && npm t && cd .. && NODE_ENV=test mocha --exit",
+    "test-local": "NODE_ENV=test mocha --exit",
     "client": "cd client && yarn start",
     "server": "nodemon server.js",
     "dev": "concurrently --kill-others-on-fail \"yarn server\" \"yarn client\"",
