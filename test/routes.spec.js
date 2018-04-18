@@ -296,7 +296,7 @@ describe('API Routes', () => {
         })
     })
 
-    it.skip('should not add an entry to samples if the name is missing', () => {
+    it('should not add an entry to samples if the name is missing', () => {
       return chai.request(server)
         .post('/api/v1/samples')
         .send([{

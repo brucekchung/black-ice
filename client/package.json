@@ -12,7 +12,7 @@
   },
   "proxy": "http://localhost:5000/",
   "scripts": {
-    "test": "react-scripts test --env=jsdom --watchAll",
+    "test": "CI=true react-scripts test --env=jsdom --watchAll",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "eject": "react-scripts eject",
