@@ -12,10 +12,7 @@
   font-weight: 300;
   text-decoration: none;
   font-size: 1.4em;
-}
-
-.Landing a:hover {
-  color: #0892a5;
+  margin: 30px;
 }
 
 .Landing h2 {
@@ -28,9 +25,16 @@
   border: 1px solid yellow;
   display: flex;
   flex-direction: column;
-  padding: 20px;
   width: 21%;
   text-align: center;
+}
+
+.Landing .selection:hover {
+  border: 1px solid #0892a5;
+}
+
+.Landing .selection:hover > a {
+  color: #0892a5;
 }
 
 .Landing .center-links {

@@ -19,16 +19,28 @@ class Landing extends Component {
         <h2>Welcome, { this.state.user }!</h2>
         <div className="center-links">
           <div className="selection">
-            <a href="/DataEntry">Add Data</a>
-            <img src={folderIcon} alt="logo" />
+            <a href="/DataEntry">
+              <div>
+                Add Data
+                <img src={folderIcon} alt="logo" />
+              </div>
+            </a>
           </div>
           <div className="selection">
-            <a href="/Reports">Reports</a>
-            <img src={lineChartIcon} alt="logo" />
+            <a href="/Reports">
+              <div>
+                Reports
+                <img src={lineChartIcon} alt="logo" />
+              </div>
+            </a>
           </div>
           <div className="selection">
-            <a href="/ViewAll">Edit Data</a>
-            <img src={editDataIcon} alt="logo" />
+            <a href="/ViewAll">
+              <div>
+                Edit Data
+                <img src={editDataIcon} alt="logo" />
+              </div>
+            </a>
           </div>
         </div>
       </div>

@@ -105,7 +105,7 @@ class Reports extends Component {
       if (sample.reflectance === '') {
         return acc
       } else {
-        let num = parseInt(sample.reflectance)
+        let num = parseInt(sample.reflectance, 10)
 
         return acc + num
       }
