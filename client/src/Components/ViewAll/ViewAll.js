@@ -37,9 +37,19 @@ class ViewAll extends Component {
     const tableRow = button.parentNode.parentNode
     const id = tableRow.id
     const editedRow = [...tableRow.childNodes].splice(0, 10)
-    const match = this.state.allData.find(dataPoint => dataPoint.id === parseInt(id, 10))
+    const match = this.state.allData.find(dataPoint => dataPoint.sample_id === parseInt(id, 10))
 
-    editedRow.forEach(tableData => match[tableData.className] = tableData.innerText)
+    editedRow.forEach(tableData => {
+      let className;
+      const tdClass = tableData.className
+
+      if(tdClass.includes('editable-true')) {
+        className = tdClass.replace(' editable-true', '')
+      } else if(tdClass.includes('editable-false')) {
+        className = tdClass.replace(' editable-false', '')
+      }
+      return match[className] = tableData.innerText
+    })
     return match
   }
 
@@ -91,7 +101,7 @@ class ViewAll extends Component {
     const dataToRender = this.state.hasSearched ? this.state.filteredData : this.state.allData
 
     return dataToRender.map(dataPoint => {
-      const editable = parseInt(this.state.editableContent, 10) === dataPoint.id
+      const editable = parseInt(this.state.editableContent, 10) === dataPoint.sample_id
 
       return (
         <tr id={ dataPoint.sample_id } key={ dataPoint.sample_id }>
@@ -102,8 +112,8 @@ class ViewAll extends Component {
           <td className='lng'>{ dataPoint.lng }</td>
           <td className='region'>{ dataPoint.region}</td>
           <td className='country'>{ dataPoint.country }</td>
-          <td className='reflectance' contentEditable={ editable }>{ dataPoint.reflectance }</td>
-          <td className='wavelength' contentEditable={ editable }>{ dataPoint.wavelength }</td>
+          <td className={`reflectance editable-${ editable }`} contentEditable={ editable }>{ dataPoint.reflectance }</td>
+          <td className={`wavelength editable-${ editable }`} contentEditable={ editable }>{ dataPoint.wavelength }</td>
           <td className='sample_id'>{ dataPoint.sample_id }</td> 
           <td><button onClick={ this.handleEdit }>Edit</button></td>
           <td><button className='delete-btn' onClick={ this.deleteRow }>Delete</button></td>
