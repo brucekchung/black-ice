@@ -130,10 +130,13 @@ class Reports extends Component {
       .width(1000)
       .height(300)
       .isAnimated(true)
-      // .exportChart('download_data', 'reflectance')
     }
 
     container.datum(reformatted).call(barChart)
+  }
+
+  getAnotherReport = () => {
+    this.setState({ showGraph: false })
   }
 
   render() {
@@ -161,47 +164,52 @@ class Reports extends Component {
             <h4>Reflectance</h4>
           </div>
         </div>
-        <form onSubmit={ this.handleSubmit }>
-          <h3>Choose a location:</h3>
-          <div className="choose-location">
-            <DropDown name='country'
-                      options={ this.removeRepeatOptions(this.state.allLocations, 'country') }
-                      handleChange={ this.handleChange } />
-            <DropDown name='region'
-                      options={ this.availableOptions('region') }
-                      handleChange={ this.handleChange } />
-            <DropDown name='coordinates'
-                      options={ this.availableOptions('coordinates') }
-                      handleChange={ this.handleChange } />
-          </div>
-          <h3>Choose a date range:</h3>
-          <div className="choose-dates">
-            <label htmlFor="startDate">Start</label>
-            <input id="startDate"
-                   type="text"
-                   name="startDate"
-                   placeholder="mm/dd/yy"
-                   autocomplete="off"
-                   value={ this.state.startDate }
-                   onChange={ this.setDates }/>
-            <label htmlFor="endDate">End</label>
-            <input id="endDate"
-                   type="text"
-                   name="endDate"
-                   placeholder="mm/dd/yy"
-                   autocomplete="off"
-                   value={ this.state.endDate }
-                   onChange={ this.setDates }/>
-          </div>
-          <button type='submit'>Generate Report</button>
-        </form>
+        {
+          !this.state.showGraph &&
+          <form onSubmit={ this.handleSubmit }>
+            <h3>Choose a location:</h3>
+            <div className="choose-location">
+              <DropDown name='country'
+                        options={ this.removeRepeatOptions(this.state.allLocations, 'country') }
+                        handleChange={ this.handleChange } />
+              <DropDown name='region'
+                        options={ this.availableOptions('region') }
+                        handleChange={ this.handleChange } />
+              <DropDown name='coordinates'
+                        options={ this.availableOptions('coordinates') }
+                        handleChange={ this.handleChange } />
+            </div>
+            <h3>Choose a date range:</h3>
+            <div className="choose-dates">
+              <label htmlFor="startDate">Start</label>
+              <input id="startDate"
+                     type="text"
+                     name="startDate"
+                     placeholder="mm/dd/yy"
+                     autocomplete="off"
+                     value={ this.state.startDate }
+                     onChange={ this.setDates }/>
+              <label htmlFor="endDate">End</label>
+              <input id="endDate"
+                     type="text"
+                     name="endDate"
+                     placeholder="mm/dd/yy"
+                     autocomplete="off"
+                     value={ this.state.endDate }
+                     onChange={ this.setDates }/>
+            </div>
+            <button type='submit'>Generate Report</button>
+          </form>
+        }
         {
           this.state.showGraph &&
           <div className="graph">
             <div className="y-label">Reflectance</div>
             <div className="js-chart-container"></div>
             <div className="x-label">Wavelength</div>
+            <button onClick={ this.getAnotherReport }>Get another report</button>
           </div>
+
         }
       </div>
     )
