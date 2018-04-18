@@ -53,9 +53,14 @@ class Reports extends Component {
   }
 
   formatLatLng = locations => {
-    return locations.map(location => {
-      return `${ location.lat }, ${ location.lng }`
+    const coords = []
+    locations.forEach(location => {
+      if (location.lat && location.lng) {
+        coords.push(`${ location.lat }, ${ location.lng }`)
+      }
     })
+    
+    return coords
   }
 
   handleChange = e => {
