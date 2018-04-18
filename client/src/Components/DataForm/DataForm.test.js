@@ -1,10 +1,9 @@
 import React from 'react'
 import DataForm from './DataForm'
 import { shallow } from 'enzyme'
-import { dataOnly } from '../../mockData'
 
 describe('DataForm', () => {
-  let wrapper;
+  let wrapper
 
   beforeEach(() => {
     wrapper = shallow(<DataForm data={ [{ name: '', date_collected: '', reflectance: '', wavelength: '' }] }

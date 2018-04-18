@@ -3,7 +3,7 @@ import Landing from './Landing'
 import { shallow } from 'enzyme'
 
 describe('Landing', () => {
-  let wrapper;
+  let wrapper
 
   beforeEach(() => {
     wrapper = shallow(<Landing />)

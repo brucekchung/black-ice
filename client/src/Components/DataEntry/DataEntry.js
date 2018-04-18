@@ -1,6 +1,4 @@
 import React, { Component } from 'react'
-import './DataEntry.css'
-import Nav from '../Nav/Nav'
 import DropDown from '../LocationForm/LocationForm'
 import DataForm from '../DataForm/DataForm'
 import { apiCall } from '../../apiCall/apiCall'
@@ -22,7 +20,7 @@ class DataEntry extends Component {
         alt: ''
       },
       addLocation: false,
-      data: [{
+      sampleData: [{
           name: '',
           date_collected: '',
           reflectance: '',
@@ -33,7 +31,7 @@ class DataEntry extends Component {
 
   componentDidMount = async () => {
     const url = '/api/v1/locations'
-    const allLocations = await apiCall(url);
+    const allLocations = await apiCall(url)
 
     this.setState({ allLocations })
   }
@@ -48,7 +46,7 @@ class DataEntry extends Component {
 
   sortOptionsInfo = (locations, type) => {
     return locations.reduce((acc, location) => {
-      if(acc.includes(location[type])) {
+      if (acc.includes(location[type])) {
         return acc
       }
 
@@ -69,18 +67,21 @@ class DataEntry extends Component {
   }
 
   handleClick = e => {
-    e.preventDefault();
+    e.preventDefault()
     e.target.innerText === 'Add Data' ? this.addDataSet() : this.removeDataSet()
   }
 
   updateData = e => {
     const name = e.target.name
     const value = e.target.value
-    const index = e.target.parentNode.className.replace('data-form-set ', '')
-    const data = [...this.state.data]
+    const index = parseInt(e.target.parentNode.className.replace('data-form-set ', ''), 10)
+    const sampleData = [...this.state.sampleData]
 
-    data[index][name] = value
-    this.setState({ data })
+    console.log('parentNode: ', e.target.parentNode)
+    console.log('index: ', index)
+
+    sampleData[index][name] = value
+    this.setState({ sampleData })
   }
 
   addDataSet = () => {
@@ -90,17 +91,17 @@ class DataEntry extends Component {
       reflectance: '',
       wavelength: ''
     }
-    const newDataArray = [...this.state.data, newSet]
+    const newDataArray = [...this.state.sampleData, newSet]
 
-    this.setState({ data: newDataArray })
+    this.setState({ sampleData: newDataArray })
   }
 
   removeDataSet = () => {
-    if (this.state.data.length > 1) {
-      const allItems = [...this.state.data]
+    if (this.state.sampleData.length > 1) {
+      const allItems = [...this.state.sampleData]
 
       allItems.pop()
-      this.setState({ data: allItems })
+      this.setState({ sampleData: allItems })
     }
   }
 
@@ -138,7 +139,7 @@ class DataEntry extends Component {
         alt: ''
       },
       addLocation: false,
-      data: [{
+      sampleData: [{
           name: '',
           date_collected: '',
           reflectance: '',
@@ -149,12 +150,12 @@ class DataEntry extends Component {
 
   submit = async () => {
     const locations_id = await this.getLocationId()
-    const data = {
+    const sampleData = {
       type: 'samples',
-      payload: this.state.data.map(data => Object.assign(data, { locations_id }))
+      payload: this.state.sampleData.map(sample => Object.assign(sample, { locations_id }))
     }
 
-    this.sendData(data)  
+    this.sendData(sampleData)  
     this.resetState()  
   }
 
@@ -171,12 +172,12 @@ class DataEntry extends Component {
 
   submitWithLocation = async () => {
     const locations_id = await this.submitLocation()
-    const data = {
+    const sampleData = {
       type: 'samples',
-      payload: this.state.data.map(data => Object.assign(data, { locations_id }))
+      payload: this.state.sampleData.map(sample => Object.assign(sample, { locations_id }))
     }
-    const createdData = await this.sendData(data)
 
+    await this.sendData(sampleData)
     this.resetState()
   }
 
@@ -258,7 +259,7 @@ class DataEntry extends Component {
                   className="add-new-location-button"
                   onClick={ this.changeLocationForm }>Add a New Location</button>
           <h3>Data</h3>
-          <DataForm data={ this.state.data }
+          <DataForm sampleData={ this.state.sampleData }
                     handleChange={ this.updateData }
                     handleClick={ this.handleClick } />
           <button type="submit" className="submit-button">Save</button>
@@ -281,7 +282,7 @@ DataEntry.propTypes = {
       alt: string.isRequired
     }),
     addLocation: bool.isRequired,
-    data: arrayOf(object.isRequired).isRequired
+    sampleData: arrayOf(object.isRequired).isRequired
   })
 }
 

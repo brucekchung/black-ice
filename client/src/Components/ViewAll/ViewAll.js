@@ -1,5 +1,4 @@
 import React, { Component } from 'react'
-import Nav from '../Nav/Nav'
 import { apiCall } from '../../apiCall/apiCall'
 import './ViewAll.css'
 import { shape, array } from 'prop-types'
@@ -8,7 +7,7 @@ class ViewAll extends Component {
   constructor() {
     super()
     this.state = {
-      data: [],
+      allData: [],
       filteredData: [],
       editableContent: null,
       hasSearched: false
@@ -18,13 +17,13 @@ class ViewAll extends Component {
   componentDidMount = async () => {
     const samples = await apiCall('/api/v1/samples')
     const locations = await apiCall('/api/v1/locations')
-    const data = samples.map(sample => {
+    const allData = samples.map(sample => {
       const sample_id = {sample_id: sample.id}
       const found = locations.find(location => location.id === sample.locations_id)
       return Object.assign(sample, sample_id, found )
     })
 
-    this.setState({ data })
+    this.setState({ allData })
   }
 
   editData = button => {
@@ -37,20 +36,20 @@ class ViewAll extends Component {
   getRowData = button => {
     const tableRow = button.parentNode.parentNode
     const id = tableRow.id
-    const editedRow = [...tableRow.childNodes].splice(0,10)
-    const match = this.state.data.find(dataPoint => dataPoint.id === parseInt(id, 10))
+    const editedRow = [...tableRow.childNodes].splice(0, 10)
+    const match = this.state.allData.find(dataPoint => dataPoint.id === parseInt(id, 10))
 
     editedRow.forEach(tableData => match[tableData.className] = tableData.innerText)
     return match
   }
 
-  updateData = async data => {
+  updateData = async newData => {
     const updatedData = {
-      reflectance: data.reflectance,
-      wavelength: data.wavelength
+      reflectance: newData.reflectance,
+      wavelength: newData.wavelength
     }
 
-    const url = `/api/v1/samples/${ data.sample_id }`
+    const url = `/api/v1/samples/${ newData.sample_id }`
     const init = {
       method: 'PUT',
       headers: {
@@ -63,9 +62,9 @@ class ViewAll extends Component {
   }
 
   saveData = async button => {
-    const data = this.getRowData(button)
+    const rowData = this.getRowData(button)
 
-    await this.updateData(data)
+    await this.updateData(rowData)
     button.innerText = 'Edit'
     this.setState({ editableContent: null })
   }
@@ -78,20 +77,20 @@ class ViewAll extends Component {
 
   deleteRow = async e => {
     const tableRow = e.target.parentNode.parentNode
-    const id = tableRow.id
-    const remainingData = this.state.data.filter(dataPoint => dataPoint.sample_id !== id)
+    const id = parseInt(tableRow.id, 10)
+    const remainingData = this.state.allData.filter(dataPoint => dataPoint.sample_id !== id)
     const url = `/api/v1/samples/${ id }`
     const init = { method: 'DELETE' }
 
     await apiCall(url, init)
 
-    this.setState({ data: remainingData })
+    this.setState({ allData: remainingData })
   }
 
   renderData = () => {
-    const data = this.state.hasSearched ? this.state.filteredData : this.state.data
+    const dataToRender = this.state.hasSearched ? this.state.filteredData : this.state.allData
 
-    return data.map(dataPoint => {
+    return dataToRender.map(dataPoint => {
       const editable = parseInt(this.state.editableContent, 10) === dataPoint.id
 
       return (
@@ -114,12 +113,12 @@ class ViewAll extends Component {
   }
 
   filterData = searchValue => {
-    return this.state.data.filter(dataPoint => {
+    return this.state.allData.filter(dataPoint => {
       const values = Object.values(dataPoint)
       const match = values.find(value => {
         let stuff = value
 
-        if(typeof value === 'number') {
+        if (typeof value === 'number') {
           stuff = value.toString()
         }
 
@@ -172,8 +171,8 @@ class ViewAll extends Component {
 
 ViewAll.propTypes = {
   state: shape({
-    data: array.isRequired,
-    filteredData: array.isRequired,
+    allData: array.isRequired,
+    filteredData: array.isRequired
   })
 }
 

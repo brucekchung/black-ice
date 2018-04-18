@@ -4,7 +4,7 @@ import './DataForm.css'
 
 class DataForm extends Component {
   renderInputs = () => {
-    return this.props.data.map((item, index) => {
+    return this.props.sampleData.map((item, index) => {
       return (
         <div key={ index } className={`data-form-set ${index}`} >
           <h4>Data Point { index + 1 }</h4>
@@ -52,7 +52,7 @@ class DataForm extends Component {
 }
 
 DataForm.propTypes = {
-  data: arrayOf(object.isRequired).isRequired,
+  sampleData: arrayOf(object.isRequired).isRequired,
   handleChange: func.isRequired,
   handleClick: func.isRequired
 }

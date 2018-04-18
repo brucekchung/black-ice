@@ -1,13 +1,12 @@
 import '../../../node_modules/britecharts/dist/css/britecharts.min.css'
 import React, { Component } from 'react'
-import Nav from '../Nav/Nav'
 import DropDown from '../LocationForm/LocationForm'
 import { apiCall } from '../../apiCall/apiCall'
 import { shape, array, string, bool } from 'prop-types'
 import './Reports.css'
 import BarChart from 'britecharts/dist/umd/bar.min'
 
-const d3Selection = require('d3-selection');
+const d3Selection = require('d3-selection')
 
 class Reports extends Component {
   constructor() {
@@ -18,7 +17,7 @@ class Reports extends Component {
       selectedLocation: {
         country: '',
         coordinates: '',
-        region: '',
+        region: ''
       },
       showGraph: false,
       startDate: '',
@@ -45,7 +44,7 @@ class Reports extends Component {
 
   removeRepeatOptions = (locations, type) => {
     return locations.reduce((acc, location) => {
-      if(acc.includes(location[type])) {
+      if (acc.includes(location[type])) {
         return acc
       }
 
@@ -83,15 +82,15 @@ class Reports extends Component {
   }
 
   handleSubmit = async (e) => {
-    e.preventDefault();
+    e.preventDefault()
 
     const { startDate, endDate } = this.state
     const id = await this.getLocationId()
     const url = `/api/v1/samples?locations_id=${ id }&startDate=${ startDate }&endDate=${ endDate }`
-    const data = await apiCall(url)
+    const displayData = await apiCall(url)
     
     this.setState({ showGraph: true })
-    this.displayBarGraph(data)
+    this.displayBarGraph(displayData)
   }
 
   calculateAverage = () => {
@@ -103,7 +102,7 @@ class Reports extends Component {
 
   calculateReflectance = () => {
     const reflectance = this.state.allSamples.reduce((acc, sample) => {
-      if(sample.reflectance === '') {
+      if (sample.reflectance === '') {
         return acc
       } else {
         let num = parseInt(sample.reflectance)
@@ -117,14 +116,14 @@ class Reports extends Component {
     return rounded
   }
 
-  displayBarGraph = data => {
-    const reformatted = data.map(dataPoint => ({
+  displayBarGraph = graphData => {
+    const reformatted = graphData.map(dataPoint => ({
       value: dataPoint.reflectance,
       name: dataPoint.wavelength
     }))
 
     const container = d3Selection.select('.js-chart-container'),
-      barChart = new BarChart();
+      barChart = new BarChart()
 
     if (container.node()) {
       barChart
@@ -134,7 +133,7 @@ class Reports extends Component {
       // .exportChart('download_data', 'reflectance')
     }
 
-    container.datum(reformatted).call(barChart);
+    container.datum(reformatted).call(barChart)
   }
 
   render() {
@@ -216,7 +215,7 @@ Reports.propTypes = {
     selectedLocation: shape({
       country: string.isRequired,
       coordinates: string.isRequired,
-      region: string.isRequired,
+      region: string.isRequired
     }),
     showGraph: bool.isRequired,
     startDate: string.isRequired,

@@ -4,7 +4,7 @@ import './LocationForm.css'
 
 class DropDown extends Component {
   renderOptions = () => {
-    if(this.props.options && this.props.options.length > 0) {
+    if (this.props.options && this.props.options.length > 0) {
       return this.props.options.map((option, index) => (
         <option value={ option } 
                 key={ option + index }>{ option }</option>
