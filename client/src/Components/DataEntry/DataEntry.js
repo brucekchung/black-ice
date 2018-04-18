@@ -125,7 +125,8 @@ class DataEntry extends Component {
   getLocationId = async () => {
     const latlng = this.state.selectedLocation.coordinates.split(', ')
     const url = `/api/v1/locations?lat=${ latlng[0] }&lng=${ latlng[1] }`
-    const { id } = await apiCall(url)
+    const results = await apiCall(url)
+    const id = results[0].id
 
     return id
   }
@@ -154,6 +155,7 @@ class DataEntry extends Component {
 
   submit = async () => {
     const locations_id = await this.getLocationId()
+    debugger;
     const sampleData = {
       type: 'samples',
       payload: this.state.sampleData.map(sample => Object.assign(sample, { locations_id }))
