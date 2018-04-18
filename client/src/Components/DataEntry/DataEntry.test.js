@@ -178,7 +178,7 @@ describe('DataEntry', () => {
       }
     })
     window.fetch = jest.fn().mockImplementation(() => Promise.resolve({
-      json: () => Promise.resolve({ id: 1 })
+      json: () => Promise.resolve([{ id: 1 }])
     }))
 
     const id = wrapper.instance().getLocationId()
@@ -228,7 +228,7 @@ describe('DataEntry', () => {
 
   it('should call fetch and reset state', () => {
     window.fetch = jest.fn().mockImplementation(() => Promise.resolve({
-      json: () => Promise.resolve({})
+      json: () => Promise.resolve([{ id: 1 }])
     }))
     const expected = {
       allLocations: [],
