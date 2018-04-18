@@ -1,6 +1,6 @@
 import '../../../node_modules/britecharts/dist/css/britecharts.min.css'
 import React, { Component } from 'react'
-import DropDown from '../LocationForm/LocationForm'
+import DropDown from '../DropDown/DropDown'
 import { apiCall } from '../../apiCall/apiCall'
 import { shape, array, string, bool } from 'prop-types'
 import './Reports.css'
@@ -191,7 +191,7 @@ class Reports extends Component {
                      type="text"
                      name="startDate"
                      placeholder="mm/dd/yy"
-                     autocomplete="off"
+                     autoComplete="off"
                      value={ this.state.startDate }
                      onChange={ this.setDates }/>
               <label htmlFor="endDate">End</label>
@@ -199,7 +199,7 @@ class Reports extends Component {
                      type="text"
                      name="endDate"
                      placeholder="mm/dd/yy"
-                     autocomplete="off"
+                     autoComplete="off"
                      value={ this.state.endDate }
                      onChange={ this.setDates }/>
             </div>

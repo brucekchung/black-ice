@@ -22,7 +22,7 @@ class Landing extends Component {
             <a href="/DataEntry">
               <div>
                 Add Data
-                <img src={folderIcon} alt="logo" />
+                <img src={ folderIcon } alt="logo" />
               </div>
             </a>
           </div>
@@ -30,7 +30,7 @@ class Landing extends Component {
             <a href="/Reports">
               <div>
                 Reports
-                <img src={lineChartIcon} alt="logo" />
+                <img src={ lineChartIcon } alt="logo" />
               </div>
             </a>
           </div>
@@ -38,7 +38,7 @@ class Landing extends Component {
             <a href="/ViewAll">
               <div>
                 Edit Data
-                <img src={editDataIcon} alt="logo" />
+                <img src={ editDataIcon } alt="logo" />
               </div>
             </a>
           </div>

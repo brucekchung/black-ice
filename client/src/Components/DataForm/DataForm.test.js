@@ -6,7 +6,7 @@ describe('DataForm', () => {
   let wrapper
 
   beforeEach(() => {
-    wrapper = shallow(<DataForm data={ [{ name: '', date_collected: '', reflectance: '', wavelength: '' }] }
+    wrapper = shallow(<DataForm sampleData={ [{ name: '', date_collected: '', reflectance: '', wavelength: '' }] }
                                 handleClick={ jest.fn() }
                                 handleChange={ jest.fn() } />, 
                                 { disableLifecycleMethods: true })

@@ -1,10 +1,14 @@
 .DataForm input {
-  margin: 10px;
+  min-width: 175px;
+  width: 22%;
 }
 
 .data-form-set {
+  display: flex;
+  justify-content: space-between;
+  margin: auto;
   margin-bottom: 20px;
-  width: 100%;
+  width: 85%;
 }
 
 .DataForm button {
@@ -13,6 +17,29 @@
 }
 
 .add-remove-buttons {
-  position: absolute;
-  right: 135px;
+  margin: auto;
+  text-align: right;
+  width: 85%;
+}
+
+.add-remove-buttons button {
+  margin: 0;
+  margin-left: 20px;
+}
+
+@media screen and (max-width: 1020px) {
+  .data-form-set {
+    display: block;
+    width: 66%;
+  }
+
+  .data-form-set input {
+    display: block;
+    margin: 20px 0;
+    width: 100%;
+  }
+
+  .add-remove-buttons {
+    width: 70%;
+  }
 }

@@ -40,12 +40,12 @@ class ViewAll extends Component {
     const match = this.state.allData.find(dataPoint => dataPoint.sample_id === parseInt(id, 10))
 
     editedRow.forEach(tableData => {
-      let className;
+      let className
       const tdClass = tableData.className
 
-      if(tdClass.includes('editable-true')) {
+      if (tdClass.includes('editable-true')) {
         className = tdClass.replace(' editable-true', '')
-      } else if(tdClass.includes('editable-false')) {
+      } else if (tdClass.includes('editable-false')) {
         className = tdClass.replace(' editable-false', '')
       }
       

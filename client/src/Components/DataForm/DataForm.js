@@ -6,33 +6,35 @@ class DataForm extends Component {
   renderInputs = () => {
     return this.props.sampleData.map((item, index) => {
       return (
-        <div key={ index } className={`data-form-set ${index}`} >
-          <h4>Data Point { index + 1 }</h4>
-          <input type="text"  
-                 name="name"
-                 className="name"
-                 placeholder="Name"
-                 autoComplete="off"
-                 onChange={ this.props.handleChange }
-                 value={ item.name } />
-          <input type="text"
-                 name="date_collected"
-                 placeholder="Date collected (mm/dd/yy)"
-                 autoComplete="off"
-                 onChange={ this.props.handleChange }
-                 value={ item.date_collected } />
-          <input type="text"
-                 name="reflectance"
-                 placeholder="Reflectance"
-                 autoComplete="off"
-                 onChange={ this.props.handleChange }
-                 value={ item.reflectance } />
-          <input type="text"
-                 name="wavelength"
-                 placeholder="Wavelength"
-                 autoComplete="off"
-                 onChange={ this.props.handleChange }
-                 value={ item.wavelength } />
+        <div key={ index }>
+          <h4 >Data Point { index + 1 }</h4>
+          <div className={`data-form-set ${index}`} >
+            <input type="text"  
+                   name="name"
+                   className="name"
+                   placeholder="Name"
+                   autoComplete="off"
+                   onChange={ this.props.handleChange }
+                   value={ item.name } />
+            <input type="text"
+                   name="date_collected"
+                   placeholder="Date collected (mm/dd/yy)"
+                   autoComplete="off"
+                   onChange={ this.props.handleChange }
+                   value={ item.date_collected } />
+            <input type="text"
+                   name="reflectance"
+                   placeholder="Reflectance"
+                   autoComplete="off"
+                   onChange={ this.props.handleChange }
+                   value={ item.reflectance } />
+            <input type="text"
+                   name="wavelength"
+                   placeholder="Wavelength"
+                   autoComplete="off"
+                   onChange={ this.props.handleChange }
+                   value={ item.wavelength } />
+          </div>
         </div>
       )
     })

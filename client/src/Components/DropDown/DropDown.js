@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import { func, arrayOf, string } from 'prop-types'
-import './LocationForm.css'
+import './DropDown.css'
 
 class DropDown extends Component {
   renderOptions = () => {

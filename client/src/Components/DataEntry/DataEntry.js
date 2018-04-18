@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import DropDown from '../LocationForm/LocationForm'
+import DropDown from '../DropDown/DropDown'
 import DataForm from '../DataForm/DataForm'
 import { apiCall } from '../../apiCall/apiCall'
 import './DataEntry.css'
@@ -55,7 +55,14 @@ class DataEntry extends Component {
   }
 
   sortLatLng = locations => {
-    return locations.map(location => `${ location.lat }, ${ location.lng }`)
+    const coords = []
+    locations.forEach(location => {
+      if (location.lat && location.lng) {
+        coords.push(`${ location.lat }, ${ location.lng }`)
+      }
+    })
+    
+    return coords
   }
 
   handleChange = e => {
@@ -76,9 +83,6 @@ class DataEntry extends Component {
     const value = e.target.value
     const index = parseInt(e.target.parentNode.className.replace('data-form-set ', ''), 10)
     const sampleData = [...this.state.sampleData]
-
-    console.log('parentNode: ', e.target.parentNode)
-    console.log('index: ', index)
 
     sampleData[index][name] = value
     this.setState({ sampleData })
@@ -208,12 +212,15 @@ class DataEntry extends Component {
             <div className="choose-location">
               <h4>Choose an existing location:</h4>
               <DropDown name='country'
+                        className='drop-down'
                         options={ this.sortOptionsInfo(this.state.allLocations, 'country') }
                         handleChange={ this.handleChange } />
               <DropDown name='region'
+                        className='drop-down'
                         options={ this.availableOptions('region') }
                         handleChange={ this.handleChange } />
               <DropDown name='coordinates'
+                        className='drop-down'
                         options={ this.availableOptions('coordinates') }
                         handleChange={ this.handleChange } />
             </div>
@@ -225,31 +232,37 @@ class DataEntry extends Component {
               <input type="text"
                      name="name"
                      placeholder="Location Name"
+                     autoComplete="off"
                      value={ this.state.selectedLocation.name }
                      onChange={ this.handleChange } />
               <input type="text"
                      name="country"
                      placeholder="Country"
+                     autoComplete="off"
                      value={ this.state.selectedLocation.country }
                      onChange={ this.handleChange } />
               <input type="text"
                      name="region"
                      placeholder="Region"
+                     autoComplete="off"
                      value={ this.state.selectedLocation.region }
                      onChange={ this.handleChange } />
               <input type="number"
                      name="alt"
                      placeholder="Altitude"
+                     autoComplete="off"
                      value={ this.state.selectedLocation.alt }
                      onChange={ this.handleChange } />
               <input type="text"
                      name="lat"
                      placeholder="Latitude"
+                     autoComplete="off"
                      value={ this.state.selectedLocation.lat }
                      onChange={ this.handleChange } />
               <input type="text"
                      name="lng"
                      placeholder="Longitude"
+                     autoComplete="off"
                      value={ this.state.selectedLocation.lng }
                      onChange={ this.handleChange } />
             </div>
