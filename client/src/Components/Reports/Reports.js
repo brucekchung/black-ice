@@ -191,7 +191,7 @@ class Reports extends Component {
                      type="text"
                      name="startDate"
                      placeholder="mm/dd/yy"
-                     autocomplete="off"
+                     autoComplete="off"
                      value={ this.state.startDate }
                      onChange={ this.setDates }/>
               <label htmlFor="endDate">End</label>
@@ -199,7 +199,7 @@ class Reports extends Component {
                      type="text"
                      name="endDate"
                      placeholder="mm/dd/yy"
-                     autocomplete="off"
+                     autoComplete="off"
                      value={ this.state.endDate }
                      onChange={ this.setDates }/>
             </div>
