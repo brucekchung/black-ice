@@ -22,6 +22,7 @@
 .Reports form input,
 .Reports form select {
   margin: 20px 0 ;
+  min-width: 240px;
 }
 
 .Reports form input {
@@ -39,6 +40,7 @@
   border: 5px solid #0892a5;
   border-radius: 100%;
   text-align: center;
+  margin: 10px;
   min-height: 200px;
   min-width: 200px;
 }
@@ -73,4 +75,54 @@
 
 .x-label {
   padding: 30px;
+}
+
+@media screen and (max-width: 1100px) {
+  .dashboard {
+    flex-wrap: wrap;
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 1020px) {
+  .choose-dates {
+    margin: auto;
+    width: 70%;
+  }
+
+  .choose-dates input {
+    padding: 0;
+    padding-left: 10px;
+    width: 95%;
+  }
+
+  .Reports form input {
+    margin: 20px 0;
+  }
+
+  .choose-dates label {
+    display: block;
+    margin-left: 10px;
+    text-align: left;
+  }
+}
+
+@media screen and (max-width: 920px) {
+  .dashboard div {
+    margin: 15px auto;
+  }
+}
+
+@media screen and (max-width: 475px) {
+  .Reports form input,
+  .Reports form select {
+    margin-left: -10px;
+  }
+}
+
+@media screen and (max-width: 430px) {
+  .Reports form input,
+  .Reports form select {
+    margin-left: -25px;
+  }
 }
