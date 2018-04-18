@@ -1,32 +1,29 @@
 .Landing {
-  margin: 0 auto;
-  height: 100%;
   display: flex;
   flex-direction: column;
   font-weight: 300;
+  height: 100%;
+  margin: 0 auto;
 }
 
 .Landing a {
   color: #eef0f2;
-  font-size: 1.5rem;
-  font-weight: 300;
-  text-decoration: none;
   font-size: 1.4em;
+  font-weight: 300;
   margin: 30px;
+  text-decoration: none;
 }
 
 .Landing h2 {
   font-size: 2rem;
-  text-align: center;
   margin: 50px;
+  text-align: center;
 }
 
 .Landing .selection {
   border: 1px solid yellow;
-  display: flex;
-  flex-direction: column;
-  width: 21%;
   text-align: center;
+  width: 21%;
 }
 
 .Landing .selection:hover {
@@ -38,13 +35,15 @@
 }
 
 .Landing .center-links {
-  margin: 0 auto;
   display: flex;
   justify-content: space-between;
+  margin: 0 auto;
   width: 71%;
 }
 
 .Landing img {
+  display: block;
   height: 70px;
+  margin: auto;
   margin-top: 20px;
 }
