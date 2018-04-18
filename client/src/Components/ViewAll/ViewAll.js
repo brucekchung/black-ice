@@ -48,6 +48,7 @@ class ViewAll extends Component {
       } else if(tdClass.includes('editable-false')) {
         className = tdClass.replace(' editable-false', '')
       }
+      
       return match[className] = tableData.innerText
     })
     return match
