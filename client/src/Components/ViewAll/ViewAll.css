@@ -2,6 +2,7 @@
   color: #eef0f2;
   font-weight: 300;
   position: relative;
+  box-sizing: border-box;
 }
 
 .ViewAll .search-bar {
@@ -38,11 +39,19 @@
 .ViewAll table tbody td,
 .ViewAll table thead th {
   text-align: left;
-  padding-top: 10px;
-  padding-right: 10px;
-  width: 100px;
+  padding: 10px;
+  min-width: 70px;
 }
 
 .ViewAll input:focus {
+  border: 2px solid #0892a5;
+}
+
+.editable-true {
+  border: 1px solid #eef0f2;
+  outline: none;
+}
+
+.editable-true:focus {
   border: 2px solid #0892a5;
 }
