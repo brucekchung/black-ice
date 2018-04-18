@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import DropDown from '../LocationForm/LocationForm'
+import DropDown from '../DropDown/DropDown'
 import DataForm from '../DataForm/DataForm'
 import { apiCall } from '../../apiCall/apiCall'
 import './DataEntry.css'
@@ -55,7 +55,14 @@ class DataEntry extends Component {
   }
 
   sortLatLng = locations => {
-    return locations.map(location => `${ location.lat }, ${ location.lng }`)
+    const coords = []
+    locations.forEach(location => {
+      if (location.lat && location.lng) {
+        coords.push(`${ location.lat }, ${ location.lng }`)
+      }
+    })
+    
+    return coords
   }
 
   handleChange = e => {

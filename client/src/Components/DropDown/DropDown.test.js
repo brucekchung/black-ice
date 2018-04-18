@@ -1,6 +1,6 @@
 /* eslint-disable */
 import React from 'react'
-import DropDown from './LocationForm'
+import DropDown from './DropDown'
 import { shallow } from 'enzyme'
 
 describe('DropDown', () => {

@@ -1,6 +1,6 @@
 import '../../../node_modules/britecharts/dist/css/britecharts.min.css'
 import React, { Component } from 'react'
-import DropDown from '../LocationForm/LocationForm'
+import DropDown from '../DropDown/DropDown'
 import { apiCall } from '../../apiCall/apiCall'
 import { shape, array, string, bool } from 'prop-types'
 import './Reports.css'
