@@ -22,6 +22,7 @@
 
 .Landing .selection {
   border: 1px solid yellow;
+  min-width: 150px;
   text-align: center;
   width: 21%;
 }
@@ -38,7 +39,7 @@
   display: flex;
   justify-content: space-between;
   margin: 0 auto;
-  width: 71%;
+  width: 70%;
 }
 
 .Landing img {
@@ -46,4 +47,21 @@
   height: 70px;
   margin: auto;
   margin-top: 20px;
+}
+
+@media screen and (max-width: 700px) {
+  .Landing .center-links {
+    display: block;
+    margin: auto;
+  }
+
+  .Landing .selection {
+    margin: 20px auto;
+    height: 200px;
+    width: 100%;
+  }
+
+  .Landing .selection div {
+    margin-top: 25px;
+  }
 }
