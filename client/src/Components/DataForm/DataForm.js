@@ -6,9 +6,9 @@ class DataForm extends Component {
   renderInputs = () => {
     return this.props.sampleData.map((item, index) => {
       return (
-        <div>
-          <h4>Data Point { index + 1 }</h4>
-          <div key={ index } className={`data-form-set ${index}`} >
+        <div key={ index }>
+          <h4 >Data Point { index + 1 }</h4>
+          <div className={`data-form-set ${index}`} >
             <input type="text"  
                    name="name"
                    className="name"

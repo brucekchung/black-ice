@@ -36,16 +36,19 @@ ShallowWrapper {
                               Choose an existing location:
                     </h4>
                     <DropDown
+                              className="drop-down"
                               handleChange={[Function]}
                               name="country"
                               options={Array []}
                     />
                     <DropDown
+                              className="drop-down"
                               handleChange={[Function]}
                               name="region"
                               options={Array []}
                     />
                     <DropDown
+                              className="drop-down"
                               handleChange={[Function]}
                               name="coordinates"
                               options={Array []}
@@ -118,16 +121,19 @@ ShallowWrapper {
                             Choose an existing location:
               </h4>
               <DropDown
+                            className="drop-down"
                             handleChange={[Function]}
                             name="country"
                             options={Array []}
               />
               <DropDown
+                            className="drop-down"
                             handleChange={[Function]}
                             name="region"
                             options={Array []}
               />
               <DropDown
+                            className="drop-down"
                             handleChange={[Function]}
                             name="coordinates"
                             options={Array []}
@@ -193,16 +199,19 @@ ShallowWrapper {
                   Choose an existing location:
 </h4>,
                 <DropDown
+                  className="drop-down"
                   handleChange={[Function]}
                   name="country"
                   options={Array []}
 />,
                 <DropDown
+                  className="drop-down"
                   handleChange={[Function]}
                   name="region"
                   options={Array []}
 />,
                 <DropDown
+                  className="drop-down"
                   handleChange={[Function]}
                   name="coordinates"
                   options={Array []}
@@ -228,6 +237,7 @@ ShallowWrapper {
                 "key": undefined,
                 "nodeType": "class",
                 "props": Object {
+                  "className": "drop-down",
                   "handleChange": [Function],
                   "name": "country",
                   "options": Array [],
@@ -241,6 +251,7 @@ ShallowWrapper {
                 "key": undefined,
                 "nodeType": "class",
                 "props": Object {
+                  "className": "drop-down",
                   "handleChange": [Function],
                   "name": "region",
                   "options": Array [],
@@ -254,6 +265,7 @@ ShallowWrapper {
                 "key": undefined,
                 "nodeType": "class",
                 "props": Object {
+                  "className": "drop-down",
                   "handleChange": [Function],
                   "name": "coordinates",
                   "options": Array [],
@@ -366,16 +378,19 @@ ShallowWrapper {
                                     Choose an existing location:
                         </h4>
                         <DropDown
+                                    className="drop-down"
                                     handleChange={[Function]}
                                     name="country"
                                     options={Array []}
                         />
                         <DropDown
+                                    className="drop-down"
                                     handleChange={[Function]}
                                     name="region"
                                     options={Array []}
                         />
                         <DropDown
+                                    className="drop-down"
                                     handleChange={[Function]}
                                     name="coordinates"
                                     options={Array []}
@@ -448,16 +463,19 @@ ShallowWrapper {
                                 Choose an existing location:
                 </h4>
                 <DropDown
+                                className="drop-down"
                                 handleChange={[Function]}
                                 name="country"
                                 options={Array []}
                 />
                 <DropDown
+                                className="drop-down"
                                 handleChange={[Function]}
                                 name="region"
                                 options={Array []}
                 />
                 <DropDown
+                                className="drop-down"
                                 handleChange={[Function]}
                                 name="coordinates"
                                 options={Array []}
@@ -523,16 +541,19 @@ ShallowWrapper {
                     Choose an existing location:
 </h4>,
                   <DropDown
+                    className="drop-down"
                     handleChange={[Function]}
                     name="country"
                     options={Array []}
 />,
                   <DropDown
+                    className="drop-down"
                     handleChange={[Function]}
                     name="region"
                     options={Array []}
 />,
                   <DropDown
+                    className="drop-down"
                     handleChange={[Function]}
                     name="coordinates"
                     options={Array []}
@@ -558,6 +579,7 @@ ShallowWrapper {
                   "key": undefined,
                   "nodeType": "class",
                   "props": Object {
+                    "className": "drop-down",
                     "handleChange": [Function],
                     "name": "country",
                     "options": Array [],
@@ -571,6 +593,7 @@ ShallowWrapper {
                   "key": undefined,
                   "nodeType": "class",
                   "props": Object {
+                    "className": "drop-down",
                     "handleChange": [Function],
                     "name": "region",
                     "options": Array [],
@@ -584,6 +607,7 @@ ShallowWrapper {
                   "key": undefined,
                   "nodeType": "class",
                   "props": Object {
+                    "className": "drop-down",
                     "handleChange": [Function],
                     "name": "coordinates",
                     "options": Array [],
@@ -719,6 +743,7 @@ ShallowWrapper {
                               Choose an existing location:
                     </h4>
                     <DropDown
+                              className="drop-down"
                               handleChange={[Function]}
                               name="country"
                               options={
@@ -729,11 +754,13 @@ ShallowWrapper {
                               }
                     />
                     <DropDown
+                              className="drop-down"
                               handleChange={[Function]}
                               name="region"
                               options={Array []}
                     />
                     <DropDown
+                              className="drop-down"
                               handleChange={[Function]}
                               name="coordinates"
                               options={Array []}
@@ -806,6 +833,7 @@ ShallowWrapper {
                             Choose an existing location:
               </h4>
               <DropDown
+                            className="drop-down"
                             handleChange={[Function]}
                             name="country"
                             options={
@@ -816,11 +844,13 @@ ShallowWrapper {
                             }
               />
               <DropDown
+                            className="drop-down"
                             handleChange={[Function]}
                             name="region"
                             options={Array []}
               />
               <DropDown
+                            className="drop-down"
                             handleChange={[Function]}
                             name="coordinates"
                             options={Array []}
@@ -886,6 +916,7 @@ ShallowWrapper {
                   Choose an existing location:
 </h4>,
                 <DropDown
+                  className="drop-down"
                   handleChange={[Function]}
                   name="country"
                   options={
@@ -896,11 +927,13 @@ ShallowWrapper {
                   }
 />,
                 <DropDown
+                  className="drop-down"
                   handleChange={[Function]}
                   name="region"
                   options={Array []}
 />,
                 <DropDown
+                  className="drop-down"
                   handleChange={[Function]}
                   name="coordinates"
                   options={Array []}
@@ -926,6 +959,7 @@ ShallowWrapper {
                 "key": undefined,
                 "nodeType": "class",
                 "props": Object {
+                  "className": "drop-down",
                   "handleChange": [Function],
                   "name": "country",
                   "options": Array [
@@ -942,6 +976,7 @@ ShallowWrapper {
                 "key": undefined,
                 "nodeType": "class",
                 "props": Object {
+                  "className": "drop-down",
                   "handleChange": [Function],
                   "name": "region",
                   "options": Array [],
@@ -955,6 +990,7 @@ ShallowWrapper {
                 "key": undefined,
                 "nodeType": "class",
                 "props": Object {
+                  "className": "drop-down",
                   "handleChange": [Function],
                   "name": "coordinates",
                   "options": Array [],
@@ -1067,6 +1103,7 @@ ShallowWrapper {
                                     Choose an existing location:
                         </h4>
                         <DropDown
+                                    className="drop-down"
                                     handleChange={[Function]}
                                     name="country"
                                     options={
@@ -1077,11 +1114,13 @@ ShallowWrapper {
                                     }
                         />
                         <DropDown
+                                    className="drop-down"
                                     handleChange={[Function]}
                                     name="region"
                                     options={Array []}
                         />
                         <DropDown
+                                    className="drop-down"
                                     handleChange={[Function]}
                                     name="coordinates"
                                     options={Array []}
@@ -1154,6 +1193,7 @@ ShallowWrapper {
                                 Choose an existing location:
                 </h4>
                 <DropDown
+                                className="drop-down"
                                 handleChange={[Function]}
                                 name="country"
                                 options={
@@ -1164,11 +1204,13 @@ ShallowWrapper {
                                 }
                 />
                 <DropDown
+                                className="drop-down"
                                 handleChange={[Function]}
                                 name="region"
                                 options={Array []}
                 />
                 <DropDown
+                                className="drop-down"
                                 handleChange={[Function]}
                                 name="coordinates"
                                 options={Array []}
@@ -1234,6 +1276,7 @@ ShallowWrapper {
                     Choose an existing location:
 </h4>,
                   <DropDown
+                    className="drop-down"
                     handleChange={[Function]}
                     name="country"
                     options={
@@ -1244,11 +1287,13 @@ ShallowWrapper {
                     }
 />,
                   <DropDown
+                    className="drop-down"
                     handleChange={[Function]}
                     name="region"
                     options={Array []}
 />,
                   <DropDown
+                    className="drop-down"
                     handleChange={[Function]}
                     name="coordinates"
                     options={Array []}
@@ -1274,6 +1319,7 @@ ShallowWrapper {
                   "key": undefined,
                   "nodeType": "class",
                   "props": Object {
+                    "className": "drop-down",
                     "handleChange": [Function],
                     "name": "country",
                     "options": Array [
@@ -1290,6 +1336,7 @@ ShallowWrapper {
                   "key": undefined,
                   "nodeType": "class",
                   "props": Object {
+                    "className": "drop-down",
                     "handleChange": [Function],
                     "name": "region",
                     "options": Array [],
@@ -1303,6 +1350,7 @@ ShallowWrapper {
                   "key": undefined,
                   "nodeType": "class",
                   "props": Object {
+                    "className": "drop-down",
                     "handleChange": [Function],
                     "name": "coordinates",
                     "options": Array [],

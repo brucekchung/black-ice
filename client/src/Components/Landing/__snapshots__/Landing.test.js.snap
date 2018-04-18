@@ -32,12 +32,14 @@ ShallowWrapper {
                     <a
                               href="/DataEntry"
                     >
-                              Add Data
+                              <div>
+                                        Add Data
+                                        <img
+                                                  alt="logo"
+                                                  src="folder.svg"
+                                        />
+                              </div>
                     </a>
-                    <img
-                              alt="logo"
-                              src="folder.svg"
-                    />
           </div>
           <div
                     className="selection"
@@ -45,12 +47,14 @@ ShallowWrapper {
                     <a
                               href="/Reports"
                     >
-                              Reports
+                              <div>
+                                        Reports
+                                        <img
+                                                  alt="logo"
+                                                  src="line-chart.svg"
+                                        />
+                              </div>
                     </a>
-                    <img
-                              alt="logo"
-                              src="line-chart.svg"
-                    />
           </div>
           <div
                     className="selection"
@@ -58,12 +62,14 @@ ShallowWrapper {
                     <a
                               href="/ViewAll"
                     >
-                              Edit Data
+                              <div>
+                                        Edit Data
+                                        <img
+                                                  alt="logo"
+                                                  src="archive.svg"
+                                        />
+                              </div>
                     </a>
-                    <img
-                              alt="logo"
-                              src="archive.svg"
-                    />
           </div>
 </div>,
       ],
@@ -102,12 +108,14 @@ ShallowWrapper {
               <a
                             href="/DataEntry"
               >
-                            Add Data
+                            <div>
+                                          Add Data
+                                          <img
+                                                        alt="logo"
+                                                        src="folder.svg"
+                                          />
+                            </div>
               </a>
-              <img
-                            alt="logo"
-                            src="folder.svg"
-              />
 </div>,
             <div
               className="selection"
@@ -115,12 +123,14 @@ ShallowWrapper {
               <a
                             href="/Reports"
               >
-                            Reports
+                            <div>
+                                          Reports
+                                          <img
+                                                        alt="logo"
+                                                        src="line-chart.svg"
+                                          />
+                            </div>
               </a>
-              <img
-                            alt="logo"
-                            src="line-chart.svg"
-              />
 </div>,
             <div
               className="selection"
@@ -128,12 +138,14 @@ ShallowWrapper {
               <a
                             href="/ViewAll"
               >
-                            Edit Data
+                            <div>
+                                          Edit Data
+                                          <img
+                                                        alt="logo"
+                                                        src="archive.svg"
+                                          />
+                            </div>
               </a>
-              <img
-                            alt="logo"
-                            src="archive.svg"
-              />
 </div>,
           ],
           "className": "center-links",
@@ -145,46 +157,68 @@ ShallowWrapper {
             "key": undefined,
             "nodeType": "host",
             "props": Object {
-              "children": Array [
-                <a
-                  href="/DataEntry"
+              "children": <a
+                href="/DataEntry"
 >
+                <div>
+                                Add Data
+                                <img
+                                                alt="logo"
+                                                src="folder.svg"
+                                />
+                </div>
+</a>,
+              "className": "selection",
+            },
+            "ref": null,
+            "rendered": Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": <div>
                   Add Data
-</a>,
-                <img
-                  alt="logo"
-                  src="folder.svg"
+                  <img
+                                    alt="logo"
+                                    src="folder.svg"
+                  />
+</div>,
+                "href": "/DataEntry",
+              },
+              "ref": null,
+              "rendered": Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": Array [
+                    "Add Data",
+                    <img
+                      alt="logo"
+                      src="folder.svg"
 />,
-              ],
-              "className": "selection",
+                  ],
+                },
+                "ref": null,
+                "rendered": Array [
+                  "Add Data",
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "alt": "logo",
+                      "src": "folder.svg",
+                    },
+                    "ref": null,
+                    "rendered": null,
+                    "type": "img",
+                  },
+                ],
+                "type": "div",
+              },
+              "type": "a",
             },
-            "ref": null,
-            "rendered": Array [
-              Object {
-                "instance": null,
-                "key": undefined,
-                "nodeType": "host",
-                "props": Object {
-                  "children": "Add Data",
-                  "href": "/DataEntry",
-                },
-                "ref": null,
-                "rendered": "Add Data",
-                "type": "a",
-              },
-              Object {
-                "instance": null,
-                "key": undefined,
-                "nodeType": "host",
-                "props": Object {
-                  "alt": "logo",
-                  "src": "folder.svg",
-                },
-                "ref": null,
-                "rendered": null,
-                "type": "img",
-              },
-            ],
             "type": "div",
           },
           Object {
@@ -192,46 +226,68 @@ ShallowWrapper {
             "key": undefined,
             "nodeType": "host",
             "props": Object {
-              "children": Array [
-                <a
-                  href="/Reports"
+              "children": <a
+                href="/Reports"
 >
+                <div>
+                                Reports
+                                <img
+                                                alt="logo"
+                                                src="line-chart.svg"
+                                />
+                </div>
+</a>,
+              "className": "selection",
+            },
+            "ref": null,
+            "rendered": Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": <div>
                   Reports
-</a>,
-                <img
-                  alt="logo"
-                  src="line-chart.svg"
+                  <img
+                                    alt="logo"
+                                    src="line-chart.svg"
+                  />
+</div>,
+                "href": "/Reports",
+              },
+              "ref": null,
+              "rendered": Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": Array [
+                    "Reports",
+                    <img
+                      alt="logo"
+                      src="line-chart.svg"
 />,
-              ],
-              "className": "selection",
+                  ],
+                },
+                "ref": null,
+                "rendered": Array [
+                  "Reports",
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "alt": "logo",
+                      "src": "line-chart.svg",
+                    },
+                    "ref": null,
+                    "rendered": null,
+                    "type": "img",
+                  },
+                ],
+                "type": "div",
+              },
+              "type": "a",
             },
-            "ref": null,
-            "rendered": Array [
-              Object {
-                "instance": null,
-                "key": undefined,
-                "nodeType": "host",
-                "props": Object {
-                  "children": "Reports",
-                  "href": "/Reports",
-                },
-                "ref": null,
-                "rendered": "Reports",
-                "type": "a",
-              },
-              Object {
-                "instance": null,
-                "key": undefined,
-                "nodeType": "host",
-                "props": Object {
-                  "alt": "logo",
-                  "src": "line-chart.svg",
-                },
-                "ref": null,
-                "rendered": null,
-                "type": "img",
-              },
-            ],
             "type": "div",
           },
           Object {
@@ -239,46 +295,68 @@ ShallowWrapper {
             "key": undefined,
             "nodeType": "host",
             "props": Object {
-              "children": Array [
-                <a
-                  href="/ViewAll"
+              "children": <a
+                href="/ViewAll"
 >
-                  Edit Data
+                <div>
+                                Edit Data
+                                <img
+                                                alt="logo"
+                                                src="archive.svg"
+                                />
+                </div>
 </a>,
-                <img
-                  alt="logo"
-                  src="archive.svg"
-/>,
-              ],
               "className": "selection",
             },
             "ref": null,
-            "rendered": Array [
-              Object {
+            "rendered": Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": <div>
+                  Edit Data
+                  <img
+                                    alt="logo"
+                                    src="archive.svg"
+                  />
+</div>,
+                "href": "/ViewAll",
+              },
+              "ref": null,
+              "rendered": Object {
                 "instance": null,
                 "key": undefined,
                 "nodeType": "host",
                 "props": Object {
-                  "children": "Edit Data",
-                  "href": "/ViewAll",
+                  "children": Array [
+                    "Edit Data",
+                    <img
+                      alt="logo"
+                      src="archive.svg"
+/>,
+                  ],
                 },
                 "ref": null,
-                "rendered": "Edit Data",
-                "type": "a",
+                "rendered": Array [
+                  "Edit Data",
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "alt": "logo",
+                      "src": "archive.svg",
+                    },
+                    "ref": null,
+                    "rendered": null,
+                    "type": "img",
+                  },
+                ],
+                "type": "div",
               },
-              Object {
-                "instance": null,
-                "key": undefined,
-                "nodeType": "host",
-                "props": Object {
-                  "alt": "logo",
-                  "src": "archive.svg",
-                },
-                "ref": null,
-                "rendered": null,
-                "type": "img",
-              },
-            ],
+              "type": "a",
+            },
             "type": "div",
           },
         ],
@@ -308,12 +386,14 @@ ShallowWrapper {
                         <a
                                     href="/DataEntry"
                         >
-                                    Add Data
+                                    <div>
+                                                Add Data
+                                                <img
+                                                            alt="logo"
+                                                            src="folder.svg"
+                                                />
+                                    </div>
                         </a>
-                        <img
-                                    alt="logo"
-                                    src="folder.svg"
-                        />
             </div>
             <div
                         className="selection"
@@ -321,12 +401,14 @@ ShallowWrapper {
                         <a
                                     href="/Reports"
                         >
-                                    Reports
+                                    <div>
+                                                Reports
+                                                <img
+                                                            alt="logo"
+                                                            src="line-chart.svg"
+                                                />
+                                    </div>
                         </a>
-                        <img
-                                    alt="logo"
-                                    src="line-chart.svg"
-                        />
             </div>
             <div
                         className="selection"
@@ -334,12 +416,14 @@ ShallowWrapper {
                         <a
                                     href="/ViewAll"
                         >
-                                    Edit Data
+                                    <div>
+                                                Edit Data
+                                                <img
+                                                            alt="logo"
+                                                            src="archive.svg"
+                                                />
+                                    </div>
                         </a>
-                        <img
-                                    alt="logo"
-                                    src="archive.svg"
-                        />
             </div>
 </div>,
         ],
@@ -378,12 +462,14 @@ ShallowWrapper {
                 <a
                                 href="/DataEntry"
                 >
-                                Add Data
+                                <div>
+                                                Add Data
+                                                <img
+                                                                alt="logo"
+                                                                src="folder.svg"
+                                                />
+                                </div>
                 </a>
-                <img
-                                alt="logo"
-                                src="folder.svg"
-                />
 </div>,
               <div
                 className="selection"
@@ -391,12 +477,14 @@ ShallowWrapper {
                 <a
                                 href="/Reports"
                 >
-                                Reports
+                                <div>
+                                                Reports
+                                                <img
+                                                                alt="logo"
+                                                                src="line-chart.svg"
+                                                />
+                                </div>
                 </a>
-                <img
-                                alt="logo"
-                                src="line-chart.svg"
-                />
 </div>,
               <div
                 className="selection"
@@ -404,12 +492,14 @@ ShallowWrapper {
                 <a
                                 href="/ViewAll"
                 >
-                                Edit Data
+                                <div>
+                                                Edit Data
+                                                <img
+                                                                alt="logo"
+                                                                src="archive.svg"
+                                                />
+                                </div>
                 </a>
-                <img
-                                alt="logo"
-                                src="archive.svg"
-                />
 </div>,
             ],
             "className": "center-links",
@@ -421,46 +511,68 @@ ShallowWrapper {
               "key": undefined,
               "nodeType": "host",
               "props": Object {
-                "children": Array [
-                  <a
-                    href="/DataEntry"
+                "children": <a
+                  href="/DataEntry"
 >
+                  <div>
+                                    Add Data
+                                    <img
+                                                      alt="logo"
+                                                      src="folder.svg"
+                                    />
+                  </div>
+</a>,
+                "className": "selection",
+              },
+              "ref": null,
+              "rendered": Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": <div>
                     Add Data
-</a>,
-                  <img
-                    alt="logo"
-                    src="folder.svg"
+                    <img
+                                        alt="logo"
+                                        src="folder.svg"
+                    />
+</div>,
+                  "href": "/DataEntry",
+                },
+                "ref": null,
+                "rendered": Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": Array [
+                      "Add Data",
+                      <img
+                        alt="logo"
+                        src="folder.svg"
 />,
-                ],
-                "className": "selection",
+                    ],
+                  },
+                  "ref": null,
+                  "rendered": Array [
+                    "Add Data",
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "alt": "logo",
+                        "src": "folder.svg",
+                      },
+                      "ref": null,
+                      "rendered": null,
+                      "type": "img",
+                    },
+                  ],
+                  "type": "div",
+                },
+                "type": "a",
               },
-              "ref": null,
-              "rendered": Array [
-                Object {
-                  "instance": null,
-                  "key": undefined,
-                  "nodeType": "host",
-                  "props": Object {
-                    "children": "Add Data",
-                    "href": "/DataEntry",
-                  },
-                  "ref": null,
-                  "rendered": "Add Data",
-                  "type": "a",
-                },
-                Object {
-                  "instance": null,
-                  "key": undefined,
-                  "nodeType": "host",
-                  "props": Object {
-                    "alt": "logo",
-                    "src": "folder.svg",
-                  },
-                  "ref": null,
-                  "rendered": null,
-                  "type": "img",
-                },
-              ],
               "type": "div",
             },
             Object {
@@ -468,46 +580,68 @@ ShallowWrapper {
               "key": undefined,
               "nodeType": "host",
               "props": Object {
-                "children": Array [
-                  <a
-                    href="/Reports"
+                "children": <a
+                  href="/Reports"
 >
+                  <div>
+                                    Reports
+                                    <img
+                                                      alt="logo"
+                                                      src="line-chart.svg"
+                                    />
+                  </div>
+</a>,
+                "className": "selection",
+              },
+              "ref": null,
+              "rendered": Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": <div>
                     Reports
-</a>,
-                  <img
-                    alt="logo"
-                    src="line-chart.svg"
+                    <img
+                                        alt="logo"
+                                        src="line-chart.svg"
+                    />
+</div>,
+                  "href": "/Reports",
+                },
+                "ref": null,
+                "rendered": Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": Array [
+                      "Reports",
+                      <img
+                        alt="logo"
+                        src="line-chart.svg"
 />,
-                ],
-                "className": "selection",
+                    ],
+                  },
+                  "ref": null,
+                  "rendered": Array [
+                    "Reports",
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "alt": "logo",
+                        "src": "line-chart.svg",
+                      },
+                      "ref": null,
+                      "rendered": null,
+                      "type": "img",
+                    },
+                  ],
+                  "type": "div",
+                },
+                "type": "a",
               },
-              "ref": null,
-              "rendered": Array [
-                Object {
-                  "instance": null,
-                  "key": undefined,
-                  "nodeType": "host",
-                  "props": Object {
-                    "children": "Reports",
-                    "href": "/Reports",
-                  },
-                  "ref": null,
-                  "rendered": "Reports",
-                  "type": "a",
-                },
-                Object {
-                  "instance": null,
-                  "key": undefined,
-                  "nodeType": "host",
-                  "props": Object {
-                    "alt": "logo",
-                    "src": "line-chart.svg",
-                  },
-                  "ref": null,
-                  "rendered": null,
-                  "type": "img",
-                },
-              ],
               "type": "div",
             },
             Object {
@@ -515,46 +649,68 @@ ShallowWrapper {
               "key": undefined,
               "nodeType": "host",
               "props": Object {
-                "children": Array [
-                  <a
-                    href="/ViewAll"
+                "children": <a
+                  href="/ViewAll"
 >
-                    Edit Data
+                  <div>
+                                    Edit Data
+                                    <img
+                                                      alt="logo"
+                                                      src="archive.svg"
+                                    />
+                  </div>
 </a>,
-                  <img
-                    alt="logo"
-                    src="archive.svg"
-/>,
-                ],
                 "className": "selection",
               },
               "ref": null,
-              "rendered": Array [
-                Object {
+              "rendered": Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": <div>
+                    Edit Data
+                    <img
+                                        alt="logo"
+                                        src="archive.svg"
+                    />
+</div>,
+                  "href": "/ViewAll",
+                },
+                "ref": null,
+                "rendered": Object {
                   "instance": null,
                   "key": undefined,
                   "nodeType": "host",
                   "props": Object {
-                    "children": "Edit Data",
-                    "href": "/ViewAll",
+                    "children": Array [
+                      "Edit Data",
+                      <img
+                        alt="logo"
+                        src="archive.svg"
+/>,
+                    ],
                   },
                   "ref": null,
-                  "rendered": "Edit Data",
-                  "type": "a",
+                  "rendered": Array [
+                    "Edit Data",
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "alt": "logo",
+                        "src": "archive.svg",
+                      },
+                      "ref": null,
+                      "rendered": null,
+                      "type": "img",
+                    },
+                  ],
+                  "type": "div",
                 },
-                Object {
-                  "instance": null,
-                  "key": undefined,
-                  "nodeType": "host",
-                  "props": Object {
-                    "alt": "logo",
-                    "src": "archive.svg",
-                  },
-                  "ref": null,
-                  "rendered": null,
-                  "type": "img",
-                },
-              ],
+                "type": "a",
+              },
               "type": "div",
             },
           ],
@@ -606,12 +762,14 @@ ShallowWrapper {
                     <a
                               href="/DataEntry"
                     >
-                              Add Data
+                              <div>
+                                        Add Data
+                                        <img
+                                                  alt="logo"
+                                                  src="folder.svg"
+                                        />
+                              </div>
                     </a>
-                    <img
-                              alt="logo"
-                              src="folder.svg"
-                    />
           </div>
           <div
                     className="selection"
@@ -619,12 +777,14 @@ ShallowWrapper {
                     <a
                               href="/Reports"
                     >
-                              Reports
+                              <div>
+                                        Reports
+                                        <img
+                                                  alt="logo"
+                                                  src="line-chart.svg"
+                                        />
+                              </div>
                     </a>
-                    <img
-                              alt="logo"
-                              src="line-chart.svg"
-                    />
           </div>
           <div
                     className="selection"
@@ -632,12 +792,14 @@ ShallowWrapper {
                     <a
                               href="/ViewAll"
                     >
-                              Edit Data
+                              <div>
+                                        Edit Data
+                                        <img
+                                                  alt="logo"
+                                                  src="archive.svg"
+                                        />
+                              </div>
                     </a>
-                    <img
-                              alt="logo"
-                              src="archive.svg"
-                    />
           </div>
 </div>,
       ],
@@ -676,12 +838,14 @@ ShallowWrapper {
               <a
                             href="/DataEntry"
               >
-                            Add Data
+                            <div>
+                                          Add Data
+                                          <img
+                                                        alt="logo"
+                                                        src="folder.svg"
+                                          />
+                            </div>
               </a>
-              <img
-                            alt="logo"
-                            src="folder.svg"
-              />
 </div>,
             <div
               className="selection"
@@ -689,12 +853,14 @@ ShallowWrapper {
               <a
                             href="/Reports"
               >
-                            Reports
+                            <div>
+                                          Reports
+                                          <img
+                                                        alt="logo"
+                                                        src="line-chart.svg"
+                                          />
+                            </div>
               </a>
-              <img
-                            alt="logo"
-                            src="line-chart.svg"
-              />
 </div>,
             <div
               className="selection"
@@ -702,12 +868,14 @@ ShallowWrapper {
               <a
                             href="/ViewAll"
               >
-                            Edit Data
+                            <div>
+                                          Edit Data
+                                          <img
+                                                        alt="logo"
+                                                        src="archive.svg"
+                                          />
+                            </div>
               </a>
-              <img
-                            alt="logo"
-                            src="archive.svg"
-              />
 </div>,
           ],
           "className": "center-links",
@@ -719,46 +887,68 @@ ShallowWrapper {
             "key": undefined,
             "nodeType": "host",
             "props": Object {
-              "children": Array [
-                <a
-                  href="/DataEntry"
+              "children": <a
+                href="/DataEntry"
 >
+                <div>
+                                Add Data
+                                <img
+                                                alt="logo"
+                                                src="folder.svg"
+                                />
+                </div>
+</a>,
+              "className": "selection",
+            },
+            "ref": null,
+            "rendered": Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": <div>
                   Add Data
-</a>,
-                <img
-                  alt="logo"
-                  src="folder.svg"
+                  <img
+                                    alt="logo"
+                                    src="folder.svg"
+                  />
+</div>,
+                "href": "/DataEntry",
+              },
+              "ref": null,
+              "rendered": Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": Array [
+                    "Add Data",
+                    <img
+                      alt="logo"
+                      src="folder.svg"
 />,
-              ],
-              "className": "selection",
+                  ],
+                },
+                "ref": null,
+                "rendered": Array [
+                  "Add Data",
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "alt": "logo",
+                      "src": "folder.svg",
+                    },
+                    "ref": null,
+                    "rendered": null,
+                    "type": "img",
+                  },
+                ],
+                "type": "div",
+              },
+              "type": "a",
             },
-            "ref": null,
-            "rendered": Array [
-              Object {
-                "instance": null,
-                "key": undefined,
-                "nodeType": "host",
-                "props": Object {
-                  "children": "Add Data",
-                  "href": "/DataEntry",
-                },
-                "ref": null,
-                "rendered": "Add Data",
-                "type": "a",
-              },
-              Object {
-                "instance": null,
-                "key": undefined,
-                "nodeType": "host",
-                "props": Object {
-                  "alt": "logo",
-                  "src": "folder.svg",
-                },
-                "ref": null,
-                "rendered": null,
-                "type": "img",
-              },
-            ],
             "type": "div",
           },
           Object {
@@ -766,46 +956,68 @@ ShallowWrapper {
             "key": undefined,
             "nodeType": "host",
             "props": Object {
-              "children": Array [
-                <a
-                  href="/Reports"
+              "children": <a
+                href="/Reports"
 >
+                <div>
+                                Reports
+                                <img
+                                                alt="logo"
+                                                src="line-chart.svg"
+                                />
+                </div>
+</a>,
+              "className": "selection",
+            },
+            "ref": null,
+            "rendered": Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": <div>
                   Reports
-</a>,
-                <img
-                  alt="logo"
-                  src="line-chart.svg"
+                  <img
+                                    alt="logo"
+                                    src="line-chart.svg"
+                  />
+</div>,
+                "href": "/Reports",
+              },
+              "ref": null,
+              "rendered": Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": Array [
+                    "Reports",
+                    <img
+                      alt="logo"
+                      src="line-chart.svg"
 />,
-              ],
-              "className": "selection",
+                  ],
+                },
+                "ref": null,
+                "rendered": Array [
+                  "Reports",
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "alt": "logo",
+                      "src": "line-chart.svg",
+                    },
+                    "ref": null,
+                    "rendered": null,
+                    "type": "img",
+                  },
+                ],
+                "type": "div",
+              },
+              "type": "a",
             },
-            "ref": null,
-            "rendered": Array [
-              Object {
-                "instance": null,
-                "key": undefined,
-                "nodeType": "host",
-                "props": Object {
-                  "children": "Reports",
-                  "href": "/Reports",
-                },
-                "ref": null,
-                "rendered": "Reports",
-                "type": "a",
-              },
-              Object {
-                "instance": null,
-                "key": undefined,
-                "nodeType": "host",
-                "props": Object {
-                  "alt": "logo",
-                  "src": "line-chart.svg",
-                },
-                "ref": null,
-                "rendered": null,
-                "type": "img",
-              },
-            ],
             "type": "div",
           },
           Object {
@@ -813,46 +1025,68 @@ ShallowWrapper {
             "key": undefined,
             "nodeType": "host",
             "props": Object {
-              "children": Array [
-                <a
-                  href="/ViewAll"
+              "children": <a
+                href="/ViewAll"
 >
-                  Edit Data
+                <div>
+                                Edit Data
+                                <img
+                                                alt="logo"
+                                                src="archive.svg"
+                                />
+                </div>
 </a>,
-                <img
-                  alt="logo"
-                  src="archive.svg"
-/>,
-              ],
               "className": "selection",
             },
             "ref": null,
-            "rendered": Array [
-              Object {
+            "rendered": Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": <div>
+                  Edit Data
+                  <img
+                                    alt="logo"
+                                    src="archive.svg"
+                  />
+</div>,
+                "href": "/ViewAll",
+              },
+              "ref": null,
+              "rendered": Object {
                 "instance": null,
                 "key": undefined,
                 "nodeType": "host",
                 "props": Object {
-                  "children": "Edit Data",
-                  "href": "/ViewAll",
+                  "children": Array [
+                    "Edit Data",
+                    <img
+                      alt="logo"
+                      src="archive.svg"
+/>,
+                  ],
                 },
                 "ref": null,
-                "rendered": "Edit Data",
-                "type": "a",
+                "rendered": Array [
+                  "Edit Data",
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "alt": "logo",
+                      "src": "archive.svg",
+                    },
+                    "ref": null,
+                    "rendered": null,
+                    "type": "img",
+                  },
+                ],
+                "type": "div",
               },
-              Object {
-                "instance": null,
-                "key": undefined,
-                "nodeType": "host",
-                "props": Object {
-                  "alt": "logo",
-                  "src": "archive.svg",
-                },
-                "ref": null,
-                "rendered": null,
-                "type": "img",
-              },
-            ],
+              "type": "a",
+            },
             "type": "div",
           },
         ],
@@ -882,12 +1116,14 @@ ShallowWrapper {
                         <a
                                     href="/DataEntry"
                         >
-                                    Add Data
+                                    <div>
+                                                Add Data
+                                                <img
+                                                            alt="logo"
+                                                            src="folder.svg"
+                                                />
+                                    </div>
                         </a>
-                        <img
-                                    alt="logo"
-                                    src="folder.svg"
-                        />
             </div>
             <div
                         className="selection"
@@ -895,12 +1131,14 @@ ShallowWrapper {
                         <a
                                     href="/Reports"
                         >
-                                    Reports
+                                    <div>
+                                                Reports
+                                                <img
+                                                            alt="logo"
+                                                            src="line-chart.svg"
+                                                />
+                                    </div>
                         </a>
-                        <img
-                                    alt="logo"
-                                    src="line-chart.svg"
-                        />
             </div>
             <div
                         className="selection"
@@ -908,12 +1146,14 @@ ShallowWrapper {
                         <a
                                     href="/ViewAll"
                         >
-                                    Edit Data
+                                    <div>
+                                                Edit Data
+                                                <img
+                                                            alt="logo"
+                                                            src="archive.svg"
+                                                />
+                                    </div>
                         </a>
-                        <img
-                                    alt="logo"
-                                    src="archive.svg"
-                        />
             </div>
 </div>,
         ],
@@ -952,12 +1192,14 @@ ShallowWrapper {
                 <a
                                 href="/DataEntry"
                 >
-                                Add Data
+                                <div>
+                                                Add Data
+                                                <img
+                                                                alt="logo"
+                                                                src="folder.svg"
+                                                />
+                                </div>
                 </a>
-                <img
-                                alt="logo"
-                                src="folder.svg"
-                />
 </div>,
               <div
                 className="selection"
@@ -965,12 +1207,14 @@ ShallowWrapper {
                 <a
                                 href="/Reports"
                 >
-                                Reports
+                                <div>
+                                                Reports
+                                                <img
+                                                                alt="logo"
+                                                                src="line-chart.svg"
+                                                />
+                                </div>
                 </a>
-                <img
-                                alt="logo"
-                                src="line-chart.svg"
-                />
 </div>,
               <div
                 className="selection"
@@ -978,12 +1222,14 @@ ShallowWrapper {
                 <a
                                 href="/ViewAll"
                 >
-                                Edit Data
+                                <div>
+                                                Edit Data
+                                                <img
+                                                                alt="logo"
+                                                                src="archive.svg"
+                                                />
+                                </div>
                 </a>
-                <img
-                                alt="logo"
-                                src="archive.svg"
-                />
 </div>,
             ],
             "className": "center-links",
@@ -995,46 +1241,68 @@ ShallowWrapper {
               "key": undefined,
               "nodeType": "host",
               "props": Object {
-                "children": Array [
-                  <a
-                    href="/DataEntry"
+                "children": <a
+                  href="/DataEntry"
 >
+                  <div>
+                                    Add Data
+                                    <img
+                                                      alt="logo"
+                                                      src="folder.svg"
+                                    />
+                  </div>
+</a>,
+                "className": "selection",
+              },
+              "ref": null,
+              "rendered": Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": <div>
                     Add Data
-</a>,
-                  <img
-                    alt="logo"
-                    src="folder.svg"
+                    <img
+                                        alt="logo"
+                                        src="folder.svg"
+                    />
+</div>,
+                  "href": "/DataEntry",
+                },
+                "ref": null,
+                "rendered": Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": Array [
+                      "Add Data",
+                      <img
+                        alt="logo"
+                        src="folder.svg"
 />,
-                ],
-                "className": "selection",
+                    ],
+                  },
+                  "ref": null,
+                  "rendered": Array [
+                    "Add Data",
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "alt": "logo",
+                        "src": "folder.svg",
+                      },
+                      "ref": null,
+                      "rendered": null,
+                      "type": "img",
+                    },
+                  ],
+                  "type": "div",
+                },
+                "type": "a",
               },
-              "ref": null,
-              "rendered": Array [
-                Object {
-                  "instance": null,
-                  "key": undefined,
-                  "nodeType": "host",
-                  "props": Object {
-                    "children": "Add Data",
-                    "href": "/DataEntry",
-                  },
-                  "ref": null,
-                  "rendered": "Add Data",
-                  "type": "a",
-                },
-                Object {
-                  "instance": null,
-                  "key": undefined,
-                  "nodeType": "host",
-                  "props": Object {
-                    "alt": "logo",
-                    "src": "folder.svg",
-                  },
-                  "ref": null,
-                  "rendered": null,
-                  "type": "img",
-                },
-              ],
               "type": "div",
             },
             Object {
@@ -1042,46 +1310,68 @@ ShallowWrapper {
               "key": undefined,
               "nodeType": "host",
               "props": Object {
-                "children": Array [
-                  <a
-                    href="/Reports"
+                "children": <a
+                  href="/Reports"
 >
+                  <div>
+                                    Reports
+                                    <img
+                                                      alt="logo"
+                                                      src="line-chart.svg"
+                                    />
+                  </div>
+</a>,
+                "className": "selection",
+              },
+              "ref": null,
+              "rendered": Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": <div>
                     Reports
-</a>,
-                  <img
-                    alt="logo"
-                    src="line-chart.svg"
+                    <img
+                                        alt="logo"
+                                        src="line-chart.svg"
+                    />
+</div>,
+                  "href": "/Reports",
+                },
+                "ref": null,
+                "rendered": Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": Array [
+                      "Reports",
+                      <img
+                        alt="logo"
+                        src="line-chart.svg"
 />,
-                ],
-                "className": "selection",
+                    ],
+                  },
+                  "ref": null,
+                  "rendered": Array [
+                    "Reports",
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "alt": "logo",
+                        "src": "line-chart.svg",
+                      },
+                      "ref": null,
+                      "rendered": null,
+                      "type": "img",
+                    },
+                  ],
+                  "type": "div",
+                },
+                "type": "a",
               },
-              "ref": null,
-              "rendered": Array [
-                Object {
-                  "instance": null,
-                  "key": undefined,
-                  "nodeType": "host",
-                  "props": Object {
-                    "children": "Reports",
-                    "href": "/Reports",
-                  },
-                  "ref": null,
-                  "rendered": "Reports",
-                  "type": "a",
-                },
-                Object {
-                  "instance": null,
-                  "key": undefined,
-                  "nodeType": "host",
-                  "props": Object {
-                    "alt": "logo",
-                    "src": "line-chart.svg",
-                  },
-                  "ref": null,
-                  "rendered": null,
-                  "type": "img",
-                },
-              ],
               "type": "div",
             },
             Object {
@@ -1089,46 +1379,68 @@ ShallowWrapper {
               "key": undefined,
               "nodeType": "host",
               "props": Object {
-                "children": Array [
-                  <a
-                    href="/ViewAll"
+                "children": <a
+                  href="/ViewAll"
 >
-                    Edit Data
+                  <div>
+                                    Edit Data
+                                    <img
+                                                      alt="logo"
+                                                      src="archive.svg"
+                                    />
+                  </div>
 </a>,
-                  <img
-                    alt="logo"
-                    src="archive.svg"
-/>,
-                ],
                 "className": "selection",
               },
               "ref": null,
-              "rendered": Array [
-                Object {
+              "rendered": Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": <div>
+                    Edit Data
+                    <img
+                                        alt="logo"
+                                        src="archive.svg"
+                    />
+</div>,
+                  "href": "/ViewAll",
+                },
+                "ref": null,
+                "rendered": Object {
                   "instance": null,
                   "key": undefined,
                   "nodeType": "host",
                   "props": Object {
-                    "children": "Edit Data",
-                    "href": "/ViewAll",
+                    "children": Array [
+                      "Edit Data",
+                      <img
+                        alt="logo"
+                        src="archive.svg"
+/>,
+                    ],
                   },
                   "ref": null,
-                  "rendered": "Edit Data",
-                  "type": "a",
+                  "rendered": Array [
+                    "Edit Data",
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "alt": "logo",
+                        "src": "archive.svg",
+                      },
+                      "ref": null,
+                      "rendered": null,
+                      "type": "img",
+                    },
+                  ],
+                  "type": "div",
                 },
-                Object {
-                  "instance": null,
-                  "key": undefined,
-                  "nodeType": "host",
-                  "props": Object {
-                    "alt": "logo",
-                    "src": "archive.svg",
-                  },
-                  "ref": null,
-                  "rendered": null,
-                  "type": "img",
-                },
-              ],
+                "type": "a",
+              },
               "type": "div",
             },
           ],
