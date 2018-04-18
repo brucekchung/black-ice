@@ -43,3 +43,40 @@
 .DataEntry .add-location input {
   margin: 0 10px 10px 10px;
 }
+
+@media screen and (max-width: 1020px) {
+  .choose-location {
+    display: flex;
+    flex-direction: column;
+    height: 230px;
+    justify-content: space-between;
+    margin: 0 auto 30px auto;
+    width: 70%;
+  }
+
+  .choose-location select {
+    margin-left: 10px;
+    width: 100%;
+  }
+
+  .DataEntry h4 {
+    margin-bottom: 10px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .import-button {
+    position: inherit;
+    margin-top: 30px;
+  }
+
+  .DataEntry h3 {
+    margin-top: 40px;
+  }
+}
+
+@media screen and (max-width: 475px) {
+  .choose-location select {
+    margin-left: 0;
+  }
+}

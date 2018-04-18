@@ -208,12 +208,15 @@ class DataEntry extends Component {
             <div className="choose-location">
               <h4>Choose an existing location:</h4>
               <DropDown name='country'
+                        className='drop-down'
                         options={ this.sortOptionsInfo(this.state.allLocations, 'country') }
                         handleChange={ this.handleChange } />
               <DropDown name='region'
+                        className='drop-down'
                         options={ this.availableOptions('region') }
                         handleChange={ this.handleChange } />
               <DropDown name='coordinates'
+                        className='drop-down'
                         options={ this.availableOptions('coordinates') }
                         handleChange={ this.handleChange } />
             </div>
