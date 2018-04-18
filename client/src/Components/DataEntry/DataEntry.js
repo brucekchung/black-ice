@@ -221,7 +221,7 @@ class DataEntry extends Component {
           {
             this.state.addLocation &&
             <div className="add-location">
-              <h4>Add a New Location</h4>
+              <h4>Add a new location:</h4>
               <input type="text"
                      name="name"
                      placeholder="Location Name"
